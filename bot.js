@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.0.1
+// Version 1.0.2
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -49,6 +49,11 @@ client.on('message', receivedMessage => {
         receivedMessage.channel.send("Eat it! ***Eat it now!***")
     }
     if (receivedMessage.content == "ehe") {
+        // Create the attachment using MessageAttachment
+        const ehe = new MessageAttachment('ehe.jpg')
+        // Send the attachment in the message channel with the content
+        receivedMessage.channel.send(ehe)
+        // Send caption
         receivedMessage.channel.send("**Ehe te nandayo!**")
     }
 })
@@ -131,6 +136,12 @@ function processCommand(receivedMessage) {
     else if (primaryCommand == "") {
         receivedMessage.channel.send("Poggers!")
     }
+
+    // Genshin commands
+    else if (primaryCommand == config.genshin) {
+        receivedMessage.channel.send("In terms of mora... we have no mora.")
+    }
+    
     // If command doesn't exist
     else {
         receivedMessage.channel.send("Rip that command currently does not exist. Try `pog help` for a list of operable commands.")
