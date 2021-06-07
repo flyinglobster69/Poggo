@@ -1,3 +1,8 @@
+// pog#2538 (PogChamp; pog bot)
+// Version 1.0.1
+// 1.0: June 03 2021
+// Author: FlyingLobster69 (LooOOooL YT)
+
 // Import the discord.js module
 const {Client, MessageAttachment} = require('discord.js')
 const fs = require('fs')
@@ -17,7 +22,7 @@ client.on('ready', () => {
 
 client.on('message', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
-        return
+        return // kekw
     }
     
     if (receivedMessage.content.startsWith(config.prefix)) {
@@ -26,12 +31,8 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.startsWith(config.prefixUpper)) {
         processCommand(receivedMessage)
     }
-    if (receivedMessage.content == "pog") {
-        receivedMessage.channel.send("Poggers!")
-    }
-    if (receivedMessage.content == "poggers") {
-        receivedMessage.channel.send("pog indeed")
-    }
+
+    // Single message responses
     if (receivedMessage.content == "e") {
         receivedMessage.channel.send("e")
     }
@@ -50,17 +51,16 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content == "ehe") {
         receivedMessage.channel.send("**Ehe te nandayo!**")
     }
-    if (receivedMessage.content == "poggies") {
-        receivedMessage.channel.send("wait thats illegal")
-    }
 })
 
+// Command function
 function processCommand(receivedMessage) {
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
+    // Console printout (commands received and reply)
     console.log("Command received: " + primaryCommand)
     console.log("Arguments: " + arguments) // There may not be any arguments
 
@@ -70,14 +70,14 @@ function processCommand(receivedMessage) {
             receivedMessage.channel.send("Starting Windows...")
         }
         else {
-            return
+            return // receivedMessage.channel.send(bsod)
         }
     }
     else if (primaryCommand == "help") {
         receivedMessage.channel.send(`Prefix\: \`pog\`; Command list\: \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\``)
     }
     else if (primaryCommand == "test") {
-        receivedMessage.channel.send(Math.random())
+        receivedMessage.channel.send("Msg test: " + Math.random())
     }
     else if (primaryCommand == "horny") {
         receivedMessage.channel.send("go to horny jail smh")
@@ -86,7 +86,7 @@ function processCommand(receivedMessage) {
         receivedMessage.channel.send("***Will you shut up man?***")
     }
     else if (primaryCommand == "trump") {
-        receivedMessage.channel.send("Error 404: Not Found")
+        receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall, it will be a big, beautiful wall, and it will keep out all the Mexicans.*")
     }
     else if (primaryCommand == "ping") {
         receivedMessage.channel.send("Pong!")
@@ -129,7 +129,7 @@ function processCommand(receivedMessage) {
 
     // If pog
     else if (primaryCommand == "") {
-        return
+        receivedMessage.channel.send("Poggers!")
     }
     // If command doesn't exist
     else {
