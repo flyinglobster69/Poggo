@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.0.2
+// Version 1.0.3
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -10,6 +10,13 @@ const { exitCode } = require('process')
 
 // Create an instance of Discord that we will use to control the bot
 const config = require('./config.json')
+
+// Connect singles
+const e = require('./singles/e.json')
+const help = require('./singles/help.json')
+const sixnine = require('./singles/69.json')
+const paimon = require('./singles/paimon.json')
+
 const client = new Client()
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
 
@@ -33,20 +40,17 @@ client.on('message', receivedMessage => {
     }
 
     // Single message responses
-    if (receivedMessage.content == "e") {
-        receivedMessage.channel.send("e")
+    if (receivedMessage.content == e.e) {
+        receivedMessage.channel.send(e.e)
     }
-    if (receivedMessage.content == "help") {
-        receivedMessage.channel.send("no :)")
+    if (receivedMessage.content == help.help) {
+        receivedMessage.channel.send(help.reply)
     }
-    if (receivedMessage.content == "cyka") {
-        receivedMessage.channel.send("blyat")
+    if (receivedMessage.content == sixnine.input) {
+        receivedMessage.channel.send(sixnine.reply)
     }
-    if (receivedMessage.content == "69") {
-        receivedMessage.channel.send("nice")
-    }
-    if (receivedMessage.content == "paimon") {
-        receivedMessage.channel.send("Eat it! ***Eat it now!***")
+    if (receivedMessage.content == paimon.paimon) {
+        receivedMessage.channel.send(paimon.reply)
     }
     if (receivedMessage.content == "ehe") {
         // Create the attachment using MessageAttachment
