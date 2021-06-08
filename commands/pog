@@ -1,7 +1,0 @@
-module.exports = {
-	name: 'pog',
-	description: 'pog',
-	execute(receivedMessage, args) {
-		receivedMessage.channel.send('Poggers!');
-	},
-};

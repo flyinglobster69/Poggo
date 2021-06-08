@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.1
+// Version 1.1.1
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -126,9 +126,6 @@ function processCommand(receivedMessage) {
     }
     else if (primaryCommand == "ping") {
         receivedMessage.channel.send("Pong!")
-        // var yourping = new Date().getTime() - receivedMessage.createdTimestamp
-        // var botping = Math.round(bot.ws.ping)
-        // receivedMessage.channel.send(`Your ping: ${yourping} \nBots ping: ${botping}`)
         receivedMessage.channel.send(`🏓Latency is ${Date.now() - receivedMessage.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`)
     }
 
@@ -161,11 +158,13 @@ function processCommand(receivedMessage) {
 
     // If pog
     else if (primaryCommand == "") {
+        // poggers
         receivedMessage.channel.send("Poggers!")
     }
 
     // Genshin commands
     else if (primaryCommand.includes(config.genshin)) {
+        // Genshin pfps
         if (arguments.includes("ganyu")) {
             receivedMessage.channel.send("Ganyu " + config.gp)
             receivedMessage.channel.send(ganyupfp)
@@ -217,7 +216,7 @@ function processCommand(receivedMessage) {
     
     // If command doesn't exist
     else {
-        receivedMessage.channel.send("Rip that command currently does not exist. Try `pog help` for a list of operable commands.")
+        receivedMessage.channel.send("Rip that command currently does not exist. Try `pog help` for a list of operable commands or *suggest a new command* in #pog-status")
     }
 }
 
