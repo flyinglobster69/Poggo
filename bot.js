@@ -281,6 +281,20 @@ function processCommand(receivedMessage) {
         else if (arguments.includes(sm.albedo2)) {
             receivedMessage.channel.send(smyt.albedo2)
         }
+
+        // Confirm doubles
+        else if (arguments == "childe") {
+            receivedMessage.channel.send("Try `childe1` or `childe2` :)")
+        }
+        else if (arguments == "fischl") {
+            receivedMessage.channel.send("Try `fischl1` or `fischl2` :)")
+        }
+        else if (arguments == "klee") {
+            receivedMessage.channel.send("Try `klee1` or `klee2` :)")
+        }
+        else if (arguments == "albedo") {
+            receivedMessage.channel.send("Try `albedo1` or `albedo2` :)")
+        }
     }
     
     // If command doesn't exist
