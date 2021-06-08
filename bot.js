@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.0.4
+// Version 1.1
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -16,7 +16,30 @@ const e = require('./singles/e.json')
 const help = require('./singles/help.json')
 const sixnine = require('./singles/69.json')
 const paimon = require('./singles/paimon.json')
+const dewitjson = require('./singles/dewit.json')
 
+// Connect single attachments
+const dewit = new MessageAttachment('dewit.gif')
+const ehe = new MessageAttachment('ehe.jpg')
+
+// Connect Andrew
+const andrew = new MessageAttachment('andrew.jpg')
+const andrewps = new MessageAttachment('andrewps.png')
+
+// Connect Genshin pfps
+const ganyupfp = new MessageAttachment('ganyu_pfp.png')
+const keqingpfp = new MessageAttachment('keqing_pfp.png')
+const noellepfp = new MessageAttachment('noelle_pfp.png')
+const barbarapfp = new MessageAttachment('barbara_pfp.png')
+const monapfp = new MessageAttachment('mona_pfp.png')
+const kleepfp = new MessageAttachment('klee_pfp.png')
+const qiqipfp = new MessageAttachment('qiqi_pfp.png')
+const fischlpfp = new MessageAttachment('fischl_pfp.png')
+const sucrosepfp = new MessageAttachment('sucrose_pfp.png')
+const hutaopfp = new MessageAttachment('hutao_pfp.png')
+const eulapfp = new MessageAttachment('eula_pfp.png')
+
+// Connect client
 const client = new Client()
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
 
@@ -52,9 +75,10 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content == paimon.paimon) {
         receivedMessage.channel.send(paimon.reply)
     }
+    if (receivedMessage.content == dewitjson.dewit) {
+        receivedMessage.channel.send(dewit)
+    }
     if (receivedMessage.content == "ehe") {
-        // Create the attachment using MessageAttachment
-        const ehe = new MessageAttachment('ehe.jpg')
         // Send the attachment in the message channel with the content
         receivedMessage.channel.send(ehe)
         // Send caption
@@ -83,7 +107,7 @@ function processCommand(receivedMessage) {
         }
     }
     else if (primaryCommand == "help") {
-        receivedMessage.channel.send(`Prefix\: \`pog\`; Command list\: \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\``)
+        receivedMessage.channel.send(`Prefix\: \`pog\`; Command list\: \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert waifu here]\``)
     }
     else if (primaryCommand == "test") {
         receivedMessage.channel.send("Msg test: " + Math.random())
@@ -110,16 +134,12 @@ function processCommand(receivedMessage) {
 
     // Image commands
     else if (primaryCommand == "andrew") {
-        // Create the attachment using MessageAttachment
-        const andrew = new MessageAttachment('andrew.jpg')
         // Send the attachment in the message channel with the content
         receivedMessage.channel.send(andrew)
         // Send caption
         receivedMessage.channel.send("what a gamer")
     }
     else if (primaryCommand == "buff") {
-        // Create the attachment using MessageAttachment
-        const andrewps = new MessageAttachment('andrewps.png')
         // Send the attachment in the message channel with the content
         receivedMessage.channel.send(andrewps)
         // Send caption
@@ -145,8 +165,54 @@ function processCommand(receivedMessage) {
     }
 
     // Genshin commands
-    else if (primaryCommand == config.genshin) {
-        receivedMessage.channel.send("In terms of mora... we have no mora.")
+    else if (primaryCommand.includes(config.genshin)) {
+        if (arguments.includes("ganyu")) {
+            receivedMessage.channel.send("Ganyu " + config.gp)
+            receivedMessage.channel.send(ganyupfp)
+        }
+        else if (arguments.includes("keqing")) {
+            receivedMessage.channel.send("Keqing " + config.gp)
+            receivedMessage.channel.send(keqingpfp)
+        }
+        else if (arguments.includes("noelle")) {
+            receivedMessage.channel.send("Noelle " + config.gp)
+            receivedMessage.channel.send(noellepfp)
+        }
+        else if (arguments.includes("barbara")) {
+            receivedMessage.channel.send("Barbara " + config.gp)
+            receivedMessage.channel.send(barbarapfp)
+        }
+        else if (arguments.includes("mona")) {
+            receivedMessage.channel.send("Mona " + config.gp)
+            receivedMessage.channel.send(monapfp)
+        }
+        else if (arguments.includes("klee")) {
+            receivedMessage.channel.send("Klee " + config.gp)
+            receivedMessage.channel.send(kleepfp)
+        }
+        else if (arguments.includes("qiqi")) {
+            receivedMessage.channel.send("Qiqi " + config.gp)
+            receivedMessage.channel.send(qiqipfp)
+        }
+        else if (arguments.includes("fischl")) {
+            receivedMessage.channel.send("Fischl " + config.gp)
+            receivedMessage.channel.send(fischlpfp)
+        }
+        else if (arguments.includes("sucrose")) {
+            receivedMessage.channel.send("Sucrose " + config.gp)
+            receivedMessage.channel.send(sucrosepfp)
+        }
+        else if (arguments.includes("hutao")) {
+            receivedMessage.channel.send("Hu Tao " + config.gp)
+            receivedMessage.channel.send(hutaopfp)
+        }
+        else if (arguments.includes("eula")) {
+            receivedMessage.channel.send("Eula " + config.gp)
+            receivedMessage.channel.send(eulapfp)
+        }
+        else {
+            receivedMessage.channel.send("Oops the smol character pfp doesn't exist, the available characters are: `ganyu`, `keqing`, `noelle`, `barbara`, `mona`, `klee`, `qiqi`, `fischl`, `sucrose`, `hutao`, `eula`. Ex. `pog genshin ganyu`")
+        }
     }
     
     // If command doesn't exist
