@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.1.1
+// Version 1.1.2
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -129,19 +129,19 @@ function processCommand(receivedMessage) {
         receivedMessage.channel.send(`🏓Latency is ${Date.now() - receivedMessage.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`)
     }
 
-    // Image commands
-    else if (primaryCommand == "andrew") {
-        // Send the attachment in the message channel with the content
-        receivedMessage.channel.send(andrew)
-        // Send caption
-        receivedMessage.channel.send("what a gamer")
-    }
-    else if (primaryCommand == "buff") {
-        // Send the attachment in the message channel with the content
-        receivedMessage.channel.send(andrewps)
-        // Send caption
-        receivedMessage.channel.send("lmfao photoshopped")
-    }
+    // Andrew commands
+    // else if (primaryCommand == "andrew") {
+    //     // Send the attachment in the message channel with the content
+    //     receivedMessage.channel.send(andrew)
+    //     // Send caption
+    //     receivedMessage.channel.send("what a gamer")
+    // }
+    // else if (primaryCommand == "buff") {
+    //     // Send the attachment in the message channel with the content
+    //     receivedMessage.channel.send(andrewps)
+    //     // Send caption
+    //     receivedMessage.channel.send("lmfao photoshopped")
+    // }
 
     // Complex command thingies
     else if (primaryCommand.includes("exe")) {
