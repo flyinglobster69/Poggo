@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.1.2
+// Version 1.2
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -38,6 +38,14 @@ const fischlpfp = new MessageAttachment('fischl_pfp.png')
 const sucrosepfp = new MessageAttachment('sucrose_pfp.png')
 const hutaopfp = new MessageAttachment('hutao_pfp.png')
 const eulapfp = new MessageAttachment('eula_pfp.png')
+
+const chibizhongli = new MessageAttachment('chibi_zhongli.jpg')
+
+// Connect Stellar Moments
+const sm = require('./sm/sm.json')
+
+// Connect Stellar Moments YouTube links
+const smyt = require('./sm/smyt.json')
 
 // Connect client
 const client = new Client()
@@ -130,18 +138,18 @@ function processCommand(receivedMessage) {
     }
 
     // Andrew commands
-    // else if (primaryCommand == "andrew") {
-    //     // Send the attachment in the message channel with the content
-    //     receivedMessage.channel.send(andrew)
-    //     // Send caption
-    //     receivedMessage.channel.send("what a gamer")
-    // }
-    // else if (primaryCommand == "buff") {
-    //     // Send the attachment in the message channel with the content
-    //     receivedMessage.channel.send(andrewps)
-    //     // Send caption
-    //     receivedMessage.channel.send("lmfao photoshopped")
-    // }
+    else if (primaryCommand == "andrew") {
+        // Send the attachment in the message channel with the content
+        receivedMessage.channel.send(andrew)
+        // Send caption
+        receivedMessage.channel.send("what a gamer")
+    }
+    else if (primaryCommand == "buff") {
+        // Send the attachment in the message channel with the content
+        receivedMessage.channel.send(andrewps)
+        // Send caption
+        receivedMessage.channel.send("lmfao photoshopped")
+    }
 
     // Complex command thingies
     else if (primaryCommand.includes("exe")) {
@@ -209,8 +217,69 @@ function processCommand(receivedMessage) {
             receivedMessage.channel.send("Eula " + config.gp)
             receivedMessage.channel.send(eulapfp)
         }
+        else if (arguments.includes("zhongli")) {
+            receivedMessage.channel.send("In terms of mora, we have no mora.")
+            receivedMessage.channel.send(chibizhongli)
+        }
         else {
             receivedMessage.channel.send("Oops the smol character pfp doesn't exist, the available characters are: `ganyu`, `keqing`, `noelle`, `barbara`, `mona`, `klee`, `qiqi`, `fischl`, `sucrose`, `hutao`, `eula`. Ex. `pog genshin ganyu`")
+        }
+    }
+
+    // Stellar Moments
+    else if (primaryCommand.includes(config.sm)) {
+        // Soundtracks
+        if (arguments.includes(sm.ganyu)) {
+            receivedMessage.channel.send(smyt.ganyu)
+        }
+        else if (arguments.includes(sm.keqing)) {
+            receivedMessage.channel.send(smyt.keqing)
+        }
+        else if (arguments.includes(sm.zhongli)) {
+            receivedMessage.channel.send(smyt.zhongli)
+        }
+        else if (arguments.includes(sm.mona)) {
+            receivedMessage.channel.send(smyt.mona)
+        }
+        else if (arguments.includes(sm.qiqi)) {
+            receivedMessage.channel.send(smyt.qiqi)
+        }
+        else if (arguments.includes(sm.venti)) {
+            receivedMessage.channel.send(smyt.venti)
+        }
+        else if (arguments.includes(sm.xinyan)) {
+            receivedMessage.channel.send(smyt.xinyan)
+        }
+        else if (arguments.includes(sm.xiangling)) {
+            receivedMessage.channel.send(smyt.xiangling)
+        }
+        else if (arguments.includes(sm.diona)) {
+            receivedMessage.channel.send(smyt.diona)
+        }
+        // Doubles
+        else if (arguments.includes(sm.childe1)) {
+            receivedMessage.channel.send(smyt.childe1)
+        }
+        else if (arguments.includes(sm.childe2)) {
+            receivedMessage.channel.send(smyt.childe2)
+        }
+        else if (arguments.includes(sm.fischl1)) {
+            receivedMessage.channel.send(smyt.fischl1)
+        }
+        else if (arguments.includes(sm.fischl2)) {
+            receivedMessage.channel.send(smyt.fischl2)
+        }
+        else if (arguments.includes(sm.klee1)) {
+            receivedMessage.channel.send(smyt.klee1)
+        }
+        else if (arguments.includes(sm.klee2)) {
+            receivedMessage.channel.send(smyt.klee2)
+        }
+        else if (arguments.includes(sm.albedo1)) {
+            receivedMessage.channel.send(smyt.albedo1)
+        }
+        else if (arguments.includes(sm.albedo2)) {
+            receivedMessage.channel.send(smyt.albedo2)
         }
     }
     
