@@ -41,7 +41,7 @@ const eulapfp = new MessageAttachment('eula_pfp.png')
 
 // Connect client
 const client = new Client()
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
+// const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
