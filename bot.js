@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.0.3
+// Version 1.0.4
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -95,7 +95,10 @@ function processCommand(receivedMessage) {
         receivedMessage.channel.send("***Will you shut up man?***")
     }
     else if (primaryCommand == "trump") {
-        receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall, it will be a big, beautiful wall, and it will keep out all the Mexicans.*")
+        receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall (fence), it will be a big, beautiful wall (fence), and it will keep out all the Mexicans.*")
+    }
+    else if (primaryCommand == "ies") {
+        receivedMessage.channel.send("*Wait, that's illegal*")
     }
     else if (primaryCommand == "ping") {
         receivedMessage.channel.send("Pong!")
