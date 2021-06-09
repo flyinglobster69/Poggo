@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.2
+// Version 1.2.1
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -115,7 +115,7 @@ function processCommand(receivedMessage) {
         }
     }
     else if (primaryCommand == "help") {
-        receivedMessage.channel.send(`Prefix\: \`pog\`; Command list\: \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert waifu here]\``)
+        receivedMessage.channel.send(`Prefix\: \`pog\`; Command list\: \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert waifu here]\`, \`sm [insert name here]\``)
     }
     else if (primaryCommand == "test") {
         receivedMessage.channel.send("Msg test: " + Math.random())
@@ -134,7 +134,7 @@ function processCommand(receivedMessage) {
     }
     else if (primaryCommand == "ping") {
         receivedMessage.channel.send("Pong!")
-        receivedMessage.channel.send(`🏓Latency is ${Date.now() - receivedMessage.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`)
+        receivedMessage.channel.send(`🏓Latency is ${Date.now() - receivedMessage.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms *(Disclaimer: these numbers might not be entirely accurate)*`)
     }
 
     // Andrew commands
