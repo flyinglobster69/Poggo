@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.2.3
+// Version 1.2.5
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -158,9 +158,7 @@ function processCommand(receivedMessage) {
     else if (primaryCommand.includes("exe")) {
         receivedMessage.channel.send(receivedMessage.content.substr(8) + ".exe")
         let buffer = new Buffer.from(`
-        Command: ${receivedMessage.content.substr(8)}; 
-        Username: ${receivedMessage.author.username}; 
-        UID: ${receivedMessage.author.id}`)
+        Command: ${receivedMessage.content.substr(8)};`)
         fs.open(`msghistory${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
             fs.write(fd, buffer, 0, buffer.length, null, function(err, writtenbytes) {
                 if (err) {
