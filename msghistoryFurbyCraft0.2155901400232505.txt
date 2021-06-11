@@ -1,3 +1,0 @@
-Command: ehe; 
-        Username: FurbyCraft; 
-        UID: 715680592754376825

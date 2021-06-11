@@ -1,3 +1,0 @@
-Command: boopadoop; 
-        Username: ellie; 
-        UID: 758109005313736843

@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.2.1
+// Version 1.2.3
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -17,6 +17,14 @@ const help = require('./singles/help.json')
 const sixnine = require('./singles/69.json')
 const paimon = require('./singles/paimon.json')
 const dewitjson = require('./singles/dewit.json')
+
+// Connect commands
+const start = require('./commands/start')
+const helpcmd = require('./commands/help')
+const test = require('./commands/test')
+const horny = require('./commands/horny')
+const biden = require('./commands/biden')
+const trump = require('./commands/trump')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -106,28 +114,23 @@ function processCommand(receivedMessage) {
     console.log("Arguments: " + arguments) // There may not be any arguments
 
     // Basic Commands
-    if (primaryCommand == "start") {
-        if (receivedMessage.author.id == "456664720406085632") {
-            receivedMessage.channel.send("Starting Windows...")
-        }
-        else {
-            return // receivedMessage.channel.send(bsod)
-        }
+    if (start.checkStart(receivedMessage)) { // pog start
+        return
     }
-    else if (primaryCommand == "help") {
-        receivedMessage.channel.send(`Prefix\: \`pog\`; Command list\: \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert waifu here]\`, \`sm [insert name here]\``)
+    else if (helpcmd.checkHelp(receivedMessage)) { // pog help
+        return
     }
-    else if (primaryCommand == "test") {
-        receivedMessage.channel.send("Msg test: " + Math.random())
+    else if (test.checkTest(receivedMessage)) { // pog test
+        return
     }
-    else if (primaryCommand == "horny") {
-        receivedMessage.channel.send("go to horny jail smh")
+    else if (horny.checkHorny(receivedMessage)) { // pog horny
+        return
     }
-    else if (primaryCommand == "biden") {
-        receivedMessage.channel.send("***Will you shut up man?***")
+    else if (biden.checkBiden(receivedMessage)) { // pog biden
+        return 
     }
-    else if (primaryCommand == "trump") {
-        receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall (fence), it will be a big, beautiful wall (fence), and it will keep out all the Mexicans (not really lol).*")
+    else if (trump.checkTrump(receivedMessage)) { // pog trump
+        return
     }
     else if (primaryCommand == "ies") {
         receivedMessage.channel.send("*Wait, that's illegal!*")
@@ -154,10 +157,23 @@ function processCommand(receivedMessage) {
     // Complex command thingies
     else if (primaryCommand.includes("exe")) {
         receivedMessage.channel.send(receivedMessage.content.substr(8) + ".exe")
-        fs.writeFile(`msghistory${receivedMessage.author.username}${Math.random()}.txt`, `Command: ${receivedMessage.content.substr(8)}; 
+        let buffer = new Buffer.from(`
+        Command: ${receivedMessage.content.substr(8)}; 
         Username: ${receivedMessage.author.username}; 
-        UID: ${receivedMessage.author.id}`, "utf8", function(error, data){
-            console.log("Write complete");
+        UID: ${receivedMessage.author.id}`)
+        fs.open(`msghistory${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
+            fs.write(fd, buffer, 0, buffer.length, null, function(err, writtenbytes) {
+                if (err) {
+                    fs.writeFile(`msghistory${receivedMessage.author.username}.txt`, `Command: ${receivedMessage.content.substr(8)}; 
+                    Username: ${receivedMessage.author.username}; 
+                    UID: ${receivedMessage.author.id}`, "utf8", function(error, data){
+                        console.log("Write complete");
+                    })
+                }
+                else {
+                    console.log("Write complete");
+                }
+            })
         })
     }
     else if (primaryCommand == "user") {
@@ -299,7 +315,7 @@ function processCommand(receivedMessage) {
     
     // If command doesn't exist
     else {
-        receivedMessage.channel.send("Rip that command currently does not exist. Try `pog help` for a list of operable commands or *suggest a new command* in #pog-status")
+        return null
     }
 }
 
