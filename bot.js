@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.3
+// Version 1.3.1
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -27,7 +27,6 @@ const horny = require('./commands/horny')
 const biden = require('./commands/biden')
 const trump = require('./commands/trump')
 const poggies = require('./commands/poggies')
-const ping = require('./commands/ping')
 const exe = require('./commands/exe')
 const user = require('./commands/user')
 const pog = require('./commands/pog')
@@ -36,6 +35,7 @@ const undelete = require('./commands/undelete')
 const andrew = require('./commands/andrew')
 const buff = require('./commands/buff')
 const sm = require('./commands/sm')
+const version = require('./commands/version')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -43,7 +43,6 @@ const ehe = new MessageAttachment('ehe.jpg')
 
 // Connect client
 const client = new Client()
-// const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
@@ -97,10 +96,13 @@ function processCommand(receivedMessage) {
 
     // Console printout (commands received and reply)
     console.log("Command received: " + primaryCommand)
-    console.log("Arguments: " + arguments) // There may not be any arguments
+    console.log("Arguments: " + arguments) // There might not be any arguments
 
     // Basic Commands
     if (start.checkStart(receivedMessage)) { // pog start
+        return
+    }
+    else if (version.checkVersion(receivedMessage)) { // pog version
         return
     }
     else if (helpcmd.checkHelp(receivedMessage)) { // pog help
@@ -121,31 +123,28 @@ function processCommand(receivedMessage) {
     else if (poggies.checkPoggies(receivedMessage)) { // poggies
         return
     }
-    else if (ping.checkPing(receivedMessage)) { // ping
+    else if (exe.checkExe(receivedMessage)) { // pog exe
         return
     }
-    else if (exe.checkExe(receivedMessage)) { // exe
-        return
-    }
-    else if (user.checkUser(receivedMessage)) { // user
+    else if (user.checkUser(receivedMessage)) { // pog user
 		return
 	}
     else if (pog.checkPog(receivedMessage)) { // pog
         return
     }
-    else if (genshin.checkGenshin(receivedMessage)) { // genshin
+    else if (genshin.checkGenshin(receivedMessage)) { // pog genshin
         return
     }
-    else if (undelete.checkUndelete(receivedMessage)) { // undelete
+    else if (undelete.checkUndelete(receivedMessage)) { // pog undelete
         return
     }
-    else if (andrew.checkAndrew(receivedMessage)) { // andrew
+    else if (andrew.checkAndrew(receivedMessage)) { // pog andrew
         return
     }
-    else if (buff.checkBuff(receivedMessage)) { // buff
+    else if (buff.checkBuff(receivedMessage)) { // pog buff
         return
     }
-    else if (sm.checkStellarMoments(receivedMessage)) { // stellar moments
+    else if (sm.checkStellarMoments(receivedMessage)) { // pog sm
         return
     }
     // If command doesn't exist
@@ -155,6 +154,7 @@ function processCommand(receivedMessage) {
 }
 
 // Logging message deletions
+// Use 'pog undelete' to access
 client.on('messageDelete', receivedMessage => {
 
     console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``)

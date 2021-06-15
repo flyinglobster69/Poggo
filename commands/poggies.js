@@ -9,7 +9,7 @@ module.exports = {
             case 'ies' :
                 receivedMessage.channel.send("*Wait, that's illegal!*")
         }
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }

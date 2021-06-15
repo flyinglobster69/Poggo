@@ -9,7 +9,7 @@ module.exports = {
             case 'trump' :
                 receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall (fence), it will be a big, beautiful wall (fence), and it will keep out all the Mexicans (not really lol).*")
         }
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }

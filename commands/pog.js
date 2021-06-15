@@ -9,7 +9,7 @@ module.exports = {
             case '' :
                 receivedMessage.channel.send("Poggers!")
         }
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }

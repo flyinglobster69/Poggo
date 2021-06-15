@@ -9,7 +9,7 @@ module.exports = {
             case 'user' :
                 receivedMessage.channel.send(`Your username: ${receivedMessage.author.username}\nYour ID: ${receivedMessage.author.id}`)
         }
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }

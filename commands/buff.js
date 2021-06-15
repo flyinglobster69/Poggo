@@ -13,7 +13,7 @@ module.exports = {
                 receivedMessage.channel.send(andrewps)
                 receivedMessage.channel.send("lmfao photoshopped")
         }
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }

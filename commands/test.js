@@ -9,7 +9,7 @@ module.exports = {
             case 'test' :
                 receivedMessage.channel.send("Msg test: " + Math.random())
         }
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }

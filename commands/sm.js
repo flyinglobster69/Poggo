@@ -76,7 +76,7 @@ module.exports = {
                     receivedMessage.channel.send("Try `albedo1` or `albedo2` :)")
                 }
         }
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }

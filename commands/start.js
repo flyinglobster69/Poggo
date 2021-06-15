@@ -12,12 +12,12 @@ module.exports = {
                     found = true
                 }
                 else {
-                    return // receivedMessage.channel.send(bsod)
+                    receivedMessage.channel.send("no")
                 }
             
         }
 
-        // value of 'found' will be returned in index.js
+        // value of 'found' will be returned in bot.js
         return found
     }
 }
