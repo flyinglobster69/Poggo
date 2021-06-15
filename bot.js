@@ -1,10 +1,10 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.2.6
+// Version 1.3
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
 // Import the discord.js module
-const {Client, MessageAttachment, Message} = require('discord.js')
+const {Client, MessageAttachment} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
 
@@ -17,6 +17,7 @@ const help = require('./singles/help.json')
 const sixnine = require('./singles/69.json')
 const paimon = require('./singles/paimon.json')
 const dewitjson = require('./singles/dewit.json')
+const ehetendandayo = require('./singles/ehe.json')
 
 // Connect commands
 const start = require('./commands/start')
@@ -26,35 +27,19 @@ const horny = require('./commands/horny')
 const biden = require('./commands/biden')
 const trump = require('./commands/trump')
 const poggies = require('./commands/poggies')
+const ping = require('./commands/ping')
+const exe = require('./commands/exe')
+const user = require('./commands/user')
+const pog = require('./commands/pog')
+const genshin = require('./commands/genshin')
+const undelete = require('./commands/undelete')
+const andrew = require('./commands/andrew')
+const buff = require('./commands/buff')
+const sm = require('./commands/sm')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
 const ehe = new MessageAttachment('ehe.jpg')
-
-// Connect Andrew
-const andrew = new MessageAttachment('andrew.jpg')
-const andrewps = new MessageAttachment('andrewps.png')
-
-// Connect Genshin pfps
-const ganyupfp = new MessageAttachment('ganyu_pfp.png')
-const keqingpfp = new MessageAttachment('keqing_pfp.png')
-const noellepfp = new MessageAttachment('noelle_pfp.png')
-const barbarapfp = new MessageAttachment('barbara_pfp.png')
-const monapfp = new MessageAttachment('mona_pfp.png')
-const kleepfp = new MessageAttachment('klee_pfp.png')
-const qiqipfp = new MessageAttachment('qiqi_pfp.png')
-const fischlpfp = new MessageAttachment('fischl_pfp.png')
-const sucrosepfp = new MessageAttachment('sucrose_pfp.png')
-const hutaopfp = new MessageAttachment('hutao_pfp.png')
-const eulapfp = new MessageAttachment('eula_pfp.png')
-
-const chibizhongli = new MessageAttachment('chibi_zhongli.jpg')
-
-// Connect Stellar Moments
-const sm = require('./sm/sm.json')
-
-// Connect Stellar Moments YouTube links
-const smyt = require('./sm/smyt.json')
 
 // Connect client
 const client = new Client()
@@ -65,31 +50,6 @@ client.on('ready', () => {
     console.log("Connected as " + client.user.tag)
 
     client.user.setActivity("an epic poggers game")
-})
-
-// Called when a message is deleted
-client.on('messageDelete', receivedMessage => {
-
-    console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``)
-    let buffer = new Buffer.from(`
-        Deleted Message: ${receivedMessage.content};`)
-        fs.open('./msgdeleted/' + `msgdeleted${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
-            fs.write(fd, buffer, 0, buffer.length, null, function(err, writtenbytes) {
-                if (err) {
-                    fs.writeFile('./msgdeleted/' + `msghistory${receivedMessage.author.username}.txt`, `Deleted Message: ${receivedMessage.content}; 
-                    Username: ${receivedMessage.author.username}; 
-                    UID: ${receivedMessage.author.id}`, "utf8", function(error, data){
-                        console.log("Write complete");
-                    })
-                }
-                else {
-                    console.log("File exists, write complete");
-                }
-            })
-        })
-    if (receivedMessage.author.id == '527744355302244353') {
-        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
-    }
 })
 
 client.on('message', receivedMessage => {
@@ -120,11 +80,11 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content == dewitjson.dewit) {
         receivedMessage.channel.send(dewit)
     }
-    if (receivedMessage.content == "ehe") {
+    if (receivedMessage.content == ehetendandayo.ehe) {
         // Send the attachment in the message channel with the content
         receivedMessage.channel.send(ehe)
         // Send caption
-        receivedMessage.channel.send("**Ehe te nandayo!**")
+        receivedMessage.channel.send(ehetendandayo.output)
     }
 })
 
@@ -161,39 +121,49 @@ function processCommand(receivedMessage) {
     else if (poggies.checkPoggies(receivedMessage)) { // poggies
         return
     }
-    else if (primaryCommand == "ping") {
-        receivedMessage.channel.send("Pong!")
-        receivedMessage.channel.send(`🏓Latency is ${Date.now() - receivedMessage.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms *(Disclaimer: these numbers might not be entirely accurate)*`)
+    else if (ping.checkPing(receivedMessage)) { // ping
+        return
     }
-    // Get deleted messages
-    else if (primaryCommand.includes('undelete')) {
-        const msgdeleted = new MessageAttachment('./msgdeleted/' + `msgdeleted${receivedMessage.author.username}.txt`)
-        receivedMessage.channel.send(msgdeleted)
+    else if (exe.checkExe(receivedMessage)) { // exe
+        return
     }
+    else if (user.checkUser(receivedMessage)) { // user
+		return
+	}
+    else if (pog.checkPog(receivedMessage)) { // pog
+        return
+    }
+    else if (genshin.checkGenshin(receivedMessage)) { // genshin
+        return
+    }
+    else if (undelete.checkUndelete(receivedMessage)) { // undelete
+        return
+    }
+    else if (andrew.checkAndrew(receivedMessage)) { // andrew
+        return
+    }
+    else if (buff.checkBuff(receivedMessage)) { // buff
+        return
+    }
+    else if (sm.checkStellarMoments(receivedMessage)) { // stellar moments
+        return
+    }
+    // If command doesn't exist
+    else {
+        return null
+    }
+}
 
-    // Andrew commands
-    else if (primaryCommand == "andrew") {
-        // Send the attachment in the message channel with the content
-        receivedMessage.channel.send(andrew)
-        // Send caption
-        receivedMessage.channel.send("what a gamer")
-    }
-    else if (primaryCommand == "buff") {
-        // Send the attachment in the message channel with the content
-        receivedMessage.channel.send(andrewps)
-        // Send caption
-        receivedMessage.channel.send("lmfao photoshopped")
-    }
+// Logging message deletions
+client.on('messageDelete', receivedMessage => {
 
-    // Complex command thingies
-    else if (primaryCommand.includes("exe")) {
-        receivedMessage.channel.send(receivedMessage.content.substr(8) + ".exe")
-        let buffer = new Buffer.from(`
-        Command: ${receivedMessage.content.substr(8)};`)
-        fs.open('./msghistory/' + `msghistory${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
+    console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``)
+    let buffer = new Buffer.from(`
+        Deleted Message: ${receivedMessage.content};`)
+        fs.open('./msgdeleted/' + `msgdeleted${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
             fs.write(fd, buffer, 0, buffer.length, null, function(err, writtenbytes) {
                 if (err) {
-                    fs.writeFile('./msghistory/' + `msghistory${receivedMessage.author.username}.txt`, `Command: ${receivedMessage.content.substr(8)}; 
+                    fs.writeFile('./msgdeleted/' + `msghistory${receivedMessage.author.username}.txt`, `Deleted Message: ${receivedMessage.content}; 
                     Username: ${receivedMessage.author.username}; 
                     UID: ${receivedMessage.author.id}`, "utf8", function(error, data){
                         console.log("Write complete");
@@ -204,148 +174,10 @@ function processCommand(receivedMessage) {
                 }
             })
         })
-    }
-    else if (primaryCommand == "user") {
-		receivedMessage.channel.send(`Your username: ${receivedMessage.author.username}\nYour ID: ${receivedMessage.author.id}`)
-	}
-
-    // If pog
-    else if (primaryCommand == "") {
-        // poggers
-        receivedMessage.channel.send("Poggers!")
-    }
-
-    // Genshin commands
-    else if (primaryCommand.includes(config.genshin)) {
-        // Genshin pfps
-        if (arguments.includes("ganyu")) {
-            receivedMessage.channel.send("Ganyu " + config.gp)
-            receivedMessage.channel.send(ganyupfp)
-        }
-        else if (arguments.includes("keqing")) {
-            receivedMessage.channel.send("Keqing " + config.gp)
-            receivedMessage.channel.send(keqingpfp)
-        }
-        else if (arguments.includes("noelle")) {
-            receivedMessage.channel.send("Noelle " + config.gp)
-            receivedMessage.channel.send(noellepfp)
-        }
-        else if (arguments.includes("barbara")) {
-            receivedMessage.channel.send("Barbara " + config.gp)
-            receivedMessage.channel.send(barbarapfp)
-        }
-        else if (arguments.includes("mona")) {
-            receivedMessage.channel.send("Mona " + config.gp)
-            receivedMessage.channel.send(monapfp)
-        }
-        else if (arguments.includes("klee")) {
-            receivedMessage.channel.send("Klee " + config.gp)
-            receivedMessage.channel.send(kleepfp)
-        }
-        else if (arguments.includes("qiqi")) {
-            receivedMessage.channel.send("Qiqi " + config.gp)
-            receivedMessage.channel.send(qiqipfp)
-        }
-        else if (arguments.includes("fischl")) {
-            receivedMessage.channel.send("Fischl " + config.gp)
-            receivedMessage.channel.send(fischlpfp)
-        }
-        else if (arguments.includes("sucrose")) {
-            receivedMessage.channel.send("Sucrose " + config.gp)
-            receivedMessage.channel.send(sucrosepfp)
-        }
-        else if (arguments.includes("hutao")) {
-            receivedMessage.channel.send("Hu Tao " + config.gp)
-            receivedMessage.channel.send(hutaopfp)
-        }
-        else if (arguments.includes("eula")) {
-            receivedMessage.channel.send("Eula " + config.gp)
-            receivedMessage.channel.send(eulapfp)
-        }
-        else if (arguments.includes("zhongli")) {
-            receivedMessage.channel.send("In terms of mora, we have no mora.")
-            receivedMessage.channel.send(chibizhongli)
-        }
-        else {
-            receivedMessage.channel.send("Oops the smol character pfp doesn't exist, the available characters are: `ganyu`, `keqing`, `noelle`, `barbara`, `mona`, `klee`, `qiqi`, `fischl`, `sucrose`, `hutao`, `eula`. Ex. `pog genshin ganyu`")
-        }
-    }
-
-    // Stellar Moments
-    else if (primaryCommand.includes(config.sm)) {
-        // Soundtracks
-        if (arguments.includes(sm.ganyu)) {
-            receivedMessage.channel.send(smyt.ganyu)
-        }
-        else if (arguments.includes(sm.keqing)) {
-            receivedMessage.channel.send(smyt.keqing)
-        }
-        else if (arguments.includes(sm.zhongli)) {
-            receivedMessage.channel.send(smyt.zhongli)
-        }
-        else if (arguments.includes(sm.mona)) {
-            receivedMessage.channel.send(smyt.mona)
-        }
-        else if (arguments.includes(sm.qiqi)) {
-            receivedMessage.channel.send(smyt.qiqi)
-        }
-        else if (arguments.includes(sm.venti)) {
-            receivedMessage.channel.send(smyt.venti)
-        }
-        else if (arguments.includes(sm.xinyan)) {
-            receivedMessage.channel.send(smyt.xinyan)
-        }
-        else if (arguments.includes(sm.xiangling)) {
-            receivedMessage.channel.send(smyt.xiangling)
-        }
-        else if (arguments.includes(sm.diona)) {
-            receivedMessage.channel.send(smyt.diona)
-        }
-        // Doubles
-        else if (arguments.includes(sm.childe1)) {
-            receivedMessage.channel.send(smyt.childe1)
-        }
-        else if (arguments.includes(sm.childe2)) {
-            receivedMessage.channel.send(smyt.childe2)
-        }
-        else if (arguments.includes(sm.fischl1)) {
-            receivedMessage.channel.send(smyt.fischl1)
-        }
-        else if (arguments.includes(sm.fischl2)) {
-            receivedMessage.channel.send(smyt.fischl2)
-        }
-        else if (arguments.includes(sm.klee1)) {
-            receivedMessage.channel.send(smyt.klee1)
-        }
-        else if (arguments.includes(sm.klee2)) {
-            receivedMessage.channel.send(smyt.klee2)
-        }
-        else if (arguments.includes(sm.albedo1)) {
-            receivedMessage.channel.send(smyt.albedo1)
-        }
-        else if (arguments.includes(sm.albedo2)) {
-            receivedMessage.channel.send(smyt.albedo2)
-        }
-
-        // Confirm doubles
-        else if (arguments == "childe") {
-            receivedMessage.channel.send("Try `childe1` or `childe2` :)")
-        }
-        else if (arguments == "fischl") {
-            receivedMessage.channel.send("Try `fischl1` or `fischl2` :)")
-        }
-        else if (arguments == "klee") {
-            receivedMessage.channel.send("Try `klee1` or `klee2` :)")
-        }
-        else if (arguments == "albedo") {
-            receivedMessage.channel.send("Try `albedo1` or `albedo2` :)")
-        }
+    if (receivedMessage.author.id == '527744355302244353') {
+        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
     }
     
-    // If command doesn't exist
-    else {
-        return null
-    }
-}
+})
 
 client.login(config.token)

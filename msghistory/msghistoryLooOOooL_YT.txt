@@ -3,3 +3,6 @@
         Command: test;
         Command: dudewtf;
         Command: exetest;
+                Command: lmao;
+        Command: lmao;
+                Command: test;
