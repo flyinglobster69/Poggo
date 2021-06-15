@@ -1,10 +1,10 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.2.5
+// Version 1.2.6
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
 // Import the discord.js module
-const {Client, MessageAttachment} = require('discord.js')
+const {Client, MessageAttachment, Message} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
 
@@ -25,6 +25,7 @@ const test = require('./commands/test')
 const horny = require('./commands/horny')
 const biden = require('./commands/biden')
 const trump = require('./commands/trump')
+const poggies = require('./commands/poggies')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -64,6 +65,31 @@ client.on('ready', () => {
     console.log("Connected as " + client.user.tag)
 
     client.user.setActivity("an epic poggers game")
+})
+
+// Called when a message is deleted
+client.on('messageDelete', receivedMessage => {
+
+    console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``)
+    let buffer = new Buffer.from(`
+        Deleted Message: ${receivedMessage.content};`)
+        fs.open('./msgdeleted/' + `msgdeleted${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
+            fs.write(fd, buffer, 0, buffer.length, null, function(err, writtenbytes) {
+                if (err) {
+                    fs.writeFile('./msgdeleted/' + `msghistory${receivedMessage.author.username}.txt`, `Deleted Message: ${receivedMessage.content}; 
+                    Username: ${receivedMessage.author.username}; 
+                    UID: ${receivedMessage.author.id}`, "utf8", function(error, data){
+                        console.log("Write complete");
+                    })
+                }
+                else {
+                    console.log("File exists, write complete");
+                }
+            })
+        })
+    if (receivedMessage.author.id == '527744355302244353') {
+        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+    }
 })
 
 client.on('message', receivedMessage => {
@@ -132,12 +158,17 @@ function processCommand(receivedMessage) {
     else if (trump.checkTrump(receivedMessage)) { // pog trump
         return
     }
-    else if (primaryCommand == "ies") {
-        receivedMessage.channel.send("*Wait, that's illegal!*")
+    else if (poggies.checkPoggies(receivedMessage)) { // poggies
+        return
     }
     else if (primaryCommand == "ping") {
         receivedMessage.channel.send("Pong!")
         receivedMessage.channel.send(`🏓Latency is ${Date.now() - receivedMessage.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms *(Disclaimer: these numbers might not be entirely accurate)*`)
+    }
+    // Get deleted messages
+    else if (primaryCommand.includes('undelete')) {
+        const msgdeleted = new MessageAttachment('./msgdeleted/' + `msgdeleted${receivedMessage.author.username}.txt`)
+        receivedMessage.channel.send(msgdeleted)
     }
 
     // Andrew commands
@@ -159,17 +190,17 @@ function processCommand(receivedMessage) {
         receivedMessage.channel.send(receivedMessage.content.substr(8) + ".exe")
         let buffer = new Buffer.from(`
         Command: ${receivedMessage.content.substr(8)};`)
-        fs.open(`msghistory${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
+        fs.open('./msghistory/' + `msghistory${receivedMessage.author.username}.txt`, 'a', function(error, fd) {
             fs.write(fd, buffer, 0, buffer.length, null, function(err, writtenbytes) {
                 if (err) {
-                    fs.writeFile(`msghistory${receivedMessage.author.username}.txt`, `Command: ${receivedMessage.content.substr(8)}; 
+                    fs.writeFile('./msghistory/' + `msghistory${receivedMessage.author.username}.txt`, `Command: ${receivedMessage.content.substr(8)}; 
                     Username: ${receivedMessage.author.username}; 
                     UID: ${receivedMessage.author.id}`, "utf8", function(error, data){
                         console.log("Write complete");
                     })
                 }
                 else {
-                    console.log("Write complete");
+                    console.log("File exists, write complete");
                 }
             })
         })
