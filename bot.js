@@ -174,12 +174,7 @@ client.on('messageDelete', receivedMessage => {
                 }
             })
         })
-    if (receivedMessage.author.id == '527744355302244353') {
-        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
-    }
-    else if (receivedMessage.author.id == '265337002906484736') {
-        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
-    }
+    receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
     
 })
 
