@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.3.1
+// Version 1.3.2
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -157,6 +157,7 @@ function processCommand(receivedMessage) {
 // Use 'pog undelete' to access
 client.on('messageDelete', receivedMessage => {
 
+    const random = Math.floor(Math.random() * 20)
     console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``)
     let buffer = new Buffer.from(`
         Deleted Message: ${receivedMessage.content};`)
@@ -174,7 +175,10 @@ client.on('messageDelete', receivedMessage => {
                 }
             })
         })
-    receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+    if (random == 6) {
+        receivedMessage.channel.send(`To quote: \"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+    }
+    
     
 })
 

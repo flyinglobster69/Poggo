@@ -38,3 +38,4 @@ Command: try to hide from your shitty mistakes, you can't avoid me forever natha
 Command: i will find you at school and confront you one to one on why shit talking my dear oscar is wrong; 
         Username: Do_Not_Touch; 
         UID: 483067236110827530
+                Command: does it exist;
