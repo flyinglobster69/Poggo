@@ -189,12 +189,12 @@ client.on('messageDelete', receivedMessage => {
     if (random == 5) {
         randomPity = 0
         console.log("Noted.")
-        receivedMessage.channel.send(`To quote: \"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
         console.log(randomPity)
     }
-    else if (randomPity == 9) {
+    else if (randomPity > 9) {
         console.log("Noted.")
-        receivedMessage.channel.send(`To quote: \"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
         randomPity == 0
     }
     
