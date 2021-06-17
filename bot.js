@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.3.2
+// Version 1.3.3
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -155,9 +155,10 @@ function processCommand(receivedMessage) {
 
 // Logging message deletions
 // Use 'pog undelete' to access
+var randomPity = 0
 client.on('messageDelete', receivedMessage => {
 
-    const random = Math.floor(Math.random() * 20)
+    const random = Math.floor(Math.random() * 10)
     console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``)
     let buffer = new Buffer.from(`
         Deleted Message: ${receivedMessage.content};`)
@@ -166,18 +167,29 @@ client.on('messageDelete', receivedMessage => {
                 if (err) {
                     fs.writeFile('./msgdeleted/' + `msghistory${receivedMessage.author.username}.txt`, `Deleted Message: ${receivedMessage.content}; 
                     Username: ${receivedMessage.author.username}; 
-                    UID: ${receivedMessage.author.id}`, "utf8", function(error, data){
-                        console.log("Write complete");
+                    UID: ${receivedMessage.author.id}`, "utf8", function(error, data) {
+                        console.log("Write complete")
                     })
+                    randomPity += 1
+                    console.log(randomPity)
                 }
                 else {
-                    console.log("File exists, write complete");
+                    console.log("File exists, write complete")
+                    randomPity += 1
+                    console.log(randomPity)
                 }
             })
         })
-    if (random == 6) {
+    if (random == 1) {
+        randomPity = 0
         console.log("Noted.")
         receivedMessage.channel.send(`To quote: \"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+        console.log(randomPity)
+    }
+    else if (randomPity == 9) {
+        console.log("Noted.")
+        receivedMessage.channel.send(`To quote: \"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+        randomPity == 0
     }
     
     
