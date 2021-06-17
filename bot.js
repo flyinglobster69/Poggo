@@ -65,26 +65,27 @@ client.on('message', receivedMessage => {
     }
 
     // Single message responses
-    if (receivedMessage.content == e.e) {
+    if (receivedMessage.content == e.e) { // e
         receivedMessage.channel.send(e.e)
     }
-    if (receivedMessage.content == help.help) {
+    if (receivedMessage.content == help.help) { // help
         receivedMessage.channel.send(help.reply)
     }
-    if (receivedMessage.content == sixnine.input) {
+    if (receivedMessage.content == sixnine.input) { // 69
         receivedMessage.channel.send(sixnine.reply)
     }
-    if (receivedMessage.content == paimon.paimon) {
+    if (receivedMessage.content == paimon.paimon) { // paimon 
         receivedMessage.channel.send(paimon.reply)
     }
-    if (receivedMessage.content == dewitjson.dewit) {
+    if (receivedMessage.content == dewitjson.dewit) { // dewit
         receivedMessage.channel.send(dewit)
         receivedMessage.channel.send(dewitjson.emote)
     }
-    if (receivedMessage.content == ehetendandayo.ehe) {
-        // Send the attachment in the message channel with the content
+    if (receivedMessage.content == dewitjson.kekw) { // kekw
+        receivedMessage.channel.send(dewitjson.emote)
+    }
+    if (receivedMessage.content == ehetendandayo.ehe) { // ehe
         receivedMessage.channel.send(ehe)
-        // Send caption
         receivedMessage.channel.send(ehetendandayo.output)
     }
 })
