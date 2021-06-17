@@ -78,6 +78,7 @@ client.on('message', receivedMessage => {
     }
     if (receivedMessage.content == dewitjson.dewit) {
         receivedMessage.channel.send(dewit)
+        receivedMessage.channel.send(dewitjson.emote)
     }
     if (receivedMessage.content == ehetendandayo.ehe) {
         // Send the attachment in the message channel with the content
