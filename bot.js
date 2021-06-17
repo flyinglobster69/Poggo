@@ -186,7 +186,7 @@ client.on('messageDelete', receivedMessage => {
                 }
             })
         })
-    if (random == 1) {
+    if (random == 5) {
         randomPity = 0
         console.log("Noted.")
         receivedMessage.channel.send(`To quote: \"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
