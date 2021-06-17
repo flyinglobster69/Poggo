@@ -36,6 +36,7 @@ const andrew = require('./commands/andrew')
 const buff = require('./commands/buff')
 const sm = require('./commands/sm')
 const version = require('./commands/version')
+const poggers = require('./commands/poggers')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -122,6 +123,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (poggies.checkPoggies(receivedMessage)) { // poggies
+        return
+    }
+    else if (poggers.checkPoggers(receivedMessage)) { // poggers
         return
     }
     else if (exe.checkExe(receivedMessage)) { // pog exe
