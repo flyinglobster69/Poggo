@@ -7,7 +7,9 @@ module.exports = {
 
         switch(primaryCommand) {
             case 'help' :
-                receivedMessage.channel.send(`Prefix\: \`pog\`; Command list\: \`help\`, \`version\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`undelete [module]\``)
+                receivedMessage.channel.send(`Prefix\: \`pog\`; 
+                Command list\: \`help\`, \`version\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`undelete [module]\`
+                More commands will be available over time.`)
         }
         // value of 'found' will be returned in bot.js
         return found
