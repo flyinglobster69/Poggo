@@ -9,7 +9,7 @@ module.exports = {
     found = false
 
         switch(primaryCommand) {
-            case 'andrew' :
+            case 'buff' :
                 receivedMessage.channel.send(andrewps)
                 receivedMessage.channel.send("lmfao photoshopped")
         }
