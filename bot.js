@@ -161,7 +161,8 @@ function processCommand(receivedMessage) {
 
 // Logging message deletions
 // Use 'pog undelete' to access
-var randomPity = 0
+var randomPity 
+randomPity = 0
 client.on('messageDelete', receivedMessage => {
 
     const random = Math.floor(Math.random() * 10)
@@ -178,11 +179,21 @@ client.on('messageDelete', receivedMessage => {
                     })
                     randomPity += 1
                     console.log(randomPity)
+                    if (randomPity > 9) {
+                        console.log("Noted.")
+                        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+                        randomPity = 0
+                    }
                 }
                 else {
                     console.log("File exists, write complete")
                     randomPity += 1
                     console.log(randomPity)
+                    if (randomPity > 9) {
+                        console.log("Noted.")
+                        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+                        randomPity = 0
+                    }
                 }
             })
         })
@@ -192,10 +203,8 @@ client.on('messageDelete', receivedMessage => {
         receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
         console.log(randomPity)
     }
-    else if (randomPity > 9) {
-        console.log("Noted.")
-        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
-        randomPity == 0
+    if (randomPity > 9) {
+        randomPity = 0
     }
     
     
