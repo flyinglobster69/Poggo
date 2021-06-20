@@ -5,10 +5,10 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'help' :
                 receivedMessage.channel.send(`Prefix\: \`pog\`; 
-                Command list\: \`help\`, \`version\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`ping\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`undelete [module]\`, \`count\`;
+                Command list\: \`help\`, \`version\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`andrew\`, \`buff\`, \`user\`, \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`undelete [module]\`, \`count\`;
                 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
                 Decimal points currently not supported.
 

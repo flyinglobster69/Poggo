@@ -8,7 +8,7 @@ module.exports = {
     var second = splitCommand.slice(2)
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'divide' :
                 // console.log(first)
                 // console.log(second)

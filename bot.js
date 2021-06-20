@@ -1,5 +1,4 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.4
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -36,15 +35,15 @@ const undelete = require('./commands/undelete')
 const andrew = require('./commands/andrew')
 const buff = require('./commands/buff')
 const sm = require('./commands/sm')
-const version = require('./commands/version')
 const poggers = require('./commands/poggers')
+const count = require('./commands/count')
+const pirate = require('./commands/pirate')
 
 // Math
 const add = require('./commands/add')
 const subtract = require('./commands/subtract')
 const multiply = require('./commands/multiply')
 const divide = require('./commands/divide')
-const count = require('./commands/count')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -65,18 +64,18 @@ client.on('message', receivedMessage => {
         return // kekw
     }
     
-    if (receivedMessage.content.startsWith(config.prefix)) {
+    if (receivedMessage.content.toLowerCase().startsWith(config.prefix)) {
         processCommand(receivedMessage)
     }
-    if (receivedMessage.content.startsWith(config.prefixUpper)) {
-        processCommand(receivedMessage)
-    }
+    // if (receivedMessage.content.startsWith(config.prefixUpper)) {
+    //     processCommand(receivedMessage)
+    // }
 
     // Single message responses
-    if (receivedMessage.content == e.e) { // e
+    if (receivedMessage.content.toLowerCase() == e.e) { // e
         receivedMessage.channel.send(e.e)
     }
-    if (receivedMessage.content == help.help) { // help
+    if (receivedMessage.content.toLowerCase() == help.help) { // help
         receivedMessage.channel.send(help.reply)
     }
     if (receivedMessage.content.includes(sixnine.input)) { // 69
@@ -85,18 +84,18 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.includes(paimon.paimon)) { // paimon 
         receivedMessage.channel.send(paimon.reply)
     }
-    if (receivedMessage.content == dewitjson.dewit) { // dewit
+    if (receivedMessage.content.toLowerCase() == dewitjson.dewit) { // dewit
         receivedMessage.channel.send(dewit)
         receivedMessage.channel.send(dewitjson.emote)
     }
-    if (receivedMessage.content == dewitjson.kekw) { // kekw
+    if (receivedMessage.content.toLowerCase() == dewitjson.kekw) { // kekw
         receivedMessage.channel.send(dewitjson.emote)
     }
-    if (receivedMessage.content == ehetendandayo.ehe) { // ehe
+    if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
         receivedMessage.channel.send(ehe)
         receivedMessage.channel.send(ehetendandayo.output)
     }
-    if (receivedMessage.content.includes(jimmy.jimmy)) { // jimmy
+    if (receivedMessage.content.toLowerCase().includes(jimmy.jimmy)) { // jimmy
         receivedMessage.channel.send(jimmy.reply)
     }
 })
@@ -114,9 +113,6 @@ function processCommand(receivedMessage) {
 
     // Basic Commands
     if (start.checkStart(receivedMessage)) { // pog start
-        return
-    }
-    else if (version.checkVersion(receivedMessage)) { // pog version
         return
     }
     else if (helpcmd.checkHelp(receivedMessage)) { // pog help
@@ -165,6 +161,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (count.checkCount(receivedMessage)) { // pog count
+        return
+    }
+    else if (pirate.checkPirate(receivedMessage)) { // pog pirate
         return
     }
     

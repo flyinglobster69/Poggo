@@ -5,7 +5,7 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'horny' :
                 receivedMessage.channel.send("go to horny jail smh")
         }

@@ -8,7 +8,7 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'andrew' :
                 receivedMessage.channel.send(andrew)
                 receivedMessage.channel.send("what a gamer")

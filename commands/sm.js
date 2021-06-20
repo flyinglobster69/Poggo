@@ -6,7 +6,7 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'sm' :
                 // Soundtracks
                 if (arguments.includes("ganyu")) {
@@ -74,6 +74,12 @@ module.exports = {
                 }
                 else if (arguments == "albedo") {
                     receivedMessage.channel.send("Try `albedo1` or `albedo2` :)")
+                }
+                else {
+                    receivedMessage.channel.send(`Uh oh, this character has no Stellar Moments Soundtrack :(
+                        
+                        The characters are: \`ganyu\`, \`keqing\`, \`zhongli\`, \`mona\`, \`qiqi, \`venti\`, \`xinyan\`, \`xiangling\`, \`diona\`, \`childe\`, \`fischl\`, \`klee\`, \`albedo\`.
+                        If you selected one of these characters, be sure the name is in *lowercase* and try again.`)
                 }
         }
         // value of 'found' will be returned in bot.js

@@ -23,7 +23,7 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'genshin' :
                 if (arguments.includes("ganyu")) {
                     receivedMessage.channel.send("Ganyu poggers UwU")
@@ -74,7 +74,7 @@ module.exports = {
                     receivedMessage.channel.send(chibizhongli)
                 }
                 else {
-                    receivedMessage.channel.send("Oops the smol character pfp doesn't exist, the available characters are: `ganyu`, `keqing`, `noelle`, `barbara`, `mona`, `klee`, `qiqi`, `fischl`, `sucrose`, `hutao`, `eula`. Ex. `pog genshin ganyu`")
+                    receivedMessage.channel.send("Oops the smol character pfp doesn't exist, the available characters are: `ganyu`, `keqing`, `noelle`, `barbara`, `mona`, `klee`, `qiqi`, `fischl`, `sucrose`, `hutao`, `eula`. Ex. `pog genshin ganyu` (use lowercase)")
                 }
         }
         // value of 'found' will be returned in bot.js

@@ -8,7 +8,7 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'count' :
                 fs.open('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, 'r', function(error, fd) {
                     fs.readFile('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, "utf8", function(error, data) {

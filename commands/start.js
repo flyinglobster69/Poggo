@@ -5,7 +5,7 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand) {
+        switch(primaryCommand.toLowerCase()) {
             case 'start' :
                 if (receivedMessage.author.id == "456664720406085632") {
                     receivedMessage.channel.send("Starting Windows...")
