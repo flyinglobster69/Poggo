@@ -44,6 +44,7 @@ const add = require('./commands/add')
 const subtract = require('./commands/subtract')
 const multiply = require('./commands/multiply')
 const divide = require('./commands/divide')
+const count = require('./commands/count')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -163,6 +164,10 @@ function processCommand(receivedMessage) {
     else if (sm.checkStellarMoments(receivedMessage)) { // pog sm
         return
     }
+    else if (count.checkCount(receivedMessage)) { // pog count
+        return
+    }
+    
     // Math
     else if (add.checkAdd(receivedMessage)) { // pog add
         return
