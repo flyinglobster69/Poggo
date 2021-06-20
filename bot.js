@@ -1,5 +1,5 @@
 // pog#2538 (PogChamp; pog bot)
-// Version 1.3.4
+// Version 1.4
 // 1.0: June 03 2021
 // Author: FlyingLobster69 (LooOOooL YT)
 
@@ -37,6 +37,10 @@ const buff = require('./commands/buff')
 const sm = require('./commands/sm')
 const version = require('./commands/version')
 const poggers = require('./commands/poggers')
+const add = require('./commands/add')
+const subtract = require('./commands/subtract')
+const multiply = require('./commands/multiply')
+const divide = require('./commands/divide')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -151,6 +155,19 @@ function processCommand(receivedMessage) {
         return
     }
     else if (sm.checkStellarMoments(receivedMessage)) { // pog sm
+        return
+    }
+    // Math
+    else if (add.checkAdd(receivedMessage)) { // pog add
+        return
+    }
+    else if (subtract.checkSubtract(receivedMessage)) { // pog subtract
+        return
+    }
+    else if (multiply.checkMultiply(receivedMessage)) { // pog multiply
+        return
+    }
+    else if (divide.checkDivide(receivedMessage)) { // pog divide
         return
     }
     // If command doesn't exist
