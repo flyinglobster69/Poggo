@@ -47,7 +47,7 @@ const divide = require('./commands/divide')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
-const ehe = new MessageAttachment('ehe.jpg')
+const ehe = new MessageAttachment('ehe.gif')
 
 // Connect client
 const client = new Client()
