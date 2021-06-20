@@ -18,6 +18,7 @@ const sixnine = require('./singles/69.json')
 const paimon = require('./singles/paimon.json')
 const dewitjson = require('./singles/dewit.json')
 const ehetendandayo = require('./singles/ehe.json')
+const jimmy = require('./singles/jimmy.json')
 
 // Connect commands
 const start = require('./commands/start')
@@ -37,6 +38,8 @@ const buff = require('./commands/buff')
 const sm = require('./commands/sm')
 const version = require('./commands/version')
 const poggers = require('./commands/poggers')
+
+// Math
 const add = require('./commands/add')
 const subtract = require('./commands/subtract')
 const multiply = require('./commands/multiply')
@@ -75,10 +78,10 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content == help.help) { // help
         receivedMessage.channel.send(help.reply)
     }
-    if (receivedMessage.content == sixnine.input) { // 69
+    if (receivedMessage.content.includes(sixnine.input)) { // 69
         receivedMessage.channel.send(sixnine.reply)
     }
-    if (receivedMessage.content == paimon.paimon) { // paimon 
+    if (receivedMessage.content.includes(paimon.paimon)) { // paimon 
         receivedMessage.channel.send(paimon.reply)
     }
     if (receivedMessage.content == dewitjson.dewit) { // dewit
@@ -91,6 +94,9 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content == ehetendandayo.ehe) { // ehe
         receivedMessage.channel.send(ehe)
         receivedMessage.channel.send(ehetendandayo.output)
+    }
+    if (receivedMessage.content.includes(jimmy.jimmy)) { // jimmy
+        receivedMessage.channel.send(jimmy.reply)
     }
 })
 
