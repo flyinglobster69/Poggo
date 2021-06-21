@@ -10,16 +10,35 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) {
             case 'count' :
-                fs.open('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, 'r', function(error, fd) {
-                    fs.readFile('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, "utf8", function(error, data) {
-                        if (error) {
-                            receivedMessage.channel.send("Oops you have no pogs :(")
-                        }
-                        else {
-                            receivedMessage.channel.send("You've sent \`" + data + "\` pogs")
-                        }
+                let argsstring = arguments.toString()
+                let sliceuid = argsstring.slice(3, -1)
+                var argsuid = "pogcount" + sliceuid + ".txt"
+                var uid = "pogcount" + parseInt(receivedMessage.author.id).toString() + ".txt"
+
+                if (arguments == "") {
+                    fs.open('./pogcount/' + uid, 'r', function(error, fd) {
+                        fs.readFile('./pogcount/' + uid, "utf8", function(error, data) {
+                            if (error) {
+                                receivedMessage.channel.send("Oops you have no pogs :(")
+                            }
+                            else {
+                                receivedMessage.channel.send("You've sent \`" + data + "\` pogs")
+                            }
+                        })
                     })
-                })
+                }
+                else {
+                    fs.open('./pogcount/' + argsuid, 'r', function(error, fd) {
+                        fs.readFile('./pogcount/' + argsuid, "utf8", function(error, data) {
+                            if (error) {
+                                receivedMessage.channel.send("Oops they have no pogs :(")
+                            }
+                            else {
+                                receivedMessage.channel.send("They sent \`" + data + "\` pogs")
+                            }
+                        })
+                    })
+                }
         }
         // value of 'found' will be returned in bot.js
         return found

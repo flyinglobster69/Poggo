@@ -9,16 +9,18 @@ module.exports = {
         switch(primaryCommand) {
             case '' :
                 receivedMessage.channel.send("Poggers!")
-                fs.open('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, 'r+', function(error, fd) {
+                var uid = "pogcount" + parseInt(receivedMessage.author.id).toString() + ".txt"
+                console.log(uid)
+                fs.open('./pogcount/' + uid, 'r+', function(error, fd) {
                     if (error) {
-                        fs.writeFile('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, "1", "utf8", function(error, data) {
+                        fs.writeFile('./pogcount/' + uid, "1", "utf8", function(error, data) {
                             console.log("Write complete")
                         })
                     }
                     else {
-                        fs.readFile('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, "utf8", function(error, data) {
+                        fs.readFile('./pogcount/' + uid, "utf8", function(error, data) {
                             if (error) {
-                                fs.writeFile('./pogcount/' + `pogcount${receivedMessage.author.username}.txt`, "1", "utf8", function(error, data) {
+                                fs.writeFile('./pogcount/' + uid, "1", "utf8", function(error, data) {
                                     console.log("Write complete")
                                 })
                             }
@@ -27,13 +29,14 @@ module.exports = {
                                 let pogcount = data
                                 var pogint = parseInt(pogcount)
                                 var pogtotal = pogint + 1
-                                fs.write(fd, pogtotal, 0, "utf+8", function(error, writtenbytes) {
+                                var pogtotalstring = pogtotal.toString()
+                                fs.write(fd, pogtotalstring, 0, "utf+8", function(error, writtenbytes) {
                                     console.log("Pog counted")
                                     console.log(pogtotal)
                                 })
-                                // console.log(data)
-                                // console.log(pogint)
-                                // console.log(pogtotal)
+                                console.log(data)
+                                console.log(pogint)
+                                console.log(pogtotal)
                             }
                         })
                     }

@@ -56,7 +56,7 @@ const client = new Client()
 client.on('ready', () => {
     console.log("Connected as " + client.user.tag)
 
-    client.user.setActivity("an epic poggers game")
+    client.user.setActivity("pog help")
 })
 
 client.on('message', receivedMessage => {

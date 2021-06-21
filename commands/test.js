@@ -3,14 +3,14 @@ const { Client } = require("discord.js")
 module.exports = {
     checkTest: function(receivedMessage) {
     const client = new Client()
+
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     var yourping = new Date().getTime() - receivedMessage.createdTimestamp
     var botping = Math.round(client.pi)
 
-    var version = "1.4.1"
-
+    let version = "1.4.2"
     found = false
 
         switch(primaryCommand.toLowerCase()) {
