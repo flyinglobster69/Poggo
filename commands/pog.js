@@ -34,9 +34,6 @@ module.exports = {
                                     console.log("Pog counted")
                                     console.log(pogtotal)
                                 })
-                                console.log(data)
-                                console.log(pogint)
-                                console.log(pogtotal)
                             }
                         })
                     }
