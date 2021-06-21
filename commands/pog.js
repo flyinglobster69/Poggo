@@ -30,7 +30,7 @@ module.exports = {
                                 var pogint = parseInt(pogcount)
                                 var pogtotal = pogint + 1
                                 var pogtotalstring = pogtotal.toString()
-                                fs.write(fd, pogtotalstring, 0, "utf+8", function(error, writtenbytes) {
+                                fs.write(fd, pogtotalstring, 0, "utf8", function(error, writtenbytes) {
                                     console.log("Pog counted")
                                     console.log(pogtotal)
                                 })

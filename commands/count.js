@@ -1,6 +1,5 @@
 module.exports = {
     checkCount: function(receivedMessage) {
-    const {MessageAttachment} = require('discord.js')
     const fs = require('fs')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
@@ -12,10 +11,10 @@ module.exports = {
             case 'count' :
                 let argsstring = arguments.toString()
                 let sliceuid = argsstring.slice(3, -1)
-                var argsuid = "pogcount" + sliceuid + ".txt"
+                var argsuid = "pogcount" + parseInt(sliceuid).toString() + ".txt"
                 var uid = "pogcount" + parseInt(receivedMessage.author.id).toString() + ".txt"
 
-                if (arguments == "") {
+                if (arguments == 'me') {
                     fs.open('./pogcount/' + uid, 'r', function(error, fd) {
                         fs.readFile('./pogcount/' + uid, "utf8", function(error, data) {
                             if (error) {
