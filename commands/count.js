@@ -14,7 +14,7 @@ module.exports = {
                 var argsuid = "pogcount" + parseInt(sliceuid).toString() + ".txt"
                 var uid = "pogcount" + parseInt(receivedMessage.author.id).toString() + ".txt"
 
-                if (arguments == 'me') {
+                if (arguments == '') {
                     fs.open('./pogcount/' + uid, 'r', function(error, fd) {
                         fs.readFile('./pogcount/' + uid, "utf8", function(error, data) {
                             if (error) {
