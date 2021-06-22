@@ -16,10 +16,10 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) {
             case 'test' :
                 receivedMessage.channel.send("Msg test = \`Success\`")
-                receivedMessage.channel.send(`Your ping = \`${yourping}\`ms`)
+                receivedMessage.channel.send(`Your ping = \`${yourping}ms\``)
                 receivedMessage.channel.send(`Bot\'s ping = \`${botping}\``)
                 receivedMessage.channel.send("Logging = \`True\`")
-                receivedMessage.channel.send(`Verion: \`${version}\``)
+                receivedMessage.channel.send(`Version: \`${version}\``)
         }
         // value of 'found' will be returned in bot.js
         return found

@@ -10,6 +10,7 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) {
             case 'windows' :
                 receivedMessage.channel.send(chilledwindows)
+                receivedMessage.channel.send("I promise it's safe :)")
         }
         // value of 'found' will be returned in bot.js
         return found
