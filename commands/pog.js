@@ -8,7 +8,14 @@ module.exports = {
 
         switch(primaryCommand) {
             case '' :
-                receivedMessage.channel.send("Poggers!")
+                const random = Math.floor(Math.random() * 20)
+                if (random == 5) {
+                    console.log("Noted.")
+                    receivedMessage.channel.send("life is pain :(")
+                }
+                else {
+                    receivedMessage.channel.send("Poggers!")
+                }
                 var uid = "pogcount" + parseInt(receivedMessage.author.id).toString() + ".txt"
                 console.log(uid)
                 fs.open('./pogcount/' + uid, 'r+', function(error, fd) {

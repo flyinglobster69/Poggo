@@ -231,9 +231,9 @@ client.on('messageDelete', receivedMessage => {
         receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
         console.log(randomPity)
     }
-    if (randomPity > 9) {
-        randomPity = 0
-    }
+    // if (randomPity > 9) {
+    //     randomPity = 0
+    // }
     
     
 })
