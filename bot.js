@@ -38,6 +38,7 @@ const sm = require('./commands/sm')
 const poggers = require('./commands/poggers')
 const count = require('./commands/count')
 const pirate = require('./commands/pirate')
+const windows = require('./commands/windows')
 
 // Math
 const add = require('./commands/add')
@@ -67,9 +68,6 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase().startsWith(config.prefix)) {
         processCommand(receivedMessage)
     }
-    // if (receivedMessage.content.startsWith(config.prefixUpper)) {
-    //     processCommand(receivedMessage)
-    // }
 
     // Single message responses
     if (receivedMessage.content.toLowerCase() == e.e) { // e
@@ -164,6 +162,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (pirate.checkPirate(receivedMessage)) { // pog pirate
+        return
+    }
+    else if (windows.checkWindows(receivedMessage)) { // pog windows
         return
     }
     
