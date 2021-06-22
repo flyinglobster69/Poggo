@@ -10,16 +10,16 @@ module.exports = {
     var yourping = new Date().getTime() - receivedMessage.createdTimestamp
     var botping = Math.round(client.pi)
 
-    let version = "1.4.4"
+    let version = "1.4.5" // current bot version
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog test'
             case 'test' :
-                receivedMessage.channel.send("Msg test = \`Success\`")
-                receivedMessage.channel.send(`Your ping = \`${yourping}ms\``)
-                receivedMessage.channel.send(`Bot\'s ping = \`${botping}\``)
-                receivedMessage.channel.send("Logging = \`True\`")
-                receivedMessage.channel.send(`Version: \`${version}\``)
+                receivedMessage.channel.send("Msg test = \`Success\`") // sends the message if the bot is able to send a message (lmao)
+                receivedMessage.channel.send(`Your ping = \`${yourping}ms\``) // gets your latency and sends it in ms (questionable accuracy)
+                receivedMessage.channel.send(`Bot\'s ping = \`${botping}\``) // gets the bot's latency and sends it in ms (doesn't work)
+                receivedMessage.channel.send("Logging = \`True\`") // tells user that the bot is logging information
+                receivedMessage.channel.send(`Version: \`${version}\``) // sends bot version number
         }
         // value of 'found' will be returned in bot.js
         return found

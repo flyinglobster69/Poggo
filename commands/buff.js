@@ -1,17 +1,17 @@
 module.exports = {
     checkBuff: function(receivedMessage) {
     const {MessageAttachment} = require('discord.js')
-    const andrewps = new MessageAttachment('andrewps.png')
+    const andrewps = new MessageAttachment('andrewps.png') // connect andrewps.png attachment
 
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog buff'
             case 'buff' :
-                receivedMessage.channel.send(andrewps)
-                receivedMessage.channel.send("lmfao photoshopped")
+                receivedMessage.channel.send(andrewps) // send andrewps.png attachment in chat
+                receivedMessage.channel.send("lmfao photoshopped") // sends a caption
         }
         // value of 'found' will be returned in bot.js
         return found

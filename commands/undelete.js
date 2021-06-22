@@ -8,17 +8,17 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog undelete'
             case 'undelete' :
-                if (arguments.includes('deleted')) {
+                if (arguments.includes('deleted')) { // if user requests to see their deleted message logs, send the log file
                     const msgdeleted = new MessageAttachment('./msgdeleted/' + `msgdeleted${receivedMessage.author.username}.txt`)
                     receivedMessage.channel.send(msgdeleted)
                 }
-                else if (arguments.includes('exe')) {
+                else if (arguments.includes('exe')) { // if user requests to see their exe message logs, send the log file
                     const msgdeleted = new MessageAttachment('./msghistory/' + `msghistory${receivedMessage.author.username}.txt`)
                     receivedMessage.channel.send(msgdeleted)
                 }
-                else {
+                else { // if the user didn't specify which data they want
                     receivedMessage.channel.send('please specify which data you would like to access (`deleted` or `exe`)')
                 }
         }

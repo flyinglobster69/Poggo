@@ -5,9 +5,9 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog trump'
             case 'trump' :
-                receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall (fence), it will be a big, beautiful wall (fence), and it will keep out all the Mexicans (not really lol).*")
+                receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall (fence), it will be a big, beautiful wall (fence), and it will keep out all the Mexicans (not really lol).*") // e
         }
         // value of 'found' will be returned in bot.js
         return found

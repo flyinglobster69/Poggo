@@ -23,57 +23,57 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog genshin'
             case 'genshin' :
-                if (arguments.includes("ganyu")) {
+                if (arguments.includes("ganyu")) { // ganyu
                     receivedMessage.channel.send("Ganyu poggers UwU")
                     receivedMessage.channel.send(ganyupfp)
                 }
-                else if (arguments.includes("keqing")) {
+                else if (arguments.includes("keqing")) { // keqing
                     receivedMessage.channel.send("Keqing poggers UwU")
                     receivedMessage.channel.send(keqingpfp)
                 }
-                else if (arguments.includes("noelle")) {
+                else if (arguments.includes("noelle")) { // noelle
                     receivedMessage.channel.send("Noelle poggers UwU")
                     receivedMessage.channel.send(noellepfp)
                 }
-                else if (arguments.includes("barbara")) {
+                else if (arguments.includes("barbara")) { // barbara
                     receivedMessage.channel.send("Barbara poggers UwU")
                     receivedMessage.channel.send(barbarapfp)
                 }
-                else if (arguments.includes("mona")) {
+                else if (arguments.includes("mona")) { // mona
                     receivedMessage.channel.send("Mona poggers UwU")
                     receivedMessage.channel.send(monapfp)
                 }
-                else if (arguments.includes("klee")) {
+                else if (arguments.includes("klee")) { // klee
                     receivedMessage.channel.send("Klee poggers UwU")
                     receivedMessage.channel.send(kleepfp)
                 }
-                else if (arguments.includes("qiqi")) {
+                else if (arguments.includes("qiqi")) { // qiqi
                     receivedMessage.channel.send("Qiqi poggers UwU")
                     receivedMessage.channel.send(qiqipfp)
                 }
-                else if (arguments.includes("fischl")) {
+                else if (arguments.includes("fischl")) { // fischl
                     receivedMessage.channel.send("Fischl poggers UwU")
                     receivedMessage.channel.send(fischlpfp)
                 }
-                else if (arguments.includes("sucrose")) {
+                else if (arguments.includes("sucrose")) { // sucrose
                     receivedMessage.channel.send("Sucrose poggers UwU")
                     receivedMessage.channel.send(sucrosepfp)
                 }
-                else if (arguments.includes("hutao")) {
+                else if (arguments.includes("hutao")) { // hu tao
                     receivedMessage.channel.send("Hu Tao poggers UwU")
                     receivedMessage.channel.send(hutaopfp)
                 }
-                else if (arguments.includes("eula")) {
+                else if (arguments.includes("eula")) { // eula
                     receivedMessage.channel.send("Eula poggers UwU")
                     receivedMessage.channel.send(eulapfp)
                 }
-                else if (arguments.includes("zhongli")) {
+                else if (arguments.includes("zhongli")) { // kekw
                     receivedMessage.channel.send("In terms of mora, we have no mora.")
                     receivedMessage.channel.send(chibizhongli)
                 }
-                else {
+                else { // if requested character in arguments does not exist, tell user what characters exist and ara available
                     receivedMessage.channel.send("Oops the smol character pfp doesn't exist, the available characters are: `ganyu`, `keqing`, `noelle`, `barbara`, `mona`, `klee`, `qiqi`, `fischl`, `sucrose`, `hutao`, `eula`. Ex. `pog genshin ganyu` (use lowercase)")
                 }
         }

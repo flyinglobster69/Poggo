@@ -5,14 +5,14 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog start'
             case 'start' :
-                if (receivedMessage.author.id == "456664720406085632") {
-                    receivedMessage.channel.send("Starting Windows...")
+                if (receivedMessage.author.id == "456664720406085632") { // find out if the message sender is the bot's creator
+                    receivedMessage.channel.send("Starting Windows...") // start windows
                     found = true
                 }
                 else {
-                    receivedMessage.channel.send("no")
+                    receivedMessage.channel.send("no") // lock out the user if its not the creator
                 }
             
         }

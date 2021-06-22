@@ -5,9 +5,9 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'poggies'
             case 'ies' :
-                receivedMessage.channel.send("*Wait, that's illegal!*")
+                receivedMessage.channel.send("*Wait, that's illegal!*") // for legal reasons, this is a joke
         }
         // value of 'found' will be returned in bot.js
         return found

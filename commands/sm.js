@@ -6,11 +6,11 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) {
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog sm'
             case 'sm' :
                 // Soundtracks
                 if (arguments.includes("ganyu")) {
-                    receivedMessage.channel.send("https://youtu.be/vV7OmRpgXh4")
+                    receivedMessage.channel.send("https://youtu.be/vV7OmRpgXh4") // legit just sends yt links lmao
                 }
                 else if (arguments.includes("keqing")) {
                     receivedMessage.channel.send("https://youtu.be/vMeaJGQMvmw")
@@ -75,7 +75,7 @@ module.exports = {
                 else if (arguments == "albedo") {
                     receivedMessage.channel.send("Try `albedo1` or `albedo2` :)")
                 }
-                else {
+                else { // called if character has no stellar moments soundtrack
                     receivedMessage.channel.send(`Uh oh, this character has no Stellar Moments Soundtrack :(
                         
                         The characters are: \`ganyu\`, \`keqing\`, \`zhongli\`, \`mona\`, \`qiqi, \`venti\`, \`xinyan\`, \`xiangling\`, \`diona\`, \`childe\`, \`fischl\`, \`klee\`, \`albedo\`.
