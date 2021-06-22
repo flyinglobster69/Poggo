@@ -10,7 +10,7 @@ module.exports = {
     var yourping = new Date().getTime() - receivedMessage.createdTimestamp
     var botping = Math.round(client.pi)
 
-    let version = "1.4.2"
+    let version = "1.4.3"
     found = false
 
         switch(primaryCommand.toLowerCase()) {
