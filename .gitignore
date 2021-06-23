@@ -1,2 +1,2 @@
 *.txt
-*config.json
+/config.json
