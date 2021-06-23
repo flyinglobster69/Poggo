@@ -39,6 +39,7 @@ const poggers = require('./commands/poggers')
 const count = require('./commands/count')
 const pirate = require('./commands/pirate')
 const windows = require('./commands/windows')
+const invite = require('./commands/invite')
 
 // Math commands
 const add = require('./commands/add')
@@ -165,6 +166,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (windows.checkWindows(receivedMessage)) { // pog windows
+        return
+    }
+    else if (invite.checkInvite(receivedMessage)) { // pog invite
         return
     }
     
