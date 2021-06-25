@@ -8,7 +8,7 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog help'
             case 'help' : 
                 receivedMessage.channel.send(`Prefix\: \`pog\`; 
-Command list\: \`help\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`andrew\`, \`buff\`, \`user\`, \`pirate\`, \`invite\`, \`windows\`;
+Command list\: \`help\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`andrew\`, \`buff\`, \`user\`, \`pirate\`, \`invite\`, \`windows\`, \`wish\`;
 Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`undelete [module]\`, \`count [@user]\`;
 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
 Decimal points currently not supported.
