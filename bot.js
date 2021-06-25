@@ -40,6 +40,7 @@ const count = require('./commands/count')
 const pirate = require('./commands/pirate')
 const windows = require('./commands/windows')
 const invite = require('./commands/invite')
+const wish = require('./commands/wish')
 
 // Math commands
 const add = require('./commands/add')
@@ -169,6 +170,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (invite.checkInvite(receivedMessage)) { // pog invite
+        return
+    }
+    else if (wish.checkWish(receivedMessage)) { // pog wish
         return
     }
     
