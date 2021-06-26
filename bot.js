@@ -6,6 +6,7 @@
 const {Client, MessageAttachment} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
+const schedule = require('node-schedule')
 
 // Create an instance of Discord that we will use to control the bot
 const config = require('./config.json')
@@ -18,6 +19,12 @@ const paimon = require('./singles/paimon.json')
 const dewitjson = require('./singles/dewit.json')
 const ehetendandayo = require('./singles/ehe.json')
 const jimmy = require('./singles/jimmy.json')
+
+// Math commands
+const add = require('./commands/add')
+const subtract = require('./commands/subtract')
+const multiply = require('./commands/multiply')
+const divide = require('./commands/divide')
 
 // Connect commands
 const start = require('./commands/start')
@@ -41,12 +48,7 @@ const pirate = require('./commands/pirate')
 const windows = require('./commands/windows')
 const invite = require('./commands/invite')
 const wish = require('./commands/wish')
-
-// Math commands
-const add = require('./commands/add')
-const subtract = require('./commands/subtract')
-const multiply = require('./commands/multiply')
-const divide = require('./commands/divide')
+// const time = require('./commands/time')
 
 // Connect single attachments
 const dewit = new MessageAttachment('dewit.gif')
@@ -175,9 +177,18 @@ function processCommand(receivedMessage) {
     else if (wish.checkWish(receivedMessage)) { // pog wish
         return
     }
+
+    // else if (receivedMessage == "time") {
+    //     const date = new Date(2021, 5, 25, 17, 51, 0);
+    //     const job = schedule.scheduleJob(date, function(){
+    //         console.log('time test message owowoowowowowowowowowowo')
+    //         receivedMessage.channel.send('time test message owowoowowowowowowowowowo')
+    //     })
+    //     console.log(job)
+    // }
     
     // Math
-    else if (add.checkAdd(receivedMessage)) { // pog add
+    if (add.checkAdd(receivedMessage)) { // pog add
         return
     }
     else if (subtract.checkSubtract(receivedMessage)) { // pog subtract
@@ -204,36 +215,6 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
     const random = Math.floor(Math.random() * 10) // generate a random number
     console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``) // log deleted message in console
     randomPity += 1
-    // let buffer = new Buffer.from(`
-    //     Deleted Message: ${receivedMessage.content};`) // create buffer (for fs.write())
-    //     fs.open('./msgdeleted/' + `msgdeleted${receivedMessage.author.username}.txt`, 'a', function(error, fd) { // open the user's deleted message text file (list)
-    //         fs.write(fd, buffer, 0, buffer.length, null, function(err, writtenbytes) { // append deleted message below last deleted message
-    //             if (err) { // if file does not exist, create a new one
-    //                 fs.writeFile('./msgdeleted/' + `msghistory${receivedMessage.author.username}.txt`, `Deleted Message: ${receivedMessage.content}; 
-    //                 Username: ${receivedMessage.author.username}; 
-    //                 UID: ${receivedMessage.author.id}`, "utf8", function(error, data) {
-    //                     console.log("Write complete")
-    //                 })
-    //                 randomPity += 1 // add 1 to pity count
-    //                 console.log(randomPity) // log pity count in console
-    //                 if (randomPity > 9) { // if pity reaches 10, quote deleted message and reset pity counter
-    //                     console.log("Noted.")
-    //                     receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
-    //                     randomPity = 0
-    //                 }
-    //             }
-    //             else { // if file exists, append new deleted message to the bottom of the list
-    //                 console.log("File exists, write complete")
-    //                 randomPity += 1 // add 1 to pity count
-    //                 console.log(randomPity) // log pity count in console
-    //                 if (randomPity > 9) { // if pity reaches 10, quote deleted message and reset pity counter
-    //                     console.log("Noted.")
-    //                     receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
-    //                     randomPity = 0
-    //                 }
-    //             }
-    //         })
-    //     })
 
     if (randomPity > 9) { // if pity reaches 10, quote deleted message and reset pity counter
         console.log("Noted.")
@@ -246,11 +227,6 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
         receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
         console.log(randomPity)
     }
-    // if (randomPity > 9) {
-    //     randomPity = 0
-    // }
-    
-    
 })
 
 client.login(config.token)

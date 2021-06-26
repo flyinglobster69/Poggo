@@ -10,7 +10,7 @@ module.exports = {
     var yourping = new Date().getTime() - receivedMessage.createdTimestamp
     var botping = Math.round(client.pi)
 
-    let version = "1.5" // current bot version
+    let version = "1.5.1" // current bot version
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog test'
