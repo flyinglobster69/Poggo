@@ -1,3 +1,6 @@
+var star5pity = 0
+var star4pity = 0
+
 module.exports = {
     checkWish: function(receivedMessage) {
 
@@ -33,8 +36,6 @@ module.exports = {
             return star5[Math.floor(Math.random() * star5.length)]
         }
         const star = "<:star:858047215952068628>"
-        var star5pity = 0
-        var star4pity = 0
 
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
