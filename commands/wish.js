@@ -19,7 +19,7 @@ module.exports = {
     const kazuha = new MessageAttachment('./character5star/kazuha.jpg')
     const ayaka = new MessageAttachment('./character5star/ayaka.jpg')
     const yoimiya = new MessageAttachment('./character5star/yoimiya.jpg')
-    const pallad = new MessageAttachment('./character5star/pallad.jpg')
+    const pallad = new MessageAttachment('./character5star/pallad.webm')
 
 
 
@@ -46,7 +46,7 @@ module.exports = {
                 const random = Math.floor(Math.random() * 90) // generates a random number between 1-20
                 if (random < 6) { // if random number < 6, random 5-star
                     console.log("Gold!")
-                    var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Reckless Pallad", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                    var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                     randompull = random5star(star5)
                     if (randompull == "Venti") {
                         receivedMessage.channel.send(venti)
@@ -83,9 +83,6 @@ module.exports = {
                     }
                     else if (randompull == "Yoimiya") {
                         receivedMessage.channel.send(yoimiya)
-                    }
-                    else if (randompull == "Reckless Pallad") {
-                        receivedMessage.channel.send(pallad)
                     }
                     else if (randompull == "Keqing") {
                         receivedMessage.channel.send(keqing)
@@ -110,7 +107,7 @@ module.exports = {
                 }
                 else if (star5pity > 76) { // 5-star pity hits, automatic 5-star
                     console.log("Gold!")
-                    var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Reckless Pallad", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                    var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                     randompull = random5star(star5)
                     if (randompull == "Venti") {
                         receivedMessage.channel.send(venti)
@@ -148,9 +145,6 @@ module.exports = {
                     else if (randompull == "Yoimiya") {
                         receivedMessage.channel.send(yoimiya)
                     }
-                    else if (randompull == "Reckless Pallad") {
-                        receivedMessage.channel.send(pallad)
-                    }
                     else if (randompull == "Keqing") {
                         receivedMessage.channel.send(keqing)
                     }
@@ -169,6 +163,14 @@ module.exports = {
                     receivedMessage.channel.send(star + star + star + star + star + " " + randompull)
                     star5pity = 0
                     star4pity += 1
+                    console.log(star4pity)
+                    console.log(star5pity)
+                }
+                else if (random = 69) {
+                    receivedMessage.channel.send(pallad)
+                    receivedMessage.channel.send(star + " " + randompull)
+                    star4pity += 1
+                    star5pity += 1
                     console.log(star4pity)
                     console.log(star5pity)
                 }
@@ -192,7 +194,7 @@ module.exports = {
                 }
                 else { // 3-star items
                     console.log("Blue.")
-                    var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel"] // List of 3-star weapons
+                    var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel", "Reckless Pallad"] // List of 3-star weapons
                     receivedMessage.channel.send(star + star + star + " " + random3star(star3))
                     star4pity += 1
                     star5pity += 1
