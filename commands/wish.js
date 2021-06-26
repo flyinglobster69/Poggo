@@ -167,7 +167,7 @@ module.exports = {
                     console.log(star4pity)
                     console.log(star5pity)
                 }
-                else if (random = 69) {
+                else if (random = 69) { // lol
                     receivedMessage.channel.send(pallad)
                     receivedMessage.channel.send(star + " " + randompull)
                     star4pity += 1
