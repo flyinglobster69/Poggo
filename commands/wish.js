@@ -167,9 +167,9 @@ module.exports = {
                     console.log(star4pity)
                     console.log(star5pity)
                 }
-                else if (random = 69) { // lol
+                else if (random > 89) { // lol
                     receivedMessage.channel.send(pallad)
-                    receivedMessage.channel.send(star + " " + randompull)
+                    receivedMessage.channel.send(star + " Reckless Pallad")
                     star4pity += 1
                     star5pity += 1
                     console.log(star4pity)
@@ -195,7 +195,7 @@ module.exports = {
                 }
                 else { // 3-star items
                     console.log("Blue.")
-                    var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel", "Reckless Pallad"] // List of 3-star weapons
+                    var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel"] // List of 3-star weapons
                     receivedMessage.channel.send(star + star + star + " " + random3star(star3))
                     star4pity += 1
                     star5pity += 1
