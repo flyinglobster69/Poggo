@@ -45,7 +45,7 @@ module.exports = {
         switch(primaryCommand) { // called when messages says 'pog wish'
             case 'wish' :
                 const random = Math.floor(Math.random() * 90) // generates a random number between 1-20
-                if (random < 6) { // if random number < 6, random 5-star
+                if (random < 3) { // if random number < 6, random 5-star
                     console.log("Gold!")
                     var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                     randompull = random5star(star5)
@@ -175,7 +175,7 @@ module.exports = {
                     console.log(star4pity)
                     console.log(star5pity)
                 }
-                else if (random > 77) { // if random number > 77, random 4-star
+                else if (random > 78) { // if random number > 77, random 4-star
                     console.log("Purple!")
                     var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                     receivedMessage.channel.send(star + star + star + star + " " + random4star(star4))
