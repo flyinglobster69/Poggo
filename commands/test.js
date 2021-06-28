@@ -15,11 +15,11 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog test'
             case 'test' :
-                receivedMessage.channel.send("Msg test = \`Success\`") // sends the message if the bot is able to send a message (lmao)
-                receivedMessage.channel.send(`Your ping = \`${yourping}ms\``) // gets your latency and sends it in ms (questionable accuracy)
-                receivedMessage.channel.send(`Bot\'s ping = \`${botping}\``) // gets the bot's latency and sends it in ms (doesn't work)
-                receivedMessage.channel.send("Logging = \`True\`") // tells user that the bot is logging information
-                receivedMessage.channel.send(`Version: \`${version}\``) // sends bot version number
+                receivedMessage.channel.send(`Msg test = \`Success\` *(bot can send messages)*`) // sends the message if the bot is able to send a message (lmao)
+                receivedMessage.channel.send(`Your ping = \`${yourping}ms\` *(questionable accuracy)*`) // gets your latency and sends it in ms (questionable accuracy)
+                receivedMessage.channel.send(`Bot\'s ping = \`Error\` *(doesn't work lmao)*`) // gets the bot's latency and sends it in ms (doesn't work)
+                receivedMessage.channel.send(`Logging = \`True\` *(logging pog counts only)*`) // tells user that the bot is logging information
+                receivedMessage.channel.send(`Version: \`${version}\` *(current bot version)*`) // sends bot version number
         }
         // value of 'found' will be returned in bot.js
         return found

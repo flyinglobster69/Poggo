@@ -206,8 +206,8 @@ function processCommand(receivedMessage) {
     }
 }
 
-// Logging message deletions
-// Use 'pog undelete' to access
+// Use 'pog undelete' to access deleted messages (depreciated)
+// Deleted Message quoting system
 var randomPity // create pity variable
 randomPity = 0 // initialize pity system
 client.on('messageDelete', receivedMessage => { // called whenever a message is deleted
