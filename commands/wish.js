@@ -22,7 +22,7 @@ module.exports = {
     const kazuha = new MessageAttachment('./character5star/kazuha.jpg')
     const ayaka = new MessageAttachment('./character5star/ayaka.jpg')
     const yoimiya = new MessageAttachment('./character5star/yoimiya.jpg')
-    const pallad = new MessageAttachment('./character5star/pallad.webm')
+    const pallad = new MessageAttachment('./character5star/ricrol.gif')
 
 
 
@@ -44,8 +44,8 @@ module.exports = {
 
         switch(primaryCommand) { // called when messages says 'pog wish'
             case 'wish' :
-                const random = Math.floor(Math.random() * 90) // generates a random number between 1-20
-                if (random < 4) { // if random number < 6, random 5-star
+                const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
+                if (random < 2) { // if random number < 6, random 5-star
                     console.log("Gold!")
                     var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                     randompull = random5star(star5)
@@ -106,7 +106,7 @@ module.exports = {
                     console.log(star4pity)
                     console.log(star5pity)
                 }
-                else if (star5pity > 76) { // 5-star pity hits, automatic 5-star
+                else if (star5pity > 79) { // 5-star pity hits, automatic 5-star
                     console.log("Gold!")
                     var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                     randompull = random5star(star5)
