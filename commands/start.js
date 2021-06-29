@@ -12,7 +12,7 @@ module.exports = {
                     found = true
                 }
                 else {
-                    receivedMessage.channel.send("no") // lock out the user if its not the creator
+                    receivedMessage.channel.send("Shutting down...") // lock out the user if its not the creator
                 }
             
         }

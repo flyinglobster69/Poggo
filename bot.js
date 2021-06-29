@@ -38,8 +38,6 @@ const exe = require('./commands/exe')
 const user = require('./commands/user')
 const pog = require('./commands/pog')
 const genshin = require('./commands/genshin')
-const undelete = require('./commands/undelete')
-const andrew = require('./commands/andrew')
 const buff = require('./commands/buff')
 const sm = require('./commands/sm')
 const poggers = require('./commands/poggers')
@@ -148,12 +146,6 @@ function processCommand(receivedMessage) {
         return
     }
     else if (genshin.checkGenshin(receivedMessage)) { // pog genshin
-        return
-    }
-    else if (undelete.checkUndelete(receivedMessage)) { // pog undelete
-        return
-    }
-    else if (andrew.checkAndrew(receivedMessage)) { // pog andrew
         return
     }
     else if (buff.checkBuff(receivedMessage)) { // pog buff

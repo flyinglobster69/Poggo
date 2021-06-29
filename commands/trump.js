@@ -7,7 +7,7 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog trump'
             case 'trump' :
-                receivedMessage.channel.send("***Mr. Orange*** *wants to build a wall (fence), it will be a big, beautiful wall (fence), and it will keep out all the Mexicans (not really lol).*") // e
+                receivedMessage.channel.send("[this command has been removed for impeachment]") // e
         }
         // value of 'found' will be returned in bot.js
         return found

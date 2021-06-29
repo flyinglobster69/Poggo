@@ -10,9 +10,6 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog add'
             case 'add' :
-                // console.log(first)
-                // console.log(second)
-                // console.log(first + second)
                 var sum = parseInt(first) + parseInt(second) // adds first number and second number to get the sum
                 receivedMessage.channel.send(sum) // sends the sum to the message channel
         }
