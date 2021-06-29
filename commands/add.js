@@ -1,5 +1,6 @@
 module.exports = {
     checkAdd: function(receivedMessage) {
+    const {MessageEmbed} = require('discord.js')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
@@ -11,7 +12,9 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog add'
             case 'add' :
                 var sum = parseInt(first) + parseInt(second) // adds first number and second number to get the sum
-                receivedMessage.channel.send(sum) // sends the sum to the message channel
+                const embed = new MessageEmbed()
+                .setTitle(sum)
+                receivedMessage.channel.send(embed) // sends the sum to the message channel
         }
         // value of 'found' will be returned in bot.js
         return found

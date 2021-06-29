@@ -163,9 +163,9 @@ function processCommand(receivedMessage) {
     else if (windows.checkWindows(receivedMessage)) { // pog windows
         return
     }
-    else if (invite.checkInvite(receivedMessage)) { // pog invite
-        return
-    }
+    // else if (invite.checkInvite(receivedMessage)) { // pog invite
+    //     return
+    // }
     else if (wish.checkWish(receivedMessage)) { // pog wish
         return
     }
@@ -198,7 +198,6 @@ function processCommand(receivedMessage) {
     }
 }
 
-// Use 'pog undelete' to access deleted messages (depreciated)
 // Deleted Message quoting system
 var randomPity // create pity variable
 randomPity = 0 // initialize pity system

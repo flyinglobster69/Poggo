@@ -1,5 +1,6 @@
 module.exports = {
     checkDivide: function(receivedMessage) {
+    const {MessageEmbed} = require('discord.js')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
@@ -10,11 +11,10 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog divide'
             case 'divide' :
-                // console.log(first)
-                // console.log(second)
-                // console.log(first + second)
                 var quotient = parseInt(first) / parseInt(second) // divide the first number by the second number
-                receivedMessage.channel.send(quotient) // sends the quotient in the chat
+                const embed = new MessageEmbed()
+                .setTitle(quotient)
+                receivedMessage.channel.send(embed) // sends the quotient in the chat
         }
         // value of 'found' will be returned in bot.js
         return found

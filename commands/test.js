@@ -1,4 +1,4 @@
-const { Client } = require("discord.js")
+const { Client, MessageEmbed } = require("discord.js")
 
 module.exports = {
     checkTest: function(receivedMessage) {
@@ -10,15 +10,18 @@ module.exports = {
     var yourping = new Date().getTime() - receivedMessage.createdTimestamp
     var botping = Math.round(client.pi)
 
-    let version = "1.5.4" // current bot version
+    let version = "1.6" // current bot version
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog test'
             case 'test' :
-                receivedMessage.channel.send(`Msg test = \`Success\` *(bot can send messages)*`) // sends the message if the bot is able to send a message (lmao)
-                receivedMessage.channel.send(`Your ping = \`${yourping}ms\` *(questionable accuracy)*`) // gets your latency and sends it in ms (questionable accuracy)
-                receivedMessage.channel.send(`Logging = \`True\` *(logging pog counts only)*`) // tells user that the bot is logging information
-                receivedMessage.channel.send(`Version: \`${version}\` *(current bot version)*`) // sends bot version number
+                const embed = new MessageEmbed()
+                .setTitle('Bot Test')
+                .setDescription(`Msg test = \`Success\` *(bot can send messages)*
+Your ping = \`${yourping}ms\` *(questionable accuracy)*
+Logging = \`True\` *(logging pog counts only)*
+Version: \`${version}\` *(current bot version)*`) // sends bot version number
+                receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js
         return found

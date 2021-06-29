@@ -4,7 +4,7 @@ var star4pity = 0
 module.exports = {
     checkWish: function(receivedMessage) {
 
-    const {MessageAttachment} = require('discord.js')
+    const {MessageAttachment, MessageEmbed} = require('discord.js')
     const venti = new MessageAttachment('./character5star/venti.jpg') // connect 5-star character profiles
     const tartaglia = new MessageAttachment('./character5star/tartaglia.jpg')
     const klee = new MessageAttachment('./character5star/klee.jpg')
@@ -23,8 +23,6 @@ module.exports = {
     const ayaka = new MessageAttachment('./character5star/ayaka.jpg')
     const yoimiya = new MessageAttachment('./character5star/yoimiya.jpg')
     const pallad = new MessageAttachment('./character5star/ricrol.gif')
-
-
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
@@ -100,7 +98,10 @@ module.exports = {
                     else if (randompull == "Qiqi") {
                         receivedMessage.channel.send(qiqi)
                     }
-                    receivedMessage.channel.send(star + star + star + star + star + " " + randompull)
+                    const embed = new MessageEmbed()
+                    .setTitle(star + star + star + star + star)
+                    .setDescription(randompull)
+                    receivedMessage.channel.send(embed)
                     star5pity = 0
                     star4pity += 1
                     console.log(star4pity)
@@ -161,7 +162,11 @@ module.exports = {
                     else if (randompull == "Qiqi") {
                         receivedMessage.channel.send(qiqi)
                     }
-                    receivedMessage.channel.send(star + star + star + star + star + " " + randompull)
+                    const embed = new MessageEmbed()
+                    .setTitle(star + star + star + star + star)
+                    .setDescription(randompull)
+                    // .setImage(character)
+                    receivedMessage.channel.send(embed)
                     star5pity = 0
                     star4pity += 1
                     console.log(star4pity)
@@ -169,7 +174,10 @@ module.exports = {
                 }
                 else if (random > 88) { // lol
                     receivedMessage.channel.send(pallad)
-                    receivedMessage.channel.send(star + " Reckless Pallad")
+                    const embed = new MessageEmbed()
+                    .setTitle(star)
+                    .setDescription('Reckless Pallad')
+                    receivedMessage.channel.send(embed)
                     star4pity += 1
                     star5pity += 1
                     console.log(star4pity)
@@ -179,6 +187,10 @@ module.exports = {
                     console.log("Purple!")
                     var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                     receivedMessage.channel.send(star + star + star + star + " " + random4star(star4))
+                    const embed = new MessageEmbed()
+                    .setTitle(star + star + star + star)
+                    .setDescription(random4star(star4))
+                    receivedMessage.channel.send(embed)
                     star4pity = 0
                     star5pity += 1
                     console.log(star4pity)
@@ -187,7 +199,10 @@ module.exports = {
                 else if (star4pity > 8) { // if 4-star pity hits, automatic 4-star
                     console.log("Purple!")
                     var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
-                    receivedMessage.channel.send(star + star + star + star + " " + random4star(star4))
+                    const embed = new MessageEmbed()
+                    .setTitle(star + star + star + star)
+                    .setDescription(random4star(star4))
+                    receivedMessage.channel.send(embed)
                     star4pity = 0
                     star5pity += 1
                     console.log(star4pity)
@@ -196,7 +211,10 @@ module.exports = {
                 else { // 3-star items
                     console.log("Blue.")
                     var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel"] // List of 3-star weapons
-                    receivedMessage.channel.send(star + star + star + " " + random3star(star3))
+                    const embed = new MessageEmbed()
+                    .setTitle(star + star + star)
+                    .setDescription(random3star(star3))
+                    receivedMessage.channel.send(embed)
                     star4pity += 1
                     star5pity += 1
                     console.log(star4pity)
