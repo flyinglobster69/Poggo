@@ -172,7 +172,7 @@ module.exports = {
                     console.log(star4pity)
                     console.log(star5pity)
                 }
-                else if (random > 88) { // lol
+                else if (random > 89) { // lol
                     receivedMessage.channel.send(pallad)
                     const embed = new MessageEmbed()
                     .setTitle(star)
