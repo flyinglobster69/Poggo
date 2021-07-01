@@ -18,7 +18,6 @@ const sixnine = require('./singles/69.json')
 const paimon = require('./singles/paimon.json')
 const dewitjson = require('./singles/dewit.json')
 const ehetendandayo = require('./singles/ehe.json')
-const jimmy = require('./singles/jimmy.json')
 
 // Math commands
 const add = require('./commands/add')
@@ -46,6 +45,7 @@ const pirate = require('./commands/pirate')
 const windows = require('./commands/windows')
 const invite = require('./commands/invite')
 const wish = require('./commands/wish')
+const butter = require('./commands/butter')
 // const time = require('./commands/time')
 
 // Connect single attachments
@@ -94,9 +94,6 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
         receivedMessage.channel.send(ehe)
         receivedMessage.channel.send(ehetendandayo.output)
-    }
-    if (receivedMessage.content.toLowerCase().includes(jimmy.jimmy)) { // jimmy
-        receivedMessage.channel.send(jimmy.reply)
     }
 })
 
@@ -167,6 +164,9 @@ function processCommand(receivedMessage) {
     //     return
     // }
     else if (wish.checkWish(receivedMessage)) { // pog wish
+        return
+    }
+    else if (butter.checkButter(receivedMessage)) { // pog butter
         return
     }
 

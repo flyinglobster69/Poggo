@@ -88,7 +88,7 @@ Usage: \`pog count\` (to check your pog count); \`pog count [@user]\` (mention t
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \`help\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`buff\`, \`user\`, \`pirate\`, \`windows\`, \`wish\`, \`start\`;
+                    .setDescription(`Command list\: \`help\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`buff\`, \`user\`, \`pirate\`, \`windows\`, \`wish\`, \`start\`, \`butter\`;
 Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`count [@user]\`;
 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
 Decimal points currently not supported.
