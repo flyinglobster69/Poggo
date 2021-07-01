@@ -79,6 +79,12 @@ Notice: If you mention another user that has no nickname, this command will not 
 Usage: \`pog count\` (to check your pog count); \`pog count [@user]\` (mention the user you want to check the pog count for)`)
                     receivedMessage.channel.send(embed)
                 }
+                else if (arguments.includes("help")) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`Need more clarification?`)
+                    .setDescription(`For more information about individual commands, click here: https://bit.ly/3h872Sg`)
+                    receivedMessage.channel.send(embed)
+                }
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
@@ -87,7 +93,7 @@ Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu he
 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
 Decimal points currently not supported.
 
-Use \`pog help [command]\` on Math and Bigger commands for elaboration on command usage and operation.
+Use \`pog help [command]\` on Math and Bigger commands for elaboration on command usage and operation, or \`pog help help\` to get clarification on all available commands.
 
 Please note that the bot will collect and store Discord User IDs when the user sends their first pog. 
 This allows the bot to count the number of pogs a user has.
