@@ -1,3 +1,5 @@
+const { receiveMessageOnPort } = require('worker_threads')
+
 var star5pity = 0
 var star4pity = 0
 
@@ -23,6 +25,7 @@ module.exports = {
     const ayaka = new MessageAttachment('./character5star/ayaka.jpg')
     const yoimiya = new MessageAttachment('./character5star/yoimiya.jpg')
     const pallad = new MessageAttachment('./character5star/ricrol.gif')
+    const toad = new MessageAttachment('./character5star/toad.png')
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
@@ -70,6 +73,7 @@ module.exports = {
                     }
                     else if (randompull == "Zhongli") {
                         receivedMessage.channel.send(zhongli)
+                        receivedMessage.channel.send(toad)
                     }
                     else if (randompull == "Eula") {
                         receivedMessage.channel.send(eula)
@@ -134,6 +138,7 @@ module.exports = {
                     }
                     else if (randompull == "Zhongli") {
                         receivedMessage.channel.send(zhongli)
+                        receivedMessage.channel.send(toad)
                     }
                     else if (randompull == "Eula") {
                         receivedMessage.channel.send(eula)

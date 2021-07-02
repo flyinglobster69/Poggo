@@ -18,6 +18,7 @@ const sixnine = require('./singles/69.json')
 const paimon = require('./singles/paimon.json')
 const dewitjson = require('./singles/dewit.json')
 const ehetendandayo = require('./singles/ehe.json')
+const butterjson = require('./singles/butter.json')
 
 // Math commands
 const add = require('./commands/add')
@@ -81,19 +82,22 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.includes(sixnine.input)) { // 69
         receivedMessage.channel.send(sixnine.reply)
     }
-    if (receivedMessage.content.includes(paimon.paimon)) { // paimon 
+    if (receivedMessage.content.toLowerCase().includes(paimon.paimon)) { // paimon 
         receivedMessage.channel.send(paimon.reply)
     }
     if (receivedMessage.content.toLowerCase() == dewitjson.dewit) { // dewit
         receivedMessage.channel.send(dewit)
         receivedMessage.channel.send(dewitjson.emote)
     }
-    if (receivedMessage.content.toLowerCase() == dewitjson.kekw) { // kekw
+    if (receivedMessage.content.toLowerCase().includes(dewitjson.kekw)) { // kekw
         receivedMessage.channel.send(dewitjson.emote)
     }
     if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
         receivedMessage.channel.send(ehe)
         receivedMessage.channel.send(ehetendandayo.output)
+    }
+    if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
+        receivedMessage.channel.send(butterjson.reply)
     }
 })
 
