@@ -89,7 +89,7 @@ client.on('message', receivedMessage => {
         receivedMessage.channel.send(dewit)
         receivedMessage.channel.send(dewitjson.emote)
     }
-    if (receivedMessage.content.toLowerCase().includes(dewitjson.kekw)) { // kekw
+    if (receivedMessage.content.toLowerCase() == dewitjson.kekw) { // kekw
         receivedMessage.channel.send(dewitjson.emote)
     }
     if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
