@@ -79,6 +79,16 @@ Notice: If you mention another user that has no nickname, this command will not 
 Usage: \`pog count\` (to check your pog count); \`pog count [@user]\` (mention the user you want to check the pog count for)`)
                     receivedMessage.channel.send(embed)
                 }
+                else if (arguments.includes("wish")) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`\`pog wish\``)
+                    .setDescription(`A Genshin Impact wish simulation command.
+
+Notice: The command only accepts single wishes or 10-wishes, as per the actual game.
+
+Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
+                    receivedMessage.channel.send(embed)
+                }
                 else if (arguments.includes("help")) {
                     const embed = new MessageEmbed()
                     .setTitle(`Need more clarification?`)
@@ -88,8 +98,8 @@ Usage: \`pog count\` (to check your pog count); \`pog count [@user]\` (mention t
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \`help\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`buff\`, \`user\`, \`pirate\`, \`windows\`, \`wish\`, \`start\`, \`butter\`;
-Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`count [@user]\`;
+                    .setDescription(`Command list\: \`help\`, \`test\`, \`horny\`, \`biden\`, \`trump\`, \`buff\`, \`user\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`;
+Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`count [@user]\`, \`wish [10]\`, ;
 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
 Decimal points currently not supported.
 
