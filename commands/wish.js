@@ -12,6 +12,7 @@ module.exports = {
             return star5[Math.floor(Math.random() * star5.length)]
         }
         const star = "<:star:858047215952068628>"
+        const star2 = "<:star2:861084656060334100>"
         var star5pity = 0
         var star4pity = 0
 
@@ -52,58 +53,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item1 = star + star + star + star + star + "Venti"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item1 = star + star + star + star + star + "Tartaglia"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item1 = star + star + star + star + star + "Klee"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item1 = star + star + star + star + star + "Albedo"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item1 = star + star + star + star + star + "Ganyu"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item1 = star + star + star + star + star + "Xiao"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item1 = star + star + star + star + star + "Hu Tao"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item1 = star + star + star + star + star + "Zhongli"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item1 = star + star + star + star + star + "Eula"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item1 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item1 = star + star + star + star + star + "Kamisato Ayaka"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item1 = star + star + star + star + star + "Yoimiya"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item1 = star + star + star + star + star + "Keqing"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item1 = star + star + star + star + star + "Mona"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item1 = star + star + star + star + star + "Diluc"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item1 = star + star + star + star + star + "Jean"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item1 = star + star + star + star + star + "Qiqi"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item1 = star + star + star + star + star + randompull
+                            item1 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -115,59 +116,59 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item2 = star + star + star + star + star + "Venti"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item2 = star + star + star + star + star + "Tartaglia"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item2 = star + star + star + star + star + "Klee"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item2 = star + star + star + star + star + "Albedo"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item2 = star + star + star + star + star + "Ganyu"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item2 = star + star + star + star + star + "Xiao"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item2 = star + star + star + star + star + "Hu Tao"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item2 = star + star + star + star + star + "Zhongli"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item2 = star + star + star + star + star + "Eula"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item2 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
 
                         }
                         else if (randompull == "Ayaka") {
-                            item2 = star + star + star + star + star + "Kamisato Ayaka"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item2 = star + star + star + star + star + "Yoimiya"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item2 = star + star + star + star + star + "Keqing"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item2 = star + star + star + star + star + "Mona"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item2 = star + star + star + star + star + "Diluc"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item2 = star + star + star + star + star + "Jean"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item2 = star + star + star + star + star + "Qiqi"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item2 = star + star + star + star + star + randompull
+                            item2 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -179,58 +180,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item3 = star + star + star + star + star + "Venti"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item3 = star + star + star + star + star + "Tartaglia"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item3 = star + star + star + star + star + "Klee"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item3 = star + star + star + star + star + "Albedo"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item3 = star + star + star + star + star + "Ganyu"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item3 = star + star + star + star + star + "Xiao"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item3 = star + star + star + star + star + "Hu Tao"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item3 = star + star + star + star + star + "Zhongli"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item3 = star + star + star + star + star + "Eula"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item3 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item3 = star + star + star + star + star + "Kamisato Ayaka"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item3 = star + star + star + star + star + "Yoimiya"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item3 = star + star + star + star + star + "Keqing"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item3 = star + star + star + star + star + "Mona"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item3 = star + star + star + star + star + "Diluc"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item3 = star + star + star + star + star + "Jean"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item3 = star + star + star + star + star + "Qiqi"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item3 = star + star + star + star + star + randompull
+                            item3 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -242,58 +243,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item4 = star + star + star + star + star + "Venti"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item4 = star + star + star + star + star + "Tartaglia"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item4 = star + star + star + star + star + "Klee"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item4 = star + star + star + star + star + "Albedo"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item4 = star + star + star + star + star + "Ganyu"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item4 = star + star + star + star + star + "Xiao"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item4 = star + star + star + star + star + "Hu Tao"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item4 = star + star + star + star + star + "Zhongli"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item4 = star + star + star + star + star + "Eula"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item4 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item4 = star + star + star + star + star + "Kamisato Ayaka"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item4 = star + star + star + star + star + "Yoimiya"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item4 = star + star + star + star + star + "Keqing"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item4 = star + star + star + star + star + "Mona"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item4 = star + star + star + star + star + "Diluc"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item4 = star + star + star + star + star + "Jean"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item4 = star + star + star + star + star + "Qiqi"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item4 = star + star + star + star + star + randompull
+                            item4 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -305,58 +306,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item5 = star + star + star + star + star + "Venti"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item5 = star + star + star + star + star + "Tartaglia"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item5 = star + star + star + star + star + "Klee"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item5 = star + star + star + star + star + "Albedo"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item5 = star + star + star + star + star + "Ganyu"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item5 = star + star + star + star + star + "Xiao"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item5 = star + star + star + star + star + "Hu Tao"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item5 = star + star + star + star + star + "Zhongli"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item5 = star + star + star + star + star + "Eula"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item5 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item5 = star + star + star + star + star + "Kamisato Ayaka"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item5 = star + star + star + star + star + "Yoimiya"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item5 = star + star + star + star + star + "Keqing"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item5 = star + star + star + star + star + "Mona"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item5 = star + star + star + star + star + "Diluc"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item5 = star + star + star + star + star + "Jean"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item5 = star + star + star + star + star + "Qiqi"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item5 = star + star + star + star + star + randompull
+                            item5 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -368,58 +369,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item6 = star + star + star + star + star + "Venti"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item6 = star + star + star + star + star + "Tartaglia"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item6 = star + star + star + star + star + "Klee"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item6 = star + star + star + star + star + "Albedo"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item6 = star + star + star + star + star + "Ganyu"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item6 = star + star + star + star + star + "Xiao"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item6 = star + star + star + star + star + "Hu Tao"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item6 = star + star + star + star + star + "Zhongli"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item6 = star + star + star + star + star + "Eula"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item6 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item6 = star + star + star + star + star + "Kamisato Ayaka"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item6 = star + star + star + star + star + "Yoimiya"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item6 = star + star + star + star + star + "Keqing"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item6 = star + star + star + star + star + "Mona"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item6 = star + star + star + star + star + "Diluc"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item6 = star + star + star + star + star + "Jean"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item6 = star + star + star + star + star + "Qiqi"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item6 = star + star + star + star + star + randompull
+                            item6 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -431,58 +432,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item7 = star + star + star + star + star + "Venti"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item7 = star + star + star + star + star + "Tartaglia"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item7 = star + star + star + star + star + "Klee"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item7 = star + star + star + star + star + "Albedo"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item7 = star + star + star + star + star + "Ganyu"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item7 = star + star + star + star + star + "Xiao"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item7 = star + star + star + star + star + "Hu Tao"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item7 = star + star + star + star + star + "Zhongli"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item7 = star + star + star + star + star + "Eula"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item7 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item7 = star + star + star + star + star + "Kamisato Ayaka"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item7 = star + star + star + star + star + "Yoimiya"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item7 = star + star + star + star + star + "Keqing"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item7 = star + star + star + star + star + "Mona"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item7 = star + star + star + star + star + "Diluc"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item7 = star + star + star + star + star + "Jean"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item7 = star + star + star + star + star + "Qiqi"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item7 = star + star + star + star + star + randompull
+                            item7 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -494,58 +495,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item8 = star + star + star + star + star + "Venti"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item8 = star + star + star + star + star + "Tartaglia"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item8 = star + star + star + star + star + "Klee"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item8 = star + star + star + star + star + "Albedo"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item8 = star + star + star + star + star + "Ganyu"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item8 = star + star + star + star + star + "Xiao"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item8 = star + star + star + star + star + "Hu Tao"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item8 = star + star + star + star + star + "Zhongli"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item8 = star + star + star + star + star + "Eula"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item8 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item8 = star + star + star + star + star + "Kamisato Ayaka"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item8 = star + star + star + star + star + "Yoimiya"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item8 = star + star + star + star + star + "Keqing"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item8 = star + star + star + star + star + "Mona"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item8 = star + star + star + star + star + "Diluc"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item8 = star + star + star + star + star + "Jean"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item8 = star + star + star + star + star + "Qiqi"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item8 = star + star + star + star + star + randompull
+                            item8 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -557,58 +558,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item9 = star + star + star + star + star + "Venti"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item9 = star + star + star + star + star + "Tartaglia"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item9 = star + star + star + star + star + "Klee"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item9 = star + star + star + star + star + "Albedo"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item9 = star + star + star + star + star + "Ganyu"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item9 = star + star + star + star + star + "Xiao"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item9 = star + star + star + star + star + "Hu Tao"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item9 = star + star + star + star + star + "Zhongli"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item9 = star + star + star + star + star + "Eula"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item9 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item9 = star + star + star + star + star + "Kamisato Ayaka"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item9 = star + star + star + star + star + "Yoimiya"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item9 = star + star + star + star + star + "Keqing"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item9 = star + star + star + star + star + "Mona"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item9 = star + star + star + star + star + "Diluc"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item9 = star + star + star + star + star + "Jean"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item9 = star + star + star + star + star + "Qiqi"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item9 = star + star + star + star + star + randompull
+                            item9 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -620,58 +621,58 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item10 = star + star + star + star + star + "Venti"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item10 = star + star + star + star + star + "Tartaglia"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                         }
                         else if (randompull == "Klee") {
-                            item10 = star + star + star + star + star + "Klee"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Klee"
                         }
                         else if (randompull == "Albedo") {
-                            item10 = star + star + star + star + star + "Albedo"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item10 = star + star + star + star + star + "Ganyu"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item10 = star + star + star + star + star + "Xiao"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                         }
                         else if (randompull == "Hu Tao") {
-                            item10 = star + star + star + star + star + "Hu Tao"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                         }
                         else if (randompull == "Zhongli") {
-                            item10 = star + star + star + star + star + "Zhongli"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item10 = star + star + star + star + star + "Eula"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item10 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                         }
                         else if (randompull == "Ayaka") {
-                            item10 = star + star + star + star + star + "Kamisato Ayaka"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                         }
                         else if (randompull == "Yoimiya") {
-                            item10 = star + star + star + star + star + "Yoimiya"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                         }
                         else if (randompull == "Keqing") {
-                            item10 = star + star + star + star + star + "Keqing"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                         }
                         else if (randompull == "Mona") {
-                            item10 = star + star + star + star + star + "Mona"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Mona"
                         }
                         else if (randompull == "Diluc") {
-                            item10 = star + star + star + star + star + "Diluc"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                         }
                         else if (randompull == "Jean") {
-                            item10 = star + star + star + star + star + "Jean"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Jean"
                         }
                         else if (randompull == "Qiqi") {
-                            item10 = star + star + star + star + star + "Qiqi"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                         }
                         else {
-                            item10 = star + star + star + star + star + randompull
+                            item10 = star2 + star2 + star2 + star2 + star2 + randompull
                         }
                         star5pity = 0
                         star4pity += 1
@@ -683,232 +684,232 @@ module.exports = {
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
-                            item1 = star + star + star + star + star + "Venti"
-                            item2 = star + star + star + star + star + "Venti"
-                            item3 = star + star + star + star + star + "Venti"
-                            item4 = star + star + star + star + star + "Venti"
-                            item5 = star + star + star + star + star + "Venti"
-                            item6 = star + star + star + star + star + "Venti"
-                            item7 = star + star + star + star + star + "Venti"
-                            item8 = star + star + star + star + star + "Venti"
-                            item9 = star + star + star + star + star + "Venti"
-                            item10 = star + star + star + star + star + "Venti"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Venti"
                         }
                         else if (randompull == "Tartaglia") {
-                            item1 = star + star + star + star + star + "Tartaglia"
-                            item2 = star + star + star + star + star + "Tartaglia"
-                            item3 = star + star + star + star + star + "Tartaglia"
-                            item4 = star + star + star + star + star + "Tartaglia"
-                            item5 = star + star + star + star + star + "Tartaglia"
-                            item6 = star + star + star + star + star + "Tartaglia"
-                            item7 = star + star + star + star + star + "Tartaglia"
-                            item8 = star + star + star + star + star + "Tartaglia"
-                            item9 = star + star + star + star + star + "Tartaglia"
-                            item10 = star + star + star + star + star + "Tartaglia"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
 
                         }
                         else if (randompull == "Klee") {
-                            item1 = star + star + star + star + star + "Klee"
-                            item2 = star + star + star + star + star + "Klee"
-                            item3 = star + star + star + star + star + "Klee"
-                            item4 = star + star + star + star + star + "Klee"
-                            item5 = star + star + star + star + star + "Klee"
-                            item6 = star + star + star + star + star + "Klee"
-                            item7 = star + star + star + star + star + "Klee"
-                            item8 = star + star + star + star + star + "Klee"
-                            item9 = star + star + star + star + star + "Klee"
-                            item10 = star + star + star + star + star + "Klee"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Klee"
 
                         }
                         else if (randompull == "Albedo") {
-                            item1 = star + star + star + star + star + "Albedo"
-                            item2 = star + star + star + star + star + "Albedo"
-                            item3 = star + star + star + star + star + "Albedo"
-                            item4 = star + star + star + star + star + "Albedo"
-                            item5 = star + star + star + star + star + "Albedo"
-                            item6 = star + star + star + star + star + "Albedo"
-                            item7 = star + star + star + star + star + "Albedo"
-                            item8 = star + star + star + star + star + "Albedo"
-                            item9 = star + star + star + star + star + "Albedo"
-                            item10 = star + star + star + star + star + "Albedo"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                         }
                         else if (randompull == "Ganyu") {
-                            item1 = star + star + star + star + star + "Ganyu"
-                            item2 = star + star + star + star + star + "Ganyu"
-                            item3 = star + star + star + star + star + "Ganyu"
-                            item4 = star + star + star + star + star + "Ganyu"
-                            item5 = star + star + star + star + star + "Ganyu"
-                            item6 = star + star + star + star + star + "Ganyu"
-                            item7 = star + star + star + star + star + "Ganyu"
-                            item8 = star + star + star + star + star + "Ganyu"
-                            item9 = star + star + star + star + star + "Ganyu"
-                            item10 = star + star + star + star + star + "Ganyu"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                         }
                         else if (randompull == "Xiao") {
-                            item1 = star + star + star + star + star + "Xiao"
-                            item2 = star + star + star + star + star + "Xiao"
-                            item3 = star + star + star + star + star + "Xiao"
-                            item4 = star + star + star + star + star + "Xiao"
-                            item5 = star + star + star + star + star + "Xiao"
-                            item6 = star + star + star + star + star + "Xiao"
-                            item7 = star + star + star + star + star + "Xiao"
-                            item8 = star + star + star + star + star + "Xiao"
-                            item9 = star + star + star + star + star + "Xiao"
-                            item10 = star + star + star + star + star + "Xiao"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Xiao"
 
                         }
                         else if (randompull == "Hu Tao") {
-                            item1 = star + star + star + star + star + "Hu Tao"
-                            item2 = star + star + star + star + star + "Hu Tao"
-                            item3 = star + star + star + star + star + "Hu Tao"
-                            item4 = star + star + star + star + star + "Hu Tao"
-                            item5 = star + star + star + star + star + "Hu Tao"
-                            item6 = star + star + star + star + star + "Hu Tao"
-                            item7 = star + star + star + star + star + "Hu Tao"
-                            item8 = star + star + star + star + star + "Hu Tao"
-                            item9 = star + star + star + star + star + "Hu Tao"
-                            item10 = star + star + star + star + star + "Hu Tao"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
 
                         }
                         else if (randompull == "Zhongli") {
-                            item1 = star + star + star + star + star + "Zhongli"
-                            item2 = star + star + star + star + star + "Zhongli"
-                            item3 = star + star + star + star + star + "Zhongli"
-                            item4 = star + star + star + star + star + "Zhongli"
-                            item5 = star + star + star + star + star + "Zhongli"
-                            item6 = star + star + star + star + star + "Zhongli"
-                            item7 = star + star + star + star + star + "Zhongli"
-                            item8 = star + star + star + star + star + "Zhongli"
-                            item9 = star + star + star + star + star + "Zhongli"
-                            item10 = star + star + star + star + star + "Zhongli"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                         }
                         else if (randompull == "Eula") {
-                            item1 = star + star + star + star + star + "Eula"
-                            item2 = star + star + star + star + star + "Eula"
-                            item3 = star + star + star + star + star + "Eula"
-                            item4 = star + star + star + star + star + "Eula"
-                            item5 = star + star + star + star + star + "Eula"
-                            item6 = star + star + star + star + star + "Eula"
-                            item7 = star + star + star + star + star + "Eula"
-                            item8 = star + star + star + star + star + "Eula"
-                            item9 = star + star + star + star + star + "Eula"
-                            item10 = star + star + star + star + star + "Eula"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Eula"
                         }
                         else if (randompull == "Kazuha") {
-                            item1 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item2 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item3 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item4 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item5 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item6 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item7 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item8 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item9 = star + star + star + star + star + "Kaedehara Kazuha"
-                            item10 = star + star + star + star + star + "Kaedehara Kazuha"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
 
                         }
                         else if (randompull == "Ayaka") {
-                            item1 = star + star + star + star + star + "Kamisato Ayaka"
-                            item2 = star + star + star + star + star + "Kamisato Ayaka"
-                            item3 = star + star + star + star + star + "Kamisato Ayaka"
-                            item4 = star + star + star + star + star + "Kamisato Ayaka"
-                            item5 = star + star + star + star + star + "Kamisato Ayaka"
-                            item6 = star + star + star + star + star + "Kamisato Ayaka"
-                            item7 = star + star + star + star + star + "Kamisato Ayaka"
-                            item8 = star + star + star + star + star + "Kamisato Ayaka"
-                            item9 = star + star + star + star + star + "Kamisato Ayaka"
-                            item10 = star + star + star + star + star + "Kamisato Ayaka"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
 
                         }
                         else if (randompull == "Yoimiya") {
-                            item1 = star + star + star + star + star + "Yoimiya"
-                            item2 = star + star + star + star + star + "Yoimiya"
-                            item3 = star + star + star + star + star + "Yoimiya"
-                            item4 = star + star + star + star + star + "Yoimiya"
-                            item5 = star + star + star + star + star + "Yoimiya"
-                            item6 = star + star + star + star + star + "Yoimiya"
-                            item7 = star + star + star + star + star + "Yoimiya"
-                            item8 = star + star + star + star + star + "Yoimiya"
-                            item9 = star + star + star + star + star + "Yoimiya"
-                            item10 = star + star + star + star + star + "Yoimiya"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
 
                         }
                         else if (randompull == "Keqing") {
-                            item1 = star + star + star + star + star + "Keqing"
-                            item2 = star + star + star + star + star + "Keqing"
-                            item3 = star + star + star + star + star + "Keqing"
-                            item4 = star + star + star + star + star + "Keqing"
-                            item5 = star + star + star + star + star + "Keqing"
-                            item6 = star + star + star + star + star + "Keqing"
-                            item7 = star + star + star + star + star + "Keqing"
-                            item8 = star + star + star + star + star + "Keqing"
-                            item9 = star + star + star + star + star + "Keqing"
-                            item10 = star + star + star + star + star + "Keqing"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Keqing"
 
                         }
                         else if (randompull == "Mona") {
-                            item1 = star + star + star + star + star + "Mona"
-                            item2 = star + star + star + star + star + "Mona"
-                            item3 = star + star + star + star + star + "Mona"
-                            item4 = star + star + star + star + star + "Mona"
-                            item5 = star + star + star + star + star + "Mona"
-                            item6 = star + star + star + star + star + "Mona"
-                            item7 = star + star + star + star + star + "Mona"
-                            item8 = star + star + star + star + star + "Mona"
-                            item9 = star + star + star + star + star + "Mona"
-                            item10 = star + star + star + star + star + "Mona"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Mona"
 
                         }
                         else if (randompull == "Diluc") {
-                            item1 = star + star + star + star + star + "Diluc"
-                            item2 = star + star + star + star + star + "Diluc"
-                            item3 = star + star + star + star + star + "Diluc"
-                            item4 = star + star + star + star + star + "Diluc"
-                            item5 = star + star + star + star + star + "Diluc"
-                            item6 = star + star + star + star + star + "Diluc"
-                            item7 = star + star + star + star + star + "Diluc"
-                            item8 = star + star + star + star + star + "Diluc"
-                            item9 = star + star + star + star + star + "Diluc"
-                            item10 = star + star + star + star + star + "Diluc"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Diluc"
 
                         }
                         else if (randompull == "Jean") {
-                            item1 = star + star + star + star + star + "Jean"
-                            item2 = star + star + star + star + star + "Jean"
-                            item3 = star + star + star + star + star + "Jean"
-                            item4 = star + star + star + star + star + "Jean"
-                            item5 = star + star + star + star + star + "Jean"
-                            item6 = star + star + star + star + star + "Jean"
-                            item7 = star + star + star + star + star + "Jean"
-                            item8 = star + star + star + star + star + "Jean"
-                            item9 = star + star + star + star + star + "Jean"
-                            item10 = star + star + star + star + star + "Jean"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Jean"
 
                         }
                         else if (randompull == "Qiqi") {
-                            item1 = star + star + star + star + star + "Qiqi"
-                            item2 = star + star + star + star + star + "Qiqi"
-                            item3 = star + star + star + star + star + "Qiqi"
-                            item4 = star + star + star + star + star + "Qiqi"
-                            item5 = star + star + star + star + star + "Qiqi"
-                            item6 = star + star + star + star + star + "Qiqi"
-                            item7 = star + star + star + star + star + "Qiqi"
-                            item8 = star + star + star + star + star + "Qiqi"
-                            item9 = star + star + star + star + star + "Qiqi"
-                            item10 = star + star + star + star + star + "Qiqi"
+                            item1 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item2 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item3 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item4 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item5 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item6 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item7 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item8 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item9 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            item10 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
 
                         }
                         else {
-                            item1 = star + star + star + star + star + randompull
-                            item2 = star + star + star + star + star + randompull
-                            item3 = star + star + star + star + star + randompull
-                            item4 = star + star + star + star + star + randompull
-                            item5 = star + star + star + star + star + randompull
-                            item6 = star + star + star + star + star + randompull
-                            item7 = star + star + star + star + star + randompull
-                            item8 = star + star + star + star + star + randompull
-                            item9 = star + star + star + star + star + randompull
-                            item10 = star + star + star + star + star + randompull
+                            item1 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item2 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item3 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item4 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item5 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item6 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item7 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item8 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item9 = star2 + star2 + star2 + star2 + star2 + randompull
+                            item10 = star2 + star2 + star2 + star2 + star2 + randompull
 
                         }
                         star5pity = 0
