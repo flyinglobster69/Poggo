@@ -1,3 +1,6 @@
+var star5pity = 0
+var star4pity = 0
+
 module.exports = {
     checkWish: function(receivedMessage) {
 
@@ -13,8 +16,6 @@ module.exports = {
         }
         const star = "<:star:858047215952068628>"
         const star2 = "<:star2:861084656060334100>"
-        var star5pity = 0
-        var star4pity = 0
 
         var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel"] // List of 3-star weapons
         var item1 = star + star + star + random3star(star3)
