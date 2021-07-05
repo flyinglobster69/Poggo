@@ -1049,8 +1049,8 @@ module.exports = {
                     }
                     else { // 3-star items
 
-                        star4pity += 1
-                        star5pity += 1
+                        star4pity += 10
+                        star5pity += 10
                         console.log(star4pity)
                         console.log(star5pity)
                     }
