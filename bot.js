@@ -19,6 +19,7 @@ const paimon = require('./singles/paimon.json')
 const dewitjson = require('./singles/dewit.json')
 const ehetendandayo = require('./singles/ehe.json')
 const butterjson = require('./singles/butter.json')
+const sus = require('./singles/sus.json')
 
 // Math commands
 const add = require('./commands/add')
@@ -98,6 +99,9 @@ client.on('message', receivedMessage => {
     }
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)
+    }
+    if (receivedMessage.channel.toLowerCase.includes(sus.sus)) { // sus
+        receivedMessage.channel.send(sus.reply)
     }
 })
 

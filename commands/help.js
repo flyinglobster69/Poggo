@@ -84,7 +84,7 @@ Usage: \`pog count\` (to check your pog count); \`pog count [@user]\` (mention t
                     .setTitle(`\`pog wish\``)
                     .setDescription(`A Genshin Impact wish simulation command.
 
-Notice: The command only accepts single wishes or 10-wishes, as per the actual game.
+Notice: The command only accepts single wishes or 10-wishes, as per the actual game. The pity system for 10-pulls also doesn't work (it works for singles but is a separate system).
 
 Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     receivedMessage.channel.send(embed)
