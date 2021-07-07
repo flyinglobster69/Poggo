@@ -1067,6 +1067,8 @@ ${item8}
 ${item9}
 ${item10}`)
                     receivedMessage.channel.send(embed)
+                    console.log(star4pity)
+                    console.log(star5pity)
                 }
                 else {
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90

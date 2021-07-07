@@ -100,7 +100,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)
     }
-    if (receivedMessage.channel.toLowerCase.includes(sus.sus)) { // sus
+    if (receivedMessage.content.toLowerCase().includes(sus.sus)) { // sus
         receivedMessage.channel.send(sus.reply)
     }
 })
