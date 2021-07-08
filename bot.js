@@ -6,7 +6,7 @@
 const {Client, MessageAttachment} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
-const schedule = require('node-schedule')
+// const schedule = require('node-schedule')
 
 // Create an instance of Discord that we will use to control the bot
 const config = require('./config.json')
@@ -100,7 +100,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)
     }
-    if (receivedMessage.content.toLowerCase().includes(sus.sus)) { // sus
+    if ((receivedMessage.content.toLowerCase().includes(sus.sus)) || (receivedMessage.content.toLowerCase().includes(sus.amogus))) { // AMOGUS SUS
         receivedMessage.channel.send(sus.reply)
     }
 })

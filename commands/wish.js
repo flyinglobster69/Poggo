@@ -50,7 +50,7 @@ module.exports = {
                     const random9 = Math.floor(Math.random() * 90)
                     const random10 = Math.floor(Math.random() * 90)
 
-                    if (random1 < 2) { // if random number < 6, random 5-star
+                    if (random1 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -113,7 +113,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random2 < 2) { // if random number < 6, random 5-star
+                    if (random2 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -177,7 +177,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random3 < 2) { // if random number < 6, random 5-star
+                    if (random3 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -240,7 +240,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random4 < 2) { // if random number < 6, random 5-star
+                    if (random4 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -303,7 +303,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random5 < 2) { // if random number < 6, random 5-star
+                    if (random5 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -366,7 +366,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random6 < 2) { // if random number < 6, random 5-star
+                    if (random6 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -429,7 +429,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random7 < 2) { // if random number < 6, random 5-star
+                    if (random7 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -492,7 +492,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random8 < 2) { // if random number < 6, random 5-star
+                    if (random8 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -555,7 +555,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random9 < 2) { // if random number < 6, random 5-star
+                    if (random9 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -618,7 +618,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    if (random10 < 2) { // if random number < 6, random 5-star
+                    if (random10 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
@@ -919,7 +919,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random1 > 78) { // if random number > 78, random 4-star
+                    else if (random1 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         
@@ -930,7 +930,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random2 > 78) { // if random number > 78, random 4-star
+                    else if (random2 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         
@@ -941,7 +941,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random3 > 78) { // if random number > 78, random 4-star
+                    else if (random3 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         
@@ -952,7 +952,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random4 > 78) { // if random number > 78, random 4-star
+                    else if (random4 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
@@ -963,7 +963,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random5 > 78) { // if random number > 78, random 4-star
+                    else if (random5 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
@@ -974,7 +974,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random6 > 78) { // if random number > 78, random 4-star
+                    else if (random6 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
@@ -985,7 +985,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random7 > 78) { // if random number > 78, random 4-star
+                    else if (random7 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
@@ -996,7 +996,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random8 > 78) { // if random number > 78, random 4-star
+                    else if (random8 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
@@ -1007,7 +1007,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random9 > 78) { // if random number > 78, random 4-star
+                    else if (random9 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
@@ -1018,7 +1018,7 @@ module.exports = {
                         console.log(star4pity)
                         console.log(star5pity)
                     }
-                    else if (random10 > 78) { // if random number > 78, random 4-star
+                    else if (random10 > 70) { // if random number > 78, random 4-star
                         console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
