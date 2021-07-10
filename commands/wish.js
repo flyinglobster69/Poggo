@@ -1542,10 +1542,10 @@ ${item10}`)
                         console.log(star5pity)
                     }
                     else if (random > 89) { // lol
-                        receivedMessage.channel.send(pallad)
                         const embed = new MessageEmbed()
                         .setTitle(star)
                         .setDescription('Reckless Pallad')
+                        .setImage('https://media.tenor.com/images/d6aa26740d030a83fb8025010b10acb6/tenor.gif')
                         receivedMessage.channel.send(embed)
                         star4pity += 1
                         star5pity += 1
