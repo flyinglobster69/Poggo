@@ -3,7 +3,7 @@
 // Author: FlyingLobster69 (LooOOooL YT)
 
 // Import the discord.js module
-const {Client, MessageAttachment} = require('discord.js')
+const {Client, MessageAttachment, MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
 // const schedule = require('node-schedule')
@@ -87,15 +87,18 @@ client.on('message', receivedMessage => {
         receivedMessage.channel.send(paimon.reply)
     }
     if (receivedMessage.content.toLowerCase() == dewitjson.dewit) { // dewit
-        receivedMessage.channel.send(dewit)
-        receivedMessage.channel.send(dewitjson.emote)
+        const embed = new MessageEmbed()
+        .setImage('https://media.discordapp.net/attachments/852751760324821042/863226637460963364/dewit.gif')
+        receivedMessage.channel.send(embed)
     }
     if (receivedMessage.content.toLowerCase() == dewitjson.kekw) { // kekw
         receivedMessage.channel.send(dewitjson.emote)
     }
     if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
-        receivedMessage.channel.send(ehe)
-        receivedMessage.channel.send(ehetendandayo.output)
+        const embed = new MessageEmbed()
+        .setTitle(ehetendandayo.output)
+        .setImage('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
+        receivedMessage.channel.send(embed)
     }
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)

@@ -30,6 +30,8 @@ module.exports = {
         var item9 = star + star + star + random3star(star3)
         var item10 = star + star + star + random3star(star3)
 
+        var charimage = 'https://media1.tenor.com/images/17f64ce3809e2d329599e1c38f488703/tenor.gif?itemid=18856455'
+
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
@@ -54,59 +56,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         }
                         else if (randompull == "Tartaglia") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item1 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -117,60 +138,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item2 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -181,59 +220,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item3 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -244,59 +302,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item4 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -307,59 +384,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item5 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -370,59 +466,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item6 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -433,59 +548,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item7 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -496,59 +630,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item8 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -559,59 +712,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item9 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -622,59 +794,78 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Klee"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Xiao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Keqing"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Mona"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Diluc"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Jean"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item10 = star2 + star2 + star2 + star2 + star2 + randompull
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -685,6 +876,7 @@ module.exports = {
                         console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
+                        charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "Venti") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Venti"
                             item2 = star2 + star2 + star2 + star2 + star2 + "Venti"
@@ -696,6 +888,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Venti"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Venti"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Venti"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
                         }
                         else if (randompull == "Tartaglia") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
@@ -708,7 +901,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Tartaglia"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                         }
                         else if (randompull == "Klee") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Klee"
@@ -721,7 +914,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Klee"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Klee"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Klee"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                         }
                         else if (randompull == "Albedo") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Albedo"
@@ -734,6 +927,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Albedo"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Albedo"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                         }
                         else if (randompull == "Ganyu") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
@@ -746,6 +940,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Ganyu"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                         }
                         else if (randompull == "Xiao") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Xiao"
@@ -758,7 +953,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Xiao"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Xiao"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                         }
                         else if (randompull == "Hu Tao") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
@@ -771,7 +966,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Hu Tao"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                         }
                         else if (randompull == "Zhongli") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
@@ -784,6 +979,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
+                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
                         }
                         else if (randompull == "Eula") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -796,6 +992,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Eula"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Eula"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Eula"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                         }
                         else if (randompull == "Kazuha") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
@@ -808,7 +1005,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
@@ -821,7 +1018,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -834,7 +1031,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                         }
                         else if (randompull == "Keqing") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Keqing"
@@ -847,7 +1044,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Keqing"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Keqing"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                         }
                         else if (randompull == "Mona") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Mona"
@@ -860,7 +1057,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Mona"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Mona"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Mona"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                         }
                         else if (randompull == "Diluc") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Diluc"
@@ -873,7 +1070,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Diluc"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Diluc"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                         }
                         else if (randompull == "Jean") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Jean"
@@ -886,7 +1083,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Jean"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Jean"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Jean"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                         }
                         else if (randompull == "Qiqi") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
@@ -899,7 +1096,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Qiqi"
-
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                         }
                         else {
                             item1 = star2 + star2 + star2 + star2 + star2 + randompull
@@ -912,7 +1109,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + randompull
                             item9 = star2 + star2 + star2 + star2 + star2 + randompull
                             item10 = star2 + star2 + star2 + star2 + star2 + randompull
-
+                            charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
                         }
                         star5pity = 0
                         star4pity += 1
@@ -1067,6 +1264,7 @@ ${item7}
 ${item8}
 ${item9}
 ${item10}`)
+                    .setImage(charimage)
                     receivedMessage.channel.send(embed)
                     console.log(star4pity)
                     console.log(star5pity)
@@ -1075,7 +1273,7 @@ ${item10}`)
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
                     if (random < 2) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
                             const embed = new MessageEmbed()
@@ -1210,7 +1408,7 @@ ${item10}`)
                     }
                     else if (star5pity > 79) { // 5-star pity hits, automatic 5-star
                         console.log("Gold!")
-                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
                             const embed = new MessageEmbed()
@@ -1276,14 +1474,14 @@ ${item10}`)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png')
                             receivedMessage.channel.send(embed)
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull == "Kaedehara Kazuha") {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png')
                             receivedMessage.channel.send(embed)
                         }
-                        else if (randompull == "Ayaka") {
+                        else if (randompull == "Kamisato Ayaka") {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
