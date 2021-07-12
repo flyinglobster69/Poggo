@@ -87,7 +87,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -169,7 +169,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -251,7 +251,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -333,7 +333,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -415,7 +415,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -497,7 +497,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -579,7 +579,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -661,7 +661,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -743,7 +743,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -825,7 +825,7 @@ module.exports = {
                         }
                         else if (randompull == "Zhongli") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Eula"
@@ -979,7 +979,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Zhongli"
-                            charimage = 'https://th.bing.com/th/id/OIP.pLnYJAkPRB-1D2LozKzdoAHaEK?pid=ImgDet&rs=1'
+                            charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                         }
                         else if (randompull == "Eula") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Eula"
