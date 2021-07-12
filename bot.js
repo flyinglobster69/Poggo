@@ -20,6 +20,7 @@ const dewitjson = require('./singles/dewit.json')
 const ehetendandayo = require('./singles/ehe.json')
 const butterjson = require('./singles/butter.json')
 const sus = require('./singles/sus.json')
+const dad = require('./singles/dad.json')
 
 // Math commands
 const add = require('./commands/add')
@@ -105,6 +106,10 @@ client.on('message', receivedMessage => {
     }
     if ((receivedMessage.content.toLowerCase().includes(sus.sus)) || (receivedMessage.content.toLowerCase().includes(sus.amogus))) { // AMOGUS SUS
         receivedMessage.channel.send(sus.reply)
+    }
+    if (receivedMessage.content.toLowerCase().startsWith(dad.im)) {
+        var name = receivedMessage.content.substr(3)
+        receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
 })
 

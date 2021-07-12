@@ -95,11 +95,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -177,11 +177,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item2 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -259,11 +259,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item3 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -341,11 +341,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item4 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -423,11 +423,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item5 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -505,11 +505,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item6 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -587,11 +587,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item7 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -669,11 +669,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -751,11 +751,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item9 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -833,11 +833,11 @@ module.exports = {
                         }
                         else if (randompull == "Kazuha") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item10 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -1005,7 +1005,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kaedehara Kazuha"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                         }
                         else if (randompull == "Ayaka") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
@@ -1018,7 +1018,7 @@ module.exports = {
                             item8 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                             item9 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
                             item10 = star2 + star2 + star2 + star2 + star2 + "Kamisato Ayaka"
-                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png'
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                         }
                         else if (randompull == "Yoimiya") {
                             item1 = star2 + star2 + star2 + star2 + star2 + "Yoimiya"
@@ -1343,14 +1343,14 @@ ${item10}`)
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
-                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png')
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png')
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Ayaka") {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
-                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png')
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png')
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Yoimiya") {
@@ -1478,14 +1478,14 @@ ${item10}`)
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
-                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Kazuha_Card.png')
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png')
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Kamisato Ayaka") {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
-                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Character_Ayaka_Card.png')
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png')
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Yoimiya") {
