@@ -9,7 +9,9 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog user'
             case 'user' :
                 const embed = new MessageEmbed()
+                .setTitle('Discord Profile')
                 .setDescription(`Your username: ${receivedMessage.author.username}\nYour ID: ${receivedMessage.author.id}`) 
+                .setImage(receivedMessage.author.avatarURL())
                 receivedMessage.channel.send(embed) // sends user information (username and uid)
         }
         // value of 'found' will be returned in bot.js
