@@ -14,6 +14,7 @@ module.exports = {
                 var quotient = parseInt(first) / parseInt(second) // divide the first number by the second number
                 const embed = new MessageEmbed()
                 .setTitle(quotient)
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the quotient in the chat
         }
         // value of 'found' will be returned in bot.js

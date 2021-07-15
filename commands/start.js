@@ -11,6 +11,7 @@ module.exports = {
                 if (receivedMessage.author.id == "456664720406085632") { // find out if the message sender is the bot's creator
                     const embed = new MessageEmbed()
                     .setImage('https://www.howtogeek.com/wp-content/uploads/2013/10/windows-7-startup.png')
+                    .setColor('#00ADEF')
                     receivedMessage.channel.send(embed) // start windows
                     found = true
                 }

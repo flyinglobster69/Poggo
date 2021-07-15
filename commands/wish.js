@@ -16,7 +16,13 @@ module.exports = {
         }
         const star = "<:star:858047215952068628>"
         const star2 = "<:star2:861084656060334100>"
-        // const toad = require('./character5star/toad.png')
+        const color = '#191a36'
+        const anemo = '#4cc285'
+        const geo = '#ecc60d'
+        const pyro = '#da5d31'
+        const hydro = '#569cd0'
+        const cryo = '#b4dcde'
+        const electro = '#965daa'
 
         var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel"] // List of 3-star weapons
         var item1 = star + star + star + random3star(star3)
@@ -1265,6 +1271,7 @@ ${item8}
 ${item9}
 ${item10}`)
                     .setImage(charimage)
+                    .setColor(color)
                     receivedMessage.channel.send(embed)
                     console.log(star4pity)
                     console.log(star5pity)
@@ -1280,6 +1287,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Tartaglia") {
@@ -1287,6 +1295,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png')
+                            .setColor(geo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Klee") {
@@ -1294,6 +1303,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Albedo") {
@@ -1301,6 +1311,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png')
+                            .setColor(geo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Ganyu") {
@@ -1308,6 +1319,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Xiao") {
@@ -1315,6 +1327,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Hu Tao") {
@@ -1322,6 +1335,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Zhongli") {
@@ -1330,6 +1344,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png')
+                            .setColor(geo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Eula") {
@@ -1337,6 +1352,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Kazuha") {
@@ -1344,6 +1360,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Ayaka") {
@@ -1351,6 +1368,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Yoimiya") {
@@ -1358,6 +1376,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Keqing") {
@@ -1365,6 +1384,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg')
+                            .setColor(electro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Mona") {
@@ -1372,6 +1392,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg')
+                            .setColor(hydro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Diluc") {
@@ -1379,6 +1400,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Jean") {
@@ -1386,6 +1408,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Qiqi") {
@@ -1393,12 +1416,14 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
                         else {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
+                            .setColor(color)
                             receivedMessage.channel.send(embed)
                         }
                         star5pity = 0
@@ -1415,6 +1440,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Tartaglia") {
@@ -1422,6 +1448,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png')
+                            .setColor(geo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Klee") {
@@ -1429,6 +1456,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Albedo") {
@@ -1436,6 +1464,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png')
+                            .setColor(geo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Ganyu") {
@@ -1443,6 +1472,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Xiao") {
@@ -1450,6 +1480,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Hu Tao") {
@@ -1457,14 +1488,16 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Zhongli") {
-                            receivedMessage.channel.send(toad)
+                            // receivedMessage.channel.send(toad)
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png')
+                            .setColor(geo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Eula") {
@@ -1472,20 +1505,23 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
-                        else if (randompull == "Kaedehara Kazuha") {
+                        else if (randompull == "Kazuha") {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
-                        else if (randompull == "Kamisato Ayaka") {
+                        else if (randompull == "Ayaka") {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Yoimiya") {
@@ -1493,6 +1529,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Keqing") {
@@ -1500,6 +1537,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg')
+                            .setColor(electro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Mona") {
@@ -1507,6 +1545,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg')
+                            .setColor(hydro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Diluc") {
@@ -1514,6 +1553,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg')
+                            .setColor(pyro)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Jean") {
@@ -1521,6 +1561,7 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg')
+                            .setColor(anemo)
                             receivedMessage.channel.send(embed)
                         }
                         else if (randompull == "Qiqi") {
@@ -1528,12 +1569,14 @@ ${item10}`)
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
                             .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg')
+                            .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
                         else {
                             const embed = new MessageEmbed()
                             .setTitle(star + star + star + star + star)
                             .setDescription(randompull)
+                            .setColor(color)
                             receivedMessage.channel.send(embed)
                         }
                         star5pity = 0
@@ -1546,6 +1589,7 @@ ${item10}`)
                         .setTitle(star)
                         .setDescription('Reckless Pallad')
                         .setImage('https://media.tenor.com/images/d6aa26740d030a83fb8025010b10acb6/tenor.gif')
+                        .setColor(color)
                         receivedMessage.channel.send(embed)
                         star4pity += 1
                         star5pity += 1
@@ -1558,6 +1602,7 @@ ${item10}`)
                         const embed = new MessageEmbed()
                         .setTitle(star + star + star + star)
                         .setDescription(random4star(star4))
+                        .setColor(color)
                         receivedMessage.channel.send(embed)
                         star4pity = 0
                         star5pity += 1
@@ -1570,6 +1615,7 @@ ${item10}`)
                         const embed = new MessageEmbed()
                         .setTitle(star + star + star + star)
                         .setDescription(random4star(star4))
+                        .setColor(color)
                         receivedMessage.channel.send(embed)
                         star4pity = 0
                         star5pity += 1
@@ -1582,6 +1628,7 @@ ${item10}`)
                         const embed = new MessageEmbed()
                         .setTitle(star + star + star)
                         .setDescription(random3star(star3))
+                        .setColor(color)
                         receivedMessage.channel.send(embed)
                         star4pity += 1
                         star5pity += 1

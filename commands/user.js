@@ -10,8 +10,9 @@ module.exports = {
             case 'user' :
                 const embed = new MessageEmbed()
                 .setTitle('Discord Profile')
-                .setDescription(`Your username: ${receivedMessage.author.username}\nYour ID: ${receivedMessage.author.id}`) 
-                .setImage(receivedMessage.author.avatarURL())
+                .setDescription(`Your username: ${receivedMessage.author.username}\nYour Discord Tag: ${receivedMessage.member.user.tag}\nYour ID: ${receivedMessage.author.id}`) 
+                .setThumbnail(receivedMessage.author.avatarURL())
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends user information (username and uid)
         }
         // value of 'found' will be returned in bot.js

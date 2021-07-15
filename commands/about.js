@@ -1,7 +1,7 @@
 const { Client, MessageEmbed } = require("discord.js")
 
 module.exports = {
-    checkTest: function(receivedMessage) {
+    checkAbout: function(receivedMessage) {
     const client = new Client()
 
     const version = require('./version.json')
@@ -13,13 +13,14 @@ module.exports = {
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog test'
-            case 'test' :
+            case 'about' :
                 const embed = new MessageEmbed()
                 .setTitle('Bot Test')
                 .setDescription(`Msg test = \`Success\` *(bot can send messages)*
 Your ping = \`${yourping}ms\` *(questionable accuracy)*
 Logging = \`True\` *(logging pog counts only)*
-Version: \`${version.version}\` *(current bot version)*`) // sends bot version number
+Version: \`${version.version}\` *(current bot version)*`)
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

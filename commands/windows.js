@@ -16,6 +16,7 @@ module.exports = {
 (for legal reasons, this is a joke)`)
                 .setImage('https://c.s-microsoft.com/en-us/CMSImages/1399_Panel01_Hero_WindowsSV.jpg?version=7b8fd32d-ae59-c18a-c858-7f309b21ec98')
                 .attachFiles('./win11_installer.exe')
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

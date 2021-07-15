@@ -13,6 +13,8 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle('mmmm b u t t e r 🛬')
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')
+                .setImage('https://im3.ezgif.com/tmp/ezgif-3-5e2ed801b624.gif')
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

@@ -3,7 +3,7 @@
 // Author: FlyingLobster69 (LooOOooL YT)
 
 // Import the discord.js module
-const {Client, MessageAttachment, MessageEmbed} = require('discord.js')
+const {Client, MessageAttachment, MessageEmbed, List} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
 // const schedule = require('node-schedule')
@@ -22,6 +22,8 @@ const butterjson = require('./singles/butter.json')
 const sus = require('./singles/sus.json')
 const dad = require('./singles/dad.json')
 
+// const susjs = require('./singles/sus')
+
 // Math commands
 const add = require('./commands/add')
 const subtract = require('./commands/subtract')
@@ -31,7 +33,7 @@ const divide = require('./commands/divide')
 // Connect commands
 const start = require('./commands/start')
 const helpcmd = require('./commands/help')
-const test = require('./commands/test')
+const about = require('./commands/about')
 const horny = require('./commands/horny')
 const biden = require('./commands/biden')
 const trump = require('./commands/trump')
@@ -49,11 +51,7 @@ const windows = require('./commands/windows')
 // const invite = require('./commands/invite')
 const wish = require('./commands/wish')
 const butter = require('./commands/butter')
-// const time = require('./commands/time')
-
-// Connect single attachments
-const dewit = new MessageAttachment('dewit.gif')
-const ehe = new MessageAttachment('ehe.gif')
+const american = require('./commands/american')
 
 // Connect client
 const client = new Client()
@@ -75,6 +73,9 @@ client.on('message', receivedMessage => {
     }
 
     // Single message responses
+    // if (susjs.checkSus(receivedMessage)) { // AMOGUS SUS
+    //     return
+    // }
     if (receivedMessage.content.toLowerCase() == e.e) { // e
         receivedMessage.channel.send(e.e)
     }
@@ -90,6 +91,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase() == dewitjson.dewit) { // dewit
         const embed = new MessageEmbed()
         .setImage('https://media.discordapp.net/attachments/852751760324821042/863226637460963364/dewit.gif')
+        .setColor('#00ADEF')
         receivedMessage.channel.send(embed)
     }
     if (receivedMessage.content.toLowerCase() == dewitjson.kekw) { // kekw
@@ -99,15 +101,16 @@ client.on('message', receivedMessage => {
         const embed = new MessageEmbed()
         .setTitle(ehetendandayo.output)
         .setImage('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
+        .setColor('#00ADEF')
         receivedMessage.channel.send(embed)
     }
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)
     }
-    if ((receivedMessage.content.toLowerCase().includes(sus.sus)) || (receivedMessage.content.toLowerCase().includes(sus.amogus))) { // AMOGUS SUS
+    if (receivedMessage.content.toLowerCase().includes(sus.sus || sus.amogus)) {
         receivedMessage.channel.send(sus.reply)
     }
-    if (receivedMessage.content.toLowerCase().startsWith(dad.im)) {
+    if (receivedMessage.content.toLowerCase().startsWith(dad.im)) { // dad
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
@@ -131,7 +134,7 @@ function processCommand(receivedMessage) {
     else if (helpcmd.checkHelp(receivedMessage)) { // pog help
         return
     }
-    else if (test.checkTest(receivedMessage)) { // pog test
+    else if (about.checkAbout(receivedMessage)) { // pog about
         return
     }
     else if (horny.checkHorny(receivedMessage)) { // pog horny
@@ -183,6 +186,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (butter.checkButter(receivedMessage)) { // pog butter
+        return
+    }
+    else if (american.checkAmerican(receivedMessage)) { // pog american
         return
     }
 

@@ -12,6 +12,7 @@ module.exports = {
                 .setTitle('Invite pog bot!')
                 .setDescription('Invite me at https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=518152')
                 .setThumbnail('https://vignette3.wikia.nocookie.net/kancolle/images/2/21/PogChamp_Emote.png/revision/latest?cb=20160817151144')
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

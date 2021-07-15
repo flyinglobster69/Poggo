@@ -14,6 +14,7 @@ module.exports = {
                 var difference = parseInt(first) - parseInt(second) // subtract second number from first number
                 const embed = new MessageEmbed()
                 .setTitle(difference)
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the difference to the chat
         }
         // value of 'found' will be returned in bot.js

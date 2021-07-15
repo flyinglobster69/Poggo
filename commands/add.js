@@ -14,6 +14,7 @@ module.exports = {
                 var sum = parseInt(first) + parseInt(second) // adds first number and second number to get the sum
                 const embed = new MessageEmbed()
                 .setTitle(sum)
+                .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the sum to the message channel
         }
         // value of 'found' will be returned in bot.js
