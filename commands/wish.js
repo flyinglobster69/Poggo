@@ -600,7 +600,7 @@ module.exports = {
                         else if (randompull == "Klee") {
                             item6 = goldstar + "Klee"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
-                            color = klee
+                            color = pyro
                         }
                         else if (randompull == "Albedo") {
                             item6 = goldstar + "Albedo"
