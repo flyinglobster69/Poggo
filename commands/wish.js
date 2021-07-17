@@ -112,7 +112,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item1 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -152,7 +152,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item1 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -216,9 +216,10 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item2 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
+                            color = anemo
                         }
                         else if (randompull == "Ayaka") {
                             item2 = goldstar + "Kamisato Ayaka"
@@ -255,7 +256,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item2 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -319,7 +320,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item3 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -359,7 +360,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item3 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -423,7 +424,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item4 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -463,7 +464,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item4 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -527,7 +528,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item5 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -567,7 +568,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item5 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -631,7 +632,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item6 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -671,7 +672,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item6 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -735,7 +736,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item7 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -775,7 +776,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item7 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -839,7 +840,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item8 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -879,7 +880,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item8 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -943,7 +944,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull == "Kazuha") {
+                        else if (randompull = "Kazuha") {
                             item9 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -983,7 +984,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item9 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
@@ -1087,7 +1088,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
+                        else if (randompull == "Baal") {
                             item10 = goldstar + "Baal"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
