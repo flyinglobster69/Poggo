@@ -15,7 +15,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle('mmmm b u t t e r 🛬')
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')
-                .setImage('https://im3.ezgif.com/tmp/ezgif-3-5e2ed801b624.gif')
+                .setImage('https://media1.tenor.com/images/e9dcba66f4220c77c0ad61531d0f4e20/tenor.gif')
                 .setColor('#00ADEF')
                 receivedMessage.channel.send(embed)
         }
