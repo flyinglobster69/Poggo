@@ -112,7 +112,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item1 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -216,7 +216,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item2 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -320,7 +320,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item3 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -424,7 +424,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item4 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -528,7 +528,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item5 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -632,7 +632,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item6 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -736,7 +736,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item7 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -840,7 +840,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item8 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo
@@ -944,7 +944,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                             color = cryo
                         }
-                        else if (randompull = "Kazuha") {
+                        else if (randompull == "Kazuha") {
                             item9 = goldstar + "Kaedehara Kazuha"
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                             color = anemo

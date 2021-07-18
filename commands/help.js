@@ -1,8 +1,6 @@
 module.exports = {
     checkHelp: function(receivedMessage) {
     const {MessageEmbed} = require('discord.js')
-
-    const version = require('./version.json')
     const color = '#00ff00'
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
@@ -92,7 +90,6 @@ Usage: \`pog count\` (to check your pog count); \`pog count [@user]\` (mention t
                     .setDescription(`A Genshin Impact wish simulation command.
 
 Notice: The command only accepts single wishes or 10-wishes, as per the actual game. The pity system for 10-pulls also doesn't work (it works for singles but is a separate system).
-Current event character: *${version.eventchar}*
 
 Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     .setColor(color)
