@@ -1,25 +1,23 @@
 module.exports = {
-    checkStart: function(receivedMessage) {
-    const {MessageEmbed} = require('discord.js')
+    checkUpload: function(receivedMessage) {
+    const {MessageEmbed, MessageAttachment} = require('discord.js')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
     color = '#00ADEF'
+    const upload = new MessageAttachment('upload.mp4')
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog start'
-            case 'start' :
+            case 'upload' :
                 if (receivedMessage.author.id == "456664720406085632") { // find out if the message sender is the bot's creator
-                    const embed = new MessageEmbed()
-                    .setImage('https://www.howtogeek.com/wp-content/uploads/2013/10/windows-7-startup.png')
-                    .setColor(color)
-                    receivedMessage.channel.send(embed) // start windows
+                    receivedMessage.channel.send(upload) // start windows
                     found = true
                 }
                 else {
                     const embed = new MessageEmbed()
-                    .setDescription(`*It's black in Windows 11 :)*`)
-                    .setImage('https://img.memecdn.com/evolution-of-the-blue-screen-of-death_o_3216563.jpg')
+                    .setDescription(`***AAAAAAAAAAAAAAAAAAAA***`)
+                    .setImage('http://i1.kym-cdn.com/photos/images/facebook/000/751/659/bf1.jpg')
                     .setColor(color)
                     receivedMessage.channel.send(embed) // lock out the user if its not the creator
                 }

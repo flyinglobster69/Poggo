@@ -10,7 +10,7 @@ module.exports = {
             case '' :
                 const random = Math.floor(Math.random() * 20) // generates a random number between 1-20
                 if (random == 5) { // if random number = 5, send 'life is pain :(' instead of 'Poggers!'
-                    console.log("Noted.")
+                    console.log("pain")
                     receivedMessage.channel.send("life is pain :(")
                 }
                 else { // poggers reply
@@ -38,8 +38,6 @@ module.exports = {
                                 var pogtotal = pogint + 1 // add 1 to the pog count
                                 var pogtotalstring = pogtotal.toString() // convert new pog count back to string value
                                 fs.write(fd, pogtotalstring, 0, "utf8", function(error, writtenbytes) { // overwrite the old pog count value with the new one
-                                    console.log("Pog counted")
-                                    console.log(pogtotal)
                                 })
                             }
                         })

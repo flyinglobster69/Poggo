@@ -3,7 +3,7 @@
 // Author: FlyingLobster69 (LooOOooL YT)
 
 // Import the discord.js module
-const {Client, MessageAttachment, MessageEmbed, List} = require('discord.js')
+const {Client, MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
 // const schedule = require('node-schedule')
@@ -52,6 +52,7 @@ const windows = require('./commands/windows')
 const wish = require('./commands/wish')
 const butter = require('./commands/butter')
 const american = require('./commands/american')
+const upload = require('./commands/upload')
 
 // Connect client
 const client = new Client()
@@ -107,10 +108,10 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)
     }
-    if (receivedMessage.content.toLowerCase().includes(sus.sus || sus.amogus)) {
+    if (receivedMessage.content.toLowerCase().includes(sus.sus) || receivedMessage.content.toLowerCase().includes(sus.amogus)) { // sus
         receivedMessage.channel.send(sus.reply)
     }
-    if (receivedMessage.content.toLowerCase().startsWith(dad.im)) { // dad
+    if (receivedMessage.content.toLowerCase().startsWith(dad.im) || receivedMessage.content.toLowerCase().includes(dad.im2)) { // dad
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
@@ -191,6 +192,9 @@ function processCommand(receivedMessage) {
     else if (american.checkAmerican(receivedMessage)) { // pog american
         return
     }
+    else if (upload.checkUpload(receivedMessage)) { // pog upload
+        return
+    }
 
     // else if (receivedMessage == "time") {
     //     const date = new Date(2021, 5, 25, 17, 51, 0);
@@ -226,17 +230,14 @@ randomPity = 0 // initialize pity system
 client.on('messageDelete', receivedMessage => { // called whenever a message is deleted
 
     const random = Math.floor(Math.random() * 10) // generate a random number
-    console.log(`${receivedMessage.author.username} deleted: \`${receivedMessage.content}\``) // log deleted message in console
     randomPity += 1
 
     if (randomPity > 9) { // if pity reaches 10, quote deleted message and reset pity counter
-        console.log("Noted.")
         receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
         randomPity = 0
     }
     if (random == 5) { // if random number (luck) is 5, quote delete message and reset pity count (10% luck)
         randomPity = 0
-        console.log("Noted.")
         receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
         console.log(randomPity)
     }
