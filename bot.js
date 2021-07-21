@@ -53,6 +53,8 @@ const wish = require('./commands/wish')
 const butter = require('./commands/butter')
 const american = require('./commands/american')
 const upload = require('./commands/upload')
+const ecount = require('./commands/ecount')
+const ping = require('./commands/ping')
 
 // Connect client
 const client = new Client()
@@ -79,6 +81,33 @@ client.on('message', receivedMessage => {
     // }
     if (receivedMessage.content.toLowerCase() == e.e) { // e
         receivedMessage.channel.send(e.e)
+        var uid = "ecount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
+                console.log(uid)
+                fs.open('./ecount/' + uid, 'r+', function(error, fd) { // opens the user's e count file
+                    if (error) { // if user has no pog count file, create one
+                        fs.writeFile('./ecount/' + uid, "1", "utf8", function(error, data) { // start user with 1 e
+                            console.log("Write complete")
+                        })
+                    }
+                    else { // if user has a pog count file
+                        fs.readFile('./ecount/' + uid, "utf8", function(error, data) { // read the value in the e count file
+                            if (error) { // if file does not exist, create one (this is unlikely to be needed)
+                                fs.writeFile('./ecount/' + uid, "1", "utf8", function(error, data) { // start user with 1 e
+                                    console.log("Write complete")
+                                })
+                            }
+                            else { // log e
+                                console.log(data)
+                                let ecount = data // initialize e count variable and assign it to data from fs.readFile()
+                                var eint = parseInt(ecount) // convert e count to an int variable
+                                var etotal = eint + 1 // add 1 to the e count
+                                var etotalstring = etotal.toString() // convert new e count back to string value
+                                fs.write(fd, etotalstring, 0, "utf8", function(error, writtenbytes) { // overwrite the old e count value with the new one
+                                })
+                            }
+                        })
+                    }
+                })
     }
     if (receivedMessage.content.toLowerCase() == help.help) { // help
         receivedMessage.channel.send(help.reply)
@@ -111,7 +140,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase().includes(sus.sus) || receivedMessage.content.toLowerCase().includes(sus.amogus)) { // sus
         receivedMessage.channel.send(sus.reply)
     }
-    if (receivedMessage.content.toLowerCase().startsWith(dad.im) || receivedMessage.content.toLowerCase().includes(dad.im2)) { // dad
+    if (receivedMessage.content.toLowerCase().startsWith(dad.im)) { // dad
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
@@ -193,6 +222,12 @@ function processCommand(receivedMessage) {
         return
     }
     else if (upload.checkUpload(receivedMessage)) { // pog upload
+        return
+    }
+    else if (ecount.checkEcount(receivedMessage)) { // pog ecount
+        return
+    }
+    else if (ping.checkPing(receivedMessage)) { // pog ping
         return
     }
 

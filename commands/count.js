@@ -19,10 +19,10 @@ module.exports = {
                     fs.open('./pogcount/' + uid, 'r', function(error, fd) { // open the user's pog count txt file
                         fs.readFile('./pogcount/' + uid, "utf8", function(error, data) { // read the user's pog count txt file
                             if (error) { // if there is no file, that means the user has sent no pogs
-                                receivedMessage.channel.send("Oops you have no pogs :(")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "Oops you have no pogs :(")
                             }
                             else { // if the file exists, send the number of pogs into the chat
-                                receivedMessage.channel.send("You've sent \`" + data + "\` pogs")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "You've sent \`" + data + "\` pogs")
                             }
                         })
                     })
@@ -31,10 +31,10 @@ module.exports = {
                     fs.open('./pogcount/' + argsuid, 'r', function(error, fd) { // open the mentioned user's pog count file
                         fs.readFile('./pogcount/' + argsuid, "utf8", function(error, data) { // read the mentioned user's pog count file
                             if (error) { // if there is no file, that means the mentioned user has sent no pogs
-                                receivedMessage.channel.send("Oops they have no pogs :(")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "Oops they have no pogs :(")
                             }
                             else { // if the file exists, send the number of pogs in the chat
-                                receivedMessage.channel.send("They sent \`" + data + "\` pogs")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "They sent \`" + data + "\` pogs")
                             }
                         })
                     })

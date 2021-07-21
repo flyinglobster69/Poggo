@@ -14,6 +14,7 @@ module.exports = {
                 var product = parseInt(first) * parseInt(second) // multiplies first number with second number
                 const embed = new MessageEmbed()
                 .setTitle(product)
+                .setDescription("<@!" + receivedMessage.author.id + ">")
                 .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the product in the chat
         }

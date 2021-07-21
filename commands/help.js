@@ -105,8 +105,8 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \`help\`, \`about\`, \`horny\`, \`biden\`, \`trump\`, \`buff\`, \`user\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`;
-Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`count [@user]\`, \`wish [10]\`, ;
+                    .setDescription(`Command list\: \`help\`, \`about\`, \`horny\`, \`biden\`, \`trump\`, \`buff\`, \`user\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`, \`ping\`;
+Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`count [@user]\`, \`ecount [@user]\`, \`wish [10]\`, ;
 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
 Decimal points currently not supported.
 

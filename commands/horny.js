@@ -9,7 +9,7 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog horny'
             case 'horny' :
                 const embed = new MessageEmbed()
-                .setDescription('go to horny jail smh')
+                .setDescription("<@!" + receivedMessage.author.id + ">" + 'go to horny jail smh')
                 .setImage('https://media1.tenor.com/images/6493bee2be7ae168a5ef7a68cf751868/tenor.gif?itemid=17298755')
                 .setColor('#FF0000')
                 receivedMessage.channel.send(embed) // horny bad
