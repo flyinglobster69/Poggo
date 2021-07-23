@@ -64,7 +64,7 @@ module.exports = {
 
                     if (random1 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -102,7 +102,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item1 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -152,10 +152,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item1 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item1 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item1 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item1 = goldstar + randompull
@@ -168,7 +173,7 @@ module.exports = {
                     }
                     if (random2 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -206,7 +211,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item2 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -256,10 +261,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item2 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item2 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item2 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item2 = goldstar + randompull
@@ -272,7 +282,7 @@ module.exports = {
                     }
                     if (random3 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -310,7 +320,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item3 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -360,10 +370,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item3 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item3 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item3 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item3 = goldstar + randompull
@@ -376,7 +391,7 @@ module.exports = {
                     }
                     if (random4 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -414,7 +429,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item4 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -464,10 +479,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item4 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item4 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item4 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item4 = goldstar + randompull
@@ -480,7 +500,7 @@ module.exports = {
                     }
                     if (random5 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -518,7 +538,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item5 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -568,10 +588,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item5 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item5 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item5 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item5 = goldstar + randompull
@@ -584,7 +609,7 @@ module.exports = {
                     }
                     if (random6 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -622,7 +647,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item6 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -672,10 +697,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item6 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item6 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item6 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item6 = goldstar + randompull
@@ -688,7 +718,7 @@ module.exports = {
                     }
                     if (random7 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -726,7 +756,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item7 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -776,10 +806,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item7 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item7 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item7 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item7 = goldstar + randompull
@@ -792,7 +827,7 @@ module.exports = {
                     }
                     if (random8 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -830,7 +865,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item8 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -880,10 +915,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item8 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item8 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item8 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item8 = goldstar + randompull
@@ -896,7 +936,7 @@ module.exports = {
                     }
                     if (random9 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -934,7 +974,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item9 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -984,10 +1024,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item9 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item9 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item9 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item9 = goldstar + randompull
@@ -1000,7 +1045,7 @@ module.exports = {
                     }
                     if (random10 < 3) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -1038,7 +1083,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item10 = goldstar + "Zhongli"
                             charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                             color = geo
@@ -1088,10 +1133,15 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull == "Baal") {
-                            item10 = goldstar + "Baal"
+                        else if (randompull == "BOOBA SWORD") {
+                            item10 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item10 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item10 = goldstar + randompull
@@ -1104,7 +1154,7 @@ module.exports = {
                     }
                     else if (star5pity > 79) { // 5-star pity hits, automatic 5-star
                         console.log("Gold!")
-                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
                         if (randompull == "drunk bard") {
@@ -1205,7 +1255,7 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                             color = pyro
                         }
-                        else if (randompull == "Zhongli") {
+                        else if (randompull == "Geo Daddy") {
                             item1 = goldstar + "Zhongli"
                             item2 = goldstar + "Zhongli"
                             item3 = goldstar + "Zhongli"
@@ -1345,19 +1395,34 @@ module.exports = {
                             charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                             color = cryo
                         }
-                        else if (randompull = "Baal") {
-                            item1 = goldstar + "Baal"
-                            item2 = goldstar + "Baal"
-                            item3 = goldstar + "Baal"
-                            item4 = goldstar + "Baal"
-                            item5 = goldstar + "Baal"
-                            item6 = goldstar + "Baal"
-                            item7 = goldstar + "Baal"
-                            item8 = goldstar + "Baal"
-                            item9 = goldstar + "Baal"
-                            item10 = goldstar + "Baal"
+                        else if (randompull = "BOOBA SWORD") {
+                            item1 = goldstar + "Raiden Shogun"
+                            item2 = goldstar + "Raiden Shogun"
+                            item3 = goldstar + "Raiden Shogun"
+                            item4 = goldstar + "Raiden Shogun"
+                            item5 = goldstar + "Raiden Shogun"
+                            item6 = goldstar + "Raiden Shogun"
+                            item7 = goldstar + "Raiden Shogun"
+                            item8 = goldstar + "Raiden Shogun"
+                            item9 = goldstar + "Raiden Shogun"
+                            item10 = goldstar + "Raiden Shogun"
                             charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                             color = electro
+                        }
+                        else if (randompull == "Sangonomiya Kokomi") {
+                            item1 = goldstar + "Sangonomiya Kokomi"
+                            item2 = goldstar + "Sangonomiya Kokomi"
+                            item3 = goldstar + "Sangonomiya Kokomi"
+                            item4 = goldstar + "Sangonomiya Kokomi"
+                            item5 = goldstar + "Sangonomiya Kokomi"
+                            item6 = goldstar + "Sangonomiya Kokomi"
+                            item7 = goldstar + "Sangonomiya Kokomi"
+                            item7 = goldstar + "Sangonomiya Kokomi"
+                            item8 = goldstar + "Sangonomiya Kokomi"
+                            item9 = goldstar + "Sangonomiya Kokomi"
+                            item10 = goldstar + "Sangonomiya Kokomi"
+                            charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                            color = hydro
                         }
                         else {
                             item1 = goldstar + randompull
@@ -1379,7 +1444,7 @@ module.exports = {
                     }
                     else if (random1 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         
                         item1 = purplestar + random4star(star4)
 
@@ -1390,7 +1455,7 @@ module.exports = {
                     }
                     else if (random2 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         
                         item2 = purplestar + random4star(star4)
 
@@ -1401,7 +1466,7 @@ module.exports = {
                     }
                     else if (random3 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         
                         item3 = purplestar + random4star(star4)
 
@@ -1412,7 +1477,7 @@ module.exports = {
                     }
                     else if (random4 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
                         item4 = purplestar + random4star(star4)
 
@@ -1423,7 +1488,7 @@ module.exports = {
                     }
                     else if (random5 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
                         item5 = purplestar + random4star(star4)
 
@@ -1434,7 +1499,7 @@ module.exports = {
                     }
                     else if (random6 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
                         item6 = purplestar + random4star(star4)
 
@@ -1445,7 +1510,7 @@ module.exports = {
                     }
                     else if (random7 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
                         item7 = purplestar + random4star(star4)
 
@@ -1456,7 +1521,7 @@ module.exports = {
                     }
                     else if (random8 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
                         item8 = purplestar + random4star(star4)
 
@@ -1467,7 +1532,7 @@ module.exports = {
                     }
                     else if (random9 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
                         item9 = purplestar + random4star(star4)
 
@@ -1478,7 +1543,7 @@ module.exports = {
                     }
                     else if (random10 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
 
                         item10 = purplestar + random4star(star4)
 
@@ -1489,7 +1554,7 @@ module.exports = {
                     }
                     else if (star4pity > 8) { // if 4-star pity hits, automatic 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         item1 = purplestar + random4star(star4)
                         item2 = purplestar + random4star(star4)
                         item3 = purplestar + random4star(star4)
@@ -1514,8 +1579,9 @@ module.exports = {
                         console.log(star5pity)
                     }
                     const embed = new MessageEmbed()
-                    .setTitle("10-pull:")
-                    .setDescription(`${item1}
+                    .setTitle(`10-pull:`)
+                    .setDescription(`<@!${receivedMessage.author.id}> got:
+${item1}
 ${item2}
 ${item3}
 ${item4}
@@ -1535,7 +1601,7 @@ ${item10}`)
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
                     if (random < 2) { // if random number < 6, random 5-star
                         console.log("Gold!")
-                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
                             const embed = new MessageEmbed()
@@ -1674,12 +1740,20 @@ ${item10}`)
                             .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
-                        else if (randompull == "Baal") {
+                        else if (randompull == "Raiden Shogun") {
                             const embed = new MessageEmbed()
                             .setTitle(goldstar)
                             .setDescription(randompull)
-                            .setImage('https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif')
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/9/97/Character_Raiden_Shogun_Card.png')
                             .setColor(electro)
+                            receivedMessage.channel.send(embed)
+                        }
+                        else if (randompull = "Sangonomiya Kokomi") {
+                            const embed = new MessageEmbed()
+                            .setTitle(goldstar)
+                            .setDescription(randompull)
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg')
+                            .setColor(hydro)
                             receivedMessage.channel.send(embed)
                         }
                         else {
@@ -1696,7 +1770,7 @@ ${item10}`)
                     }
                     else if (star5pity > 79) { // 5-star pity hits, automatic 5-star
                         console.log("Gold!")
-                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Baal", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+                        var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
                             const embed = new MessageEmbed()
@@ -1835,12 +1909,20 @@ ${item10}`)
                             .setColor(cryo)
                             receivedMessage.channel.send(embed)
                         }
-                        else if (randompull == "Baal") {
+                        else if (randompull == "Raiden Shogun") {
                             const embed = new MessageEmbed()
                             .setTitle(goldstar)
                             .setDescription(randompull)
-                            .setImage('https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif')
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/9/97/Character_Raiden_Shogun_Card.png')
                             .setColor(electro)
+                            receivedMessage.channel.send(embed)
+                        }
+                        else if (randompull = "Sangonomiya Kokomi") {
+                            const embed = new MessageEmbed()
+                            .setTitle(goldstar)
+                            .setDescription(randompull)
+                            .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg')
+                            .setColor(hydro)
                             receivedMessage.channel.send(embed)
                         }
                         else {
@@ -1869,7 +1951,7 @@ ${item10}`)
                     }
                     else if (random > 78) { // if random number > 78, random 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         const embed = new MessageEmbed()
                         .setTitle(purplestar)
                         .setDescription(random4star(star4))
@@ -1882,7 +1964,7 @@ ${item10}`)
                     }
                     else if (star4pity > 8) { // if 4-star pity hits, automatic 4-star
                         console.log("Purple!")
-                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
+                        var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         const embed = new MessageEmbed()
                         .setTitle(purplestar)
                         .setDescription(random4star(star4))

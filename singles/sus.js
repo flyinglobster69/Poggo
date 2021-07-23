@@ -7,7 +7,7 @@ module.exports = {
 
         switch(receivedMessage.content.toLowerCase()) { // called when messages says 'sus'
             case 'sus' || 'amogus' :
-                var sussylist = ["ඞ", "ඞු්ි", "ඩ", "ඹ", "ඩිුා"]
+                var sussylist = ["ඞ", "ඞු්ි", "ඩ", "ඹ", "ඩිුා", "වා"]
                 var sussyreply = randomsus(sussylist)
                 receivedMessage.channel.send(sussyreply)
         }
