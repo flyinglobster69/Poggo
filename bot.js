@@ -33,7 +33,7 @@ const divide = require('./commands/divide')
 // Connect commands
 const start = require('./commands/start')
 const helpcmd = require('./commands/help')
-const about = require('./commands/about')
+const test = require('./commands/test')
 const horny = require('./commands/horny')
 const biden = require('./commands/biden')
 const trump = require('./commands/trump')
@@ -48,13 +48,13 @@ const poggers = require('./commands/poggers')
 const count = require('./commands/count')
 const pirate = require('./commands/pirate')
 const windows = require('./commands/windows')
-// const invite = require('./commands/invite')
 const wish = require('./commands/wish')
 const butter = require('./commands/butter')
 const american = require('./commands/american')
 const upload = require('./commands/upload')
 const ecount = require('./commands/ecount')
 const ping = require('./commands/ping')
+const code = require('./commands/code')
 
 // Connect client
 const client = new Client()
@@ -164,7 +164,7 @@ function processCommand(receivedMessage) {
     else if (helpcmd.checkHelp(receivedMessage)) { // pog help
         return
     }
-    else if (about.checkAbout(receivedMessage)) { // pog about
+    else if (test.checkTest(receivedMessage)) { // pog test
         return
     }
     else if (horny.checkHorny(receivedMessage)) { // pog horny
@@ -209,9 +209,6 @@ function processCommand(receivedMessage) {
     else if (windows.checkWindows(receivedMessage)) { // pog windows
         return
     }
-    // else if (invite.checkInvite(receivedMessage)) { // pog invite
-    //     return
-    // }
     else if (wish.checkWish(receivedMessage)) { // pog wish
         return
     }
@@ -228,6 +225,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (ping.checkPing(receivedMessage)) { // pog ping
+        return
+    }
+    else if (code.checkCode(receivedMessage)) { // pog code
         return
     }
 

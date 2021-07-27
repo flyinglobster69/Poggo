@@ -1,7 +1,7 @@
 const { Client, MessageEmbed } = require("discord.js")
 
 module.exports = {
-    checkAbout: function(receivedMessage) {
+    checkTest: function(receivedMessage) {
     const client = new Client()
 
     const version = require('./version.json')
@@ -13,7 +13,7 @@ module.exports = {
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog test'
-            case 'about' :
+            case 'test' :
                 const embed = new MessageEmbed()
                 .setTitle('Bot Test')
                 .setDescription(`Msg test = \`Success\` *(bot can send messages)*
