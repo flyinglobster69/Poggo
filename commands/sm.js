@@ -1,7 +1,7 @@
 module.exports = {
     checkStellarMoments: function(receivedMessage) {
-    const {MessageEmbed} = require('discord.js')
-    const sm = 'https://game.video.tm/wp-content/uploads/sites/10/2021/02/Genshin-Impact-Character-OST-Album-The-Stellar-Moments.jpg'
+    const {MessageEmbed} = require('discord.js') // https://imgur.com/a/su09V90
+    const sm = 'https://i.imgur.com/D7XHB4H.jpg'
     const color = '#191a36'
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
