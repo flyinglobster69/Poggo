@@ -63,7 +63,7 @@ module.exports = {
                     var color = '#191a36'
 
                     if (random1 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -168,11 +168,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random2 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -277,11 +277,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random3 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -386,11 +386,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random4 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -495,11 +495,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random5 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -604,11 +604,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random6 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -713,11 +713,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random7 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -822,11 +822,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random8 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -931,11 +931,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random9 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -1040,11 +1040,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     if (random10 < 3) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -1149,11 +1149,11 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (star5pity > 79) { // 5-star pity hits, automatic 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -1439,19 +1439,19 @@ module.exports = {
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random1 > 50) { // if random number > 78, random 4-star
-                        console.log("Purple!")
+                        // console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         
                         item1 = purplestar + random4star(star4)
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random2 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1461,8 +1461,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random3 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1472,8 +1472,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random4 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1483,8 +1483,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random5 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1494,8 +1494,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random6 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1505,8 +1505,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random7 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1516,8 +1516,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random8 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1527,8 +1527,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random9 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1538,8 +1538,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random10 > 50) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1549,8 +1549,8 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (star4pity > 8) { // if 4-star pity hits, automatic 4-star
                         console.log("Purple!")
@@ -1568,15 +1568,15 @@ module.exports = {
 
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else { // 3-star items
 
                         star4pity += 1
                         star5pity += 10
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     const embed = new MessageEmbed()
                     .setTitle(`10-pull:`)
@@ -1594,13 +1594,13 @@ ${item10}`)
                     .setImage(charimage)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
-                    console.log(star4pity)
-                    console.log(star5pity)
+                    // console.log(star4pity)
+                    // console.log(star5pity)
                 }
                 else {
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
                     if (random < 2) { // if random number < 6, random 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
@@ -1765,11 +1765,11 @@ ${item10}`)
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (star5pity > 79) { // 5-star pity hits, automatic 5-star
-                        console.log("Gold!")
+                        // console.log("Gold!")
                         var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
                         randompull = random5star(star5)
                         if (randompull == "Venti") {
@@ -1934,8 +1934,8 @@ ${item10}`)
                         }
                         star5pity = 0
                         star4pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random > 89) { // lol
                         const embed = new MessageEmbed()
@@ -1946,8 +1946,8 @@ ${item10}`)
                         receivedMessage.channel.send(embed)
                         star4pity += 1
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (random > 78) { // if random number > 78, random 4-star
                         console.log("Purple!")
@@ -1959,11 +1959,11 @@ ${item10}`)
                         receivedMessage.channel.send(embed)
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else if (star4pity > 8) { // if 4-star pity hits, automatic 4-star
-                        console.log("Purple!")
+                        // console.log("Purple!")
                         var star4 = ["Yanfei", "Rosaria", "Xinyan", "Sucrose", "Diona", "Chongyun", "Noelle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Amber", "Razor", "Kaeya", "Barbara", "Lisa", "Sayu", "Kujou Sara", "Rust", "Sacrificial Bow", "The Stringless", "Favonius Warbow", "Eye of Perception", "Sacrificial Fragments", "The Widsith", "Favonius Codex", "Favonius Lance", "Dragon's Bane", "Rainslasher", "Sacrificial Greatsword", "The Bell", "Favonius Greatsword", "Lion's Roar", "Sacrificial Sword", "The Flute", "Favonius Sword"] // List of 4-star characters and weapons
                         const embed = new MessageEmbed()
                         .setTitle(purplestar)
@@ -1972,11 +1972,11 @@ ${item10}`)
                         receivedMessage.channel.send(embed)
                         star4pity = 0
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                     else { // 3-star items
-                        console.log("Blue.")
+                        // console.log("Blue.")
                         var star3 = ["Slingshot", "Sharpshooter's Oath", "Raven Bow", "Emerald Orb", "Thrilling Tales of Dragon Slayers", "Magic Guide", "Black Tassel", "Debate Club", "Bloodstained Greatsword", "Ferrous Shadow", "Skyrider Sword", "Harbringer of Dawn", "Cool Steel"] // List of 3-star weapons
                         const embed = new MessageEmbed()
                         .setTitle(star + star + star)
@@ -1985,8 +1985,8 @@ ${item10}`)
                         receivedMessage.channel.send(embed)
                         star4pity += 1
                         star5pity += 1
-                        console.log(star4pity)
-                        console.log(star5pity)
+                        // console.log(star4pity)
+                        // console.log(star5pity)
                     }
                 }
         }

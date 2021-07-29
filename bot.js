@@ -61,7 +61,7 @@ const client = new Client()
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
-    console.log("Connected as " + client.user.tag)
+    console.log("Eyy " + client.user.tag + " is now online!")
 
     client.user.setActivity("pog help") // Activity status on Discord
 })
@@ -154,8 +154,8 @@ function processCommand(receivedMessage) {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
     // Console printout (commands received and reply)
-    console.log("Command received: " + primaryCommand)
-    console.log("Arguments: " + arguments) // There might not be any arguments
+    // console.log("Command received: " + primaryCommand)
+    // console.log("Arguments: " + arguments) // There might not be any arguments
 
     // Basic Commands
     if (start.checkStart(receivedMessage)) { // pog start

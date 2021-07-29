@@ -7,7 +7,7 @@ Rem This bot is still a work-in-progress; if you have feedback for improving the
 Rem Also I am relatively new to programming in JavaScript.
 
 Rem Server Location: Western Canada
-Rem Server Type: Acer Aspire of some sort from 12 years ago
+Rem Server Type: Acer Aspire of some sort from 12 years ago (chonky desktop pc)
 
 Rem Bot Language: Javascript
 Rem Bot Prefix: 'pog'
@@ -22,7 +22,7 @@ Rem - The Aviation Butter command that sends a very buttery landing video into t
 Rem - Replying to a phrase with '.exe' at the end of it 
 Rem - Occasionally quotes a user when they delete a message (deleted messages not saved)
 Rem - Rick Roll
-Rem - Windows command sends the ChilledWindows.exe virus disguised as a Windows 11 Installer (it's perfectly safe)
+Rem - Windows command sends the ChilledWindows.exe virus disguised as a Windows 11 Installer into the chat (it's completely safe)
 
 Rem Future Features:
 Rem - Bot verification and whitelisting
@@ -30,7 +30,7 @@ Rem - Sending random reddit posts (meme command)
 Rem - Reminder system (pings user to remind them of something)
 Rem - Butter landing submissions (so it isn't just one butter landing every time)
 
-Rem Invite me at https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=518152
+Rem Invite the bot at https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=518152
 
 @echo off
 start https://bit.ly/3h872Sg

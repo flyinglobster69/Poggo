@@ -16,7 +16,7 @@ module.exports = {
                 .setTitle('mmmm b u t t e r 🛬')
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')
                 .setImage('https://media1.tenor.com/images/9475b573a143c5a765caad621bdc82ec/tenor.gif')
-                .setColor('#00ADEF')
+                .setColor('#FFFF00')
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js
