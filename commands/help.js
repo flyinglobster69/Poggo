@@ -76,11 +76,22 @@ Usage: \`pog sm [character]\``)
                 else if (arguments.includes("count")) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog count\``)
-                    .setDescription(`Returns your current pog count or another user's pog count if specified.
+                    .setDescription(`Returns your current \`pog\` count or another user's \`pog\` count if specified.
 
-Notice: If you mention another user that has no nickname, this command will not work. There will be a fix for this in a future version.
+Notice: If you mention another user that has no nickname, this command might not work. 
 
-Usage: \`pog count\` (to check your pog count); \`pog count [@user]\` (mention the user you want to check the pog count for)`)
+Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (mention the user you want to check the \`pog\` count for)`)
+                    .setColor(color)
+                    receivedMessage.channel.send(embed)
+                }
+                else if (arguments.includes("ecount")) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`\`pog ecount\``)
+                    .setDescription(`Returns your current \`e\` count or another user's \`e\` count if specified.
+
+Notice: If you mention another user that has no nickname, this command might not work. 
+
+Usage: \`pog ecount\` (to check your \`e\` count); \`pog ecount [@user]\` (mention the user you want to check the \`e\` count for)`)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -105,8 +116,8 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \`help\`, \`test\`, \`code\`, \`user\`, \`ping\`, \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`, \`horny\`;
-Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`count [@user]\`, \`ecount [@user]\`, \`wish [10]\`, ;
+                    .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`user\`, \`ping\`, \`version\`, \`readme\`;\nTroll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`, \`horny\`;
+Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;\nCount Commands: \`count [@user]\`, \`ecount [@user]\`;
 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
 Decimal points currently not supported.
 

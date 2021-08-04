@@ -21,6 +21,7 @@ const ehetendandayo = require('./singles/ehe.json')
 const butterjson = require('./singles/butter.json')
 const sus = require('./singles/sus.json')
 const dad = require('./singles/dad.json')
+const swear = require('./singles/swears.json')
 
 // const susjs = require('./singles/sus')
 
@@ -55,6 +56,8 @@ const upload = require('./commands/upload')
 const ecount = require('./commands/ecount')
 const ping = require('./commands/ping')
 const code = require('./commands/code')
+const version = require('./commands/version')
+const readme = require('./commands/readme')
 
 // Connect client
 const client = new Client()
@@ -144,6 +147,9 @@ client.on('message', receivedMessage => {
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
+    if (receivedMessage.content.toLowerCase().includes(swear.fucc)) {
+        receivedMessage.channel.send('Uh oh someone said a no-no word :P   ˢᵘˢˢʸ ᵇᵃᵏᵃ')
+    }
 })
 
 // Command function
@@ -228,6 +234,12 @@ function processCommand(receivedMessage) {
         return
     }
     else if (code.checkCode(receivedMessage)) { // pog code
+        return
+    }
+    else if (version.checkVersion(receivedMessage)) { // pog version
+        return
+    }
+    else if (readme.checkReadme(receivedMessage)) { // pog readme
         return
     }
 

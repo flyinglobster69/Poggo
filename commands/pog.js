@@ -32,7 +32,6 @@ module.exports = {
                                 })
                             }
                             else { // log pogs
-                                console.log(data)
                                 let pogcount = data // initialize pog count variable and assign it to data from fs.readFile()
                                 var pogint = parseInt(pogcount) // convert pog count to an int variable
                                 var pogtotal = pogint + 1 // add 1 to the pog count
