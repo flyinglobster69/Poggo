@@ -57,10 +57,10 @@ Usage: \`pog exe [any text]\``)
                 }
                 else if (arguments.includes("genshin")) {
                     const embed = new MessageEmbed()
-                    .setTitle(`\`pog genshin\``)
-                    .setDescription(`Takes the text input after \`pog genshin\` and interprets it as a Genshin Impact character name and returns a cute pfp of that character (if available)
+                    .setTitle(`\`pog smol\``)
+                    .setDescription(`Takes the text input after \`pog smol\` and interprets it as a Genshin Impact character name and returns a 'smol' pfp of that character (if available)
 
-Usage: \`pog genshin [character]\``)
+Usage: \`pog smol [character]\``)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -117,7 +117,7 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`user\`, \`ping\`, \`version\`, \`readme\`;\nTroll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`, \`horny\`;
-Bigger Commands\: \`exe [insert text here]\`, \`genshin [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;\nCount Commands: \`count [@user]\`, \`ecount [@user]\`;
+Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;\nCount Commands: \`count [@user]\`, \`ecount [@user]\`;
 Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`;
 Decimal points currently not supported.
 

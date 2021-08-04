@@ -23,6 +23,8 @@ Rem - Replying to a phrase with '.exe' at the end of it
 Rem - Occasionally quotes a user when they delete a message (deleted messages not saved)
 Rem - Rick Roll
 Rem - Windows command sends the ChilledWindows.exe virus disguised as a Windows 11 Installer into the chat (it's completely safe)
+Rem - Latency check (questionable accuracy)
+Rem - Replies to certain swear words (for the memes)
 
 Rem Future Features:
 Rem - Bot verification and whitelisting

@@ -32,32 +32,32 @@ const multiply = require('./commands/multiply')
 const divide = require('./commands/divide')
 
 // Connect commands
+const pog = require('./commands/pog')
+const poggies = require('./commands/poggies')
+const poggers = require('./commands/poggers')
 const start = require('./commands/start')
 const helpcmd = require('./commands/help')
 const test = require('./commands/test')
-const horny = require('./commands/horny')
-const biden = require('./commands/biden')
-const trump = require('./commands/trump')
-const poggies = require('./commands/poggies')
-const exe = require('./commands/exe')
 const user = require('./commands/user')
-const pog = require('./commands/pog')
-const genshin = require('./commands/genshin')
-const buff = require('./commands/buff')
-const sm = require('./commands/sm')
-const poggers = require('./commands/poggers')
-const count = require('./commands/count')
-const pirate = require('./commands/pirate')
-const windows = require('./commands/windows')
-const wish = require('./commands/wish')
-const butter = require('./commands/butter')
-const american = require('./commands/american')
-const upload = require('./commands/upload')
-const ecount = require('./commands/ecount')
 const ping = require('./commands/ping')
 const code = require('./commands/code')
 const version = require('./commands/version')
 const readme = require('./commands/readme')
+const horny = require('./commands/horny')
+const biden = require('./commands/biden')
+const trump = require('./commands/trump')
+const pirate = require('./commands/pirate')
+const windows = require('./commands/windows')
+const exe = require('./commands/exe')
+const buff = require('./commands/buff')
+const butter = require('./commands/butter')
+const american = require('./commands/american')
+const count = require('./commands/count')
+const ecount = require('./commands/ecount')
+const wish = require('./commands/wish')
+const sm = require('./commands/sm')
+const smol = require('./commands/smol')
+const upload = require('./commands/upload')
 
 // Connect client
 const client = new Client()
@@ -159,18 +159,38 @@ function processCommand(receivedMessage) {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
-    // Console printout (commands received and reply)
-    // console.log("Command received: " + primaryCommand)
-    // console.log("Arguments: " + arguments) // There might not be any arguments
-
     // Basic Commands
-    if (start.checkStart(receivedMessage)) { // pog start
+    if (pog.checkPog(receivedMessage)) { // pog
+        return
+    }
+    else if (poggies.checkPoggies(receivedMessage)) { // poggies
+        return
+    }
+    else if (poggers.checkPoggers(receivedMessage)) { // poggers
+        return
+    }
+    else if (start.checkStart(receivedMessage)) { // pog start
         return
     }
     else if (helpcmd.checkHelp(receivedMessage)) { // pog help
         return
     }
     else if (test.checkTest(receivedMessage)) { // pog test
+        return
+    }
+    else if (user.checkUser(receivedMessage)) { // pog user
+		return
+	}
+    else if (ping.checkPing(receivedMessage)) { // pog ping
+        return
+    }
+    else if (code.checkCode(receivedMessage)) { // pog code
+        return
+    }
+    else if (version.checkVersion(receivedMessage)) { // pog version
+        return
+    }
+    else if (readme.checkReadme(receivedMessage)) { // pog readme
         return
     }
     else if (horny.checkHorny(receivedMessage)) { // pog horny
@@ -182,40 +202,16 @@ function processCommand(receivedMessage) {
     else if (trump.checkTrump(receivedMessage)) { // pog trump
         return
     }
-    else if (poggies.checkPoggies(receivedMessage)) { // poggies
-        return
-    }
-    else if (poggers.checkPoggers(receivedMessage)) { // poggers
-        return
-    }
-    else if (exe.checkExe(receivedMessage)) { // pog exe
-        return
-    }
-    else if (user.checkUser(receivedMessage)) { // pog user
-		return
-	}
-    else if (pog.checkPog(receivedMessage)) { // pog
-        return
-    }
-    else if (genshin.checkGenshin(receivedMessage)) { // pog genshin
-        return
-    }
-    else if (buff.checkBuff(receivedMessage)) { // pog buff
-        return
-    }
-    else if (sm.checkStellarMoments(receivedMessage)) { // pog sm
-        return
-    }
-    else if (count.checkCount(receivedMessage)) { // pog count
-        return
-    }
     else if (pirate.checkPirate(receivedMessage)) { // pog pirate
         return
     }
     else if (windows.checkWindows(receivedMessage)) { // pog windows
         return
     }
-    else if (wish.checkWish(receivedMessage)) { // pog wish
+    else if (exe.checkExe(receivedMessage)) { // pog exe
+        return
+    }
+    else if (buff.checkBuff(receivedMessage)) { // pog buff
         return
     }
     else if (butter.checkButter(receivedMessage)) { // pog butter
@@ -224,22 +220,22 @@ function processCommand(receivedMessage) {
     else if (american.checkAmerican(receivedMessage)) { // pog american
         return
     }
-    else if (upload.checkUpload(receivedMessage)) { // pog upload
+    else if (count.checkCount(receivedMessage)) { // pog count
         return
     }
     else if (ecount.checkEcount(receivedMessage)) { // pog ecount
         return
     }
-    else if (ping.checkPing(receivedMessage)) { // pog ping
+    else if (wish.checkWish(receivedMessage)) { // pog wish
         return
     }
-    else if (code.checkCode(receivedMessage)) { // pog code
+    else if (sm.checkStellarMoments(receivedMessage)) { // pog sm
         return
     }
-    else if (version.checkVersion(receivedMessage)) { // pog version
+    else if (smol.checkSmol(receivedMessage)) { // pog smol
         return
     }
-    else if (readme.checkReadme(receivedMessage)) { // pog readme
+    else if (upload.checkUpload(receivedMessage)) { // pog upload
         return
     }
 

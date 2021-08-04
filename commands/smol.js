@@ -1,5 +1,5 @@
 module.exports = {
-    checkGenshin: function(receivedMessage) {
+    checkSmol: function(receivedMessage) {
     const {MessageAttachment} = require('discord.js')
 
     // Connect Genshin pfps
@@ -24,7 +24,7 @@ module.exports = {
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog genshin'
-            case 'genshin' :
+            case 'smol' :
                 if (arguments.includes("ganyu")) { // ganyu
                     receivedMessage.channel.send("Ganyu poggers UwU")
                     receivedMessage.channel.send(ganyupfp)
