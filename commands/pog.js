@@ -10,25 +10,23 @@ module.exports = {
             case '' :
                 const random = Math.floor(Math.random() * 20) // generates a random number between 1-20
                 if (random == 5) { // if random number = 5, send 'life is pain :(' instead of 'Poggers!'
-                    console.log("pain")
                     receivedMessage.channel.send("life is pain :(")
                 }
                 else { // poggers reply
                     receivedMessage.channel.send("Poggers!")
                 }
                 var uid = "pogcount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
-                console.log(uid)
                 fs.open('./pogcount/' + uid, 'r+', function(error, fd) { // opens the user's pog count file
                     if (error) { // if user has no pog count file, create one
                         fs.writeFile('./pogcount/' + uid, "1", "utf8", function(error, data) { // start user with 1 pog
-                            console.log("Write complete")
+                            null
                         })
                     }
                     else { // if user has a pog count file
                         fs.readFile('./pogcount/' + uid, "utf8", function(error, data) { // read the value in the pog count file
                             if (error) { // if file does not exist, create one (this is unlikely to be needed)
                                 fs.writeFile('./pogcount/' + uid, "1", "utf8", function(error, data) { // start user with 1 pog
-                                    console.log("Write complete")
+                                    null
                                 })
                             }
                             else { // log pogs
