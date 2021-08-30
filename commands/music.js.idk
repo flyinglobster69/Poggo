@@ -1,0 +1,127 @@
+module.exports = {
+    checkMusic: function(receivedMessage) {
+    const ytdl = require('ytdl-core');
+    const queue = new Map();
+    const { Client } = require('discord.js');
+    const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
+    
+    let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
+    let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
+    let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
+    let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
+    found = false
+
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog version'
+            case 'music' :
+                if (arguments.toLowerCase() == 'play') {
+                    execute(receivedMessage, serverQueue)
+                    return
+                }
+                else if (arguments.toLowerCase() == 'skip') {
+                    skip(receivedMessage, serverQueue)
+                    return
+                }
+                else if (arguments.toLowerCase() == 'stop') {
+                    stop(receivedMessage, serverQueue)
+                    return
+                }
+                else {
+                    receivedMessage.channel.send('Error, Invalid Command!')
+                }
+
+                async function execute(receivedMessage, serverQueue) {
+                    const args = receivedMessage.content.split(" ")
+                  
+                    const voiceChannel = receivedMessage.member.voice.channel
+                    if (!voiceChannel)
+                        return receivedMessage.channel.send("You need to be in a voice channel to play music!")
+                    const permissions = voiceChannel.permissionsFor(receivedMessage.client.user)
+                    if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+                        return receivedMessage.channel.send("I need the permissions to join and speak in your voice channel!")
+                    }
+                
+                
+                    const songInfo = await ytdl.getInfo(args[1]);
+                    const song = {
+                        title: songInfo.title,
+                        url: songInfo.video_url,
+                    }
+
+                    if (!serverQueue) {
+
+                    }
+                    else {
+                        serverQueue.songs.push(song);
+                        console.log(serverQueue.songs);
+                        return receivedMessage.channel.send(`${song.title} has been added to the queue!`);
+                    }
+
+                    // Creating the contract for our queue
+                    const queueContruct = {
+                        textChannel: receivedMessage.channel,
+                        voiceChannel: voiceChannel,
+                        connection: null,
+                        songs: [],
+                        volume: 5,
+                        playing: true,
+                    }
+                    // Setting the queue using our contract
+                    queue.set(receivedMessage.guild.id, queueContruct);
+                    // Pushing the song to our songs array
+                    queueContruct.songs.push(song);
+
+                    try {
+                        // Here we try to join the voicechat and save our connection into our object.
+                        var connection = await voiceChannel.join()
+                        queueContruct.connection = connection
+                        // Calling the play function to start a song
+                        play(receivedMessage.guild, queueContruct.songs[0])
+                    } 
+                    catch (err) {
+                        // Printing the error message if the bot fails to join the voicechat
+                        console.log(err)
+                        queue.delete(receivedMessage.guild.id)
+                        return receivedMessage.channel.send(err)
+                    }
+                }
+
+                function play(guild, song) {
+                    const serverQueue = queue.get(guild.id)
+                    if (!song) {
+                        serverQueue.voiceChannel.leave()
+                        queue.delete(guild.id)
+                        return;
+                    }
+                }
+
+                const dispatcher = serverQueue.connection
+                .play(ytdl(song.url))
+                .on("finish", () => {
+                    serverQueue.songs.shift()
+                    play(guild, serverQueue.songs[0])
+                })
+                .on("error", error => console.error(error))
+                dispatcher.setVolumeLogarithmic(serverQueue.volume / 5)
+                serverQueue.textChannel.send(`Start playing: **${song.title}**`)
+
+                function skip(receivedMessage, serverQueue) {
+                    if (!receivedMessage.member.voice.channel)
+                        return receivedMessage.channel.send("You have to be in a voice channel to stop the music!")
+                    if (!serverQueue)
+                        return receivedMessage.channel.send("There is no song that I could skip!")
+                    serverQueue.connection.dispatcher.end()
+                }
+
+                function stop(receivedMessage, serverQueue) {
+                    if (!receivedMessage.member.voice.channel)
+                        return receivedMessage.channel.send(
+                            "You have to be in a voice channel to stop the music!"
+                        );
+                        serverQueue.songs = [];
+                        serverQueue.connection.dispatcher.end();
+                }
+        }
+        // value of 'found' will be returned in bot.js
+        return found
+    }
+}

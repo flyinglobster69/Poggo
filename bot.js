@@ -58,6 +58,7 @@ const wish = require('./commands/wish')
 const sm = require('./commands/sm')
 const smol = require('./commands/smol')
 const upload = require('./commands/upload')
+// const music = require('./commands/music')
 
 // Connect client
 const client = new Client()
@@ -141,14 +142,14 @@ client.on('message', receivedMessage => {
         receivedMessage.channel.send(butterjson.reply)
     }
     if (receivedMessage.content.toLowerCase().includes(sus.sus) || receivedMessage.content.toLowerCase().includes(sus.amogus)) { // sus
-        receivedMessage.channel.send(sus.reply)
+        receivedMessage.channel.send(susGen())
     }
     if (receivedMessage.content.toLowerCase().startsWith(dad.im)) { // dad
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
-    if (receivedMessage.content.toLowerCase().includes(swear.fucc)) {
-        receivedMessage.channel.send('Uh oh someone said a no-no word :P   ˢᵘˢˢʸ ᵇᵃᵏᵃ')
+    if (receivedMessage.content.toLowerCase().includes(swear.fucc) || receivedMessage.content.toLowerCase().includes(swear.retard)) {
+        receivedMessage.channel.send(`Uh oh someone said a no-no word :P   ˢᵘˢˢʸ ᵇᵃᵏᵃ ${susGen()}`)
     }
 })
 
@@ -238,6 +239,9 @@ function processCommand(receivedMessage) {
     else if (upload.checkUpload(receivedMessage)) { // pog upload
         return
     }
+    // else if (music.checkMusic(receivedMessage)) { // pog music
+    //     return
+    // }
 
     // else if (receivedMessage == "time") {
     //     const date = new Date(2021, 5, 25, 17, 51, 0);
@@ -282,8 +286,13 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
     if (random == 5) { // if random number (luck) is 5, quote delete message and reset pity count (10% luck)
         randomPity = 0
         receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
-        console.log(randomPity)
     }
 })
+
+// Random 'sus' text selector
+function susGen() {
+    var susList = ["ඞ", "ඞු්ි", "ඩ", "ඹ", "ඩිුා"]
+    return susList[Math.floor(Math.random() * susList.length)]
+}
 
 client.login(config.token)
