@@ -58,6 +58,7 @@ const wish = require('./commands/wish')
 const sm = require('./commands/sm')
 const smol = require('./commands/smol')
 const upload = require('./commands/upload')
+const isearthround = require('./commands/isearthround')
 // const music = require('./commands/music')
 
 // Connect client
@@ -237,6 +238,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (upload.checkUpload(receivedMessage)) { // pog upload
+        return
+    }
+    else if (isearthround.checkIsearthround(receivedMessage)) { // pog isearthround
         return
     }
     // else if (music.checkMusic(receivedMessage)) { // pog music
