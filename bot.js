@@ -59,6 +59,7 @@ const sm = require('./commands/sm')
 const smol = require('./commands/smol')
 const upload = require('./commands/upload')
 const isearthround = require('./commands/isearthround')
+const die = require('./commands/die')
 // const music = require('./commands/music')
 
 // Connect client
@@ -91,18 +92,17 @@ client.on('message', receivedMessage => {
                 fs.open('./ecount/' + uid, 'r+', function(error, fd) { // opens the user's e count file
                     if (error) { // if user has no pog count file, create one
                         fs.writeFile('./ecount/' + uid, "1", "utf8", function(error, data) { // start user with 1 e
-                            console.log("Write complete")
+                            null
                         })
                     }
                     else { // if user has a pog count file
                         fs.readFile('./ecount/' + uid, "utf8", function(error, data) { // read the value in the e count file
                             if (error) { // if file does not exist, create one (this is unlikely to be needed)
                                 fs.writeFile('./ecount/' + uid, "1", "utf8", function(error, data) { // start user with 1 e
-                                    console.log("Write complete")
+                                    null
                                 })
                             }
                             else { // log e
-                                console.log(data)
                                 let ecount = data // initialize e count variable and assign it to data from fs.readFile()
                                 var eint = parseInt(ecount) // convert e count to an int variable
                                 var etotal = eint + 1 // add 1 to the e count
@@ -241,6 +241,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (isearthround.checkIsearthround(receivedMessage)) { // pog isearthround
+        return
+    }
+    else if (die.checkDie(receivedMessage)) { // pog die
         return
     }
     // else if (music.checkMusic(receivedMessage)) { // pog music

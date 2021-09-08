@@ -1,5 +1,5 @@
 module.exports = {
-    checkIsearthround: function(receivedMessage) {
+    checkDie: function(receivedMessage) {
     const {MessageEmbed} = require('discord.js')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
@@ -10,13 +10,12 @@ module.exports = {
     }
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog isearthround'
-            case 'isearthround' :
-                var reply = ['Yes Earth is round ya dingus!', 'Is it? Why are the sun and moon round?', 'Yes, no, maybe (?) - if its flat then you should be flat on the ground rather than 3D', 'Thats like... elementary school knowledge lmao (yes earth is round)']
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog die'
+            case 'die' :
+                var reply = ['no u :)', 'Death is inevitable, why procrastinate? 💀', '```Your PC ran into a problem and needs to restart!```', 'e']
                 const embed = new MessageEmbed()
                 .setDescription("<@!" + receivedMessage.author.id + "> " + randomReply(reply))
-                .setTitle('Is earth round?')
-                .setColor('#00ff00')
+                .setColor('#0827F5')
                 receivedMessage.channel.send(embed) // horny bad
         }
         // value of 'found' will be returned in bot.js
