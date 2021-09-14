@@ -12,11 +12,11 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog die'
             case 'die' :
-                var reply = ['no u :)', 'Death is inevitable, why procrastinate? 💀', '```Your PC ran into a problem and needs to restart!```', 'e']
+                var reply = ['no u :)', 'Death is inevitable, why procrastinate? 💀', '```Your PC ran into a problem and needs to restart!```', 'e', "I'm not alive :)"]
                 const embed = new MessageEmbed()
                 .setDescription("<@!" + receivedMessage.author.id + "> " + randomReply(reply))
                 .setColor('#0827F5')
-                receivedMessage.channel.send(embed) // horny bad
+                receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js
         return found

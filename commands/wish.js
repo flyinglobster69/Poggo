@@ -14,6 +14,9 @@ module.exports = {
         function random5star(star5) {
             return star5[Math.floor(Math.random() * star5.length)]
         }
+        function nameGen(nameList) {
+            return nameList[Math.floor(Math.random() * nameList.length)]
+        }
         function single5star() {
             // console.log("Gold!")
             var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
@@ -75,7 +78,6 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Zhongli") {
-                // receivedMessage.channel.send(toad)
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -202,7 +204,8 @@ module.exports = {
             randompull = random5star(star5)
             charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
             if (randompull == "drunk bard") {
-                item = goldstar + "Venti"
+                var nameList = ["Venti", "Barbatos"]
+                item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/43cb917c658c0cc22dbf96f2e8858269/tenor.gif'
                 color = anemo
             }
@@ -237,7 +240,8 @@ module.exports = {
                 color = pyro
             }
             else if (randompull == "Geo Daddy") {
-                item = goldstar + "Zhongli"
+                var nameList = ["Zhongli", "Rex Lapis"]
+                item = goldstar + nameGen(nameList)
                 charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                 color = geo
             }
@@ -252,7 +256,8 @@ module.exports = {
                 color = anemo
             }
             else if (randompull == "Ayaka") {
-                item = goldstar + "Kamisato Ayaka"
+                var nameList = ["Kamisato Ayaka", "Kamisato Ayaya"]
+                item = goldstar + nameGen(nameList)
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                 color = cryo
             }
@@ -287,7 +292,8 @@ module.exports = {
                 color = cryo
             }
             else if (randompull == "BOOBA SWORD") {
-                item = goldstar + "Raiden Shogun"
+                var nameList = ["Raiden Shogun", "Ei"]
+                item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                 color = electro
             }

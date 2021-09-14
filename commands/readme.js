@@ -11,9 +11,10 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog pirate'
             case 'readme' :
                 const embed = new MessageEmbed()
-                .setTitle('Pog bot README File')
-                .setDescription('A basic README file that briefly describes the bot.')
+                .setTitle("Pog bot's README File")
+                .setDescription("A basic README file that briefly describes the bot.\nIt's recommended that you download the file and open it on your computer.")
                 .setColor('#00ADEF')
+                .setImage("https://tenor.com/bjCoL.gif")
                 .attachFiles(readme)
                 receivedMessage.channel.send(embed) // send embed
         }
