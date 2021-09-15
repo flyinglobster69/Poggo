@@ -60,6 +60,7 @@ const smol = require('./commands/smol')
 const upload = require('./commands/upload')
 const isearthround = require('./commands/isearthround')
 const die = require('./commands/die')
+const invite = require('./commands/invite')
 // const music = require('./commands/music')
 
 // Connect client
@@ -244,6 +245,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (die.checkDie(receivedMessage)) { // pog die
+        return
+    }
+    else if (invite.checkInvite(receivedMessage)) { // pog invite
         return
     }
     // else if (music.checkMusic(receivedMessage)) { // pog music

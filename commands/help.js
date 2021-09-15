@@ -116,7 +116,7 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`user\`, \`ping\`, \`version\`, \`readme\`;
+                    .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`user\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
 Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;
 Count Commands: \`count [@user]\`, \`ecount [@user]\`;

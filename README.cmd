@@ -23,16 +23,17 @@ Rem - Replying to a phrase with '.exe' at the end of it
 Rem - Occasionally quotes a user when they delete a message (deleted messages not saved)
 Rem - Rick Roll
 Rem - Windows command sends the ChilledWindows.exe virus disguised as a Windows 11 Installer into the chat (it's completely safe)
-Rem - Latency check (questionable accuracy)
 Rem - Replies to certain swear words (for the memes)
+Rem - And much more.
 
 Rem Future Features:
 Rem - Bot verification and whitelisting
 Rem - Sending random reddit posts (meme command)
 Rem - Reminder system (pings user to remind them of something)
 Rem - Butter landing submissions (so it isn't just one butter landing every time)
+Rem - Music VC Function (play music in VC)
 
-Rem Invite the bot at https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=518152
+Rem Invite the bot at https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=314432
 
 @echo off
 start https://bit.ly/3h872Sg
