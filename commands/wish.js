@@ -204,7 +204,7 @@ module.exports = {
             randompull = random5star(star5)
             charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
             if (randompull == "drunk bard") {
-                var nameList = ["Venti", "Barbatos"]
+                var nameList = ["Venti", "Barbatos", "Windborne Bard", "Tone-Deaf Bard"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/43cb917c658c0cc22dbf96f2e8858269/tenor.gif'
                 color = anemo
@@ -240,7 +240,7 @@ module.exports = {
                 color = pyro
             }
             else if (randompull == "Geo Daddy") {
-                var nameList = ["Zhongli", "Rex Lapis"]
+                var nameList = ["Zhongli", "Rex Lapis", "Morax", "God of Contracts"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                 color = geo
@@ -292,7 +292,7 @@ module.exports = {
                 color = cryo
             }
             else if (randompull == "BOOBA SWORD") {
-                var nameList = ["Raiden Shogun", "Ei"]
+                var nameList = ["Raiden Shogun", "Ei", "Baal", "雷 らい 電 でん 将 しょう 軍 ぐん"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                 color = electro
