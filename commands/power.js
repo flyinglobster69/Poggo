@@ -1,6 +1,6 @@
 module.exports = {
-    checkDivide: function(receivedMessage) {
-    const {MessageEmbed} = require('discord.js')
+    checkPower: function(receivedMessage) {
+    const {MessageEmbed, Math} = require('discord.js')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
@@ -9,14 +9,18 @@ module.exports = {
     var second = splitCommand.slice(2) // second number in arguments = second number
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog divide'
-            case 'divide' :
-                var quotient = parseInt(first) / parseInt(second) // divide the first number by the second number
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog power'
+            case 'power' :
+                var base = parseInt(first)
+                var exponent = parseInt(second)
+
+                var power = base ** exponent
+
                 const embed = new MessageEmbed()
-                .setTitle(quotient)
-                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseInt(first)} ÷ ${parseInt(second)} =`)
+                .setTitle(power)
+                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseInt(base)}^${parseInt(exponent)}`)
                 .setColor('#00ADEF')
-                receivedMessage.channel.send(embed) // sends the quotient in the chat
+                receivedMessage.channel.send(embed) // sends the sum to the message channel
         }
         // value of 'found' will be returned in bot.js
         return found

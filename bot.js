@@ -30,6 +30,7 @@ const add = require('./commands/add')
 const subtract = require('./commands/subtract')
 const multiply = require('./commands/multiply')
 const divide = require('./commands/divide')
+const power = require('./commands/power')
 
 // Connect commands
 const pog = require('./commands/pog')
@@ -274,6 +275,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (divide.checkDivide(receivedMessage)) { // pog divide
+        return
+    }
+    else if (power.checkPower(receivedMessage)) { // pog power
         return
     }
     // If command doesn't exist

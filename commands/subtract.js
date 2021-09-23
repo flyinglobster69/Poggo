@@ -14,7 +14,7 @@ module.exports = {
                 var difference = parseInt(first) - parseInt(second) // subtract second number from first number
                 const embed = new MessageEmbed()
                 .setTitle(difference)
-                .setDescription("<@!" + receivedMessage.author.id + ">")
+                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseInt(first)} - ${parseInt(second)} =`)
                 .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the difference to the chat
         }
