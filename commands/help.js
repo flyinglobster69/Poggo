@@ -126,6 +126,7 @@ Decimal points currently not supported.
 Use \`pog help [command]\` on Math and Bigger commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for in-depth instructions.
 
 Please note that the bot will collect and store Discord User IDs when the user sends their first pog. 
+The most up-to-date logs are preserved on the Server, while backups are kept on GitHub (may be slightly outdated)
 This allows the bot to count the number of pogs a user has.
 
 More commands will be available over time.`) // lists commands and notices
