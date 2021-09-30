@@ -5,6 +5,7 @@ module.exports = {
     checkWish: function(receivedMessage) {
 
     const {MessageEmbed} = require('discord.js')
+        const primogem = 'https://th.bing.com/th/id/R.7384eddb3aa0b07801ada263123ec336?rik=Gr7ZaVnIfXjK%2bQ&pid=ImgRaw&r=0'
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
         }
@@ -27,6 +28,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://media1.tenor.com/images/43cb917c658c0cc22dbf96f2e8858269/tenor.gif')
                 .setColor(anemo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Tartaglia") {
@@ -35,6 +37,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png')
                 .setColor(geo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Klee") {
@@ -43,6 +46,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg')
                 .setColor(pyro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Albedo") {
@@ -51,6 +55,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png')
                 .setColor(geo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Ganyu") {
@@ -59,6 +64,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png')
                 .setColor(cryo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Xiao") {
@@ -67,6 +73,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg')
                 .setColor(anemo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Hu Tao") {
@@ -75,6 +82,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg')
                 .setColor(pyro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Zhongli") {
@@ -83,6 +91,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png')
                 .setColor(geo)
+                .setThumbnail('https://th.bing.com/th/id/OIP.oJNFbpLvfgNG0-L3_qJSygAAAA?pid=ImgDet&rs=1')
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Eula") {
@@ -91,6 +100,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png')
                 .setColor(cryo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Kazuha") {
@@ -99,6 +109,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png')
                 .setColor(anemo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Ayaka") {
@@ -107,6 +118,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png')
                 .setColor(cryo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Yoimiya") {
@@ -115,6 +127,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png')
                 .setColor(pyro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Keqing") {
@@ -123,6 +136,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg')
                 .setColor(electro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Mona") {
@@ -131,6 +145,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg')
                 .setColor(hydro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Diluc") {
@@ -139,6 +154,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg')
                 .setColor(pyro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Jean") {
@@ -147,6 +163,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg')
                 .setColor(anemo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Qiqi") {
@@ -155,6 +172,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg')
                 .setColor(cryo)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Raiden Shogun") {
@@ -163,6 +181,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/9/97/Character_Raiden_Shogun_Card.png')
                 .setColor(electro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else if (randompull = "Sangonomiya Kokomi") {
@@ -171,6 +190,7 @@ module.exports = {
                 .setDescription(randompull)
                 .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg')
                 .setColor(hydro)
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             else {
@@ -178,6 +198,7 @@ module.exports = {
                 .setTitle(goldstar)
                 .setDescription(randompull)
                 .setColor("#ffff00")
+                .setThumbnail(primogem)
                 receivedMessage.channel.send(embed)
             }
             star5pity = 0
@@ -192,6 +213,7 @@ module.exports = {
             .setTitle(purplestar)
             .setDescription(random4star(star4))
             .setColor("#800080")
+            .setThumbnail(primogem)
             receivedMessage.channel.send(embed)
             star4pity = 0
             star5pity += 1
@@ -533,6 +555,7 @@ ${item8}
 ${item9}
 ${item10}`)
                     .setImage(charimage)
+                    .setThumbnail(primogem)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                     // console.log(star4pity)
@@ -552,6 +575,7 @@ ${item10}`)
                         .setDescription('Reckless Pallad')
                         .setImage('https://media.tenor.com/images/d6aa26740d030a83fb8025010b10acb6/tenor.gif')
                         .setColor(color)
+                        .setThumbnail('https://th.bing.com/th/id/OIP.leQ4vnoL-ZyYJwY5IlEpxAHaGA?pid=ImgDet&rs=1')
                         receivedMessage.channel.send(embed)
                         star4pity += 1
                         star5pity += 1

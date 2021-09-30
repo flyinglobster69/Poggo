@@ -11,10 +11,10 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog add'
             case 'add' :
-                var sum = parseInt(first) + parseInt(second) // adds first number and second number to get the sum
+                var sum = parseFloat(first) + parseFloat(second) // adds first number and second number to get the sum
                 const embed = new MessageEmbed()
-                .setTitle(sum)
-                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseInt(first)} + ${parseInt(second)} =`)
+                .setTitle(parseFloat(sum))
+                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseFloat(first)} + ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the sum to the message channel
         }

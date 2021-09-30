@@ -16,7 +16,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Qilin's Prance (Ganyu)`)
                     .setURL('https://youtu.be/vV7OmRpgXh4')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed) // legit just sends yt links lmao
                 }
@@ -24,7 +24,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Nimble as Lightning (Keqing)`)
                     .setURL('https://youtu.be/vMeaJGQMvmw')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -32,7 +32,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Rex Incognito (Rex Lapis)`)
                     .setURL('https://youtu.be/SBfoWTB-T_U')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -40,7 +40,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Surge of Prophecies (Mona)`)
                     .setURL('https://youtu.be/xG4EDhX4tRg')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -48,7 +48,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Preserver of Fortune (Qiqi)`)
                     .setURL('https://youtu.be/5prZq3ya7f0')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -56,7 +56,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Bard's Adventure (drunk bard)`)
                     .setURL('https://youtu.be/Oofw4zlXcNg')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -64,7 +64,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Rockin' With Fire (Xinyan)`)
                     .setURL('https://youtu.be/diS-Mnwn7GI')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -72,7 +72,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Flaming Fry (Xiangling)`)
                     .setURL('https://youtu.be/HXxPv9a_TnA')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -80,7 +80,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Exclusive Specialty (Diona)`)
                     .setURL('https://youtu.be/qwlplyAJjjM')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -89,7 +89,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Letter from Ajax (Ajax)`)
                     .setURL('https://youtu.be/AXjnVSZozYI')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -97,7 +97,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`From Snehznaya with Boldness (Ajax)`)
                     .setURL('https://youtu.be/jUny1b9UnJw')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -105,7 +105,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Ouvertüre der ewigen Nacht (Prinzessin der Verurteilung)`)
                     .setURL('https://youtu.be/M4A6EDbWgzA')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -113,7 +113,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Sieh an, mein Sommernachtgarten! (Prinzessin der Verurteilung)`)
                     .setURL('https://youtu.be/yr5GC1AZ6b4')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -121,7 +121,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Let's go, Crimson Knight! (terrorist loli)`)
                     .setURL('https://youtu.be/qQE1yJAoSYY')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -129,7 +129,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Where the Sunlight Flees (terrorist loli)`)
                     .setURL('https://youtu.be/wzScVV24XYU')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -137,7 +137,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Contemplation in Snow (Albedo)`)
                     .setURL('https://youtu.be/GCnIxGuC740')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                }
@@ -145,7 +145,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setTitle(`Genius of Takwin (Albedo)`)
                     .setURL('https://youtu.be/Fpt9YMaceqA')
-                    .setImage(sm)
+                    .setThumbnail(sm)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }

@@ -23,8 +23,6 @@ const sus = require('./singles/sus.json')
 const dad = require('./singles/dad.json')
 const swear = require('./singles/swears.json')
 
-// const susjs = require('./singles/sus')
-
 // Math commands
 const add = require('./commands/add')
 const subtract = require('./commands/subtract')
@@ -90,7 +88,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase() == e.e) { // e
         receivedMessage.channel.send(e.e)
         var uid = "ecount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
-                console.log(uid)
+
                 fs.open('./ecount/' + uid, 'r+', function(error, fd) { // opens the user's e count file
                     if (error) { // if user has no pog count file, create one
                         fs.writeFile('./ecount/' + uid, "1", "utf8", function(error, data) { // start user with 1 e
@@ -137,7 +135,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
         const embed = new MessageEmbed()
         .setTitle(ehetendandayo.output)
-        .setImage('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
+        .setThumbnail('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
         .setColor('#00ADEF')
         receivedMessage.channel.send(embed)
     }
@@ -151,7 +149,7 @@ client.on('message', receivedMessage => {
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
-    if (receivedMessage.content.toLowerCase().includes(swear.fucc) || receivedMessage.content.toLowerCase().includes(swear.retard)) {
+    if (receivedMessage.content.toLowerCase().includes(swear.fucc) || receivedMessage.content.toLowerCase().includes(swear.retard)) { // F
         receivedMessage.channel.send(`Uh oh someone said a no-no word :P   ˢᵘˢˢʸ ᵇᵃᵏᵃ ${susGen()}`)
     }
 })
@@ -282,7 +280,7 @@ function processCommand(receivedMessage) {
     }
     // If command doesn't exist
     else {
-        return null
+        return null // do nothing lmao
     }
 }
 

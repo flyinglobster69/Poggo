@@ -11,14 +11,14 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog power'
             case 'power' :
-                var base = parseInt(first)
-                var exponent = parseInt(second)
+                var base = parseFloat(first)
+                var exponent = parseFloat(second)
 
                 var power = base ** exponent
 
                 const embed = new MessageEmbed()
                 .setTitle(power)
-                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseInt(base)}^${parseInt(exponent)}`)
+                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseFloat(base)}^${parseFloat(exponent)}`)
                 .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the sum to the message channel
         }

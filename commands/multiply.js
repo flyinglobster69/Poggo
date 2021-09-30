@@ -11,10 +11,10 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog multiply'
             case 'multiply' :
-                var product = parseInt(first) * parseInt(second) // multiplies first number with second number
+                var product = parseFloat(first) * parseFloat(second) // multiplies first number with second number
                 const embed = new MessageEmbed()
                 .setTitle(product)
-                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseInt(first)} × ${parseInt(second)} =`)
+                .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseFloat(first)} × ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 receivedMessage.channel.send(embed) // sends the product in the chat
         }
