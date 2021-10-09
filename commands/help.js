@@ -106,6 +106,37 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
+                else if (arguments.includes("math")) {
+                    const embed = new MessageEmbed()
+                    .setTitle('Math Commands')
+                    .setDescription(`A collection of commands that do basic math.
+
+Available Commands: \`add\`, \`subtract\`, \`multiply\`, \`divide\`, \`power\`, \`root\`
+
+Usage:
+\`pog add\` takes 2 arguments: a number, and another number that is added to it. It returns a sum.
+ex. \`pog add 6 9\` → returns \`15\`
+
+\`pog subtract\` takes 2 arguments: a number, and another number that will be subtracted from the first number. It returns a difference.
+ex. \`pog subtract 9 6\` → returns \`3\`
+
+\`pog multiply\` takes 2 arguments: a number, and another number that it is multiplied by. It returns a product.
+ex. \`pog multiply 4 20\` → returns \`80\`
+
+\`pog divide\` takes 2 arguments: a number, and another number that the first number will be divided by. It returns a quotient.
+ex. \`pog divide 20 4\` → returns \`5\`
+
+\`pog power\` takes 2 arguments: a base, and an exponent. The base is multiplied by itself the number of times specified by the exponent. 
+ex. \`pog power 2 3\` → \`2³ = 2×2×2\` → returns \`8\`
+
+\`pog root\` takes 2 arguments: a radicand, and an index. The function takes the radicand and returns it's root, depending on the index.
+ex. \`pog root 8 3\` → \`³√8\` → returns \`2\`
+
+Note: The \`power\` and \`root\` commands are a little buggy sometimes and can return a number with a lot of decimals when it isn't supposed to (ex. ³√125 returns 4.999... instead of 5)
+Note: Superscripts are not enabled, therefore for powers, the exponent is denoted with a \`^\` (ex. \`2^3\` = \`2³\`)and the index of a root function is simply placed 1 space behind the root symbol (ex. \`3 √8\` = \`³√8\`)`)
+                    .setColor(color)
+                    receivedMessage.channel.send(embed)
+                }
                 else if (arguments.includes("help")) {
                     const embed = new MessageEmbed()
                     .setTitle(`Need more clarification?`)
@@ -120,8 +151,8 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
 Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;
 Count Commands: \`count [@user]\`, \`ecount [@user]\`;
-Math commands\: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`, \`power [base exponent]\`;
-Decimal points currently not supported.
+Math commands: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`, \`power [base exponent]\`, \`root [base radicand]\`;
+Type \`pog help math\` for a more in-depth overview of Math commands
 
 Use \`pog help [command]\` on Math and Bigger commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for in-depth instructions.
 
