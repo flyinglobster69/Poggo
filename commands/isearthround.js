@@ -16,7 +16,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setDescription("<@!" + receivedMessage.author.id + "> " + randomReply(reply))
                 .setTitle('Is earth round?')
-                .setImage('https://c.tenor.com/ymIwgjjnFKkAAAAC/terra-earth.gif')
+                .setImage('https://i.imgflip.com/1qr9fk.jpg')
                 .setColor('#00ff00')
                 receivedMessage.channel.send(embed) // horny bad
         }
