@@ -82,10 +82,6 @@ client.on('message', receivedMessage => {
         processCommand(receivedMessage)
     }
 
-    // Single message responses
-    // if (susjs.checkSus(receivedMessage)) { // AMOGUS SUS
-    //     return
-    // }
     if (receivedMessage.content.toLowerCase() == e.e) { // e
         receivedMessage.channel.send(e.e)
         var uid = "ecount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
@@ -208,9 +204,9 @@ function processCommand(receivedMessage) {
     else if (pirate.checkPirate(receivedMessage)) { // pog pirate
         return
     }
-    else if (windows.checkWindows(receivedMessage)) { // pog windows
-        return
-    }
+    // else if (windows.checkWindows(receivedMessage)) { // pog windows
+    //     return
+    // }
     else if (exe.checkExe(receivedMessage)) { // pog exe
         return
     }

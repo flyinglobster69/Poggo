@@ -7,9 +7,11 @@ module.exports = {
     found = false
     color = '#00ADEF'
 
+    var random = Math.floor(Math.random() * 69)
+
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog start'
             case 'start' :
-                if (receivedMessage.author.id == "456664720406085632") { // find out if the message sender is the bot's creator
+                if (random == 42) {
                     const embed = new MessageEmbed()
                     .setImage('https://c.tenor.com/wHC9IYtiPMkAAAAC/starting-windows-logo.gif')
                     .setColor(color)
@@ -18,10 +20,10 @@ module.exports = {
                 }
                 else {
                     const embed = new MessageEmbed()
-                    .setDescription(`*It's black in Windows 11 :)*`)
-                    .setImage('https://img.memecdn.com/evolution-of-the-blue-screen-of-death_o_3216563.jpg')
+                    .setDescription(`kekw`)
+                    .setImage('https://itknowledgeexchange.techtarget.com/windows-enterprise-desktop/files/2016/12/gsod.jpg')
                     .setColor(color)
-                    receivedMessage.channel.send(embed) // lock out the user if its not the creator
+                    receivedMessage.channel.send(embed) // die
                 }
             
         }

@@ -10,43 +10,7 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog help'
             case 'help' : 
-                if (arguments.includes("add")) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`\`pog add\``)
-                    .setDescription(`Adds two numbers together and returns the sum.
-
-Usage: \`pog add [first number] [second number]\` (no operator symbols)`)
-                    .setColor(color)
-                    receivedMessage.channel.send(embed)
-                }
-                else if (arguments.includes("subtract")) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`\`pog subtract\``)
-                    .setDescription(`Subtracts the second number from the first number and returns the difference.
-
-Usage: \`pog subtract [first number] [second number]\` (no operator symbols)`)
-                    .setColor(color)
-                    receivedMessage.channel.send(embed)
-                }
-                else if (arguments.includes("multiply")) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`\`pog multiply\``)
-                    .setDescription(`Multiplies two numbers together and returns the product.
-
-Usage: \`pog multiply [first number] [second number]\` (no operator symbols)`)
-                    .setColor(color)
-                    receivedMessage.channel.send(embed)
-                }
-                else if (arguments.includes("divide")) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`\`pog divide\``)
-                    .setDescription(`Divides the first number by the second number and returns the quotient.
-
-Usage: \`pog divide [first number] [second number]\` (no operator symbols)`)
-                    .setColor(color)
-                    receivedMessage.channel.send(embed)
-                }
-                else if (arguments.includes("exe")) {
+                if (arguments.includes("exe")) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog exe\``)
                     .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it.
@@ -148,17 +112,18 @@ Note: Superscripts are not enabled, therefore for powers, the exponent is denote
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`user\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
-Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`windows\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
+Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
 Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;
 Count Commands: \`count [@user]\`, \`ecount [@user]\`;
 Math commands: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`, \`power [base exponent]\`, \`root [base radicand]\`;
 Type \`pog help math\` for a more in-depth overview of Math commands
 
-Use \`pog help [command]\` on Math and Bigger commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for in-depth instructions.
+Use \`pog help [command]\` on Bigger commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for dummy instructions.
 
-Please note that the bot will collect and store Discord User IDs when the user sends their first pog. 
-The most up-to-date logs are preserved on the Server, while backups are kept on GitHub (may be slightly outdated)
-This allows the bot to count the number of pogs a user has.
+Please note that the bot will collect and store Discord User IDs when the user sends their first \`pog\` or \`e\`. 
+The most up-to-date pog logs are preserved on the Server, while backups are kept on GitHub (may be slightly outdated)
+This allows the bot to record a user's \`pog\` count and \`e\` count (a core function).
+No other identifiable data is stored on the server or GitHub.
 
 More commands will be available over time.`) // lists commands and notices
                     .setColor('#00ADEF')
