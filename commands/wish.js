@@ -6,6 +6,7 @@ module.exports = {
 
     const {MessageEmbed} = require('discord.js')
         const primogem = 'https://th.bing.com/th/id/R.7384eddb3aa0b07801ada263123ec336?rik=Gr7ZaVnIfXjK%2bQ&pid=ImgRaw&r=0'
+        
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
         }
