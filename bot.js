@@ -47,7 +47,6 @@ const horny = require('./commands/horny')
 const biden = require('./commands/biden')
 const trump = require('./commands/trump')
 const pirate = require('./commands/pirate')
-const windows = require('./commands/windows')
 const exe = require('./commands/exe')
 const buff = require('./commands/buff')
 const butter = require('./commands/butter')
@@ -61,6 +60,7 @@ const upload = require('./commands/upload')
 const isearthround = require('./commands/isearthround')
 const die = require('./commands/die')
 const invite = require('./commands/invite')
+const birthday = require('./commands/birthday')
 // const music = require('./commands/music')
 
 // Connect client
@@ -204,9 +204,6 @@ function processCommand(receivedMessage) {
     else if (pirate.checkPirate(receivedMessage)) { // pog pirate
         return
     }
-    // else if (windows.checkWindows(receivedMessage)) { // pog windows
-    //     return
-    // }
     else if (exe.checkExe(receivedMessage)) { // pog exe
         return
     }
@@ -244,6 +241,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (invite.checkInvite(receivedMessage)) { // pog invite
+        return
+    }
+    else if (birthday.checkBirthday(receivedMessage)) { // pog birthday (private)
         return
     }
     // else if (music.checkMusic(receivedMessage)) { // pog music
