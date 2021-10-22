@@ -1,59 +1,8 @@
 
-Xiao
-Venti
-Tartaglia
-Ayaka
-Zhongli
-Primoridal Jade Winged-Spear
-Primoridal Jade Winged-Spear
-Skyward Harp
-Raiden Shogun
-Klee
-Skyward Blade
-Kazuha
-Hu Tao
-Diluc
-Yoimiya
-Ganyu
-Amos' Bow
-Skyward Blade
-Wolf's Gravestone
-Wolf's Gravestone
-Tartaglia
-Tartaglia
-Kazuha
-Yoimiya
-Primoridal Jade Winged-Spear
-Skyward Blade
-Skyward Blade
-Wolf's Gravestone
-Keqing
-Zhongli
-Zhongli
-<:star:858047215952068628><:star:858047215952068628><:star:858047215952068628><:star:858047215952068628>Rosaria
-<:star:858047215952068628><:star:858047215952068628><:star:858047215952068628><:star:858047215952068628>Xingqiu
-<:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100>Skyward Pride
-<:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100>Klee
-<:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100>Tone-Deaf Bard
-<:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100>Skyward Atlas
-<:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100>Skyward Blade
-<:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100><:star2:861084656060334100>Wolf's Gravestone
-Keqing
+Lost Prayer to the Sacred Winds
+Albedo
 Sangonomiya Kokomi
-Ayaka
-Skyward Spine
 Eula
-Kazuha
-Albedo
-Albedo
-Kazuha
-Skyward Pride
-Yoimiya
-Tartaglia
-Amos' Bow
-Amos' Bow
-Skyward Pride
-Skyward Spine
-Albedo
-Wolf's Gravestone
-Klee
+Ganyu
+Ganyu
+Keqing

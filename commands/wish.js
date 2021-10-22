@@ -648,13 +648,26 @@ ${item10}`)
                     receivedMessage.channel.send(embed)
                 }
                 else if (arguments == 'history') {
-                    const embed = new MessageEmbed()
-                    .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
-                    .setDescription('See attached wish history file with your Discord user ID (It may delay sending)')
-                    .setThumbnail(primogem)
-                    .setColor(color)
-                    .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
-                    receivedMessage.channel.send(embed)
+                    fs.readFile(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`, "utf8", function(error, data) { // read the value in the pog count file
+                        if (error) { // if file does not exist
+                            const embed = new MessageEmbed()
+                            .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
+                            .setDescription('This user has no wish history.')
+                            .setThumbnail('https://c.tenor.com/v6uW6qb-ukcAAAAi/qiqi-fallen.gif')
+                            .setColor(color)
+                            // .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
+                            receivedMessage.channel.send(embed)
+                        }
+                        else { // send file
+                            const embed = new MessageEmbed()
+                            .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
+                            .setDescription('See attached wish history file with your Discord user ID (it may delay sending)')
+                            .setThumbnail(primogem)
+                            .setColor(color)
+                            .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
+                            receivedMessage.channel.send(embed)
+                        }
+                    })
                 }
                 else {
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
