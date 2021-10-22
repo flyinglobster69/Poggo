@@ -22,21 +22,44 @@ module.exports = {
         }
         function wishHistory() {
             var uid = "wishhistory" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
-                fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's pog count file
+                fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's wish history file
                     if (error) { // if user has no wish history file, create one
                         fs.writeFile('./wishhistory/' + uid, randompull, "utf8", function(error, data) { // start user with 1 pog
                             null
                         })
                     }
-                    else { // if user has a pog count file
+                    else { // if user has a wish history file
                         fs.readFile('./wishhistory/' + uid, "utf8", function(error, data) { // read the value in the pog count file
                             if (error) { // if file does not exist, create one (this is unlikely to be needed)
                                 fs.writeFile('./wishhistory/' + uid, randompull, "utf8", function(error, data) { // start user with wish history
                                     null
                                 })
                             }
-                            else { // log pogs
-                                fs.write(fd, `\n${randompull}`, 0, "utf8", function(error, writtenbytes) { // overwrite the old pog count value with the new one
+                            else { // log wishes
+                                fs.write(fd, `\n${randompull}`, 0, "utf8", function(error, writtenbytes) { // appends new wish to the line below the last
+                                })
+                            }
+                        })
+                    }
+                })
+        }
+        function tenWishHistory(item) {
+            var uid = "wishhistory" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
+                fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's wish history file
+                    if (error) { // if user has no wish history file, create one
+                        fs.writeFile('./wishhistory/' + uid, item, "utf8", function(error, data) { // start user with 1 pog
+                            null
+                        })
+                    }
+                    else { // if user has a wish history file
+                        fs.readFile('./wishhistory/' + uid, "utf8", function(error, data) { // read the value in the pog count file
+                            if (error) { // if file does not exist, create one (this is unlikely to be needed)
+                                fs.writeFile('./wishhistory/' + uid, item, "utf8", function(error, data) { // start user with wish history
+                                    null
+                                })
+                            }
+                            else { // log wishes
+                                fs.write(fd, `\n${item}`, 0, "utf8", function(error, writtenbytes) { // appends new wish to the line below the last
                                 })
                             }
                         })
@@ -269,129 +292,110 @@ module.exports = {
             // console.log("Gold!")
             var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
             randompull = random5star(star5)
+            // wishHistory()
             charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
             if (randompull == "Venti") {
                 var nameList = ["Venti", "Barbatos", "Windborne Bard", "Tone-Deaf Bard"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/43cb917c658c0cc22dbf96f2e8858269/tenor.gif'
                 color = anemo
-                wishHistory()
             }
             else if (randompull == "Tartaglia") {
                 item = goldstar + "Tartaglia"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                 color = hydro
-                wishHistory()
             }
             else if (randompull == "Klee") {
                 item = goldstar + "Klee"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                 color = pyro
-                wishHistory()
             }
             else if (randompull == "Albedo") {
                 item = goldstar + "Albedo"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                 color = geo
-                wishHistory()
             }
             else if (randompull == "Ganyu") {
                 item = goldstar + "Ganyu"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                 color = cryo
-                wishHistory()
             }
             else if (randompull == "Xiao") {
                 item = goldstar + "Xiao"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                 color = anemo
-                wishHistory()
             }
             else if (randompull == "Hu Tao") {
                 item = goldstar + "Hu Tao"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                 color = pyro
-                wishHistory()
             }
             else if (randompull == "Zhongli") {
                 var nameList = ["Zhongli", "Rex Lapis", "Morax", "God of Contracts"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                 color = geo
-                wishHistory()
             }
             else if (randompull == "Eula") {
                 item = goldstar + "Eula"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                 color = cryo
-                wishHistory()
             }
             else if (randompull == "Kazuha") {
                 item = goldstar + "Kaedehara Kazuha"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                 color = anemo
-                wishHistory()
             }
             else if (randompull == "Ayaka") {
                 var nameList = ["Kamisato Ayaka", "Kamisato Ayaya"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                 color = cryo
-                wishHistory()
             }
             else if (randompull == "Yoimiya") {
                 item = goldstar + "Yoimiya"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                 color = pyro
-                wishHistory()
             }
             else if (randompull == "Keqing") {
                 item = goldstar + "Keqing"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                 color = electro
-                wishHistory()
             }
             else if (randompull == "Mona") {
                 item = goldstar + "Mona"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                 color = hydro
-                wishHistory()
             }
             else if (randompull == "Diluc") {
                 item = goldstar + "Diluc"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                 color = pyro
-                wishHistory()
             }
             else if (randompull == "Jean") {
                 item = goldstar + "Jean"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                 color = anemo
-                wishHistory()
             }
             else if (randompull == "Qiqi") {
                 item = goldstar + "Qiqi"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                 color = cryo
-                wishHistory()
             }
-            else if (randompull == "BOOBA SWORD") {
+            else if (randompull == "Raiden Shogun") {
                 var nameList = ["Raiden Shogun", "Ei", "Baal", "雷 らい 電 でん 将 しょう 軍 ぐん"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                 color = electro
-                wishHistory()
             }
             else if (randompull == "Sangonomiya Kokomi") {
                 item = goldstar + "Sangonomiya Kokomi"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
                 color = hydro
-                wishHistory()
             }
             else {
                 item = goldstar + randompull
                 charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
-                wishHistory()
             }
             star5pity = 0
             star4pity += 1
@@ -455,47 +459,66 @@ module.exports = {
                     const random8 = Math.floor(Math.random() * 90)
                     const random9 = Math.floor(Math.random() * 90)
                     const random10 = Math.floor(Math.random() * 90)
-                    var color = '#191a36'
 
-                    if (random1 < 3) { // if random number < 6, random 5-star
+                    if (random1 < 3) { // if random number < 3
                         item1 = ten5star()
                         item1 = item
+                        var randompull1 = randompull
+                        tenWishHistory(randompull1)
                     }
-                    if (random2 < 3) { // if random number < 6, random 5-star
+                    if (random2 < 3) {
                         item2 = ten5star()
                         item2 = item
+                        var randompull2 = randompull
+                        tenWishHistory(randompull2)
                     }
-                    if (random3 < 3) { // if random number < 6, random 5-star
+                    if (random3 < 3) {
                         item3 = ten5star()
                         item3 = item
+                        var randompull3 = randompull
+                        tenWishHistory(randompull3)
                     }
-                    if (random4 < 3) { // if random number < 6, random 5-star
+                    if (random4 < 3) {
                         item4 = ten5star()
                         item4 = item
+                        var randompull4 = randompull
+                        tenWishHistory(randompull4)
                     }
-                    if (random5 < 3) { // if random number < 6, random 5-star
+                    if (random5 < 3) {
                         item5 = ten5star()
                         item5 = item
+                        var randompull5 = randompull
+                        tenWishHistory(randompull5)
                     }
-                    if (random6 < 3) { // if random number < 6, random 5-star
+                    if (random6 < 3) {
                         item6 = ten5star()
                         item6 = item
+                        var randompull6 = randompull
+                        tenWishHistory(randompull6)
                     }
-                    if (random7 < 3) { // if random number < 6, random 5-star
+                    if (random7 < 3) {
                         item7 = ten5star()
                         item7 = item
+                        var randompull7 = randompull
+                        tenWishHistory(randompull7)
                     }
-                    if (random8 < 3) { // if random number < 6, random 5-star
+                    if (random8 < 3) {
                         item8 = ten5star()
                         item8 = item
+                        var randompull8 = randompull
+                        tenWishHistory(randompull8)
                     }
-                    if (random9 < 3) { // if random number < 6, random 5-star
+                    if (random9 < 3) {
                         item9 = ten5star()
                         item9 = item
+                        var randompull9 = randompull
+                        tenWishHistory(randompull9)
                     }
-                    if (random10 < 3) { // if random number < 6, random 5-star
+                    if (random10 < 3) { 
                         item10 = ten5star()
                         item10 = item
+                        var randompull10 = randompull
+                        tenWishHistory(randompull10)
                     }
                     else if (star5pity > 79) { // 5-star pity hits, automatic 5-star
                         item1 = ten5star()
@@ -528,43 +551,43 @@ module.exports = {
                         item10 = ten5star()
                         item10 = item
                     }
-                    else if (random1 > 50) { // if random number > 78, random 4-star
+                    else if (random1 > 50) { // if random number > 50, random 4-star
                         item1 = ten4star()
                         item1 = item
                     }
-                    else if (random2 > 50) { // if random number > 78, random 4-star
+                    else if (random2 > 50) { 
                         item2 = ten4star()
                         item2 = item
                     }
-                    else if (random3 > 50) { // if random number > 78, random 4-star
+                    else if (random3 > 50) { 
                         item3 = ten4star()
                         item3 = item
                     }
-                    else if (random4 > 50) { // if random number > 78, random 4-star
+                    else if (random4 > 50) { 
                         item4 = ten4star()
                         item4 = item
                     }
-                    else if (random5 > 50) { // if random number > 78, random 4-star
+                    else if (random5 > 50) { 
                         item5 = ten4star()
                         item5 = item
                     }
-                    else if (random6 > 50) { // if random number > 78, random 4-star
+                    else if (random6 > 50) { 
                         item6 = ten4star()
                         item6 = item
                     }
-                    else if (random7 > 50) { // if random number > 78, random 4-star
+                    else if (random7 > 50) {
                         item7 = ten4star()
                         item7 = item
                     }
-                    else if (random8 > 50) { // if random number > 78, random 4-star
+                    else if (random8 > 50) { 
                         item8 = ten4star()
                         item8 = item
                     }
-                    else if (random9 > 50) { // if random number > 78, random 4-star
+                    else if (random9 > 50) {
                         item9 = ten4star()
                         item9 = item
                     }
-                    else if (random10 > 50) { // if random number > 78, random 4-star
+                    else if (random10 > 50) {
                         item10 = ten4star()
                         item10 = item
                     }
