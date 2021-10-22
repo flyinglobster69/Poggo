@@ -4,6 +4,7 @@ var star4pity = 0
 module.exports = {
     checkWish: function(receivedMessage) {
 
+    const fs = require('fs') // connect fs module
     const {MessageEmbed} = require('discord.js')
         const primogem = 'https://th.bing.com/th/id/R.7384eddb3aa0b07801ada263123ec336?rik=Gr7ZaVnIfXjK%2bQ&pid=ImgRaw&r=0'
         
@@ -19,11 +20,35 @@ module.exports = {
         function nameGen(nameList) {
             return nameList[Math.floor(Math.random() * nameList.length)]
         }
+        function wishHistory() {
+            var uid = "wishhistory" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
+                fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's pog count file
+                    if (error) { // if user has no wish history file, create one
+                        fs.writeFile('./wishhistory/' + uid, randompull, "utf8", function(error, data) { // start user with 1 pog
+                            null
+                        })
+                    }
+                    else { // if user has a pog count file
+                        fs.readFile('./wishhistory/' + uid, "utf8", function(error, data) { // read the value in the pog count file
+                            if (error) { // if file does not exist, create one (this is unlikely to be needed)
+                                fs.writeFile('./wishhistory/' + uid, randompull, "utf8", function(error, data) { // start user with wish history
+                                    null
+                                })
+                            }
+                            else { // log pogs
+                                fs.write(fd, `\n${randompull}`, 0, "utf8", function(error, writtenbytes) { // overwrite the old pog count value with the new one
+                                })
+                            }
+                        })
+                    }
+                })
+        }
         function single5star() {
             // console.log("Gold!")
             var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kaedehara Kazuha", "Kamisato Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
             randompull = random5star(star5)
             if (randompull == "Venti") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -33,6 +58,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Tartaglia") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -42,6 +68,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Klee") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -51,6 +78,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Albedo") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -60,6 +88,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Ganyu") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -69,6 +98,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Xiao") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -78,6 +108,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Hu Tao") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -87,6 +118,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Zhongli") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -96,6 +128,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Eula") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -105,6 +138,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Kazuha") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -114,6 +148,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Ayaka") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -123,6 +158,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Yoimiya") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -132,6 +168,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Keqing") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -141,6 +178,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Mona") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -150,6 +188,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Diluc") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -159,6 +198,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Jean") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -168,6 +208,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Qiqi") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -177,6 +218,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull == "Raiden Shogun") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -186,6 +228,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else if (randompull = "Sangonomiya Kokomi") {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -195,6 +238,7 @@ module.exports = {
                 receivedMessage.channel.send(embed)
             }
             else {
+                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -223,111 +267,131 @@ module.exports = {
         }
         function ten5star() {
             // console.log("Gold!")
-            var star5 = ["drunk bard", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Geo Daddy", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "BOOBA SWORD", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
+            var star5 = ["Venti", "Tartaglia", "Klee", "Albedo", "Ganyu", "Xiao", "Hu Tao", "Zhongli", "Eula", "Kazuha", "Ayaka", "Yoimiya", "Keqing", "Mona", "Qiqi", "Diluc", "Jean", "Raiden Shogun", "Sangonomiya Kokomi", "Amos' Bow", "Skyward Harp", "Lost Prayer to the Sacred Winds", "Skyward Atlas", "Primoridal Jade Winged-Spear", "Skyward Spine", "Wolf's Gravestone", "Skyward Pride", "Skyward Blade", "Aquila Favonia"] // List of 5-star characters and weapons
             randompull = random5star(star5)
             charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
-            if (randompull == "drunk bard") {
+            if (randompull == "Venti") {
                 var nameList = ["Venti", "Barbatos", "Windborne Bard", "Tone-Deaf Bard"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/43cb917c658c0cc22dbf96f2e8858269/tenor.gif'
                 color = anemo
+                wishHistory()
             }
             else if (randompull == "Tartaglia") {
                 item = goldstar + "Tartaglia"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
                 color = hydro
+                wishHistory()
             }
             else if (randompull == "Klee") {
                 item = goldstar + "Klee"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
                 color = pyro
+                wishHistory()
             }
             else if (randompull == "Albedo") {
                 item = goldstar + "Albedo"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
                 color = geo
+                wishHistory()
             }
             else if (randompull == "Ganyu") {
                 item = goldstar + "Ganyu"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
                 color = cryo
+                wishHistory()
             }
             else if (randompull == "Xiao") {
                 item = goldstar + "Xiao"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
                 color = anemo
+                wishHistory()
             }
             else if (randompull == "Hu Tao") {
                 item = goldstar + "Hu Tao"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
                 color = pyro
+                wishHistory()
             }
-            else if (randompull == "Geo Daddy") {
+            else if (randompull == "Zhongli") {
                 var nameList = ["Zhongli", "Rex Lapis", "Morax", "God of Contracts"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
                 color = geo
+                wishHistory()
             }
             else if (randompull == "Eula") {
                 item = goldstar + "Eula"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
                 color = cryo
+                wishHistory()
             }
             else if (randompull == "Kazuha") {
                 item = goldstar + "Kaedehara Kazuha"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
                 color = anemo
+                wishHistory()
             }
             else if (randompull == "Ayaka") {
                 var nameList = ["Kamisato Ayaka", "Kamisato Ayaya"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
                 color = cryo
+                wishHistory()
             }
             else if (randompull == "Yoimiya") {
                 item = goldstar + "Yoimiya"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
                 color = pyro
+                wishHistory()
             }
             else if (randompull == "Keqing") {
                 item = goldstar + "Keqing"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
                 color = electro
+                wishHistory()
             }
             else if (randompull == "Mona") {
                 item = goldstar + "Mona"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
                 color = hydro
+                wishHistory()
             }
             else if (randompull == "Diluc") {
                 item = goldstar + "Diluc"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
                 color = pyro
+                wishHistory()
             }
             else if (randompull == "Jean") {
                 item = goldstar + "Jean"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
                 color = anemo
+                wishHistory()
             }
             else if (randompull == "Qiqi") {
                 item = goldstar + "Qiqi"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
                 color = cryo
+                wishHistory()
             }
             else if (randompull == "BOOBA SWORD") {
                 var nameList = ["Raiden Shogun", "Ei", "Baal", "雷 らい 電 でん 将 しょう 軍 ぐん"]
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                 color = electro
+                wishHistory()
             }
             else if (randompull == "Sangonomiya Kokomi") {
                 item = goldstar + "Sangonomiya Kokomi"
                 charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
                 color = hydro
+                wishHistory()
             }
             else {
                 item = goldstar + randompull
                 charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
+                wishHistory()
             }
             star5pity = 0
             star4pity += 1
@@ -559,8 +623,15 @@ ${item10}`)
                     .setThumbnail(primogem)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
-                    // console.log(star4pity)
-                    // console.log(star5pity)
+                }
+                else if (arguments == 'history') {
+                    const embed = new MessageEmbed()
+                    .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
+                    .setDescription('See attached wish history file with your Discord user ID (It may delay sending)')
+                    .setThumbnail(primogem)
+                    .setColor(color)
+                    .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
+                    receivedMessage.channel.send(embed)
                 }
                 else {
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
