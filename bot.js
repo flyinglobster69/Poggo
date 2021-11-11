@@ -308,4 +308,8 @@ function susGen() {
     return susList[Math.floor(Math.random() * susList.length)]
 }
 
+process.on('unhandledRejection', (reason, promise) => {
+    // something
+})
+
 client.login(config.token)

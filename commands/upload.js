@@ -6,12 +6,13 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     found = false
     color = '#00ADEF'
-    const upload = new MessageAttachment('upload.mp4')
+    const upload = new MessageAttachment('')
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog start'
             case 'upload' :
                 if (receivedMessage.author.id == "456664720406085632") { // find out if the message sender is the bot's creator
                     receivedMessage.channel.send(upload) // start windows
+                    receivedMessage.channel.send('null')
                     found = true
                 }
                 else {
