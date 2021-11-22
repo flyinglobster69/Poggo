@@ -61,7 +61,7 @@ const isearthround = require('./commands/isearthround')
 const die = require('./commands/die')
 const invite = require('./commands/invite')
 const birthday = require('./commands/birthday')
-const suscount = require('./commands/suscount')
+const suscount = require('./commands/sucount')
 // const music = require('./commands/music')
 
 // Connect client
@@ -140,7 +140,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)
     }
-    if (receivedMessage.content.toLowerCase().includes(sus.sus) || receivedMessage.content.toLowerCase().includes(sus.amogus)) { // sus
+    if (receivedMessage.content.toLowerCase().includes(sus.sus1) || receivedMessage.content.toLowerCase().includes(sus.sus2) || receivedMessage.content.toLowerCase().includes(sus.sus3) || receivedMessage.content.toLowerCase().includes(sus.imposter) || receivedMessage.content.toLowerCase().includes(sus.amogus)) { // sus
         receivedMessage.channel.send(susGen())
         var uid = "suscount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
 
@@ -273,7 +273,7 @@ function processCommand(receivedMessage) {
     else if (birthday.checkBirthday(receivedMessage)) { // pog birthday (private)
         return
     }
-    else if (suscount.checkSuscount(receivedMessage)) { // pog suscount
+    else if (suscount.checkSuscount(receivedMessage)) { // pog sucount
         return
     }
     // else if (music.checkMusic(receivedMessage)) { // pog music

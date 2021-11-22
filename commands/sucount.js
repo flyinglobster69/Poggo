@@ -8,7 +8,7 @@ module.exports = {
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog count'
-            case 'suscount' :
+            case 'sucount' :
                 let argsstring = arguments.toString() // converts 'arguments' to string-type
                 let sliceuid = argsstring.slice(3, -1) // removes the '<@!' and '>' from the mention
                 var argsuid = "suscount" + parseInt(sliceuid).toString() + ".txt" // sets the mention uid into the file name for ident
@@ -19,10 +19,10 @@ module.exports = {
                     fs.open('./suscount/' + uid, 'r', function(error, fd) { // open the user's e count txt file
                         fs.readFile('./suscount/' + uid, "utf8", function(error, data) { // read the user's e count txt file
                             if (error) { // if there is no file, that means the user has sent no e
-                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "is apparently not a sussy baka.")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + " is apparently not a sussy baka.")
                             }
                             else { // if the file exists, send the number of e into the chat
-                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "You've said 'sus' \`" + data + "\` times, you're a sussy baka.")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + " You've said 'sus' \`" + data + "\` times, you're a sussy baka.")
                             }
                         })
                     })
@@ -31,10 +31,10 @@ module.exports = {
                     fs.open('./suscount/' + argsuid, 'r', function(error, fd) { // open the mentioned user's e count file
                         fs.readFile('./suscount/' + argsuid, "utf8", function(error, data) { // read the mentioned user's e count file
                             if (error) { // if there is no file, that means the mentioned user has sent no e
-                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "is apparently not a sussy baka either.")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + " is apparently not a sussy baka.")
                             }
                             else { // if the file exists, send the number of e in the chat
-                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + "They said 'sus' \`" + data + "\` times, they're a sussy baka.")
+                                receivedMessage.channel.send("<@!" + receivedMessage.author.id + ">" + " They said 'sus' \`" + data + "\` times, they're a sussy baka.")
                             }
                         })
                     })
