@@ -134,4 +134,4 @@ More commands will be available over time.`) // lists commands and notices
         // value of 'found' will be returned in bot.js
         return found
     }
-}
+} 

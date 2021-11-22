@@ -168,7 +168,7 @@ client.on('message', receivedMessage => {
                         })
                     }
                 })
-    }
+    } 
     if (receivedMessage.content.toLowerCase().startsWith(dad.im)) { // dad
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
