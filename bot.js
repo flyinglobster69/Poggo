@@ -61,6 +61,7 @@ const isearthround = require('./commands/isearthround')
 const die = require('./commands/die')
 const invite = require('./commands/invite')
 const birthday = require('./commands/birthday')
+const suscount = require('./commands/suscount')
 // const music = require('./commands/music')
 
 // Connect client
@@ -141,6 +142,32 @@ client.on('message', receivedMessage => {
     }
     if (receivedMessage.content.toLowerCase().includes(sus.sus) || receivedMessage.content.toLowerCase().includes(sus.amogus)) { // sus
         receivedMessage.channel.send(susGen())
+        var uid = "suscount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
+
+                fs.open('./suscount/' + uid, 'r+', function(error, fd) { // opens the user's sus count file
+                    if (error) { // if user has no sus count file, create one
+                        fs.writeFile('./suscount/' + uid, "1", "utf8", function(error, data) { // start user with 1 amogus
+                            null
+                        })
+                    }
+                    else { // if user has a sus count file
+                        fs.readFile('./suscount/' + uid, "utf8", function(error, data) { // read the value in the sus count file
+                            if (error) { // if file does not exist, create one (this is unlikely to be needed)
+                                fs.writeFile('./suscount/' + uid, "1", "utf8", function(error, data) { // start user with 1 amogus
+                                    null
+                                })
+                            }
+                            else { // log sus
+                                let suscount = data // initialize sus count variable and assign it to data from fs.readFile()
+                                var susint = parseInt(suscount) // convert sus count to an int variable
+                                var sustotal = susint + 1 // add 1 to the sus count
+                                var sustotalstring = sustotal.toString() // convert new sus count back to string value
+                                fs.write(fd, sustotalstring, 0, "utf8", function(error, writtenbytes) { // overwrite the old sus count value with the new one
+                                })
+                            }
+                        })
+                    }
+                })
     }
     if (receivedMessage.content.toLowerCase().startsWith(dad.im)) { // dad
         var name = receivedMessage.content.substr(3)
@@ -244,6 +271,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (birthday.checkBirthday(receivedMessage)) { // pog birthday (private)
+        return
+    }
+    else if (suscount.checkSuscount(receivedMessage)) { // pog suscount
         return
     }
     // else if (music.checkMusic(receivedMessage)) { // pog music

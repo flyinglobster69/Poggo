@@ -39,23 +39,20 @@ Usage: \`pog sm [character]\``)
                 }
                 else if (arguments.includes("count")) {
                     const embed = new MessageEmbed()
-                    .setTitle(`\`pog count\``)
-                    .setDescription(`Returns your current \`pog\` count or another user's \`pog\` count if specified.
+                    .setTitle(`\`Counters\``)
+                    .setDescription(`Returns a counter value, depending on which counter is specified. Mention a user at the end of the command to see the counter for them.
+Counters: \`pog count\` (counts pog), \`pog ecount\` (counts e), \`pog suscount\` (counts sus);
 
-Notice: If you mention another user that has no nickname, this command might not work. 
+There are currently 3 counters in the bot, which count how many times you say each of these things.
+The \`pog\` count is triggered whenever you say \`pog\` on its own.
+The \`e\` count is triggered whenever you say \`e\` on its own.
+The \`sus\` count is triggered whenever you say \`amogus\` or \`sus\` anywhere within a message.
 
-Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (mention the user you want to check the \`pog\` count for)`)
-                    .setColor(color)
-                    receivedMessage.channel.send(embed)
-                }
-                else if (arguments.includes("ecount")) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`\`pog ecount\``)
-                    .setDescription(`Returns your current \`e\` count or another user's \`e\` count if specified.
+Notice: If you mention another user that has no nickname, these commands might not work. 
 
-Notice: If you mention another user that has no nickname, this command might not work. 
-
-Usage: \`pog ecount\` (to check your \`e\` count); \`pog ecount [@user]\` (mention the user you want to check the \`e\` count for)`)
+Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (mention the user you want to check the \`pog\` count for)
+\`pog ecount\` (to check your \`e\` count); \`pog ecount [@user]\` (mention the user you want to check the \`e\` count for)
+\`pog suscount\` (to check your \`sus\` count); \`pog suscount [@user]\` (mention the user you want to check the \`sus\` count for)`)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
@@ -114,7 +111,10 @@ Note: Superscripts are not enabled, therefore for powers, the exponent is denote
                     .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`user\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
 Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;
-Count Commands: \`count [@user]\`, \`ecount [@user]\`;
+
+Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
+Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.
+
 Math commands: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`, \`power [base exponent]\`, \`root [base radicand]\`;
 Type \`pog help math\` for a more in-depth overview of Math commands
 

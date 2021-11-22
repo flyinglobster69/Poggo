@@ -18,7 +18,8 @@ Rem Help Command: 'pog help'
 Rem Current Features:
 Rem - Pog counting (how many times you say 'pog')
 Rem - E counting (how many times you say 'e')
-Rem - Simple math (+-×÷ with 2 numbers without decimals)
+Rem - Sus counting (how many times you say 'sus' or 'amogus')
+Rem - Simple math (+-×÷√^ with 2 numbers - still a bit buggy)
 Rem - Respond to messages containing certain phrases (ex. 'sus' => 'ඞ')
 Rem - Simple commands related to Genshin Impact (responding to phrases and Wish Simulation)
 Rem - The Aviation Butter command that sends a very buttery landing video into the chat
