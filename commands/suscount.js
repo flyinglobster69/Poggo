@@ -8,7 +8,7 @@ module.exports = {
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog count'
-            case 'sucount' :
+            case 'suscount' :
                 let argsstring = arguments.toString() // converts 'arguments' to string-type
                 let sliceuid = argsstring.slice(3, -1) // removes the '<@!' and '>' from the mention
                 var argsuid = "suscount" + parseInt(sliceuid).toString() + ".txt" // sets the mention uid into the file name for ident

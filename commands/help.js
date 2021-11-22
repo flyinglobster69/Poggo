@@ -46,9 +46,10 @@ Counters: \`pog count\` (counts pog), \`pog ecount\` (counts e), \`pog suscount\
 There are currently 3 counters in the bot, which count how many times you say each of these things.
 The \`pog\` count is triggered whenever you say \`pog\` on its own.
 The \`e\` count is triggered whenever you say \`e\` on its own.
-The \`sus\` count is triggered whenever you say \`amogus\` or \`sus\` anywhere within a message.
+The \`sus\` count is triggered whenever you say \`amogus\`, \`imposter\` or \`sus\` anywhere within a message.
 
 Notice: If you mention another user that has no nickname, these commands might not work. 
+Notice: Using \`pog suscount\` adds 1 more sus to the counter because using the command is sus.
 
 Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (mention the user you want to check the \`pog\` count for)
 \`pog ecount\` (to check your \`e\` count); \`pog ecount [@user]\` (mention the user you want to check the \`e\` count for)
