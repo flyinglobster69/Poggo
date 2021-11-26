@@ -125,3 +125,4 @@ Raiden Shogun
 Arataki Itto
 Wolf's Gravestone
 Ganyu
+Qiqi
