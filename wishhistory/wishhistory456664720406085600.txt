@@ -126,3 +126,6 @@ Arataki Itto
 Wolf's Gravestone
 Ganyu
 Qiqi
+Skyward Spine
+Skyward Blade
+Eula
