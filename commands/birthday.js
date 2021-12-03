@@ -8,8 +8,15 @@ module.exports = {
 
     const user = ''
     const bdayTitle = 'Happy birthday! 🎉'
-    const bdayDescription = ''
-    const bdayImg = 'https://c.tenor.com/Bo1p87vHb6IAAAAC/happy-birthday-cat.gif'
+    const bdayDescription = `Happy Birthday!
+    
+    We're never gonna give you up
+    Never gonna let you down
+    Never gonna run around and desert you
+    Never gonna make you cry
+    Never gonna say goodbye
+    Never gonna tell a lie and hurt you!`
+    const bdayImg = ''
     const bdayThumb = 'https://c.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif'
     const pink = '#FFC0CB'
 
