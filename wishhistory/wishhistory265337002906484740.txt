@@ -307,3 +307,4 @@ Amos' Bow
 Shenhe
 Xiao
 Klee
+Skyward Blade
