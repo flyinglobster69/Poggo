@@ -517,3 +517,4 @@ Kazuha
 Wolf's Gravestone
 Raiden Shogun
 Mona
+Keqing
