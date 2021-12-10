@@ -38,7 +38,7 @@ const poggers = require('./commands/poggers')
 const start = require('./commands/start')
 const helpcmd = require('./commands/help')
 const test = require('./commands/test')
-const user = require('./commands/user')
+const profile = require('./commands/profile')
 const ping = require('./commands/ping')
 const code = require('./commands/code')
 const version = require('./commands/version')
@@ -204,7 +204,7 @@ function processCommand(receivedMessage) {
     else if (test.checkTest(receivedMessage)) { // pog test
         return
     }
-    else if (user.checkUser(receivedMessage)) { // pog user
+    else if (profile.checkProfile(receivedMessage)) { // pog profile
 		return
 	}
     else if (ping.checkPing(receivedMessage)) { // pog ping
