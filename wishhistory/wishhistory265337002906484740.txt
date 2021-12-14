@@ -518,3 +518,7 @@ Wolf's Gravestone
 Raiden Shogun
 Mona
 Keqing
+Venti
+Xiao
+Jean
+Xiao
