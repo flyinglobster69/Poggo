@@ -13,13 +13,8 @@ const config = require('./config.json')
 
 // Connect singles
 const e = require('./singles/e.json')
-const help = require('./singles/help.json')
-const sixnine = require('./singles/69.json')
-const paimon = require('./singles/paimon.json')
-const dewitjson = require('./singles/dewit.json')
 const ehetendandayo = require('./singles/ehe.json')
 const butterjson = require('./singles/butter.json')
-const sus = require('./singles/sus.json')
 const dad = require('./singles/dad.json')
 const swear = require('./singles/swears.json')
 
@@ -69,10 +64,13 @@ const client = new Client()
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
-    console.log("Eyy " + client.user.tag + " is now online!")
+    console.log("EPIC POGGERS " + client.user.tag + " is now online!")
 
     client.user.setActivity("pog help") // Activity status on Discord
 })
+
+// Initialize lists
+const susTxtList = ["sus", "imposter", "amogus"]
 
 client.on('message', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
@@ -112,23 +110,23 @@ client.on('message', receivedMessage => {
                     }
                 })
     }
-    if (receivedMessage.content.toLowerCase() == help.help) { // help
-        receivedMessage.channel.send(help.reply)
+    if (receivedMessage.content.toLowerCase() == "help") { // help
+        receivedMessage.channel.send(helpGen())
     }
-    if (receivedMessage.content.includes(sixnine.input)) { // 69
-        receivedMessage.channel.send(sixnine.reply)
+    if (receivedMessage.content.includes("69") && (receivedMessage.author == client.user)) { // 69
+        receivedMessage.channel.send("nice")
     }
-    if (receivedMessage.content.toLowerCase().includes(paimon.paimon)) { // paimon 
-        receivedMessage.channel.send(paimon.reply)
+    if (receivedMessage.content.toLowerCase().includes("paimon")) { // paimon 
+        receivedMessage.channel.send(emergencyFoodGen())
     }
-    if (receivedMessage.content.toLowerCase() == dewitjson.dewit) { // dewit
+    if (receivedMessage.content.toLowerCase() == "dewit") { // dewit
         const embed = new MessageEmbed()
         .setImage('https://media.discordapp.net/attachments/852751760324821042/863226637460963364/dewit.gif')
         .setColor('#00ADEF')
         receivedMessage.channel.send(embed)
     }
-    if (receivedMessage.content.toLowerCase() == dewitjson.kekw) { // kekw
-        receivedMessage.channel.send(dewitjson.emote)
+    if (receivedMessage.content.toLowerCase() == "kekw") { // kekw
+        receivedMessage.channel.send("<:kekw:852782062607401032>")
     }
     if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
         const embed = new MessageEmbed()
@@ -140,7 +138,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
         receivedMessage.channel.send(butterjson.reply)
     }
-    if (receivedMessage.content.toLowerCase().includes(sus.sus) || receivedMessage.content.toLowerCase().includes(sus.imposter) || receivedMessage.content.toLowerCase().includes(sus.amogus)) { // sus
+    if (susTxtList.includes(receivedMessage.content.toLowerCase())) { // sus
         receivedMessage.channel.send(susGen())
         var uid = "suscount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
 
@@ -336,6 +334,14 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
 function susGen() {
     var susList = ["ඞ", "ඞු්ි", "ඩ", "ඹ", "ඩිුා"]
     return susList[Math.floor(Math.random() * susList.length)]
+}
+function emergencyFoodGen() {
+    var paimonReplyList = ["*Eat it.* ***Eat it now.***", "Emergency Food!"]
+    return paimonReplyList[Math.floor(Math.random() * paimonReplyList.length)]
+}
+function helpGen() {
+    var helpList = ["no :)", "Unfortunately I am a bot and am unable to help :(", "pweese UwU", "Starting help.exe..."]
+    return helpList[Math.floor(Math.random() * helpList.length)]
 }
 
 process.on('unhandledRejection', (reason, promise) => {
