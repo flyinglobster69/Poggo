@@ -184,3 +184,6 @@ Keqing
 Skyward Harp
 Lost Prayer to the Sacred Winds
 Hu Tao
+Xiao
+Arataki Itto
+Raiden Shogun
