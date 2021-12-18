@@ -592,3 +592,4 @@ Shenhe
 Skyward Atlas
 Shenhe
 Ayaka
+Ganyu
