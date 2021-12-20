@@ -12,11 +12,7 @@ const { exitCode } = require('process')
 const config = require('./config.json')
 
 // Connect singles
-const e = require('./singles/e.json')
-const ehetendandayo = require('./singles/ehe.json')
-const butterjson = require('./singles/butter.json')
 const dad = require('./singles/dad.json')
-const swear = require('./singles/swears.json')
 
 // Math commands
 const add = require('./commands/add')
@@ -57,6 +53,7 @@ const die = require('./commands/die')
 const invite = require('./commands/invite')
 const birthday = require('./commands/birthday')
 const suscount = require('./commands/suscount')
+const ship = require('./commands/ship')
 // const music = require('./commands/music')
 
 // Connect client
@@ -71,6 +68,7 @@ client.on('ready', () => {
 
 // Initialize lists
 const susTxtList = ["sus", "imposter", "amogus"]
+const swearList = ["fuck", "retard", "bitch"]
 
 client.on('message', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
@@ -81,8 +79,8 @@ client.on('message', receivedMessage => {
         processCommand(receivedMessage)
     }
 
-    if (receivedMessage.content.toLowerCase() == e.e) { // e
-        receivedMessage.channel.send(e.e)
+    if (receivedMessage.content.toLowerCase() == "e") { // e
+        receivedMessage.channel.send("e")
         var uid = "ecount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
 
                 fs.open('./ecount/' + uid, 'r+', function(error, fd) { // opens the user's e count file
@@ -113,7 +111,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase() == "help") { // help
         receivedMessage.channel.send(helpGen())
     }
-    if (receivedMessage.content.includes("69") && (receivedMessage.author == client.user)) { // 69
+    if (receivedMessage.content.includes("69") && (receivedMessage.author.bot == false)) { // 69
         receivedMessage.channel.send("nice")
     }
     if (receivedMessage.content.toLowerCase().includes("paimon")) { // paimon 
@@ -128,15 +126,12 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase() == "kekw") { // kekw
         receivedMessage.channel.send("<:kekw:852782062607401032>")
     }
-    if (receivedMessage.content.toLowerCase() == ehetendandayo.ehe) { // ehe
+    if (receivedMessage.content.toLowerCase() == "ehe") { // ehe
         const embed = new MessageEmbed()
-        .setTitle(ehetendandayo.output)
+        .setTitle("**ehe te nandayo!**")
         .setThumbnail('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
         .setColor('#00ADEF')
         receivedMessage.channel.send(embed)
-    }
-    if (receivedMessage.content.toLowerCase().includes(butterjson.butter)) { // butter
-        receivedMessage.channel.send(butterjson.reply)
     }
     if (susTxtList.includes(receivedMessage.content.toLowerCase())) { // sus
         receivedMessage.channel.send(susGen())
@@ -171,7 +166,7 @@ client.on('message', receivedMessage => {
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
-    if (receivedMessage.content.toLowerCase().includes(swear.fucc) || receivedMessage.content.toLowerCase().includes(swear.retard)) { // F
+    if (swearList.includes(receivedMessage.content.toLowerCase())) { // F
         receivedMessage.channel.send(`Uh oh someone said a no-no word :P   ˢᵘˢˢʸ ᵇᵃᵏᵃ ${susGen()}`)
     }
 })
@@ -274,6 +269,9 @@ function processCommand(receivedMessage) {
     else if (suscount.checkSuscount(receivedMessage)) { // pog suscount
         return
     }
+    else if (ship.checkShip(receivedMessage)) { // pog ship
+        return
+    }
     // else if (music.checkMusic(receivedMessage)) { // pog music
     //     return
     // }
@@ -340,7 +338,7 @@ function emergencyFoodGen() {
     return paimonReplyList[Math.floor(Math.random() * paimonReplyList.length)]
 }
 function helpGen() {
-    var helpList = ["no :)", "Unfortunately I am a bot and am unable to help :(", "pweese UwU", "Starting help.exe..."]
+    var helpList = ["no :)", "Unfortunately I am a bot and am unable to help :(", "pweese UwU", "Starting help.exe...", "Sure, what do you need help with?"]
     return helpList[Math.floor(Math.random() * helpList.length)]
 }
 

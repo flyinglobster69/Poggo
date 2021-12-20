@@ -68,6 +68,20 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
+                else if (arguments.includes("lovecalc")) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`\`pog ship\``)
+                    .setDescription(`A "Love Calculator" lmao
+
+Notice: This command is PURE RNG, DO NOT TAKE RESULTS SERIOUSLY. 
+
+Usage: 
+\`pog ship\` (to calculate your compatibility percentage with 'someone'); 
+\`pog ship [person]\` (to calculate your compatibility percentage with the specified person); 
+\`pog ship [person1] [person2]\` (to calculate the compatibility between two specified people)`)
+                    .setColor(color)
+                    receivedMessage.channel.send(embed)
+                }
                 else if (arguments.includes("math")) {
                     const embed = new MessageEmbed()
                     .setTitle('Math Commands')
@@ -111,7 +125,7 @@ Note: Superscripts are not enabled, therefore for powers, the exponent is denote
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`profile\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
-Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`;
+Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`, \`lovecalc [person1] [person2]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
 Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.
