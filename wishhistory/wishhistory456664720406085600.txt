@@ -205,3 +205,6 @@ Shenhe
 Skyward Atlas
 Eula
 Skyward Atlas
+Mona
+Keqing
+Venti
