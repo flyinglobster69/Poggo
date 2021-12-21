@@ -200,3 +200,6 @@ Skyward Harp
 Arataki Itto
 Arataki Itto
 Skyward Spine
+Hu Tao
+Shenhe
+Skyward Atlas
