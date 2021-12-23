@@ -218,3 +218,4 @@ Kazuha
 Diluc
 Jean
 Raiden Shogun
+Yoimiya
