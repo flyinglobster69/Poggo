@@ -68,7 +68,7 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("lovecalc")) {
+                else if (arguments.includes("ship")) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog ship\``)
                     .setDescription(`A "Love Calculator" lmao
@@ -79,6 +79,18 @@ Usage:
 \`pog ship\` (to calculate your compatibility percentage with 'someone'); 
 \`pog ship [person]\` (to calculate your compatibility percentage with the specified person); 
 \`pog ship [person1] [person2]\` (to calculate the compatibility between two specified people)`)
+                    .setColor(color)
+                    receivedMessage.channel.send(embed)
+                }
+                else if (arguments.includes("profile")) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`\`pog profile\``)
+                    .setDescription(`Returns your Discord User Information
+
+This command returns your Username, Discord Tag, Discord ID, and a ping.
+If you mention someone after typing \`pog profile\`, then the bot will return the mentioned user's Discord User Information
+
+Usage: \`pog profile\` (to check your own profile); \`pog profile [@user]\` (to check someone else's profile)`)
                     .setColor(color)
                     receivedMessage.channel.send(embed)
                 }
