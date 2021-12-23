@@ -135,9 +135,9 @@ Note: Superscripts are not enabled, therefore for powers, the exponent is denote
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`profile\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
+                    .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`pirate\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
-Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`, \`lovecalc [person1] [person2]\`;
+Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
 Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.
