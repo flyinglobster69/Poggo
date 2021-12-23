@@ -593,3 +593,5 @@ Skyward Atlas
 Shenhe
 Ayaka
 Ganyu
+Yoimiya
+Lost Prayer to the Sacred Winds
