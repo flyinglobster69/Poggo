@@ -219,3 +219,4 @@ Diluc
 Jean
 Raiden Shogun
 Yoimiya
+Zhongli
