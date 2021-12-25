@@ -221,3 +221,4 @@ Raiden Shogun
 Yoimiya
 Zhongli
 Tartaglia
+Zhongli
