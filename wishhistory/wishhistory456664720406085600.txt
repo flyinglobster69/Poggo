@@ -220,3 +220,4 @@ Jean
 Raiden Shogun
 Yoimiya
 Zhongli
+Tartaglia
