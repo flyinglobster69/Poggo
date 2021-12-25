@@ -595,3 +595,5 @@ Ayaka
 Ganyu
 Yoimiya
 Lost Prayer to the Sacred Winds
+Arataki Itto
+Ayaka
