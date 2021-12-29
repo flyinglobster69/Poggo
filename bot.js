@@ -80,7 +80,6 @@ client.on('message', receivedMessage => {
     }
 
     if (receivedMessage.content.toLowerCase() == "e") { // e
-        receivedMessage.channel.send("e")
         var uid = "ecount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
 
                 fs.open('./ecount/' + uid, 'r+', function(error, fd) { // opens the user's e count file
@@ -111,7 +110,7 @@ client.on('message', receivedMessage => {
     if (receivedMessage.content.toLowerCase() == "help") { // help
         receivedMessage.channel.send(helpGen())
     }
-    if (receivedMessage.content.includes("69") && (receivedMessage.author.bot == false)) { // 69
+    if (receivedMessage.content.includes("69 ") && (receivedMessage.author.bot == false)) { // 69
         receivedMessage.channel.send("nice")
     }
     if (receivedMessage.content.toLowerCase().includes("paimon")) { // paimon 
