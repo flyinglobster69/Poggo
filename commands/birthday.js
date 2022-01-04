@@ -29,6 +29,7 @@ module.exports = {
                     .setImage(bdayImg)
                     .setThumbnail(bdayThumb)
                     .setColor(pink)
+                    .setTimestamp()
                     receivedMessage.channel.send(embed)
                     receivedMessage.channel.send(`<@!${user}>`)
                 }
@@ -39,6 +40,7 @@ module.exports = {
                     .setImage(bdayImg)
                     .setThumbnail(bdayThumb)
                     .setColor(pink)
+                    .setTimestamp()
                     receivedMessage.channel.send(embed)
                     receivedMessage.channel.send(`<@!${user}>`)
                 }

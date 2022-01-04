@@ -16,11 +16,7 @@ module.exports = {
                     found = true
                 }
                 else {
-                    const embed = new MessageEmbed()
-                    .setDescription(`***AAAAAAAAAAAAAAAAAAAA***`)
-                    .setImage('http://i1.kym-cdn.com/photos/images/facebook/000/751/659/bf1.jpg')
-                    .setColor(color)
-                    receivedMessage.channel.send(embed) // lock out the user if its not the creator
+                    null
                 }
             
         }

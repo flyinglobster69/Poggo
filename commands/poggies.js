@@ -8,10 +8,7 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'poggies'
             case 'ies' :
-                const embed = new MessageEmbed()
-                .setDescription(`*Wait, that's illegal!*`)
-                .setThumbnail(`https://media.discordapp.net/attachments/852751760324821042/859958039406837770/unknown.png`) 
-                receivedMessage.channel.send(embed) // for legal reasons, this is a joke
+                receivedMessage.channel.send('poggies?') // for legal reasons, this is a joke
         }
         // value of 'found' will be returned in bot.js
         return found

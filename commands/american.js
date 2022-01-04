@@ -12,6 +12,7 @@ module.exports = {
                 .setDescription('Americans in a nutshell')
                 .setImage('https://media.tenor.com/images/8bd3ce1541701bc7fb4105fe211143b2/tenor.gif')
                 .setColor('#00ADEF')
+                .setTimestamp()
                 receivedMessage.channel.send(embed) // tells user to shut up
         }
         // value of 'found' will be returned in bot.js

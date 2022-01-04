@@ -17,6 +17,7 @@ module.exports = {
 And here is the link to the Discord: https://discord.gg/JDTRUPP`)
                 .setImage('https://www.foxforcefivenews.com/wp-content/uploads/2016/09/sullygif.gif')
                 .setColor('#ffff00')
+                .setTimestamp()
                 // .attachFiles(readme)
                 receivedMessage.channel.send(embed)
         }

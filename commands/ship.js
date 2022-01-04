@@ -26,7 +26,8 @@ module.exports = {
                         .setTitle(`${brokenheart} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with someone ${heartpulse}`)
                         .setColor('#00ADEF')
-                        .setFooter("Maybe try someone else ;-;")
+                        .setFooter("Maybe try someone else UwU")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                     else if (percent > 80) {
@@ -35,6 +36,7 @@ module.exports = {
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with someone ${heartpulse}`)
                         .setColor('#ECC60D')
                         .setFooter("You're in luck!")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                     else {
@@ -42,7 +44,8 @@ module.exports = {
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with someone ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter("Very nice!")
+                        .setFooter("Very nice! <3")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                 }
@@ -52,7 +55,8 @@ module.exports = {
                         .setTitle(`${brokenheart} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with ${firstperson} ${heartpulse}`)
                         .setColor('#00ADEF')
-                        .setFooter("Maybe try someone else ;-;")
+                        .setFooter("Maybe try someone else UwU")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                     else if (percent > 80) {
@@ -61,6 +65,7 @@ module.exports = {
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with ${firstperson} ${heartpulse}`)
                         .setColor('#ECC60D')
                         .setFooter("You're in luck!")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                     else {
@@ -68,7 +73,8 @@ module.exports = {
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with ${firstperson} ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter("Very nice!")
+                        .setFooter("Very nice! <3")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                 }
@@ -78,7 +84,8 @@ module.exports = {
                         .setTitle(`${brokenheart} ${percent}%`)
                         .setDescription(`${firstperson[0]}'s compatibility with ${secondperson} ${heartpulse}`)
                         .setColor('#00ADEF')
-                        .setFooter("Maybe try someone else ;-;")
+                        .setFooter("Maybe try someone else UwU")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                     else if (percent > 80) {
@@ -87,6 +94,7 @@ module.exports = {
                         .setDescription(`${firstperson[0]}'s compatibility with ${secondperson} ${heartpulse}`)
                         .setColor('#ECC60D')
                         .setFooter("You're in luck!")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                     else {
@@ -94,7 +102,8 @@ module.exports = {
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`${firstperson[0]}'s compatibility with ${secondperson} ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter("Very nice!")
+                        .setFooter("Very nice! <3")
+                        .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
                 }

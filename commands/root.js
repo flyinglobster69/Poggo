@@ -21,6 +21,7 @@ module.exports = {
                     .setTitle(root)
                     .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseFloat(radicand)} √${parseFloat(base)}`)
                     .setColor('#00ADEF')
+                    .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
                 else {
@@ -28,6 +29,7 @@ module.exports = {
                     .setTitle(root)
                     .setDescription("<@!" + receivedMessage.author.id + ">" + `\n√${parseFloat(base)}`)
                     .setColor('#00ADEF')
+                    .setTimestamp()
                     receivedMessage.channel.send(embed) 
                 }
         }

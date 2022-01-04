@@ -21,6 +21,7 @@ Your ping = \`${yourping}ms\` *(questionable accuracy)*
 Logging = \`True\` *(logging pog counts only)*
 Version: \`${version.version}\` *(current bot version)*`)
                 .setColor('#00ADEF')
+                .setTimestamp()
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

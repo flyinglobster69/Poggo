@@ -1,9 +1,10 @@
-// pog#2538 (PogChamp; pog bot)
+// poggo#2538 (Poggo; Pog Bot)
 // 1.0: June 03 2021
-// Author: FlyingLobster69 (LooOOooL YT)
+// Author: FlyingLobster69#1861 (LooOOooL YT)
 
 // Import the discord.js module
-const {Client, MessageEmbed} = require('discord.js')
+const Discord = require('discord.js')
+const {Client, Intents, MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
 // const schedule = require('node-schedule')
@@ -37,7 +38,6 @@ const readme = require('./commands/readme')
 const horny = require('./commands/horny')
 const biden = require('./commands/biden')
 const trump = require('./commands/trump')
-const pirate = require('./commands/pirate')
 const exe = require('./commands/exe')
 const buff = require('./commands/buff')
 const butter = require('./commands/butter')
@@ -56,8 +56,13 @@ const suscount = require('./commands/suscount')
 const ship = require('./commands/ship')
 // const music = require('./commands/music')
 
+// Moderation commands
+const purge = require('./modcmds/purge')
+
+
 // Connect client
-const client = new Client()
+const client = new Client({ ws: { intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS'] }}) // ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS']
+// const client = new Discord.Client()
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
@@ -220,9 +225,6 @@ function processCommand(receivedMessage) {
     else if (trump.checkTrump(receivedMessage)) { // pog trump
         return
     }
-    else if (pirate.checkPirate(receivedMessage)) { // pog pirate
-        return
-    }
     else if (exe.checkExe(receivedMessage)) { // pog exe
         return
     }
@@ -303,6 +305,12 @@ function processCommand(receivedMessage) {
     else if (root.checkRoot(receivedMessage)) { // pog root
         return
     }
+
+    // Moderation commands
+    else if (purge.checkPurge(receivedMessage)) { // pog purge
+        return
+    }
+    
     // If command doesn't exist
     else {
         return null // do nothing lmao
