@@ -20,6 +20,7 @@ module.exports = {
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')
                 .setImage(randomButter(butter))
                 .setColor('#FFFF00')
+                .setTimestamp()
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

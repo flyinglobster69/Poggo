@@ -14,6 +14,7 @@ module.exports = {
                 .setThumbnail("https://tetris.wiki/images/thumb/9/98/Discord_logo.svg/1200px-Discord_logo.svg.png")
                 .setImage('https://c.tenor.com/DRd36YfJrnAAAAAi/pog-pog-champ.gif')
                 .setColor('#00ADEF')
+                .setTimestamp()
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

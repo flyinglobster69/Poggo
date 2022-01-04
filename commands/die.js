@@ -17,6 +17,7 @@ module.exports = {
                 .setDescription("<@!" + receivedMessage.author.id + "> " + randomReply(reply))
                 .setColor('#0827F5')
                 .setImage('https://c.tenor.com/8YJd3Lvu67IAAAAC/peppa-pig-minecraft.gif')
+                .setTimestamp()
                 receivedMessage.channel.send(embed)
         }
         // value of 'found' will be returned in bot.js

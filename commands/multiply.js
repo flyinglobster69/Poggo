@@ -16,6 +16,7 @@ module.exports = {
                 .setTitle(product)
                 .setDescription("<@!" + receivedMessage.author.id + ">" + `\n${parseFloat(first)} × ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
+                .setTimestamp()
                 receivedMessage.channel.send(embed) // sends the product in the chat
         }
         // value of 'found' will be returned in bot.js

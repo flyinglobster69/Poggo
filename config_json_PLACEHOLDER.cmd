@@ -1,10 +1,11 @@
-Rem {
-Rem 	"prefix": "pog",
-Rem 	"token": "no"
-Rem }
+{
+	"prefix": "pog",
+	"token": "UwU   n o   <3"
+}
 
-Rem The above lines would be the code in config.json, with an actual bot token.
+The above lines would be the code in config.json, with an actual bot token.
+
+Get Rickrolled!
+
 @echo off
 start https://bit.ly/3h872Sg
-
-Rem ^ and that's another Rick Roll kekw

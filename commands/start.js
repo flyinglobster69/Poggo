@@ -15,6 +15,7 @@ module.exports = {
                     const embed = new MessageEmbed()
                     .setImage('https://c.tenor.com/wHC9IYtiPMkAAAAC/starting-windows-logo.gif')
                     .setColor(color)
+                    .setTimestamp()
                     receivedMessage.channel.send(embed) // start windows
                     found = true
                 }
@@ -23,6 +24,7 @@ module.exports = {
                     .setDescription(`kekw`)
                     .setImage('https://itknowledgeexchange.techtarget.com/windows-enterprise-desktop/files/2016/12/gsod.jpg')
                     .setColor(color)
+                    .setTimestamp()
                     receivedMessage.channel.send(embed) // die
                 }
             

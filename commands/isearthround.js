@@ -18,6 +18,7 @@ module.exports = {
                 .setTitle('Is earth round?')
                 .setImage('https://i.imgflip.com/1qr9fk.jpg')
                 .setColor('#00ff00')
+                .setTimestamp()
                 receivedMessage.channel.send(embed) // horny bad
         }
         // value of 'found' will be returned in bot.js

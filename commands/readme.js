@@ -15,6 +15,7 @@ module.exports = {
                 .setDescription("A basic README file that briefly describes the bot.\nIt's recommended that you download the file and open it on your computer.")
                 .setColor('#00ADEF')
                 .attachFiles(readme)
+                .setTimestamp()
                 receivedMessage.channel.send(embed) // send embed
         }
         // value of 'found' will be returned in bot.js
