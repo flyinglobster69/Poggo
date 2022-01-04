@@ -44,3 +44,4 @@ Yoimiya
 Sangonomiya Kokomi
 Kazuha
 Wolf's Gravestone
+Albedo
