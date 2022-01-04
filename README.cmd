@@ -32,7 +32,7 @@ Future Features:
 - Music VC Function (play music in VC)
 
 Invite the bot with this link!
-https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=274878221312
+https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=274878426112
 
 Fun fact: this README is a Rick Roll
 
