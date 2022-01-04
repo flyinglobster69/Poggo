@@ -271,3 +271,6 @@ Keqing
 Skyward Spine
 Kamisato Ayaka
 Yae Miko
+Skyward Blade
+Qiqi
+Klee
