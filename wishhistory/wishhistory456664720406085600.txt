@@ -269,3 +269,5 @@ Primoridal Jade Winged-Spear
 Eula
 Keqing
 Skyward Spine
+Kamisato Ayaka
+Yae Miko
