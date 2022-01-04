@@ -268,3 +268,4 @@ Yoimiya
 Primoridal Jade Winged-Spear
 Eula
 Keqing
+Skyward Spine
