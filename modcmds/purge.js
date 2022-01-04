@@ -1,6 +1,6 @@
 module.exports = {
     checkPurge: function(receivedMessage) {
-    const {Client} = require('discord.js')
+    const {Client, MessageEmbed} = require('discord.js')
     const client = new Client({ ws: { intents: ['GUILD_MESSAGES']}})
 
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
@@ -40,7 +40,12 @@ module.exports = {
                         else break
                         Channel.bulkDelete(String(maxAmount), bool)
 
-                    receivedMessage.channel.send(`${amount} of messages purged!`)
+                    const embed = new MessageEmbed()
+                    .setDescription(`${amount} messages purged!`)
+                    .setThumbnail('https://c.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif')
+                    .setColor('#00ADEF')
+                    .setTimestamp()
+                    receivedMessage.channel.send(embed)
                     
                 }
         }
