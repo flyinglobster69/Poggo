@@ -274,3 +274,4 @@ Yae Miko
 Skyward Blade
 Qiqi
 Klee
+Venti

@@ -34,3 +34,4 @@ Albedo
 Raiden Shogun
 Aquila Favonia
 Shenhe
+Skyward Atlas
