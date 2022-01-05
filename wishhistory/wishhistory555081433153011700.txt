@@ -49,3 +49,4 @@ Tartaglia
 Yoimiya
 Skyward Harp
 Hu Tao
+Yae Miko
