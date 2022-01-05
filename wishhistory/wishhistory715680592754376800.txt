@@ -170,3 +170,5 @@ Amos' Bow
 Jean
 Klee
 Sangonomiya Kokomi
+Skyward Harp
+Skyward Blade
