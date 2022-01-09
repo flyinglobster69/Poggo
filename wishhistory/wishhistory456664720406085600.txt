@@ -337,3 +337,6 @@ Ganyu
 Aquila Favonia
 Zhongli
 Qiqi
+Mona
+Skyward Spine
+Aquila Favonia
