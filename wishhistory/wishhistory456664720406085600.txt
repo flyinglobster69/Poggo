@@ -336,3 +336,4 @@ Zhongli
 Ganyu
 Aquila Favonia
 Zhongli
+Qiqi
