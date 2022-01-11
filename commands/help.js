@@ -3,14 +3,14 @@ module.exports = {
     const {MessageEmbed} = require('discord.js')
     const color = '#00ff00'
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
-    let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
-    let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
+    let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
+    let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog help'
             case 'help' : 
-                if (arguments.includes("exe")) {
+                if (arguments.includes('exe')) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog exe\``)
                     .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it.
@@ -20,29 +20,9 @@ Usage: \`pog exe [any text]\``)
                     .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("genshin")) {
+                else if (arguments.includes('count')) {
                     const embed = new MessageEmbed()
-                    .setTitle(`\`pog smol\``)
-                    .setDescription(`Takes the text input after \`pog smol\` and interprets it as a Genshin Impact character name and returns a 'smol' pfp of that character (if available)
-
-Usage: \`pog smol [character]\``)
-                    .setColor(color)
-                    .setTimestamp()
-                    receivedMessage.channel.send(embed)
-                }
-                else if (arguments.includes("sm")) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`\`pog sm\``)
-                    .setDescription(`Takes the text input after \`pog sm\` and interprets it as a Genshin Impact Stellar Moments soundtrack and returns the YouTube link to the song.
-
-Usage: \`pog sm [character]\``)
-                    .setColor(color)
-                    .setTimestamp()
-                    receivedMessage.channel.send(embed)
-                }
-                else if (arguments.includes("count")) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`\`Counters\``)
+                    .setTitle('Counters')
                     .setDescription(`Returns a counter value, depending on which counter is specified. Mention a user at the end of the command to see the counter for them.
 Counters: \`pog count\` (counts pog), \`pog ecount\` (counts e), \`pog suscount\` (counts sus);
 
@@ -61,7 +41,7 @@ Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (menti
                     .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("wish")) {
+                else if (arguments.includes('wish')) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog wish\``)
                     .setDescription(`A Genshin Impact wish simulation command.
@@ -73,7 +53,7 @@ Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("ship")) {
+                else if (arguments.includes('ship')) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog ship\``)
                     .setDescription(`A "Love Calculator" lmao
@@ -88,7 +68,7 @@ Usage:
                     .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("profile")) {
+                else if (arguments.includes('profile')) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog profile\``)
                     .setDescription(`Returns your Discord User Information
@@ -101,7 +81,7 @@ Usage: \`pog profile\` (to check your own profile); \`pog profile [@user]\` (to 
                     .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("math")) {
+                else if (arguments.includes('math')) {
                     const embed = new MessageEmbed()
                     .setTitle('Math Commands')
                     .setDescription(`A collection of commands that do basic math.
@@ -133,7 +113,7 @@ Note: Superscripts are not enabled, therefore for powers, the exponent is denote
                     .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("purge")) {
+                else if (arguments.includes('purge')) {
                     const embed = new MessageEmbed()
                     .setTitle('\`pog purge\`')
                     .setDescription(`This command mass-deletes the specified number of messages.
@@ -143,10 +123,27 @@ Usage: \`pog purge [# of messages up to 100]\`
 Note: This is a moderation command that can only be used by people with the Administrator permission.
 Note: It is recommended that you purge less messages at a time and run the command multiple times, this makes it harder to accidentally purge too much.`)
                     .setColor(color)
-                    .setTimestamp
+                    .setTimestamp()
                     receivedMessage.channel.send(embed)
                 }
-                else if (arguments.includes("help")) {
+                else if (arguments.includes('remind')) {
+                    const embed = new MessageEmbed()
+                    .setTitle('\`pog remind\`')
+                    .setDescription(`This command is used to set a reminder for yourself in the channel. When the set timer ends, you get pinged in the channel where the command is run.
+
+Usage: 
+\`remind [hours minutes]\` 
+-> ex. \`pog remind 1 30\` will remind you with a ping in 1 hour 30 mins.
+\`remind [minutes]\` 
+-> ex. \`pog remind 10\` will remind you with a ping in 10 mins.
+
+Note: This command curently does not take specific reminder information, it will ping you for 'something'.
+Note: It is not recommended to purely rely on this reminder system because active reminders are cleared when the bot is rebooted for updates.`)
+                    .setColor(color)
+                    .setTimestamp()
+                    receivedMessage.channel.send(embed)
+                }
+                else if (arguments.includes('help')) {
                     const embed = new MessageEmbed()
                     .setTitle(`Need more clarification?`)
                     .setDescription(`For more information about individual commands, click here: https://bit.ly/3h872Sg`)
@@ -157,9 +154,9 @@ Note: It is recommended that you purge less messages at a time and run the comma
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \nBot Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
+                    .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
-Bigger Commands\: \`exe [insert text here]\`, \`smol [insert genshin waifu here]\`, \`sm [insert character name here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`;
+Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
 Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.
@@ -169,9 +166,9 @@ Type \`pog help math\` for a more in-depth overview of Math commands
 
 Moderation commands: \`purge [# of messages]\` (more will be implimented later probably)
 
-Use \`pog help [command]\` on Bigger commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for dummy instructions.
+Use \`pog help [command]\` on Bigger Commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for dummy instructions.
 
-Please note that the bot will collect and store Discord User IDs when the user sends their first \`pog\` or \`e\`. 
+Please note that the bot will collect and store Discord User IDs when the user sends their first \`pog\`, \`sus\` or \`e\`. 
 The most up-to-date pog logs are preserved on the Server, while backups are kept on GitHub (may be slightly outdated)
 This allows the bot to record a user's \`pog\` count and \`e\` count (a core function).
 No other identifiable data is stored on the server or GitHub.

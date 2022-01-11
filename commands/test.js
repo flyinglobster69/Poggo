@@ -1,4 +1,4 @@
-const { Client, MessageEmbed } = require("discord.js")
+const { Client, MessageEmbed } = require('discord.js')
 
 module.exports = {
     checkTest: function(receivedMessage) {
@@ -6,8 +6,8 @@ module.exports = {
 
     const version = require('./version.json')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
-    let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
-    let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
+    let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
+    let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     var yourping = new Date().getTime() - receivedMessage.createdTimestamp
     // var botping = Math.round(client.pi)
     found = false

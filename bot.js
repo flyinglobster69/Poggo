@@ -47,13 +47,12 @@ const ecount = require('./commands/ecount')
 const wish = require('./commands/wish')
 const sm = require('./commands/sm')
 const smol = require('./commands/smol')
-const upload = require('./commands/upload')
 const isearthround = require('./commands/isearthround')
 const die = require('./commands/die')
 const invite = require('./commands/invite')
-const birthday = require('./commands/birthday')
 const suscount = require('./commands/suscount')
 const ship = require('./commands/ship')
+const remind = require('./commands/remind')
 // const music = require('./commands/music')
 
 // Moderation commands
@@ -66,14 +65,14 @@ const client = new Client({ ws: { intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_ME
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
-    console.log("EPIC POGGERS " + client.user.tag + " is now online!")
+    console.log('EPIC POGGERS ' + client.user.tag + ' is now online!')
 
-    client.user.setActivity("pog help") // Activity status on Discord
+    client.user.setActivity('pog help') // Activity status on Discord
 })
 
 // Initialize lists
-const susTxtList = ["sus", "imposter", "amogus"]
-const swearList = ["fuck", "retard", "bitch"]
+const susTxtList = ['sus', 'imposter', 'amogus']
+const swearList = ['fuck', 'retard', 'bitch']
 
 client.on('message', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
@@ -84,19 +83,19 @@ client.on('message', receivedMessage => {
         processCommand(receivedMessage)
     }
 
-    if (receivedMessage.content.toLowerCase() == "e") { // e
-        var uid = "ecount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
+    if (receivedMessage.content.toLowerCase() == 'e') { // e
+        var uid = 'ecount' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
 
                 fs.open('./ecount/' + uid, 'r+', function(error, fd) { // opens the user's e count file
                     if (error) { // if user has no pog count file, create one
-                        fs.writeFile('./ecount/' + uid, "1", "utf8", function(error, data) { // start user with 1 e
+                        fs.writeFile('./ecount/' + uid, '1', 'utf8', function(error, data) { // start user with 1 e
                             null
                         })
                     }
                     else { // if user has a pog count file
-                        fs.readFile('./ecount/' + uid, "utf8", function(error, data) { // read the value in the e count file
+                        fs.readFile('./ecount/' + uid, 'utf8', function(error, data) { // read the value in the e count file
                             if (error) { // if file does not exist, create one (this is unlikely to be needed)
-                                fs.writeFile('./ecount/' + uid, "1", "utf8", function(error, data) { // start user with 1 e
+                                fs.writeFile('./ecount/' + uid, '1', 'utf8', function(error, data) { // start user with 1 e
                                     null
                                 })
                             }
@@ -105,52 +104,52 @@ client.on('message', receivedMessage => {
                                 var eint = parseInt(ecount) // convert e count to an int variable
                                 var etotal = eint + 1 // add 1 to the e count
                                 var etotalstring = etotal.toString() // convert new e count back to string value
-                                fs.write(fd, etotalstring, 0, "utf8", function(error, writtenbytes) { // overwrite the old e count value with the new one
+                                fs.write(fd, etotalstring, 0, 'utf8', function(error, writtenbytes) { // overwrite the old e count value with the new one
                                 })
                             }
                         })
                     }
                 })
     }
-    if (receivedMessage.content.toLowerCase() == "help") { // help
+    if (receivedMessage.content.toLowerCase() == 'help') { // help
         receivedMessage.channel.send(helpGen())
     }
-    if (receivedMessage.content.includes("69 ") && (receivedMessage.author.bot == false)) { // 69
-        receivedMessage.channel.send("nice")
+    if (receivedMessage.content.includes('69 ') && (receivedMessage.author.bot == false)) { // 69
+        receivedMessage.channel.send('nice')
     }
-    if (receivedMessage.content.toLowerCase().includes("paimon")) { // paimon 
+    if (receivedMessage.content.toLowerCase().includes('paimon')) { // paimon 
         receivedMessage.channel.send(emergencyFoodGen())
     }
-    if (receivedMessage.content.toLowerCase() == "dewit") { // dewit
+    if (receivedMessage.content.toLowerCase() == 'dewit') { // dewit
         const embed = new MessageEmbed()
         .setImage('https://media.discordapp.net/attachments/852751760324821042/863226637460963364/dewit.gif')
         .setColor('#00ADEF')
         receivedMessage.channel.send(embed)
     }
-    if (receivedMessage.content.toLowerCase() == "kekw") { // kekw
-        receivedMessage.channel.send("<:kekw:852782062607401032>")
+    if (receivedMessage.content.toLowerCase() == 'kekw') { // kekw
+        receivedMessage.channel.send('<:kekw:852782062607401032>')
     }
-    if (receivedMessage.content.toLowerCase() == "ehe") { // ehe
+    if (receivedMessage.content.toLowerCase() == 'ehe') { // ehe
         const embed = new MessageEmbed()
-        .setTitle("**ehe te nandayo!**")
+        .setTitle('**ehe te nandayo!**')
         .setThumbnail('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
         .setColor('#00ADEF')
         receivedMessage.channel.send(embed)
     }
     if (susTxtList.includes(receivedMessage.content.toLowerCase())) { // sus
         receivedMessage.channel.send(susGen())
-        var uid = "suscount" + parseInt(receivedMessage.author.id).toString() + ".txt" // takes the message author uid and puts it into the file name
+        var uid = 'suscount' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
 
                 fs.open('./suscount/' + uid, 'r+', function(error, fd) { // opens the user's sus count file
                     if (error) { // if user has no sus count file, create one
-                        fs.writeFile('./suscount/' + uid, "1", "utf8", function(error, data) { // start user with 1 amogus
+                        fs.writeFile('./suscount/' + uid, '1', 'utf8', function(error, data) { // start user with 1 amogus
                             null
                         })
                     }
                     else { // if user has a sus count file
-                        fs.readFile('./suscount/' + uid, "utf8", function(error, data) { // read the value in the sus count file
+                        fs.readFile('./suscount/' + uid, 'utf8', function(error, data) { // read the value in the sus count file
                             if (error) { // if file does not exist, create one (this is unlikely to be needed)
-                                fs.writeFile('./suscount/' + uid, "1", "utf8", function(error, data) { // start user with 1 amogus
+                                fs.writeFile('./suscount/' + uid, '1', 'utf8', function(error, data) { // start user with 1 amogus
                                     null
                                 })
                             }
@@ -159,7 +158,7 @@ client.on('message', receivedMessage => {
                                 var susint = parseInt(suscount) // convert sus count to an int variable
                                 var sustotal = susint + 1 // add 1 to the sus count
                                 var sustotalstring = sustotal.toString() // convert new sus count back to string value
-                                fs.write(fd, sustotalstring, 0, "utf8", function(error, writtenbytes) { // overwrite the old sus count value with the new one
+                                fs.write(fd, sustotalstring, 0, 'utf8', function(error, writtenbytes) { // overwrite the old sus count value with the new one
                                 })
                             }
                         })
@@ -178,8 +177,8 @@ client.on('message', receivedMessage => {
 // Command function
 function processCommand(receivedMessage) {
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
-    let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
-    let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
+    let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
+    let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
     // Basic Commands
@@ -273,11 +272,14 @@ function processCommand(receivedMessage) {
     else if (ship.checkShip(receivedMessage)) { // pog ship
         return
     }
+    else if (remind.checkRemind(receivedMessage)) { // pog remind
+        return
+    }
     // else if (music.checkMusic(receivedMessage)) { // pog music
     //     return
     // }
 
-    // else if (receivedMessage == "time") {
+    // else if (receivedMessage == 'time') {
     //     const date = new Date(2021, 5, 25, 17, 51, 0);
     //     const job = schedule.scheduleJob(date, function(){
     //         console.log('time test message owowoowowowowowowowowowo')
@@ -326,26 +328,26 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
     randomPity += 1
 
     if (randomPity > 9) { // if pity reaches 10, quote deleted message and reset pity counter
-        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+        receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
         randomPity = 0
     }
     if (random == 5) { // if random number (luck) is 5, quote delete message and reset pity count (10% luck)
         randomPity = 0
-        receivedMessage.channel.send(`\"${receivedMessage.content}\" - ${receivedMessage.author.username}`)
+        receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
     }
 })
 
 // Random 'sus' text selector
 function susGen() {
-    var susList = ["ඞ", "ඞු්ි", "ඩ", "ඹ", "ඩිුා"]
+    var susList = ['ඞ', 'ඞු්ි', 'ඩ', 'ඹ', 'ඩිුා']
     return susList[Math.floor(Math.random() * susList.length)]
 }
 function emergencyFoodGen() {
-    var paimonReplyList = ["*Eat it.* ***Eat it now.***", "Emergency Food!"]
+    var paimonReplyList = ['*Eat it.* ***Eat it now.***', 'Emergency Food!']
     return paimonReplyList[Math.floor(Math.random() * paimonReplyList.length)]
 }
 function helpGen() {
-    var helpList = ["no :)", "Unfortunately I am a bot and am unable to help :(", "pweese UwU", "Starting help.exe...", "Sure, what do you need help with?"]
+    var helpList = ['no :)', 'Unfortunately I am a bot and am unable to help :(', 'pweese UwU', 'Starting help.exe...', 'Sure, what do you need help with?']
     return helpList[Math.floor(Math.random() * helpList.length)]
 }
 
