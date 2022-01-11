@@ -3,11 +3,11 @@ module.exports = {
     const ytdl = require('ytdl-core');
     const queue = new Map();
     const { Client } = require('discord.js');
-    const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
+    const client = new Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] })
     
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
-    let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
-    let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
+    let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
+    let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
@@ -30,14 +30,14 @@ module.exports = {
                 }
 
                 async function execute(receivedMessage, serverQueue) {
-                    const args = receivedMessage.content.split(" ")
+                    const args = receivedMessage.content.split(' ')
                   
                     const voiceChannel = receivedMessage.member.voice.channel
                     if (!voiceChannel)
-                        return receivedMessage.channel.send("You need to be in a voice channel to play music!")
+                        return receivedMessage.channel.send('You need to be in a voice channel to play music!')
                     const permissions = voiceChannel.permissionsFor(receivedMessage.client.user)
-                    if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
-                        return receivedMessage.channel.send("I need the permissions to join and speak in your voice channel!")
+                    if (!permissions.has('CONNECT') || !permissions.has('SPEAK')) {
+                        return receivedMessage.channel.send('I need the permissions to join and speak in your voice channel!')
                     }
                 
                 
@@ -96,26 +96,26 @@ module.exports = {
 
                 const dispatcher = serverQueue.connection
                 .play(ytdl(song.url))
-                .on("finish", () => {
+                .on('finish', () => {
                     serverQueue.songs.shift()
                     play(guild, serverQueue.songs[0])
                 })
-                .on("error", error => console.error(error))
+                .on('error', error => console.error(error))
                 dispatcher.setVolumeLogarithmic(serverQueue.volume / 5)
                 serverQueue.textChannel.send(`Start playing: **${song.title}**`)
 
                 function skip(receivedMessage, serverQueue) {
                     if (!receivedMessage.member.voice.channel)
-                        return receivedMessage.channel.send("You have to be in a voice channel to stop the music!")
+                        return receivedMessage.channel.send('You have to be in a voice channel to stop the music!')
                     if (!serverQueue)
-                        return receivedMessage.channel.send("There is no song that I could skip!")
+                        return receivedMessage.channel.send('There is no song that I could skip!')
                     serverQueue.connection.dispatcher.end()
                 }
 
                 function stop(receivedMessage, serverQueue) {
                     if (!receivedMessage.member.voice.channel)
                         return receivedMessage.channel.send(
-                            "You have to be in a voice channel to stop the music!"
+                            'You have to be in a voice channel to stop the music!'
                         );
                         serverQueue.songs = [];
                         serverQueue.connection.dispatcher.end();

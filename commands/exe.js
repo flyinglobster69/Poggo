@@ -3,14 +3,14 @@ module.exports = {
     const fs = require('fs') // connect fs module
     const {MessageEmbed} = require('discord.js')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
-    let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
-    let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
+    let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
+    let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog exe'
             case 'exe' :
                 const embed = new MessageEmbed()
-                .setTitle(receivedMessage.content.substr(8) + ".exe")
+                .setTitle(receivedMessage.content.substr(8) + '.exe')
                 .setDescription('sussy baka!')
                 .setThumbnail('https://aux2.iconspalace.com/uploads/448592549.png')
                 .setTimestamp()
