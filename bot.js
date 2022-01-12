@@ -252,9 +252,6 @@ function processCommand(receivedMessage) {
     else if (invite.checkInvite(receivedMessage)) { // pog invite
         return
     }
-    else if (birthday.checkBirthday(receivedMessage)) { // pog birthday (private)
-        return
-    }
     else if (suscount.checkSuscount(receivedMessage)) { // pog suscount
         return
     }
