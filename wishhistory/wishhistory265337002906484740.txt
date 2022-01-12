@@ -600,3 +600,5 @@ Ayaka
 Hu Tao
 Shenhe
 Yae Miko
+Yae Miko
+Tartaglia
