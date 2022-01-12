@@ -45,8 +45,6 @@ const american = require('./commands/american')
 const count = require('./commands/count')
 const ecount = require('./commands/ecount')
 const wish = require('./commands/wish')
-const sm = require('./commands/sm')
-const smol = require('./commands/smol')
 const isearthround = require('./commands/isearthround')
 const die = require('./commands/die')
 const invite = require('./commands/invite')
@@ -243,12 +241,6 @@ function processCommand(receivedMessage) {
         return
     }
     else if (wish.checkWish(receivedMessage)) { // pog wish
-        return
-    }
-    else if (sm.checkStellarMoments(receivedMessage)) { // pog sm
-        return
-    }
-    else if (smol.checkSmol(receivedMessage)) { // pog smol
         return
     }
     else if (upload.checkUpload(receivedMessage)) { // pog upload
