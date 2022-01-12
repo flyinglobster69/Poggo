@@ -243,9 +243,6 @@ function processCommand(receivedMessage) {
     else if (wish.checkWish(receivedMessage)) { // pog wish
         return
     }
-    else if (upload.checkUpload(receivedMessage)) { // pog upload
-        return
-    }
     else if (isearthround.checkIsearthround(receivedMessage)) { // pog isearthround
         return
     }
