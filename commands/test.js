@@ -18,7 +18,7 @@ module.exports = {
                 .setTitle('Bot Test')
                 .setDescription(`Msg test = \`Success\` *(bot can send messages)*
 Your ping = \`${yourping}ms\` *(questionable accuracy)*
-Logging = \`True\` *(logging pog counts only)*
+Logging = \`True\` *(counters running)*
 Version: \`${version.version}\` *(current bot version)*`)
                 .setColor('#00ADEF')
                 .setTimestamp()
