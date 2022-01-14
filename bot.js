@@ -70,7 +70,6 @@ client.on('ready', () => {
 
 // Initialize lists
 const susTxtList = ['sus', 'imposter', 'amogus']
-const swearList = ['fuck', 'retard', 'bitch']
 
 client.on('message', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
@@ -163,12 +162,9 @@ client.on('message', receivedMessage => {
                     }
                 })
     } 
-    if (receivedMessage.content.toLowerCase().startsWith(dad.im)) { // dad
+    if (receivedMessage.content.toLowerCase().startsWith(dad.im) && (receivedMessage.content.length < 14)) { // dad
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
-    }
-    if (swearList.includes(receivedMessage.content.toLowerCase())) { // F
-        receivedMessage.channel.send(`Uh oh someone said a no-no word :P   ˢᵘˢˢʸ ᵇᵃᵏᵃ ${susGen()}`)
     }
 })
 
