@@ -9,7 +9,14 @@ module.exports = {
     function randomButter(butter) {
         return butter[Math.floor(Math.random() * butter.length)]
     }
-    const butter = ['https://c.tenor.com/JPkgI9Se-MkAAAAd/plane-airplane.gif', 'https://media1.tenor.com/images/9475b573a143c5a765caad621bdc82ec/tenor.gif', 'https://c.tenor.com/mmRn1NnX5WkAAAAC/boeing-rfs.gif', 'https://c.tenor.com/A9NhMybRH9YAAAAd/airplane-aircraft.gif', 'https://c.tenor.com/CwNYY_Yq5AYAAAAC/airplane-landing.gif', 'https://c.tenor.com/yeDN9Yjixh8AAAAd/plane-landing-scary.gif', 'https://c.tenor.com/Pd7BBiLBDrgAAAAd/butter-a330.gif']
+    const butter = ['https://c.tenor.com/JPkgI9Se-MkAAAAd/plane-airplane.gif', 
+    'https://media1.tenor.com/images/9475b573a143c5a765caad621bdc82ec/tenor.gif', 
+    'https://c.tenor.com/mmRn1NnX5WkAAAAC/boeing-rfs.gif', 
+    'https://c.tenor.com/A9NhMybRH9YAAAAd/airplane-aircraft.gif', 
+    'https://c.tenor.com/CwNYY_Yq5AYAAAAC/airplane-landing.gif', 
+    'https://c.tenor.com/yeDN9Yjixh8AAAAd/plane-landing-scary.gif', 
+    'https://c.tenor.com/Pd7BBiLBDrgAAAAd/butter-a330.gif']
+    
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog butter'

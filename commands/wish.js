@@ -437,7 +437,7 @@ module.exports = {
                 color = cryo
             }
             else if (randompull == 'Raiden Shogun') {
-                const nameList = ['Raiden Shogun', 'Ei', 'Baal', '雷 らい 電 でん 将 しょう 軍 ぐん']
+                const nameList = ['Raiden Shogun', 'Ei', 'Baal', '雷電 ']
                 item = goldstar + nameGen(nameList)
                 charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
                 color = electro

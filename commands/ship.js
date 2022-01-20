@@ -44,7 +44,7 @@ module.exports = {
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with someone ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter('Very nice! <3')
+                        .setFooter('A perfect match? <3')
                         .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
@@ -73,7 +73,7 @@ module.exports = {
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with ${firstperson} ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter('Very nice! <3')
+                        .setFooter('A perfect match? <3')
                         .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
@@ -102,7 +102,7 @@ module.exports = {
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`${firstperson[0]}'s compatibility with ${secondperson} ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter('Very nice! <3')
+                        .setFooter('A perfect match? <3')
                         .setTimestamp()
                         receivedMessage.channel.send(embed)
                     }
