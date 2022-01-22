@@ -2,7 +2,6 @@ const { Client, MessageEmbed } = require('discord.js')
 
 module.exports = {
     checkTest: function(receivedMessage) {
-    const client = new Client()
 
     const version = require('./version.json')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog

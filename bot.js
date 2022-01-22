@@ -4,7 +4,7 @@
 
 // Import the discord.js module
 const Discord = require('discord.js')
-const {Client, Intents, MessageEmbed} = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
 // const schedule = require('node-schedule')
@@ -58,7 +58,14 @@ const purge = require('./modcmds/purge')
 
 
 // Connect client
-const client = new Client({ ws: { intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS'] }}) // ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS']
+const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, 
+    Discord.Intents.FLAGS.GUILD_MEMBERS, 
+    Discord.Intents.FLAGS.GUILD_MESSAGES, 
+    Discord.Intents.FLAGS.GUILD_WEBHOOKS, 
+    Discord.Intents.FLAGS.GUILD_PRESENCES, 
+    Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
+    Discord.Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS]}) // ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS']
+
 // const client = new Discord.Client()
 
 // Gets called when our bot is successfully logged in and connected
@@ -71,7 +78,7 @@ client.on('ready', () => {
 // Initialize lists
 const susTxtList = ['sus', 'imposter', 'amogus']
 
-client.on('message', receivedMessage => {
+client.on('messageCreate', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
         return // kekw
     }

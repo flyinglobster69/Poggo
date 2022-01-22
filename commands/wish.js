@@ -7,9 +7,48 @@ module.exports = {
     const fs = require('fs') // connect fs module
     const {MessageEmbed} = require('discord.js')
         const primogem = 'https://th.bing.com/th/id/R.7384eddb3aa0b07801ada263123ec336?rik=Gr7ZaVnIfXjK%2bQ&pid=ImgRaw&r=0'
-        const star5 = ['Venti', 'Tartaglia', 'Klee', 'Albedo', 'Ganyu', 'Xiao', 'Hu Tao', 'Zhongli', 'Eula', 'Kaedehara Kazuha', 'Kamisato Ayaka', 'Yoimiya', 'Keqing', 'Mona', 'Qiqi', 'Diluc', 'Jean', 'Raiden Shogun', 'Sangonomiya Kokomi', 'Arataki Itto', 'Shenhe', 'Yae Miko', 'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 'Skyward Pride', 'Skyward Blade', 'Aquila Favonia'] // List of 5-star characters and weapons
-        const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 'Sacrificial Sword', 'The Flute', 'Favonius Sword'] // List of 4-star characters and weapons
-        const star3 = ['Slingshot', 'Sharpshooter\'s Oath', 'Raven Bow', 'Emerald Orb', 'Thrilling Tales of Dragon Slayers', 'Magic Guide', 'Black Tassel', 'Debate Club', 'Bloodstained Greatsword', 'Ferrous Shadow', 'Skyrider Sword', 'Harbringer of Dawn', 'Cool Steel'] // List of 3-star weapons
+        const star5 = ['Venti', 'Tartaglia', 'Klee', 'Albedo', 'Ganyu', 'Xiao', 'Hu Tao', 'Zhongli',
+            'Eula', 'Kaedehara Kazuha', 'Kamisato Ayaka', 'Yoimiya', 'Keqing', 'Mona', 'Qiqi', 'Diluc',
+            'Jean', 'Raiden Shogun', 'Sangonomiya Kokomi', 'Arataki Itto', 'Shenhe', 'Yae Miko', 
+            'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
+            'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 'Skyward Pride', 
+            'Skyward Blade', 'Aquila Favonia'] // List of 5-star characters and weapons
+
+        const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
+            'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
+            'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 
+            'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
+            'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
+            'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
+            'Sacrificial Sword', 'The Flute', 'Favonius Sword'] // List of 4-star characters and weapons
+
+        const star3 = ['Slingshot', 'Sharpshooter\'s Oath', 'Raven Bow', 'Emerald Orb', 
+            'Thrilling Tales of Dragon Slayers', 'Magic Guide', 'Black Tassel', 'Debate Club', 
+            'Bloodstained Greatsword', 'Ferrous Shadow', 'Skyrider Sword', 'Harbringer of Dawn', 
+            'Cool Steel'] // List of 3-star weapons
+
+        const venticard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
+        const childecard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
+        const kleecard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
+        const albedocard = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
+        const ganyucard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
+        const xiaocard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
+        const hutaocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
+        const zhonglicard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png'
+        const eulacard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
+        const kazuhacard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
+        const ayakacard = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
+        const yoimiyacard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
+        const keqingcard = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
+        const monacard = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
+        const diluccard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
+        const jeancard = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
+        const qiqicard = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
+        const eicard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Character_Raiden_Shogun_Card.jpg'
+        const kokomicard = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+        const ittocard = 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Arataki_Itto_Card.jpg'
+        const shenhecard = 'https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Shenhe_Card.jpg'
+        const yaecard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png'
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
@@ -77,7 +116,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://media1.tenor.com/images/43cb917c658c0cc22dbf96f2e8858269/tenor.gif')
+                .setImage(venticard)
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -88,7 +127,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png')
+                .setImage(childecard)
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -99,7 +138,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg')
+                .setImage(kleecard)
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -110,7 +149,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png')
+                .setImage(albedocard)
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -121,7 +160,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png')
+                .setImage(ganyucard)
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -132,7 +171,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg')
+                .setImage(xiaocard)
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -143,7 +182,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg')
+                .setImage(hutaocard)
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -154,7 +193,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png')
+                .setImage(zhonglicard)
                 .setColor(geo)
                 .setThumbnail('https://th.bing.com/th/id/OIP.oJNFbpLvfgNG0-L3_qJSygAAAA?pid=ImgDet&rs=1')
                 .setTimestamp()
@@ -165,7 +204,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png')
+                .setImage(eulacard)
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -176,7 +215,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png')
+                .setImage(kazuhacard)
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -187,7 +226,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png')
+                .setImage(ayakacard)
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -198,7 +237,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png')
+                .setImage(yoimiyacard)
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -209,7 +248,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg')
+                .setImage(keqingcard)
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -220,7 +259,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg')
+                .setImage(monacard)
                 .setColor(hydro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -231,7 +270,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg')
+                .setImage(diluccard)
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -242,7 +281,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg')
+                .setImage(jeancard)
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -253,7 +292,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg')
+                .setImage(qiqicard)
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -264,7 +303,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/9/97/Character_Raiden_Shogun_Card.png')
+                .setImage(eicard)
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -275,7 +314,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg')
+                .setImage(kokomicard)
                 .setColor(hydro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -286,7 +325,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Arataki_Itto_Card.jpg')
+                .setImage(ittocard)
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -297,7 +336,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Shenhe_Card.jpg')
+                .setImage(shenhecard)
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -307,7 +346,7 @@ module.exports = {
                 wishHistory()
                 .setTitle(goldstar)
                 .setDescription(randompull)
-                .setImage('https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png')
+                .setImage(yaecard)
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
@@ -356,32 +395,32 @@ module.exports = {
             else if (randompull == 'Tartaglia') {
                 const nameList = ['Tartaglia', 'Childe']
                 item = goldstar + nameGen(nameList)
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
+                charimage = childecard
                 color = hydro
             }
             else if (randompull == 'Klee') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
+                charimage = kleecard
                 color = pyro
             }
             else if (randompull == 'Albedo') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
+                charimage = albedocard
                 color = geo
             }
             else if (randompull == 'Ganyu') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
+                charimage = ganyucard
                 color = cryo
             }
             else if (randompull == 'Xiao') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
+                charimage = xiaocard
                 color = anemo
             }
             else if (randompull == 'Hu Tao') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
+                charimage = hutaocard
                 color = pyro
             }
             else if (randompull == 'Zhongli') {
@@ -392,48 +431,48 @@ module.exports = {
             }
             else if (randompull == 'Eula') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
+                charimage = eulacard
                 color = cryo
             }
             else if (randompull == 'Kaedehara Kazuha') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
+                charimage = kazuhacard
                 color = anemo
             }
             else if (randompull == 'Kamisato Ayaka') {
                 const nameList = ['Kamisato Ayaka', 'Kamisato Ayaya']
                 item = goldstar + nameGen(nameList)
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
+                charimage = ayakacard
                 color = cryo
             }
             else if (randompull == 'Yoimiya') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
+                charimage = yoimiyacard
                 color = pyro
             }
             else if (randompull == 'Keqing') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
+                charimage = keqingcard
                 color = electro
             }
             else if (randompull == 'Mona') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
+                charimage = monacard
                 color = hydro
             }
             else if (randompull == 'Diluc') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
+                charimage = diluccard
                 color = pyro
             }
             else if (randompull == 'Jean') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
+                charimage = jeancard
                 color = anemo
             }
             else if (randompull == 'Qiqi') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
+                charimage = qiqicard
                 color = cryo
             }
             else if (randompull == 'Raiden Shogun') {
@@ -444,22 +483,22 @@ module.exports = {
             }
             else if (randompull == 'Sangonomiya Kokomi') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
+                charimage = kokomicard
                 color = hydro
             }
             else if (randompull == 'Arataki Itto') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Arataki_Itto_Card.jpg'
+                charimage = ittocard
                 color = geo
             }
             else if (randompull == 'Shenhe') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Shenhe_Card.jpg'
+                charimage = shenhecard
                 color = cryo
             }
             else if (randompull == 'Yae Miko') {
                 item = goldstar + randompull
-                charimage = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png'
+                charimage = yaecard
                 color = electro
             }
             else {
