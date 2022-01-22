@@ -13,7 +13,7 @@ module.exports = {
                 .setDescription('sussy baka!')
                 .setThumbnail('https://aux2.iconspalace.com/uploads/448592549.png')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // send arguments with '.exe' at the end of it
+                receivedMessage.channel.send({ embeds: [embed]}) // send arguments with '.exe' at the end of it
         }
         // value of 'found' will be returned in bot.js
         return found

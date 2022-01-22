@@ -22,7 +22,7 @@ module.exports = {
                     .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(radicand)} √${parseFloat(base)}`)
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else {
                     const embed = new MessageEmbed()
@@ -30,7 +30,7 @@ module.exports = {
                     .setDescription('<@!' + receivedMessage.author.id + '>' + `\n√${parseFloat(base)}`)
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed) 
+                    receivedMessage.channel.send({ embeds: [embed]}) 
                 }
         }
         // value of 'found' will be returned in bot.js

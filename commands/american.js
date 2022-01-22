@@ -9,11 +9,11 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog biden'
             case 'american' :
                 const embed = new MessageEmbed()
-                .setDescription('Americans in a nutshell')
+                .setDescription('Haha funnie')
                 .setImage('https://media.tenor.com/images/8bd3ce1541701bc7fb4105fe211143b2/tenor.gif')
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // tells user to shut up
+                receivedMessage.channel.send({ embeds: [embed]}) // tells user to shut up
         }
         // value of 'found' will be returned in bot.js
         return found

@@ -44,7 +44,7 @@ module.exports = {
                     .setThumbnail('https://c.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif')
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                     
                 }
         }

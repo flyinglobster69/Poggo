@@ -64,6 +64,7 @@ const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS,
     Discord.Intents.FLAGS.GUILD_WEBHOOKS, 
     Discord.Intents.FLAGS.GUILD_PRESENCES, 
     Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
+    Discord.Intents.FLAGS.GUILD_INTEGRATIONS, 
     Discord.Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS]}) // ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS']
 
 // const client = new Discord.Client()
@@ -128,7 +129,7 @@ client.on('messageCreate', receivedMessage => {
         const embed = new MessageEmbed()
         .setImage('https://media.discordapp.net/attachments/852751760324821042/863226637460963364/dewit.gif')
         .setColor('#00ADEF')
-        receivedMessage.channel.send(embed)
+        receivedMessage.channel.send({ embeds: [embed]})
     }
     if (receivedMessage.content.toLowerCase() == 'kekw') { // kekw
         receivedMessage.channel.send('<:kekw:852782062607401032>')
@@ -138,7 +139,7 @@ client.on('messageCreate', receivedMessage => {
         .setTitle('**ehe te nandayo!**')
         .setThumbnail('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
         .setColor('#00ADEF')
-        receivedMessage.channel.send(embed)
+        receivedMessage.channel.send({ embeds: [embed]})
     }
     if (susTxtList.includes(receivedMessage.content.toLowerCase())) { // sus
         receivedMessage.channel.send(susGen())
@@ -179,7 +180,6 @@ client.on('messageCreate', receivedMessage => {
 function processCommand(receivedMessage) {
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
-    let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
     // Basic Commands

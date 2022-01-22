@@ -28,7 +28,7 @@ module.exports = {
                         .setColor('#00ADEF')
                         .setFooter('Maybe try someone else UwU')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                     else if (percent > 80) {
                         const embed = new MessageEmbed()
@@ -37,7 +37,7 @@ module.exports = {
                         .setColor('#ECC60D')
                         .setFooter('You\'re in luck!')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                     else {
                         const embed = new MessageEmbed()
@@ -46,7 +46,7 @@ module.exports = {
                         .setColor('#FFC0CB')
                         .setFooter('A perfect match? <3')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                 }
                 else if (secondperson == '') {
@@ -57,7 +57,7 @@ module.exports = {
                         .setColor('#00ADEF')
                         .setFooter('Maybe try someone else UwU')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                     else if (percent > 80) {
                         const embed = new MessageEmbed()
@@ -66,7 +66,7 @@ module.exports = {
                         .setColor('#ECC60D')
                         .setFooter('You\'re in luck!')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                     else {
                         const embed = new MessageEmbed()
@@ -75,7 +75,7 @@ module.exports = {
                         .setColor('#FFC0CB')
                         .setFooter('A perfect match? <3')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                 }
                 else {
@@ -86,7 +86,7 @@ module.exports = {
                         .setColor('#00ADEF')
                         .setFooter('Maybe try someone else UwU')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                     else if (percent > 80) {
                         const embed = new MessageEmbed()
@@ -95,7 +95,7 @@ module.exports = {
                         .setColor('#ECC60D')
                         .setFooter('You\'re in luck!')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                     else {
                         const embed = new MessageEmbed()
@@ -104,7 +104,7 @@ module.exports = {
                         .setColor('#FFC0CB')
                         .setFooter('A perfect match? <3')
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.channel.send({ embeds: [embed]})
                     }
                 }
         }

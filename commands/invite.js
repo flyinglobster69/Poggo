@@ -15,7 +15,7 @@ module.exports = {
                 .setImage('https://c.tenor.com/DRd36YfJrnAAAAAi/pog-pog-champ.gif')
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed)
+                receivedMessage.channel.send({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found

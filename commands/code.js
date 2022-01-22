@@ -19,7 +19,7 @@ And here is the link to the Discord: https://discord.gg/JDTRUPP`)
                 .setColor('#ffff00')
                 .setTimestamp()
                 // .attachFiles(readme)
-                receivedMessage.channel.send(embed)
+                receivedMessage.channel.send({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found

@@ -17,7 +17,7 @@ module.exports = {
                 .setColor('#00ADEF')
                 .setTimestamp()
                 .setFooter('UwU <3')
-                receivedMessage.channel.send(embed)
+                receivedMessage.channel.send({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found

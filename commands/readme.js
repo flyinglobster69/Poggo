@@ -16,7 +16,7 @@ module.exports = {
                 .setColor('#00ADEF')
                 .attachFiles(readme)
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // send embed
+                receivedMessage.channel.send({ embeds: [embed]}) // send embed
         }
         // value of 'found' will be returned in bot.js
         return found

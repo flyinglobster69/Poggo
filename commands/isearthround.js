@@ -26,7 +26,7 @@ module.exports = {
                 .setImage('https://i.imgflip.com/1qr9fk.jpg')
                 .setColor('#00ff00')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // horny bad
+                receivedMessage.channel.send({ embeds: [embed]}) 
         }
         // value of 'found' will be returned in bot.js
         return found

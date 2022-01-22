@@ -26,7 +26,7 @@ module.exports = {
                     .setDescription(`<@!${receivedMessage.author.id}> I will remind you to ${content} in ${minute} minutes.`)
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 // else if (arguments.toLowerCase() == 'list') {
                 //     const embed = new MessageEmbed()
@@ -34,7 +34,7 @@ module.exports = {
                 //     .setDescription()
                 //     .setColor('#00ADEF')
                 //     .setTimestamp()
-                //     receivedMessage.channel.send(embed)
+                //     receivedMessage.channel.send({ embeds: [embed]})
                 // }
                 else {
                     var minute = parseInt(second)
@@ -46,7 +46,7 @@ module.exports = {
                     .setDescription(`<@!${receivedMessage.author.id}> I will remind you ${content} in ${hour} hours and ${minute} minutes.`)
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
 
                 setTimeout(remindUser, totalwait) // Waits for totalwait miliseconds then runs setTimeout() function

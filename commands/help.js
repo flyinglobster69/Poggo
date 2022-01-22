@@ -18,7 +18,7 @@ module.exports = {
 Usage: \`pog exe [any text]\``)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('count')) {
                     const embed = new MessageEmbed()
@@ -39,7 +39,7 @@ Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (menti
 \`pog suscount\` (to check your \`sus\` count); \`pog suscount [@user]\` (mention the user you want to check the \`sus\` count for)`)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('wish')) {
                     const embed = new MessageEmbed()
@@ -51,7 +51,7 @@ Notice: The command only accepts single wishes or 10-wishes, as per the actual g
 Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('ship')) {
                     const embed = new MessageEmbed()
@@ -66,7 +66,7 @@ Usage:
 \`pog ship [person1] [person2]\` (to calculate the compatibility between two specified people)`)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('profile')) {
                     const embed = new MessageEmbed()
@@ -79,7 +79,7 @@ If you mention someone after typing \`pog profile\`, then the bot will return th
 Usage: \`pog profile\` (to check your own profile); \`pog profile [@user]\` (to check someone else's profile)`)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('math')) {
                     const embed = new MessageEmbed()
@@ -111,7 +111,7 @@ Note: The \`power\` and \`root\` commands are a little buggy sometimes and can r
 Note: Superscripts are not enabled, therefore for powers, the exponent is denoted with a \`^\` (ex. \`2^3\` = \`2³\`)and the index of a root function is simply placed 1 space behind the root symbol (ex. \`3 √8\` = \`³√8\`)`)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('purge')) {
                     const embed = new MessageEmbed()
@@ -124,7 +124,7 @@ Note: This is a moderation command that can only be used by people with the Admi
 Note: It is recommended that you purge less messages at a time and run the command multiple times, this makes it harder to accidentally purge too much.`)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('remind')) {
                     const embed = new MessageEmbed()
@@ -141,7 +141,7 @@ Note: This command curently does not take specific reminder information, it will
 Note: It is not recommended to purely rely on this reminder system because active reminders are cleared when the bot is rebooted for updates.`)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else if (arguments.includes('help')) {
                     const embed = new MessageEmbed()
@@ -149,7 +149,7 @@ Note: It is not recommended to purely rely on this reminder system because activ
                     .setDescription(`For more information about individual commands, click here: https://bit.ly/3h872Sg`)
                     .setColor('#01796f')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
                 else {
                     const embed = new MessageEmbed()
@@ -176,7 +176,7 @@ No other identifiable data is stored on the server or GitHub.
 More commands will be available over time.`) // lists commands and notices
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                 }
         }
         // value of 'found' will be returned in bot.js

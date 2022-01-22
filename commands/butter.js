@@ -29,7 +29,7 @@ module.exports = {
                 .setImage(randomButter(butter))
                 .setColor('#FFFF00')
                 .setTimestamp()
-                receivedMessage.channel.send(embed)
+                receivedMessage.channel.send({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found
