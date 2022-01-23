@@ -6,6 +6,8 @@ module.exports = {
 
     const fs = require('fs') // connect fs module
     const {MessageEmbed} = require('discord.js')
+
+
         const primogem = 'https://th.bing.com/th/id/R.7384eddb3aa0b07801ada263123ec336?rik=Gr7ZaVnIfXjK%2bQ&pid=ImgRaw&r=0'
         const star5 = ['Venti', 'Tartaglia', 'Klee', 'Albedo', 'Ganyu', 'Xiao', 'Hu Tao', 'Zhongli',
             'Eula', 'Kaedehara Kazuha', 'Kamisato Ayaka', 'Yoimiya', 'Keqing', 'Mona', 'Qiqi', 'Diluc',
@@ -120,7 +122,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Tartaglia') {
                 wishHistory()
@@ -131,7 +133,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Klee') {
                 wishHistory()
@@ -142,7 +144,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Albedo') {
                 wishHistory()
@@ -153,7 +155,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Ganyu') {
                 wishHistory()
@@ -164,7 +166,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Xiao') {
                 wishHistory()
@@ -175,7 +177,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Hu Tao') {
                 wishHistory()
@@ -186,7 +188,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Zhongli') {
                 wishHistory()
@@ -197,7 +199,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail('https://th.bing.com/th/id/OIP.oJNFbpLvfgNG0-L3_qJSygAAAA?pid=ImgDet&rs=1')
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Eula') {
                 wishHistory()
@@ -208,7 +210,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Kaedehara Kazuha') {
                 wishHistory()
@@ -219,7 +221,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Kamisato Ayaka') {
                 wishHistory()
@@ -230,7 +232,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Yoimiya') {
                 wishHistory()
@@ -241,7 +243,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Keqing') {
                 wishHistory()
@@ -252,7 +254,7 @@ module.exports = {
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Mona') {
                 wishHistory()
@@ -263,7 +265,7 @@ module.exports = {
                 .setColor(hydro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Diluc') {
                 wishHistory()
@@ -274,7 +276,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Jean') {
                 wishHistory()
@@ -285,7 +287,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Qiqi') {
                 wishHistory()
@@ -296,7 +298,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Raiden Shogun') {
                 wishHistory()
@@ -307,7 +309,7 @@ module.exports = {
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Sangonomiya Kokomi') {
                 wishHistory()
@@ -318,7 +320,7 @@ module.exports = {
                 .setColor(hydro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Arataki Itto') {
                 wishHistory()
@@ -329,7 +331,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Shenhe') {
                 wishHistory()
@@ -340,7 +342,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Yae Miko') {
                 wishHistory()
@@ -350,7 +352,7 @@ module.exports = {
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             else {
                 wishHistory()
@@ -360,7 +362,7 @@ module.exports = {
                 .setColor('#ffff00')
                 .setThumbnail(primogem)
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
             }
             star5pity = 0
             star4pity += 1
@@ -375,7 +377,7 @@ module.exports = {
             .setColor('#800080')
             .setThumbnail(primogem)
             .setTimestamp()
-            receivedMessage.channel.send({ embeds: [embed]})
+            receivedMessage.reply({ embeds: [embed]})
             star4pity = 0
             star5pity += 1
             // console.log(star4pity)
@@ -622,7 +624,7 @@ ${items[9]}`)
                     .setThumbnail(primogem)
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send({ embeds: [embed]})
+                    receivedMessage.reply({ embeds: [embed]})
                 }
                 else if (arguments == 'history') {
                     fs.readFile(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`, 'utf8', function(error, data) { // read the value in the pog count file
@@ -633,7 +635,7 @@ ${items[9]}`)
                             .setThumbnail('https://c.tenor.com/v6uW6qb-ukcAAAAi/qiqi-fallen.gif')
                             .setColor(color)
                             .setTimestamp()
-                            receivedMessage.channel.send({ embeds: [embed]})
+                            receivedMessage.reply({ embeds: [embed]})
                         }
                         else { // send file
                             const embed = new MessageEmbed()
@@ -643,7 +645,7 @@ ${items[9]}`)
                             .setColor(color)
                             .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
                             .setTimestamp()
-                            receivedMessage.channel.send({ embeds: [embed]})
+                            receivedMessage.reply({ embeds: [embed]})
                         }
                     })
                 }
@@ -663,7 +665,7 @@ ${items[9]}`)
                         .setColor(color)
                         .setThumbnail('https://th.bing.com/th/id/OIP.leQ4vnoL-ZyYJwY5IlEpxAHaGA?pid=ImgDet&rs=1')
                         .setTimestamp()
-                        receivedMessage.channel.send({ embeds: [embed]})
+                        receivedMessage.reply({ embeds: [embed]})
                         star4pity += 1
                         star5pity += 1
                     }
@@ -679,7 +681,7 @@ ${items[9]}`)
                         .setDescription(random3star(star3))
                         .setColor(color)
                         .setTimestamp()
-                        receivedMessage.channel.send({ embeds: [embed]})
+                        receivedMessage.reply({ embeds: [embed]})
                         star4pity += 1
                         star5pity += 1
                     }

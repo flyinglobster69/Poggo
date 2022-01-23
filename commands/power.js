@@ -21,7 +21,7 @@ module.exports = {
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(base)}^${parseFloat(exponent)}`)
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]}) // sends the sum to the message channel
+                receivedMessage.reply({ embeds: [embed]}) // sends the sum to the message channel
         }
         // value of 'found' will be returned in bot.js
         return found

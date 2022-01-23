@@ -9,7 +9,7 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) {
             case 'ping':
-                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + `🏓 Pong in just ${yourping}ms!
+                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + `🏓 Pong in just ${yourping}ms!
 *(questionable accuracy)*`)
         }
         return found

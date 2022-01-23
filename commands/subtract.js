@@ -17,7 +17,7 @@ module.exports = {
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(first)} - ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]}) // sends the difference to the chat
+                receivedMessage.reply({ embeds: [embed]}) // sends the difference to the chat
         }
         // value of 'found' will be returned in bot.js
         return found

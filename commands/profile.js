@@ -22,7 +22,7 @@ module.exports = {
                     .setThumbnail(receivedMessage.author.avatarURL())
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send({ embeds: [embed]}) // sends user information (username and uid)
+                    receivedMessage.reply({ embeds: [embed]}) // sends user information (username and uid)
                 }
                 else {
                     const embed = new MessageEmbed()
@@ -31,7 +31,7 @@ module.exports = {
                     .setThumbnail(receivedMessage.mentions.users.first().avatarURL())
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send({ embeds: [embed]}) // sends user information (username and uid)
+                    receivedMessage.reply({ embeds: [embed]}) // sends user information (username and uid)
                 }
         }
         // value of 'found' will be returned in bot.js

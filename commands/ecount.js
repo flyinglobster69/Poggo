@@ -19,10 +19,10 @@ module.exports = {
                     fs.open('./ecount/' + uid, 'r', function(error, fd) { // open the user's e count txt file
                         fs.readFile('./ecount/' + uid, 'utf8', function(error, data) { // read the user's e count txt file
                             if (error) { // if there is no file, that means the user has sent no e
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' Where e?')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' Where e?')
                             }
                             else { // if the file exists, send the number of e into the chat
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' You\'ve said \'e\' \`' + data + '\` times')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' You\'ve said \'e\' \`' + data + '\` times')
                             }
                         })
                     })
@@ -31,10 +31,10 @@ module.exports = {
                     fs.open('./ecount/' + argsuid, 'r', function(error, fd) { // open the mentioned user's e count file
                         fs.readFile('./ecount/' + argsuid, 'utf8', function(error, data) { // read the mentioned user's e count file
                             if (error) { // if there is no file, that means the mentioned user has sent no e
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' no e sadge')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' no e sadge')
                             }
                             else { // if the file exists, send the number of e in the chat
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' They said \'e\' \`' + data + '\` times')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' They said \'e\' \`' + data + '\` times')
                             }
                         })
                     })

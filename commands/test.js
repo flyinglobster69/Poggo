@@ -21,7 +21,8 @@ Logging = \`True\` *(counters running)*
 Version: \`${version.version}\` *(current bot version)*`)
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                .setFooter({ text: 'amogus'})
+                receivedMessage.reply({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found

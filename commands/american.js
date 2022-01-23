@@ -13,7 +13,7 @@ module.exports = {
                 .setImage('https://media.tenor.com/images/8bd3ce1541701bc7fb4105fe211143b2/tenor.gif')
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]}) // tells user to shut up
+                receivedMessage.reply({ embeds: [embed]}) // tells user to shut up
         }
         // value of 'found' will be returned in bot.js
         return found

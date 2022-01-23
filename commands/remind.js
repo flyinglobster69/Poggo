@@ -7,7 +7,8 @@ module.exports = {
     let arguments = splitCommand.slice(1)
     var first = splitCommand.slice(1)
     var second = splitCommand.slice(2)
-    var content = splitCommand.slice(3)
+    var content = splitCommand.slice(3).join(' ')
+    const secondlist = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
     found = false
 
     function remindUser() {
@@ -17,7 +18,28 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog root'
             case 'remind' :
 
-                if (second == '') {
+                if (secondlist.includes(second)) {
+                    var minute = parseInt(second)
+                    var hour = parseInt(first)
+                    var totalwait = (minute * 60000) + (hour * 3600000)
+
+                    const embed = new MessageEmbed()
+                    .setTitle('Reminder Set')
+                    .setDescription(`<@!${receivedMessage.author.id}> I will remind you to ${content} in ${hour} hours and ${minute} minutes.`)
+                    .setColor('#00ADEF')
+                    .setTimestamp()
+                    receivedMessage.reply({ embeds: [embed]})
+                }
+                // else if (arguments.toLowerCase() == 'list') {
+                //     const embed = new MessageEmbed()
+                //     .setTitle('Active Reminders')
+                //     .setDescription()
+                //     .setColor('#00ADEF')
+                //     .setTimestamp()
+                //     receivedMessage.reply({ embeds: [embed]})
+                // }
+                else {
+                    var content = splitCommand.slice(2).join(' ')
                     var minute = parseInt(first)
                     var totalwait = minute * 60000
 
@@ -26,27 +48,7 @@ module.exports = {
                     .setDescription(`<@!${receivedMessage.author.id}> I will remind you to ${content} in ${minute} minutes.`)
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send({ embeds: [embed]})
-                }
-                // else if (arguments.toLowerCase() == 'list') {
-                //     const embed = new MessageEmbed()
-                //     .setTitle('Active Reminders')
-                //     .setDescription()
-                //     .setColor('#00ADEF')
-                //     .setTimestamp()
-                //     receivedMessage.channel.send({ embeds: [embed]})
-                // }
-                else {
-                    var minute = parseInt(second)
-                    var hour = parseInt(first)
-                    var totalwait = (minute * 60000) + (hour * 3600000)
-
-                    const embed = new MessageEmbed()
-                    .setTitle('Reminder Set')
-                    .setDescription(`<@!${receivedMessage.author.id}> I will remind you ${content} in ${hour} hours and ${minute} minutes.`)
-                    .setColor('#00ADEF')
-                    .setTimestamp()
-                    receivedMessage.channel.send({ embeds: [embed]})
+                    receivedMessage.reply({ embeds: [embed]})
                 }
 
                 setTimeout(remindUser, totalwait) // Waits for totalwait miliseconds then runs setTimeout() function

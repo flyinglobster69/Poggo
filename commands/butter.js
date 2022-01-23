@@ -22,14 +22,14 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog butter'
             case 'butter' :
-                // receivedMessage.channel.send(butter)
+                // receivedMessage.reply(butter)
                 const embed = new MessageEmbed()
                 .setTitle('mmmm b u t t e r 🛬')
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')
                 .setImage(randomButter(butter))
                 .setColor('#FFFF00')
                 .setTimestamp()
-                receivedMessage.channel.send({ embeds: [embed]})
+                receivedMessage.reply({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found
