@@ -383,3 +383,6 @@ Shenhe
 Zhongli
 Wolf's Gravestone
 Raiden Shogun
+Hu Tao
+Ganyu
+Jean
