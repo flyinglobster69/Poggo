@@ -541,6 +541,7 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
+    
         switch(primaryCommand) { // called when messages says 'pog wish'
             case 'wish' :
                 if (arguments == '10') {

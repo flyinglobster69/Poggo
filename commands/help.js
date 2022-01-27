@@ -13,7 +13,7 @@ module.exports = {
                 if (arguments.includes('exe')) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog exe\``)
-                    .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it.
+                    .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it and sends the created exe file (file does nothing).
 
 Usage: \`pog exe [any text]\``)
                     .setColor(color)
@@ -169,13 +169,22 @@ Moderation commands: \`purge [# of messages]\` (more will be implimented later p
 Use \`pog help [command]\` on Bigger Commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for dummy instructions.
 
 Please note that the bot will collect and store Discord User IDs when the user sends their first \`pog\`, \`sus\` or \`e\`. 
-The most up-to-date pog logs are preserved on the Server, while backups are kept on GitHub (may be slightly outdated)
-This allows the bot to record a user's \`pog\` count and \`e\` count (a core function).
+The most up-to-date pog logs are preserved on the Server, while backups are kept on GitHub (updated every hour)
+This allows the bot to record a user's \`pog\` count, \`e\` count, and *sus* count (a core function).
 No other identifiable data is stored on the server or GitHub.
 
 More commands will be available over time.`) // lists commands and notices
                     .setColor('#00ADEF')
                     .setTimestamp()
+                    // const row = new MessageActionRow()
+			        //     .addComponents(
+				    //     new MessageButton()
+					//         .setCustomId('help')
+					//         .setLabel('More Help')
+					//         .setStyle('PRIMARY'),
+			        //     );
+
+		            // await interaction.reply({ content: embed, components: [row] });
                     receivedMessage.reply({ embeds: [embed]})
                 }
         }

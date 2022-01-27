@@ -6,7 +6,7 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog biden'
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog american'
             case 'american' :
                 const embed = new MessageEmbed()
                 .setDescription('Haha funnie')

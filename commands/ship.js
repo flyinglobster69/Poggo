@@ -15,7 +15,7 @@ module.exports = {
 
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog lovecalc'
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog ship'
             case 'ship' :
 
                 var percent = Math.floor(Math.random() * 100)

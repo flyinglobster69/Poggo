@@ -22,14 +22,14 @@ module.exports = {
         reminderlist.splice(index, 1)
         console.log(index)
         console.log(content)
-        console.log(reminderlist.splice(index, content))
+        console.log(reminderlist.splice(index, 1))
         return receivedMessage.channel.send(`<@!${receivedMessage.author.id}> I am here to remind you to ${content} 🤔`)
     }
     // function nums() {
     //     return Array.from(String(second))
     // }
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog root'
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog remind'
             case 'remind' :
 
                 if (arguments.toString().toLowerCase() == 'list') {
