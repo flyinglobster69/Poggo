@@ -386,3 +386,4 @@ Raiden Shogun
 Hu Tao
 Ganyu
 Jean
+Skyward Blade
