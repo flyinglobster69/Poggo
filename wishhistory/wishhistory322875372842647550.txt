@@ -73,3 +73,5 @@ Aquila Favonia
 Sangonomiya Kokomi
 Raiden Shogun
 Xiao
+Skyward Spine
+Klee
