@@ -653,3 +653,4 @@ Lost Prayer to the Sacred Winds
 Tartaglia
 Mona
 Ganyu
+Yoimiya
