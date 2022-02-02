@@ -13,7 +13,7 @@ module.exports = {
                 if (arguments.includes('exe')) {
                     const embed = new MessageEmbed()
                     .setTitle(`\`pog exe\``)
-                    .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it and sends the created exe file (file does nothing).
+                    .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it.
 
 Usage: \`pog exe [any text]\``)
                     .setColor(color)
