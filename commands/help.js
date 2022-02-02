@@ -1,6 +1,6 @@
 module.exports = {
     checkHelp: function(receivedMessage) {
-    const {MessageEmbed} = require('discord.js')
+    const {MessageEmbed, MessageActionRow, MessageButton} = require('discord.js')
     const color = '#00ff00'
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
@@ -121,7 +121,8 @@ Note: Superscripts are not enabled, therefore for powers, the exponent is denote
 Usage: \`pog purge [# of messages up to 100]\`
 
 Note: This is a moderation command that can only be used by people with the Administrator permission.
-Note: It is recommended that you purge less messages at a time and run the command multiple times, this makes it harder to accidentally purge too much.`)
+Note: It is recommended that you purge less messages at a time and run the command multiple times, this makes it harder to accidentally purge too much.
+Note: A button will be added soon to delete the purge message in one click, but for now it has to be removed by a moderator.`)
                     .setColor(color)
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
@@ -132,10 +133,11 @@ Note: It is recommended that you purge less messages at a time and run the comma
                     .setDescription(`This command is used to set a reminder for yourself in the channel. When the set timer ends, you get pinged in the channel where the command is run.
 
 Usage: 
-\`remind [hours minutes]\` 
--> ex. \`pog remind 1 30\` will remind you with a ping in 1 hour 30 mins.
-\`remind [minutes]\` 
--> ex. \`pog remind 10\` will remind you with a ping in 10 mins.
+\`remind [hours minutes task]\` 
+-> ex. \`pog remind 1 30 your task\` will remind you to do 'your task' with a ping in 1 hour 30 mins.
+\`remind [minutes task]\` 
+-> ex. \`pog remind 10 your task\` will remind you to do 'your task' with a ping in 10 mins.
+
 
 Note: This command curently does not take specific reminder information, it will ping you for 'something'.
 Note: It is not recommended to purely rely on this reminder system because active reminders are cleared when the bot is rebooted for updates.`)
@@ -143,18 +145,18 @@ Note: It is not recommended to purely rely on this reminder system because activ
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
                 }
-                else if (arguments.includes('help')) {
-                    const embed = new MessageEmbed()
-                    .setTitle(`Need more clarification?`)
-                    .setDescription(`For more information about individual commands, click here: https://bit.ly/3h872Sg`)
-                    .setColor('#01796f')
-                    .setTimestamp()
-                    receivedMessage.reply({ embeds: [embed]})
-                }
+                // else if (arguments.includes('help')) {
+                //     const embed = new MessageEmbed()
+                //     .setTitle(`Need more clarification?`)
+                //     .setDescription(`For more information about individual commands, click here: https://bit.ly/3h872Sg`)
+                //     .setColor('#01796f')
+                //     .setTimestamp()
+                //     receivedMessage.reply({ embeds: [embed]})
+                // }
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
-                    .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`;
+                    .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`, \`server\`;
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
 Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`;
 
@@ -164,9 +166,7 @@ Type \`pog help count\` for a more in-depth overview of the different counters a
 Math commands: \`add [number number]\`, \`subtract [number number]\`, \`multiply [number number]\`, \`divide [number number]\`, \`power [base exponent]\`, \`root [base radicand]\`;
 Type \`pog help math\` for a more in-depth overview of Math commands
 
-Moderation commands: \`purge [# of messages]\` (more will be implimented later probably)
-
-Use \`pog help [command]\` on Bigger Commands for elaboration on command usage and operation, or \`pog help help\` to get a link to the bot's website for dummy instructions.
+Moderation commands: \`purge [# of messages]\`
 
 Please note that the bot will collect and store Discord User IDs when the user sends their first \`pog\`, \`sus\` or \`e\`. 
 The most up-to-date pog logs are preserved on the Server, while backups are kept on GitHub (updated every hour)
@@ -176,16 +176,16 @@ No other identifiable data is stored on the server or GitHub.
 More commands will be available over time.`) // lists commands and notices
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    // const row = new MessageActionRow()
-			        //     .addComponents(
-				    //     new MessageButton()
-					//         .setCustomId('help')
-					//         .setLabel('More Help')
-					//         .setStyle('PRIMARY'),
-			        //     );
 
-		            // await interaction.reply({ content: embed, components: [row] });
-                    receivedMessage.reply({ embeds: [embed]})
+                    const lmfao = new MessageActionRow()
+                    .addComponents(
+                        new MessageButton()
+                        .setURL('https://bit.ly/3h872Sg')
+                        .setLabel('Need more clarification?')
+                        .setStyle('LINK')
+                    )
+
+                    receivedMessage.reply({ embeds: [embed], components: [lmfao]})
                 }
         }
         // value of 'found' will be returned in bot.js

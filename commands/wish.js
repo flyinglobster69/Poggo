@@ -666,6 +666,7 @@ ${items[9]}`)
                         .setColor(color)
                         .setThumbnail('https://th.bing.com/th/id/OIP.leQ4vnoL-ZyYJwY5IlEpxAHaGA?pid=ImgDet&rs=1')
                         .setTimestamp()
+                        .setFooter('lmao noob')
                         receivedMessage.reply({ embeds: [embed]})
                         star4pity += 1
                         star5pity += 1

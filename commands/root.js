@@ -18,18 +18,20 @@ module.exports = {
 
                 if (parseFloat(radicand) != 2) {
                     const embed = new MessageEmbed()
-                    .setTitle(root)
+                    .setTitle(root.toString())
                     .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(radicand)} √${parseFloat(base)}`)
                     .setColor('#00ADEF')
                     .setTimestamp()
+                    .setFooter({ text: 'ez mafs'})
                     receivedMessage.reply({ embeds: [embed]})
                 }
                 else {
                     const embed = new MessageEmbed()
-                    .setTitle(root)
+                    .setTitle(root.toString())
                     .setDescription('<@!' + receivedMessage.author.id + '>' + `\n√${parseFloat(base)}`)
                     .setColor('#00ADEF')
                     .setTimestamp()
+                    .setFooter({ text: 'ez mafs'})
                     receivedMessage.reply({ embeds: [embed]}) 
                 }
         }

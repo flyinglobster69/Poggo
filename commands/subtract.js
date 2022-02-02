@@ -13,10 +13,11 @@ module.exports = {
             case 'subtract' :
                 var difference = parseFloat(first) - parseFloat(second) // subtract second number from first number
                 const embed = new MessageEmbed()
-                .setTitle(difference)
+                .setTitle(difference.toString())
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(first)} - ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 .setTimestamp()
+                .setFooter({ text: 'ez mafs'})
                 receivedMessage.reply({ embeds: [embed]}) // sends the difference to the chat
         }
         // value of 'found' will be returned in bot.js

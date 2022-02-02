@@ -29,6 +29,7 @@ module.exports = {
                 .setImage(randomButter(butter))
                 .setColor('#FFFF00')
                 .setTimestamp()
+                .setFooter({ text: '100   50   40   30   20   10   b u t t e r'})
                 receivedMessage.reply({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js

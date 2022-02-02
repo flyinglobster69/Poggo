@@ -13,10 +13,11 @@ module.exports = {
             case 'add' :
                 var sum = parseFloat(first) + parseFloat(second) // adds first number and second number to get the sum
                 const embed = new MessageEmbed()
-                .setTitle(parseFloat(sum))
+                .setTitle(sum.toString())
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(first)} + ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 .setTimestamp()
+                .setFooter({ text: 'ez mafs'})
                 receivedMessage.reply({ embeds: [embed]}) // sends the sum to the message channel
         }
         // value of 'found' will be returned in bot.js

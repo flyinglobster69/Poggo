@@ -13,7 +13,7 @@ module.exports = {
             case 'divide' :
                 var quotient = parseFloat(first) / parseFloat(second) // divide the first number by the second number
                 const embed = new MessageEmbed()
-                .setTitle(quotient)
+                .setTitle(quotient.toString())
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(first)} ÷ ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 .setTimestamp()
