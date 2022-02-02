@@ -8,7 +8,7 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog pirate'
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog readme'
             case 'readme' :
                 const embed = new MessageEmbed()
                 .setTitle('Pog bot\'s README File')
@@ -16,7 +16,7 @@ module.exports = {
                 .setColor('#00ADEF')
                 .attachFiles(readme)
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // send embed
+                receivedMessage.reply({ embeds: [embed]}) // send embed
         }
         // value of 'found' will be returned in bot.js
         return found

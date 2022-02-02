@@ -1,7 +1,6 @@
 module.exports = {
     checkProfile: function(receivedMessage) {
     const {MessageEmbed, Client} = require('discord.js')
-    const client = new Client
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
@@ -23,7 +22,7 @@ module.exports = {
                     .setThumbnail(receivedMessage.author.avatarURL())
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed) // sends user information (username and uid)
+                    receivedMessage.reply({ embeds: [embed]}) // sends user information (username and uid)
                 }
                 else {
                     const embed = new MessageEmbed()
@@ -32,7 +31,7 @@ module.exports = {
                     .setThumbnail(receivedMessage.mentions.users.first().avatarURL())
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed) // sends user information (username and uid)
+                    receivedMessage.reply({ embeds: [embed]}) // sends user information (username and uid)
                 }
         }
         // value of 'found' will be returned in bot.js

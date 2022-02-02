@@ -16,7 +16,7 @@ module.exports = {
                     .setImage('https://c.tenor.com/wHC9IYtiPMkAAAAC/starting-windows-logo.gif')
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed) // start windows
+                    receivedMessage.reply({ embeds: [embed]}) // start windows
                     found = true
                 }
                 else {
@@ -25,7 +25,7 @@ module.exports = {
                     .setImage('https://itknowledgeexchange.techtarget.com/windows-enterprise-desktop/files/2016/12/gsod.jpg')
                     .setColor(color)
                     .setTimestamp()
-                    receivedMessage.channel.send(embed) // die
+                    receivedMessage.reply({ embeds: [embed]}) // die
                 }
             
         }

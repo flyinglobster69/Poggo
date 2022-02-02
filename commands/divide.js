@@ -13,11 +13,11 @@ module.exports = {
             case 'divide' :
                 var quotient = parseFloat(first) / parseFloat(second) // divide the first number by the second number
                 const embed = new MessageEmbed()
-                .setTitle(quotient)
+                .setTitle(quotient.toString())
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(first)} ÷ ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // sends the quotient in the chat
+                receivedMessage.reply({ embeds: [embed]}) // sends the quotient in the chat
         }
         // value of 'found' will be returned in bot.js
         return found

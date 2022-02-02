@@ -18,19 +18,21 @@ module.exports = {
 
                 if (parseFloat(radicand) != 2) {
                     const embed = new MessageEmbed()
-                    .setTitle(root)
+                    .setTitle(root.toString())
                     .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(radicand)} √${parseFloat(base)}`)
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    .setFooter({ text: 'ez mafs'})
+                    receivedMessage.reply({ embeds: [embed]})
                 }
                 else {
                     const embed = new MessageEmbed()
-                    .setTitle(root)
+                    .setTitle(root.toString())
                     .setDescription('<@!' + receivedMessage.author.id + '>' + `\n√${parseFloat(base)}`)
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed) 
+                    .setFooter({ text: 'ez mafs'})
+                    receivedMessage.reply({ embeds: [embed]}) 
                 }
         }
         // value of 'found' will be returned in bot.js

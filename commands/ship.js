@@ -15,7 +15,7 @@ module.exports = {
 
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog lovecalc'
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog ship'
             case 'ship' :
 
                 var percent = Math.floor(Math.random() * 100)
@@ -26,27 +26,27 @@ module.exports = {
                         .setTitle(`${brokenheart} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with someone ${heartpulse}`)
                         .setColor('#00ADEF')
-                        .setFooter('Maybe try someone else UwU')
+                        .setFooter({ text: 'Maybe try someone else UwU' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                     else if (percent > 80) {
                         const embed = new MessageEmbed()
                         .setTitle(`${hearteyes} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with someone ${heartpulse}`)
                         .setColor('#ECC60D')
-                        .setFooter('You\'re in luck!')
+                        .setFooter({ text: 'You\'re in luck!' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                     else {
                         const embed = new MessageEmbed()
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with someone ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter('A perfect match? <3')
+                        .setFooter({ text: 'A perfect match? <3' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                 }
                 else if (secondperson == '') {
@@ -55,27 +55,27 @@ module.exports = {
                         .setTitle(`${brokenheart} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with ${firstperson} ${heartpulse}`)
                         .setColor('#00ADEF')
-                        .setFooter('Maybe try someone else UwU')
+                        .setFooter({ text: 'Maybe try someone else UwU' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                     else if (percent > 80) {
                         const embed = new MessageEmbed()
                         .setTitle(`${hearteyes} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with ${firstperson} ${heartpulse}`)
                         .setColor('#ECC60D')
-                        .setFooter('You\'re in luck!')
+                        .setFooter({ text: 'You\'re in luck!' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                     else {
                         const embed = new MessageEmbed()
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`<@!${receivedMessage.author.id}>'s compatibility with ${firstperson} ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter('A perfect match? <3')
+                        .setFooter({ text: 'A perfect match? <3' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                 }
                 else {
@@ -84,27 +84,27 @@ module.exports = {
                         .setTitle(`${brokenheart} ${percent}%`)
                         .setDescription(`${firstperson[0]}'s compatibility with ${secondperson} ${heartpulse}`)
                         .setColor('#00ADEF')
-                        .setFooter('Maybe try someone else UwU')
+                        .setFooter({ text: 'Maybe try someone else UwU' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                     else if (percent > 80) {
                         const embed = new MessageEmbed()
                         .setTitle(`${hearteyes} ${percent}%`)
                         .setDescription(`${firstperson[0]}'s compatibility with ${secondperson} ${heartpulse}`)
                         .setColor('#ECC60D')
-                        .setFooter('You\'re in luck!')
+                        .setFooter({ text: 'You\'re in luck!' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                     else {
                         const embed = new MessageEmbed()
                         .setTitle(`${heartpulse} ${percent}%`)
                         .setDescription(`${firstperson[0]}'s compatibility with ${secondperson} ${heartpulse}`)
                         .setColor('#FFC0CB')
-                        .setFooter('A perfect match? <3')
+                        .setFooter({ text: 'A perfect match? <3' })
                         .setTimestamp()
-                        receivedMessage.channel.send(embed)
+                        receivedMessage.reply({ embeds: [embed]})
                     }
                 }
         }

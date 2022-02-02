@@ -6,6 +6,7 @@ module.exports = {
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
+    
     function randomButter(butter) {
         return butter[Math.floor(Math.random() * butter.length)]
     }
@@ -21,14 +22,15 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog butter'
             case 'butter' :
-                // receivedMessage.channel.send(butter)
+                // receivedMessage.reply(butter)
                 const embed = new MessageEmbed()
                 .setTitle('mmmm b u t t e r 🛬')
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')
                 .setImage(randomButter(butter))
                 .setColor('#FFFF00')
                 .setTimestamp()
-                receivedMessage.channel.send(embed)
+                .setFooter({ text: '100   50   40   30   20   10   b u t t e r'})
+                receivedMessage.reply({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found

@@ -1,7 +1,6 @@
 module.exports = {
     checkPurge: function(receivedMessage) {
-    const {Client, MessageEmbed} = require('discord.js')
-    const client = new Client({ ws: { intents: ['GUILD_MESSAGES']}})
+    const { MessageEmbed } = require('discord.js')
 
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
@@ -45,7 +44,7 @@ module.exports = {
                     .setThumbnail('https://c.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif')
                     .setColor('#00ADEF')
                     .setTimestamp()
-                    receivedMessage.channel.send(embed)
+                    receivedMessage.channel.send({ embeds: [embed]})
                     
                 }
         }

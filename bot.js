@@ -4,12 +4,11 @@
 
 // Import the discord.js module
 const Discord = require('discord.js')
-const {Client, Intents, MessageEmbed} = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
-// const schedule = require('node-schedule')
 
-// Create an instance of Discord that we will use to control the bot
+// Connect Config file
 const config = require('./config.json')
 
 // Connect singles
@@ -51,6 +50,7 @@ const invite = require('./commands/invite')
 const suscount = require('./commands/suscount')
 const ship = require('./commands/ship')
 const remind = require('./commands/remind')
+const server = require('./commands/server')
 // const music = require('./commands/music')
 
 // Moderation commands
@@ -58,8 +58,15 @@ const purge = require('./modcmds/purge')
 
 
 // Connect client
-const client = new Client({ ws: { intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS'] }}) // ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_EMOJIS']
-// const client = new Discord.Client()
+const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, 
+    Discord.Intents.FLAGS.GUILD_MEMBERS, 
+    Discord.Intents.FLAGS.GUILD_MESSAGES, 
+    Discord.Intents.FLAGS.GUILD_WEBHOOKS, 
+    Discord.Intents.FLAGS.GUILD_PRESENCES, 
+    Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
+    Discord.Intents.FLAGS.GUILD_INTEGRATIONS, 
+    Discord.Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS]}
+) // Connect Intents
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
@@ -71,7 +78,7 @@ client.on('ready', () => {
 // Initialize lists
 const susTxtList = ['sus', 'imposter', 'amogus']
 
-client.on('message', receivedMessage => {
+client.on('messageCreate', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
         return // kekw
     }
@@ -121,7 +128,7 @@ client.on('message', receivedMessage => {
         const embed = new MessageEmbed()
         .setImage('https://media.discordapp.net/attachments/852751760324821042/863226637460963364/dewit.gif')
         .setColor('#00ADEF')
-        receivedMessage.channel.send(embed)
+        receivedMessage.channel.send({ embeds: [embed]})
     }
     if (receivedMessage.content.toLowerCase() == 'kekw') { // kekw
         receivedMessage.channel.send('<:kekw:852782062607401032>')
@@ -131,7 +138,7 @@ client.on('message', receivedMessage => {
         .setTitle('**ehe te nandayo!**')
         .setThumbnail('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
         .setColor('#00ADEF')
-        receivedMessage.channel.send(embed)
+        receivedMessage.channel.send({ embeds: [embed]})
     }
     if (susTxtList.includes(receivedMessage.content.toLowerCase())) { // sus
         receivedMessage.channel.send(susGen())
@@ -172,7 +179,6 @@ client.on('message', receivedMessage => {
 function processCommand(receivedMessage) {
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(' ') // Split the message up in to pieces for each space
-    let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
     // Basic Commands
@@ -257,17 +263,11 @@ function processCommand(receivedMessage) {
     else if (remind.checkRemind(receivedMessage)) { // pog remind
         return
     }
+    else if (server.checkServer(receivedMessage)) { // pog server
+        return
+    }
     // else if (music.checkMusic(receivedMessage)) { // pog music
     //     return
-    // }
-
-    // else if (receivedMessage == 'time') {
-    //     const date = new Date(2021, 5, 25, 17, 51, 0);
-    //     const job = schedule.scheduleJob(date, function(){
-    //         console.log('time test message owowoowowowowowowowowowo')
-    //         receivedMessage.channel.send('time test message owowoowowowowowowowowowo')
-    //     })
-    //     console.log(job)
     // }
     
     // Math
@@ -332,17 +332,19 @@ function susGen() {
     var susList = ['ඞ', 'ඞු්ි', 'ඩ', 'ඹ', 'ඩිුා']
     return susList[Math.floor(Math.random() * susList.length)]
 }
+// Random Paimon reply generator
 function emergencyFoodGen() {
     var paimonReplyList = ['*Eat it.* ***Eat it now.***', 'Emergency Food!']
     return paimonReplyList[Math.floor(Math.random() * paimonReplyList.length)]
 }
+// Random Help reponse
 function helpGen() {
     var helpList = ['no :)', 'Unfortunately I am a bot and am unable to help :(', 'pweese UwU', 'Starting help.exe...', 'Sure, what do you need help with?']
     return helpList[Math.floor(Math.random() * helpList.length)]
 }
 
 process.on('unhandledRejection', (reason, promise) => {
-    // something
+    // literally nothing lmao
 })
 
 client.login(config.token)

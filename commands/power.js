@@ -17,11 +17,12 @@ module.exports = {
                 var power = base ** exponent
 
                 const embed = new MessageEmbed()
-                .setTitle(power)
+                .setTitle(power.toString())
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(base)}^${parseFloat(exponent)}`)
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // sends the sum to the message channel
+                .setFooter({ text: 'ez mafs'})
+                receivedMessage.reply({ embeds: [embed]}) // sends the sum to the message channel
         }
         // value of 'found' will be returned in bot.js
         return found

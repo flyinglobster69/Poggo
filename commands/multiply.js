@@ -13,11 +13,12 @@ module.exports = {
             case 'multiply' :
                 var product = parseFloat(first) * parseFloat(second) // multiplies first number with second number
                 const embed = new MessageEmbed()
-                .setTitle(product)
+                .setTitle(product.toString())
                 .setDescription('<@!' + receivedMessage.author.id + '>' + `\n${parseFloat(first)} × ${parseFloat(second)} =`)
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // sends the product in the chat
+                .setFooter({ text: 'ez mafs'})
+                receivedMessage.reply({ embeds: [embed]}) // sends the product in the chat
         }
         // value of 'found' will be returned in bot.js
         return found

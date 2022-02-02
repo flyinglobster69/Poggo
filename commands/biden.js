@@ -12,7 +12,7 @@ module.exports = {
                 .setImage('https://hypixel.net/attachments/will_you_shut_up_man_meme_banner-jpg.2080238/')
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // tells user to shut up
+                receivedMessage.reply({ embeds: [embed]}) // tells user to shut up
         }
         // value of 'found' will be returned in bot.js
         return found

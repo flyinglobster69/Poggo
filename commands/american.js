@@ -6,14 +6,14 @@ module.exports = {
     let primaryCommand = splitCommand[0] // The first word directly after 'pog' is the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog biden'
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog american'
             case 'american' :
                 const embed = new MessageEmbed()
-                .setDescription('Americans in a nutshell')
+                .setDescription('Haha funnie')
                 .setImage('https://media.tenor.com/images/8bd3ce1541701bc7fb4105fe211143b2/tenor.gif')
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // tells user to shut up
+                receivedMessage.reply({ embeds: [embed]}) // tells user to shut up
         }
         // value of 'found' will be returned in bot.js
         return found

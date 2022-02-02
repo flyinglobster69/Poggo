@@ -15,7 +15,8 @@ module.exports = {
                 .setImage('https://live.staticflickr.com/7103/27511257554_6e6afc378f_b.jpg')
                 .setColor('#00ADEF')
                 .setTimestamp()
-                receivedMessage.channel.send(embed) // sends buff
+                .setFooter({ text: 'Is this what you expected? 😏'})
+                receivedMessage.reply({ embeds: [embed]}) // sends buff
         }
         // value of 'found' will be returned in bot.js
         return found

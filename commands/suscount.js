@@ -19,10 +19,10 @@ module.exports = {
                     fs.open('./suscount/' + uid, 'r', function(error, fd) { // open the user's sus count txt file
                         fs.readFile('./suscount/' + uid, 'utf8', function(error, data) { // read the user's sus count txt file
                             if (error) { // if there is no file, that means the user has sent no sus
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' You\'re apparently not a sussy baka 🤔')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' You\'re apparently not a sussy baka 🤔')
                             }
                             else { // if the file exists, send the number of sus into the chat
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' You\'ve said \'sus\' \`' + data + '\` times, you\'re a sussy baka.')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' You\'ve said \'sus\' \`' + data + '\` times, you\'re a sussy baka.')
                             }
                         })
                     })
@@ -31,10 +31,10 @@ module.exports = {
                     fs.open('./suscount/' + argsuid, 'r', function(error, fd) { // open the mentioned user's e count file
                         fs.readFile('./suscount/' + argsuid, 'utf8', function(error, data) { // read the mentioned user's e count file
                             if (error) { // if there is no file, that means the mentioned user has sent no sus
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' They\'re apparently not a sussy baka 🤔')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' They\'re apparently not a sussy baka 🤔')
                             }
                             else { // if the file exists, send the number of sus in the chat
-                                receivedMessage.channel.send('<@!' + receivedMessage.author.id + '>' + ' They said \'sus\' \`' + data + '\` times, they\'re a sussy baka.')
+                                receivedMessage.reply('<@!' + receivedMessage.author.id + '>' + ' They said \'sus\' \`' + data + '\` times, they\'re a sussy baka.')
                             }
                         })
                     })

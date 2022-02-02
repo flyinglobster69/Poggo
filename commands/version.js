@@ -2,7 +2,6 @@ const { Client, MessageEmbed } = require('discord.js')
 
 module.exports = {
     checkVersion: function(receivedMessage) {
-    const client = new Client()
 
     const version = require('./version.json')
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
@@ -17,8 +16,8 @@ module.exports = {
                 .setDescription(`\`${version.version}\``)
                 .setColor('#00ADEF')
                 .setTimestamp()
-                .setFooter('UwU <3')
-                receivedMessage.channel.send(embed)
+                .setFooter({text: 'UwU <3'})
+                receivedMessage.channel.send({ embeds: [embed]})
         }
         // value of 'found' will be returned in bot.js
         return found
