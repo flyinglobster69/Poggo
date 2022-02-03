@@ -56,6 +56,9 @@ const server = require('./commands/server')
 // Moderation commands
 const purge = require('./modcmds/purge')
 
+// Initialize lists
+const susTxtList = ['sus', 'imposter', 'amogus']
+
 
 // Connect client
 const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, 
@@ -66,7 +69,7 @@ const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS,
     Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
     Discord.Intents.FLAGS.GUILD_INTEGRATIONS, 
     Discord.Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS]}
-) // Connect Intents
+) // Specify intents
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
@@ -75,8 +78,6 @@ client.on('ready', () => {
     client.user.setActivity('pog help') // Activity status on Discord
 })
 
-// Initialize lists
-const susTxtList = ['sus', 'imposter', 'amogus']
 
 client.on('messageCreate', receivedMessage => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
@@ -329,17 +330,17 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
 
 // Random 'sus' text selector
 function susGen() {
-    var susList = ['ඞ', 'ඞු්ි', 'ඩ', 'ඹ', 'ඩිුා']
+    let susList = ['ඞ', 'ඞු්ි', 'ඩ', 'ඹ', 'ඩිුා']
     return susList[Math.floor(Math.random() * susList.length)]
 }
 // Random Paimon reply generator
 function emergencyFoodGen() {
-    var paimonReplyList = ['*Eat it.* ***Eat it now.***', 'Emergency Food!']
+    let paimonReplyList = ['*Eat it.* ***Eat it now.***', 'Emergency Food!']
     return paimonReplyList[Math.floor(Math.random() * paimonReplyList.length)]
 }
 // Random Help reponse
 function helpGen() {
-    var helpList = ['no :)', 'Unfortunately I am a bot and am unable to help :(', 'pweese UwU', 'Starting help.exe...', 'Sure, what do you need help with?']
+    let helpList = ['no :)', 'Unfortunately I am a bot and am unable to help :(', 'pweese UwU', 'Starting help.exe...', 'Sure, what do you need help with?']
     return helpList[Math.floor(Math.random() * helpList.length)]
 }
 

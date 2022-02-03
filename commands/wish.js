@@ -111,10 +111,9 @@ module.exports = {
                 })
         }
         function single5star() {
-            // console.log('Gold!')
             randompull = random5star(star5)
             if (randompull == 'Venti') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -125,7 +124,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Tartaglia') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -136,7 +135,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Klee') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -147,7 +146,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Albedo') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -158,7 +157,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Ganyu') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -169,7 +168,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Xiao') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -180,7 +179,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Hu Tao') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -191,7 +190,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Zhongli') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -202,7 +201,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Eula') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -213,7 +212,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Kaedehara Kazuha') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -224,7 +223,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Kamisato Ayaka') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -235,7 +234,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Yoimiya') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -246,7 +245,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Keqing') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -257,7 +256,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Mona') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -268,7 +267,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Diluc') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -279,7 +278,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Jean') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -290,7 +289,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Qiqi') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -301,7 +300,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Raiden Shogun') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -312,7 +311,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Sangonomiya Kokomi') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -323,7 +322,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Arataki Itto') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -334,7 +333,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Shenhe') {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -345,7 +344,8 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Yae Miko') {
-                wishHistory()
+                // wishHistory()
+                const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
                 .setImage(yaecard)
@@ -355,7 +355,7 @@ module.exports = {
                 receivedMessage.reply({ embeds: [embed]})
             }
             else {
-                wishHistory()
+                // wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
                 .setDescription(randompull)
@@ -366,11 +366,8 @@ module.exports = {
             }
             star5pity = 0
             star4pity += 1
-            // console.log(star4pity)
-            // console.log(star5pity)
         }
         function single4star() {
-            // console.log('Purple!')
             const embed = new MessageEmbed()
             .setTitle(purplestar)
             .setDescription(random4star(star4))
@@ -380,11 +377,8 @@ module.exports = {
             receivedMessage.reply({ embeds: [embed]})
             star4pity = 0
             star5pity += 1
-            // console.log(star4pity)
-            // console.log(star5pity)
         }
         function ten5star() {
-            // console.log('Gold!')
             randompull = random5star(star5)
             // wishHistory()
             charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
@@ -531,7 +525,7 @@ module.exports = {
         const cryo = '#b4dcde'
         const electro = '#965daa'
 
-        var items = []
+        var items = [] // Init
 
         var charimage = 'https://media1.tenor.com/images/17f64ce3809e2d329599e1c38f488703/tenor.gif?itemid=18856455'
 
@@ -557,7 +551,6 @@ module.exports = {
                                     star5pity = 0
                                     star4pity++
                                     wishCount++
-                                    // console.log(`${wishCount} ${star5pity} ${star4pity}`)
                                 }
                                 else {
                                     ten5star()
