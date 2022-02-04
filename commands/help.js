@@ -47,6 +47,7 @@ Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (menti
                     .setDescription(`A Genshin Impact wish simulation command.
 
 Notice: The command only accepts single wishes or 10-wishes, as per the actual game. The pity system for 10-pulls also doesn't work (it works for singles but is a separate system).
+Notice: The Wish History function is temporarily disabled, you can check your current wish history, but no new data will be added to it when wishing (for now; a fix will be deployed later).
 
 Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
                     .setColor(color)

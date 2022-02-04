@@ -12,9 +12,10 @@ module.exports = {
         const star5 = ['Venti', 'Tartaglia', 'Klee', 'Albedo', 'Ganyu', 'Xiao', 'Hu Tao', 'Zhongli',
             'Eula', 'Kaedehara Kazuha', 'Kamisato Ayaka', 'Yoimiya', 'Keqing', 'Mona', 'Qiqi', 'Diluc',
             'Jean', 'Raiden Shogun', 'Sangonomiya Kokomi', 'Arataki Itto', 'Shenhe', 'Yae Miko', 
+            'Kamisato Ayato', // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
-            'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 'Skyward Pride', 
-            'Skyward Blade', 'Aquila Favonia'] // List of 5-star characters and weapons
+            'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
+            'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse'] // 5-star weapons
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
@@ -51,6 +52,7 @@ module.exports = {
         const ittocard = 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Arataki_Itto_Card.jpg'
         const shenhecard = 'https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Shenhe_Card.jpg'
         const yaecard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png'
+        const ayatocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Kamisato_Ayato_Card.png'
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
@@ -354,6 +356,17 @@ module.exports = {
                 .setTimestamp()
                 receivedMessage.reply({ embeds: [embed]})
             }
+            else if (randompull == 'Kamisato Ayato') {
+                // wishHistory()
+                const embed = new MessageEmbed()
+                .setTitle(goldstar)
+                .setDescription(randompull)
+                .setImage(ayatocard)
+                .setColor(hydro)
+                .setThumbnail(primogem)
+                .setTimestamp()
+                receivedMessage.reply({ embeds: [embed]})
+            }
             else {
                 // wishHistory()
                 const embed = new MessageEmbed()
@@ -497,6 +510,11 @@ module.exports = {
                 charimage = yaecard
                 color = electro
             }
+            else if (randompull == 'Kamisato Ayato') {
+                item = goldstar + randompull
+                charimage = ayatocard
+                color = hydro
+            }
             else {
                 item = goldstar + randompull
                 charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
@@ -547,7 +565,7 @@ module.exports = {
                                 if (random < 25) {
                                     ten5star()
                                     items[wishCount] = item
-                                    tenWishHistory(randompull)
+                                    // tenWishHistory(randompull)
                                     star5pity = 0
                                     star4pity++
                                     wishCount++
@@ -555,7 +573,7 @@ module.exports = {
                                 else {
                                     ten5star()
                                     items[wishCount] = item
-                                    tenWishHistory(randompull)
+                                    // tenWishHistory(randompull)
                                     star5pity = 0
                                     star4pity++
                                     wishCount++
@@ -564,7 +582,7 @@ module.exports = {
                             else {
                                 ten5star()
                                 items[wishCount] = item
-                                tenWishHistory(randompull)
+                                // tenWishHistory(randompull)
                                 star5pity = 0
                                 star4pity++
                                 wishCount++
@@ -573,7 +591,7 @@ module.exports = {
                         else if (star5pity > 88) {
                             ten5star()
                             items[wishCount] = item
-                            tenWishHistory(randompull)
+                            // tenWishHistory(randompull)
                             star5pity = 0
                             star4pity++
                             wishCount++

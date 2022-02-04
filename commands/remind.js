@@ -34,12 +34,22 @@ module.exports = {
                     // reminderlist.push(content)
                     // index += 1
 
-                    const embed = new MessageEmbed()
-                    .setTitle('Reminder Set ⏰')
-                    .setDescription(`<@!${receivedMessage.author.id}> I will remind you to ${content} in ${hour} hours and ${minute} minutes.`)
-                    .setColor('#00ADEF')
-                    .setTimestamp()
-                    receivedMessage.reply({ embeds: [embed]})                  
+                    if (content == '') {
+                        const embed = new MessageEmbed()
+                        .setTitle('Reminder Set ⏰')
+                        .setDescription(`<@!${receivedMessage.author.id}> I will remind you about something in \`${hour}\` hours and \`${minute}\` minutes.`)
+                        .setColor('#00ADEF')
+                        .setTimestamp()
+                        receivedMessage.reply({ embeds: [embed]})
+                    }
+                    else {
+                        const embed = new MessageEmbed()
+                        .setTitle('Reminder Set ⏰')
+                        .setDescription(`<@!${receivedMessage.author.id}> I will remind you to \`${content}\` in ${hour} hours and \`${minute}\` minutes.`)
+                        .setColor('#00ADEF')
+                        .setTimestamp()
+                        receivedMessage.reply({ embeds: [embed]})  
+                    }                
                 }
                 // else if (arguments == 'list') {
                 //     const embed = new MessageEmbed()
@@ -54,12 +64,22 @@ module.exports = {
                     content = splitCommand.slice(2).join(' ')
                     var totalwait = minute * 60000
 
-                    const embed = new MessageEmbed()
-                    .setTitle('Reminder Set ⏰')
-                    .setDescription(`<@!${receivedMessage.author.id}> I will remind you to ${content} in ${minute} minutes.`)
-                    .setColor('#00ADEF')
-                    .setTimestamp()
-                    receivedMessage.reply({ embeds: [embed]})
+                    if (content == '') {
+                        const embed = new MessageEmbed()
+                        .setTitle('Reminder Set ⏰')
+                        .setDescription(`<@!${receivedMessage.author.id}> I will remind you about something in \`${minute}\` minutes.`)
+                        .setColor('#00ADEF')
+                        .setTimestamp()
+                        receivedMessage.reply({ embeds: [embed]})
+                    }
+                    else {
+                        const embed = new MessageEmbed()
+                        .setTitle('Reminder Set ⏰')
+                        .setDescription(`<@!${receivedMessage.author.id}> I will remind you to \`${content}\` in \`${minute}\` minutes.`)
+                        .setColor('#00ADEF')
+                        .setTimestamp()
+                        receivedMessage.reply({ embeds: [embed]})
+                    }
                 
                 }
 

@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "ansi-regex": "^5.0.1",
     "discord.js": "^13.6.0",
+    "node-fetch": "^2.6.7",
     "npm": "^8.1.0",
     "ytdl-core": "^4.9.1"
   }
