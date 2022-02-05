@@ -1,6 +1,6 @@
 module.exports = {
     checkPurge: function(receivedMessage) {
-    const { MessageEmbed } = require('discord.js')
+    const { MessageEmbed, Permissions } = require('discord.js')
 
     let fullCommand = receivedMessage.content.substr(4) // Remove the leading pog
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
@@ -16,7 +16,7 @@ module.exports = {
                     let Channel = receivedMessage.channel
                     let amount = Number(arguments[0]); // amount = a number entered.
 
-                    if (!Member.hasPermission("ADMINISTRATOR")) 
+                    if (!Member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) 
                         return // Does nothing if the author does not have administrator permission.
 
                     if (!amount) 

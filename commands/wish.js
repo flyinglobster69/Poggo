@@ -15,15 +15,29 @@ module.exports = {
             'Kamisato Ayato', // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
             'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
-            'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse'] // 5-star weapons
+            'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse',
+            'Elegy for the End', 'Memory of Dust', 'Everlasting Moonglow', 'Kagura\'s Verity', 
+            'The Unforged', 'Song of Broken Pines', 'Redhorn Stonethresher', 'Engulfing Lightning', 
+            'Calamity Queller', 'Staff of Homa', 'Vortex Vanquisher', 'Mistsplitter Reforged', 
+            'Summit Shaper', 'Freedom-Sworn', 'Primordial Jade Cutter'] // 5-star weapons
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
-            'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 
+            'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', // 4-star characters
             'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
             'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
             'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
-            'Sacrificial Sword', 'The Flute', 'Favonius Sword'] // List of 4-star characters and weapons
+            'Sacrificial Sword', 'The Flute', 'Favonius Sword', 'Alley Hunter', 'The Viridescent Hunt', 
+            'Royal Bow', 'Predator', 'Mouun\'s Moon', 'Mitternachts Waltz', 'Hamayumi', 
+            'Prototype Crescent', 'Compound Bow', 'Blackcliff Warbow', 'Windblume Ode', 'Wine and Song', 
+            'Solar Pearl', 'Royal Grimore', 'Oathsworn Eye', 'Mappa Mare', 'Hakushin Ring', 'Frostbearer',
+            'Dodoco Tales', 'Akuoumaru', 'Royal Greatsword', 'Whiteblind', 'Snow Tombed Starsilver', 
+            'Katsuragikiri Nagamasa', 'Serpent Spine', 'Blackcliff Slasher', 'Prototype Archaic',
+            'Luxurious Sea-Lord', 'Lithic Blade', 'Prototype Starglitter', 'Lithic Spear', 
+            'Kitain Cross Spear', '"The Catch"', 'Dragonspine Spear', 'Deathmatch', 'Crescent Pike', 
+            'Blackcliff Pole', 'Wavebreaker\'s Fin', 'Royal Spear', 'The Black Sword', 'The Alley Flash',
+            'Sword of Descension', 'Royal Longsword', 'Prototype Rancour', 'Amenoma Kageuchi', 
+            'Iron Sting', 'Festering Desire', 'Cinnebar Spindle', 'Blackcliff Sword'] // 4-star weapons
 
         const star3 = ['Slingshot', 'Sharpshooter\'s Oath', 'Raven Bow', 'Emerald Orb', 
             'Thrilling Tales of Dragon Slayers', 'Magic Guide', 'Black Tassel', 'Debate Club', 
