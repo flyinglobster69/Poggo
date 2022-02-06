@@ -15,12 +15,15 @@ module.exports = {
 
     found = false
 
-    function remindUser() {
+    function remindUserContent() {
         // reminderlist.splice(index, 1)
         // console.log(index)
         // console.log(content)
         // console.log(reminderlist.splice(index, 1))
         return receivedMessage.channel.send(`<@!${receivedMessage.author.id}> I am here to remind you to ${content} 🤔`)
+    }
+    function remindUser() {
+        return receivedMessage.channel.send(`<@!${receivedMessage.author.id}> I am here to remind you about something 🤔`)
     }
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog remind'
@@ -49,6 +52,8 @@ module.exports = {
                         .setColor('#00ADEF')
                         .setTimestamp()
                         receivedMessage.reply({ embeds: [embed]})  
+
+                        setTimeout(remindUserContent, totalwait)
                     }                
                 }
                 // else if (arguments == 'list') {
@@ -79,11 +84,13 @@ module.exports = {
                         .setColor('#00ADEF')
                         .setTimestamp()
                         receivedMessage.reply({ embeds: [embed]})
+
+                        setTimeout(remindUserContent, totalwait) 
                     }
                 
                 }
 
-                setTimeout(remindUser, totalwait) // Waits for totalwait miliseconds then runs setTimeout() function
+                setTimeoutContent(remindUser, totalwait)
         }
         // value of 'found' will be returned in bot.js
         return found

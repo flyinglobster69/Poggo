@@ -8,41 +8,50 @@ module.exports = {
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
     found = false
 
-        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog version'
+        switch(primaryCommand.toLowerCase()) { // called when messages says 'pog purge'
             case 'purge' :
                 
-                    let Member = receivedMessage.member
-                    let server = receivedMessage.guild
-                    let Channel = receivedMessage.channel
                     let amount = Number(arguments[0]); // amount = a number entered.
 
-                    if (!Member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) 
+                    if (!receivedMessage.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) 
                         return // Does nothing if the author does not have administrator permission.
-
+                    
                     if (!amount) 
-                        return Channel.send(`${Member} Missing parameter: \`pog purge [number from 1-99]\``) // If amount is missing, then it raises an error.
-                    let bool = false;
+                        // const embed = new MessageEmbed()
+                        // .setTitle('Oopsie Poopsie!')
+                        // .setDescription('Missing parameter: \`pog purge [number from 1-99]\`')
+                        // .setFooter({ text: 'Task Failed Successfully'})
+                        // .setTimestamp()
+                        return receivedMessage.reply('Missing parameter: \`pog purge [number from 1-99]\`') // If amount is missing, then it raises an error.
+                    let bool = false
 
-                    if (!Member.id === server.ownerID) { // Bypass for the server owner.
-                    if (amount >= 100) 
-                        return Channel.send(`Oopsie! \nYou can\'t clear more than 100 messages in one go! ${Member}`) // If amount is over 100 then it raises an error.
-                    } 
+                    if (!receivedMessage.member.id === receivedMessage.guild.ownerID) { // Bypass for the server owner.
+                        if (amount >= 100) 
+                            // const embed = new MessageEmbed()
+                            // .setTitle('Oopsie Poopsie!')
+                            // .setDescription('You can\'t clear more than 100 messages in one go!')
+                            // .setFooter({ text: 'Task Failed Successfully'})
+                            // .setTimestamp()
+                            return receivedMessage.reply('You can\'t clear more than 100 messages in one go!') // If amount is over 100 then it raises an error.
+                        } 
                     else {
                         bool = true
                     }
                     let maxAmount;
                     if (amount > 99) maxAmount = 100
                     else maxAmount = amount
-                    for (Channel.bulkDelete(String(maxAmount + 1), bool); amount >= 0; amount -= 100) {
+                    for (receivedMessage.channel.bulkDelete(String(maxAmount + 1), bool); amount >= 0; amount -= 100) {
                         if (amount > 99) maxAmount = 100
                         else if (amount > 0) maxAmount = amount
                         else break
-                        Channel.bulkDelete(String(maxAmount), bool)
+                        receivedMessage.channel.bulkDelete(String(maxAmount), bool)
 
                     const embed = new MessageEmbed()
-                    .setDescription(`${amount} messages purged!`)
+                    .setTitle(`${amount} messages purged!`)
+                    .setDescription(`Messages purged by <@${receivedMessage.member.id}>`)
                     .setThumbnail('https://c.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif')
                     .setColor('#00ADEF')
+                    .setFooter({ text: 'Task Complete'})
                     .setTimestamp()
                     receivedMessage.channel.send({ embeds: [embed]})
                     

@@ -73,7 +73,13 @@ const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS,
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
-    console.log('EPIC POGGERS ' + client.user.tag + ' is now online!')
+    console.log(`${client.user.tag} is 
+    Never gonna give you up
+    Never gonna let you down
+    Never gonna run around and desert you
+    Never gonna make you cry
+    Never gonna say goodbye
+    Never gonna tell a lie and hurt you`)
 
     client.user.setActivity('pog help') // Activity status on Discord
 })
