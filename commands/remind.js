@@ -44,6 +44,8 @@ module.exports = {
                         .setColor('#00ADEF')
                         .setTimestamp()
                         receivedMessage.reply({ embeds: [embed]})
+                        
+                        setTimeout(remindUser, totalwait)
                     }
                     else {
                         const embed = new MessageEmbed()
@@ -76,6 +78,8 @@ module.exports = {
                         .setColor('#00ADEF')
                         .setTimestamp()
                         receivedMessage.reply({ embeds: [embed]})
+
+                        setTimeout(remindUser, totalwait)
                     }
                     else {
                         const embed = new MessageEmbed()
@@ -89,8 +93,6 @@ module.exports = {
                     }
                 
                 }
-
-                setTimeoutContent(remindUser, totalwait)
         }
         // value of 'found' will be returned in bot.js
         return found
