@@ -40,7 +40,7 @@ module.exports = {
                         if (amount >= 100) {
                             const embed = new MessageEmbed()
                             .setTitle('Oopsie Poopsie!')
-                            .setDescription('You can\'t clear more than 100 messages in one go!')
+                            .setDescription('You can\'t clear more than 100 messages in one go, therefore 100 messages have been purged')
                             .setFooter({ text: 'Task Failed Successfully'})
                             .setTimestamp()
                             receivedMessage.reply({ embeds: [embed]}) // If amount is over 100 then it raises an error.

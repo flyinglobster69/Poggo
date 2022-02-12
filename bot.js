@@ -1,7 +1,6 @@
 // poggo#2538 (Poggo; Pog Bot)
 // 1.0: June 03 2021
 // Author: FlyingLobster69#1861 (LooOOooL YT)
-// Copyright ©️ 2021 FlyingLobster69
 
 // Import the discord.js module
 const Discord = require('discord.js')

@@ -34,7 +34,6 @@ Future Features:
 Invite the bot with this link!
 https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=274878426112
 
-Copyright ©️ 2021 FlyingLobster69
 
 Fun fact: this README is a rickroll!
 
