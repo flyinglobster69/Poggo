@@ -14,7 +14,7 @@ module.exports = {
             case 'code' :
                 const embed = new MessageEmbed()
                 .setTitle('Source Code')
-                .setDescription(`Click the corresponding buttons to access the GitHub repository and join the Discord!`)
+                .setDescription(`Click the corresponding buttons to view the GitHub repository and join the Discord!`)
                 .setThumbnail('https://avatars.githubusercontent.com/u/73574038?v=4')
                 .setColor('#ffff00')
                 .setURL('https://github.com/flyinglobster69/Poggo')

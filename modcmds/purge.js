@@ -12,39 +12,64 @@ module.exports = {
             case 'purge' :
                 
                     let amount = Number(arguments[0]); // amount = a number entered.
+                    let bool = false
 
                     if (!receivedMessage.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) 
                         return // Does nothing if the author does not have administrator permission.
                     
-                    if (!amount) 
-                        // const embed = new MessageEmbed()
-                        // .setTitle('Oopsie Poopsie!')
-                        // .setDescription('Missing parameter: \`pog purge [number from 1-99]\`')
-                        // .setFooter({ text: 'Task Failed Successfully'})
-                        // .setTimestamp()
-                        return receivedMessage.reply('Missing parameter: \`pog purge [number from 1-99]\`') // If amount is missing, then it raises an error.
-                    let bool = false
+                    if (!amount) {
+                        const embed = new MessageEmbed()
+                        .setTitle('Oopsie Poopsie!')
+                        .setDescription('Missing parameter: \`pog purge [number from 1-99]\`')
+                        .setFooter({ text: 'Task Failed Successfully'})
+                        .setTimestamp()
+                        receivedMessage.reply({ embeds: [embed]}) // If amount is missing, then it raises an error.
+                        bool = false
+                    }
+                    if (amount >= 100) {
+                        const embed = new MessageEmbed()
+                        .setTitle('Oopsie Poopsie!')
+                        .setDescription('You can\'t clear more than 100 messages in one go, therefore 100 messages have been purged')
+                        .setFooter({ text: 'Task Failed Successfully'})
+                        .setTimestamp()
+                        receivedMessage.reply({ embeds: [embed]}) // If amount is over 100 then it raises an error.
+                        bool = false
+                    }
 
                     if (!receivedMessage.member.id === receivedMessage.guild.ownerID) { // Bypass for the server owner.
-                        if (amount >= 100) 
-                            // const embed = new MessageEmbed()
-                            // .setTitle('Oopsie Poopsie!')
-                            // .setDescription('You can\'t clear more than 100 messages in one go!')
-                            // .setFooter({ text: 'Task Failed Successfully'})
-                            // .setTimestamp()
-                            return receivedMessage.reply('You can\'t clear more than 100 messages in one go!') // If amount is over 100 then it raises an error.
-                        } 
+                        if (amount >= 100) {
+                            const embed = new MessageEmbed()
+                            .setTitle('Oopsie Poopsie!')
+                            .setDescription('You can\'t clear more than 100 messages in one go!')
+                            .setFooter({ text: 'Task Failed Successfully'})
+                            .setTimestamp()
+                            receivedMessage.reply({ embeds: [embed]}) // If amount is over 100 then it raises an error.
+                            bool = false
+                        }
+                    } 
                     else {
                         bool = true
                     }
-                    let maxAmount;
-                    if (amount > 99) maxAmount = 100
-                    else maxAmount = amount
-                    for (receivedMessage.channel.bulkDelete(String(maxAmount + 1), bool); amount >= 0; amount -= 100) {
-                        if (amount > 99) maxAmount = 100
-                        else if (amount > 0) maxAmount = amount
-                        else break
-                        receivedMessage.channel.bulkDelete(String(maxAmount), bool)
+
+                    let maxAmount = 100
+                    if (amount > 100) {
+                        amount = 100
+                    }
+                    else {
+                        maxAmount = amount
+                    }
+
+                    for (receivedMessage.channel.bulkDelete(String(amount + 1), bool); amount >= 0; amount -= 100) {
+                        if (amount > 100) {
+                            amount = 100
+                        }
+                        else if (amount > 0) {
+                            maxAmount = amount
+                        }
+                        else {
+                            break
+                        }
+                        receivedMessage.channel.bulkDelete(String(amount), bool)
 
                     const embed = new MessageEmbed()
                     .setTitle(`${amount} messages purged!`)
