@@ -10,8 +10,8 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog readme'
             case 'readme' :
                 const embed = new MessageEmbed()
-                .setTitle('Pog bot\'s README File')
-                .setDescription('A basic README file that briefly describes the bot.\nTap the button below to read the file on GitHub.')
+                .setTitle('Pog bot\'s README')
+                .setDescription('A basic README that briefly describes the bot.\nTap the button below to read it on GitHub.')
                 .setColor('#00ADEF')
                 .setTimestamp()
 

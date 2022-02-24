@@ -9,7 +9,7 @@ module.exports = {
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog trump'
             case 'trump' :
                 const embed = new MessageEmbed()
-                .setDescription('[this command has been removed for impeachment]')
+                .setDescription('[this command has been put in impeachment]')
                 .setImage('https://th.bing.com/th/id/R.794fd892046872b59fb299b2691af272?rik=P%2bbgp4Dp4sqfIA&pid=ImgRaw')
                 .setColor('#FFA500')
                 .setTimestamp()

@@ -2,7 +2,7 @@
 // 1.0: June 03 2021
 // Author: FlyingLobster69#1861 (LooOOooL YT)
 
-// Import the discord.js module
+// Import the discord.js modules
 const Discord = require('discord.js')
 const {MessageEmbed} = require('discord.js')
 const fs = require('fs')
@@ -10,6 +10,9 @@ const { exitCode } = require('process')
 
 // Connect Config file
 const config = require('./config.json')
+
+// Connect Version tracker
+const version = require('./commands/version.json')
 
 // Connect singles
 const dad = require('./singles/dad.json')
@@ -73,13 +76,7 @@ const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS,
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
-    console.log(`${client.user.tag} is 
-    Never gonna give you up
-    Never gonna let you down
-    Never gonna run around and desert you
-    Never gonna make you cry
-    Never gonna say goodbye
-    Never gonna tell a lie and hurt you`)
+    console.log(`${client.user.tag} is connected on Version ${version.version}`)
 
     client.user.setActivity('pog help') // Activity status on Discord
 })

@@ -24,7 +24,7 @@ module.exports = {
             case 'butter' :
                 // receivedMessage.reply(butter)
                 const embed = new MessageEmbed()
-                .setTitle('mmmm b u t t e r 🛬')
+                .setTitle('not bts lmao 🛬')
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')
                 .setImage(randomButter(butter))
                 .setColor('#FFFF00')

@@ -20,7 +20,7 @@ module.exports = {
         // console.log(index)
         // console.log(content)
         // console.log(reminderlist.splice(index, 1))
-        return receivedMessage.channel.send(`<@!${receivedMessage.author.id}> I am here to remind you to ${content} 🤔`)
+        return receivedMessage.channel.send(`<@!${receivedMessage.author.id}> I am here to remind you to \`${content}\` 🤔`)
     }
     function remindUser() {
         return receivedMessage.channel.send(`<@!${receivedMessage.author.id}> I am here to remind you about something 🤔`)
@@ -50,7 +50,7 @@ module.exports = {
                     else {
                         const embed = new MessageEmbed()
                         .setTitle('Reminder Set ⏰')
-                        .setDescription(`<@!${receivedMessage.author.id}> I will remind you to \`${content}\` in ${hour} hours and \`${minute}\` minutes.`)
+                        .setDescription(`<@!${receivedMessage.author.id}> I will remind you to \`${content}\` in \`${hour}\` hours and \`${minute}\` minutes.`)
                         .setColor('#00ADEF')
                         .setTimestamp()
                         receivedMessage.reply({ embeds: [embed]})  
