@@ -12,7 +12,7 @@ const { exitCode } = require('process')
 const config = require('./config.json')
 
 // Connect Version tracker
-const version = require('./commands/version.json')
+const currentVersion = require('./commands/version.json')
 
 // Connect singles
 const dad = require('./singles/dad.json')
@@ -76,7 +76,7 @@ const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS,
 
 // Gets called when our bot is successfully logged in and connected
 client.on('ready', () => {
-    console.log(`${client.user.tag} is connected on Version ${version.version}`)
+    console.log(`${client.user.tag} is connected on Version ${currentVersion.version}`)
 
     client.user.setActivity('pog help') // Activity status on Discord
 })
