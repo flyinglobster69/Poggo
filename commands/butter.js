@@ -22,7 +22,6 @@ module.exports = {
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog butter'
             case 'butter' :
-                // receivedMessage.reply(butter)
                 const embed = new MessageEmbed()
                 .setTitle('not bts lmao 🛬')
                 .setDescription('https://youtu.be/lowrM-780tg 🧈')

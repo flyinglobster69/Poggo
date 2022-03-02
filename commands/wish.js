@@ -4,7 +4,7 @@ var star4pity = 0
 module.exports = {
     checkWish: function(receivedMessage) {
 
-    const fs = require('fs') // connect fs module
+    // const fs = require('fs') // connect fs module
     const {MessageEmbed} = require('discord.js')
 
 
@@ -80,52 +80,52 @@ module.exports = {
         function nameGen(nameList) {
             return nameList[Math.floor(Math.random() * nameList.length)]
         }
-        function wishHistory() {
-            var uid = 'wishhistory' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
-                fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's wish history file
-                    if (error) { // if user has no wish history file, create one
-                        fs.writeFile('./wishhistory/' + uid, randompull, 'utf8', function(error, data) { // start user with 1 pog
-                            null
-                        })
-                    }
-                    else { // if user has a wish history file
-                        fs.readFile('./wishhistory/' + uid, 'utf8', function(error, data) { // read the value in the pog count file
-                            if (error) { // if file does not exist, create one (this is unlikely to be needed)
-                                fs.writeFile('./wishhistory/' + uid, randompull, 'utf8', function(error, data) { // start user with wish history
-                                    null
-                                })
-                            }
-                            else { // log wishes
-                                fs.write(fd, `\n${randompull}`, 0, 'utf8', function(error, writtenbytes) { // appends new wish to the line below the last
-                                })
-                            }
-                        })
-                    }
-                })
-        }
-        function tenWishHistory(item) {
-            var uid = 'wishhistory' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
-                fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's wish history file
-                    if (error) { // if user has no wish history file, create one
-                        fs.writeFile('./wishhistory/' + uid, item, 'utf8', function(error, data) { // start user with 1 pog
-                            null
-                        })
-                    }
-                    else { // if user has a wish history file
-                        fs.readFile('./wishhistory/' + uid, 'utf8', function(error, data) { // read the value in the pog count file
-                            if (error) { // if file does not exist, create one (this is unlikely to be needed)
-                                fs.writeFile('./wishhistory/' + uid, item, 'utf8', function(error, data) { // start user with wish history
-                                    null
-                                })
-                            }
-                            else { // log wishes
-                                fs.write(fd, `\n${item}`, 0, 'utf8', function(error, writtenbytes) { // appends new wish to the line below the last
-                                })
-                            }
-                        })
-                    }
-                })
-        }
+        // function wishHistory() {
+        //     var uid = 'wishhistory' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
+        //         fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's wish history file
+        //             if (error) { // if user has no wish history file, create one
+        //                 fs.writeFile('./wishhistory/' + uid, randompull, 'utf8', function(error, data) { // start user with 1 pog
+        //                     null
+        //                 })
+        //             }
+        //             else { // if user has a wish history file
+        //                 fs.readFile('./wishhistory/' + uid, 'utf8', function(error, data) { // read the value in the pog count file
+        //                     if (error) { // if file does not exist, create one (this is unlikely to be needed)
+        //                         fs.writeFile('./wishhistory/' + uid, randompull, 'utf8', function(error, data) { // start user with wish history
+        //                             null
+        //                         })
+        //                     }
+        //                     else { // log wishes
+        //                         fs.write(fd, `\n${randompull}`, 0, 'utf8', function(error, writtenbytes) { // appends new wish to the line below the last
+        //                         })
+        //                     }
+        //                 })
+        //             }
+        //         })
+        // }
+        // function tenWishHistory(item) {
+        //     var uid = 'wishhistory' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
+        //         fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's wish history file
+        //             if (error) { // if user has no wish history file, create one
+        //                 fs.writeFile('./wishhistory/' + uid, item, 'utf8', function(error, data) { // start user with 1 pog
+        //                     null
+        //                 })
+        //             }
+        //             else { // if user has a wish history file
+        //                 fs.readFile('./wishhistory/' + uid, 'utf8', function(error, data) { // read the value in the pog count file
+        //                     if (error) { // if file does not exist, create one (this is unlikely to be needed)
+        //                         fs.writeFile('./wishhistory/' + uid, item, 'utf8', function(error, data) { // start user with wish history
+        //                             null
+        //                         })
+        //                     }
+        //                     else { // log wishes
+        //                         fs.write(fd, `\n${item}`, 0, 'utf8', function(error, writtenbytes) { // appends new wish to the line below the last
+        //                         })
+        //                     }
+        //                 })
+        //             }
+        //         })
+        // }
         function single5star() {
             randompull = random5star(star5)
             if (randompull == 'Venti') {
@@ -652,29 +652,29 @@ ${items[9]}`)
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
                 }
-                else if (arguments == 'history') {
-                    fs.readFile(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`, 'utf8', function(error, data) { // read the value in the pog count file
-                        if (error) { // if file does not exist
-                            const embed = new MessageEmbed()
-                            .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
-                            .setDescription('This user has no wish history.')
-                            .setThumbnail('https://c.tenor.com/v6uW6qb-ukcAAAAi/qiqi-fallen.gif')
-                            .setColor(color)
-                            .setTimestamp()
-                            receivedMessage.reply({ embeds: [embed]})
-                        }
-                        else { // send file
-                            const embed = new MessageEmbed()
-                            .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
-                            .setDescription('See attached wish history file with your Discord user ID (it may delay sending)')
-                            .setThumbnail(primogem)
-                            .setColor(color)
-                            .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
-                            .setTimestamp()
-                            receivedMessage.reply({ embeds: [embed]})
-                        }
-                    })
-                }
+                // else if (arguments == 'history') {
+                //     fs.readFile(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`, 'utf8', function(error, data) { // read the value in the pog count file
+                //         if (error) { // if file does not exist
+                //             const embed = new MessageEmbed()
+                //             .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
+                //             .setDescription('This user has no wish history.')
+                //             .setThumbnail('https://c.tenor.com/v6uW6qb-ukcAAAAi/qiqi-fallen.gif')
+                //             .setColor(color)
+                //             .setTimestamp()
+                //             receivedMessage.reply({ embeds: [embed]})
+                //         }
+                //         else { // send file
+                //             const embed = new MessageEmbed()
+                //             .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
+                //             .setDescription('See attached wish history file with your Discord user ID (it may delay sending)')
+                //             .setThumbnail(primogem)
+                //             .setColor(color)
+                //             .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
+                //             .setTimestamp()
+                //             receivedMessage.reply({ embeds: [embed]})
+                //         }
+                //     })
+                // }
                 else {
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
                     if (random < 2) { // if random number < 6, random 5-star

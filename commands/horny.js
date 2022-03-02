@@ -11,7 +11,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle('BONK!')
                 .setDescription('<@!' + receivedMessage.author.id + '>' + ' go to horny jail smh')
-                .setImage('https://media1.tenor.com/images/6493bee2be7ae168a5ef7a68cf751868/tenor.gif?itemid=17298755')
+                .setThumbnail('https://media1.tenor.com/images/6493bee2be7ae168a5ef7a68cf751868/tenor.gif?itemid=17298755')
                 .setColor('#FF0000')
                 .setTimestamp()
                 .setFooter({ text: 'smh'})

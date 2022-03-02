@@ -17,7 +17,8 @@ module.exports = {
                     '```Your PC ran into a problem and needs to restart!```', 
                     'e', 
                     'I\'m not alive :)', 
-                    'why?']
+                    'why?',
+                    'UwU... **n o**']
                     
                 const embed = new MessageEmbed()
                 .setDescription('<@!' + receivedMessage.author.id + '> ' + randomReply(reply))

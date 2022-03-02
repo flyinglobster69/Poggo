@@ -54,6 +54,7 @@ const suscount = require('./commands/suscount')
 const ship = require('./commands/ship')
 const remind = require('./commands/remind')
 const server = require('./commands/server')
+const rng = require('./commands/rng')
 // const music = require('./commands/music')
 
 // Moderation commands
@@ -268,6 +269,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (server.checkServer(receivedMessage)) { // pog server
+        return
+    }
+    else if (rng.checkRng(receivedMessage)) { // pog rng
         return
     }
     // else if (music.checkMusic(receivedMessage)) { // pog music

@@ -15,7 +15,8 @@ module.exports = {
                     .setTitle(`\`pog exe\``)
                     .setDescription(`Takes any text input after \`pog exe\` and returns the text with \`.exe\` at the end of it.
 
-Usage: \`pog exe [any text]\``)
+Usage: \`pog exe [any text]\`
+ex. \`pog exe virus\` → returns \`virus.exe\` in an embedded message.`)
                     .setColor(color)
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
@@ -49,7 +50,8 @@ Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (menti
 Notice: The command only accepts single wishes or 10-wishes, as per the actual game. The pity system for 10-pulls also doesn't work (it works for singles but is a separate system).
 Notice: The Wish History function is temporarily disabled, you can check your current wish history, but no new data will be added to it when wishing (for now; a fix will be deployed later).
 
-Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)`)
+Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)
+Note: The Pity system is shared, so other users running the command at the same time can "steal your pity".`)
                     .setColor(color)
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
@@ -134,9 +136,9 @@ Note: A button will be added soon to delete the purge message in one click, but 
                     .setDescription(`This command is used to set a reminder for yourself in the channel. When the set timer ends, you get pinged in the channel where the command is run.
 
 Usage: 
-\`remind [hours minutes task]\` 
+\`pog remind [hours minutes task]\` 
 -> ex. \`pog remind 1 30 your task\` will remind you to do 'your task' with a ping in 1 hour 30 mins.
-\`remind [minutes task]\` 
+\`pog remind [minutes task]\` 
 -> ex. \`pog remind 10 your task\` will remind you to do 'your task' with a ping in 10 mins.
 
 
@@ -145,6 +147,15 @@ Note: It is not recommended to purely rely on this reminder system because activ
                     .setColor(color)
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
+                }
+                else if (arguments.includes('rng')) {
+                    const embed = new MessageEmbed()
+                    .setTitle('\`pog rng\`')
+                    .setDescription(`This command randomly generates a number between two specified values.
+
+Usage:
+\`pog rng [number] [number]\` where the first number is the minimum, and the second number is the maximum.
+ex. \`pog rng 69 420\` will generate a random number between 69 and 420.`)
                 }
                 // else if (arguments.includes('help')) {
                 //     const embed = new MessageEmbed()
@@ -159,7 +170,7 @@ Note: It is not recommended to purely rely on this reminder system because activ
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`, \`server\`;
 Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
-Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`;
+Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
 Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.
@@ -172,9 +183,18 @@ Moderation commands: \`purge [# of messages]\`
 Please note that the bot will collect and store Discord User IDs when the user sends their first \`pog\`, \`sus\` or \`e\`. 
 The most up-to-date pog logs are preserved on the Server, while backups are kept on GitHub (updated every hour)
 This allows the bot to record a user's \`pog\` count, \`e\` count, and *sus* count (a core function).
-No other identifiable data is stored on the server or GitHub.
+No other identifiable data is stored on the server PC or GitHub.
 
-More commands will be available over time.`) // lists commands and notices
+More commands will be available over time.
+
+Permission requirements:
+- View Channels
+- Send Messages
+- Send Messages in Threads (optional)
+- Read Message History
+- Embed Links
+- Use External Emoji
+- Administrator (for purge command; optional)`) // lists commands and notices
                     .setColor('#00ADEF')
                     .setTimestamp()
 
