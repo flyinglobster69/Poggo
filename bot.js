@@ -139,11 +139,7 @@ client.on('messageCreate', receivedMessage => {
         receivedMessage.channel.send('<:kekw:852782062607401032>')
     }
     if (receivedMessage.content.toLowerCase() == 'ehe') { // ehe
-        const embed = new MessageEmbed()
-        .setTitle('**ehe te nandayo!**')
-        .setThumbnail('https://cdn.discordapp.com/attachments/852751760324821042/863226283961876510/ehe.gif')
-        .setColor('#00ADEF')
-        receivedMessage.channel.send({ embeds: [embed]})
+        receivedMessage.channel.send({ embeds: [ehePranked()]})
     }
     if (susTxtList.includes(receivedMessage.content.toLowerCase())) { // sus
         receivedMessage.channel.send(susGen())
@@ -349,6 +345,24 @@ function emergencyFoodGen() {
 function helpGen() {
     let helpList = ['no :)', 'Unfortunately I am a bot and am unable to help :(', 'pweese UwU', 'Starting help.exe...', 'Sure, what do you need help with?']
     return helpList[Math.floor(Math.random() * helpList.length)]
+}
+// Random Ehe response
+function ehePranked() {
+    let eheRNG = Math.floor(Math.random() * (10 - 1) + 1)
+    if (eheRNG == 6) {
+        const embed = new MessageEmbed()
+        .setTitle('**You\'ve been pranked!**')
+        .setThumbnail('https://c.tenor.com/mZxwB9vnUeMAAAAd/hu-tao-pranked.gif')
+        .setColor('#FF0000')
+        return embed
+    }
+    else {
+        const embed = new MessageEmbed()
+        .setTitle('**Ehe te nandayo!**')
+        .setThumbnail('https://c.tenor.com/zdVAouVjlBgAAAAC/genshin-impact-eheh-te-nandayo.gif')
+        .setColor('#00ADEF')
+        return embed
+    }
 }
 
 process.on('unhandledRejection', (reason, promise) => {
