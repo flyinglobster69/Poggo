@@ -68,6 +68,8 @@ module.exports = {
         const yaecard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png'
         const ayatocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Kamisato_Ayato_Card.png'
 
+        const footer = 'Official art from Genshin Fandom Wiki'
+
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
         }
@@ -137,6 +139,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Tartaglia') {
@@ -148,6 +151,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Klee') {
@@ -159,6 +163,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Albedo') {
@@ -170,6 +175,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Ganyu') {
@@ -181,6 +187,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Xiao') {
@@ -192,6 +199,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Hu Tao') {
@@ -203,6 +211,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Zhongli') {
@@ -214,6 +223,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail('https://th.bing.com/th/id/OIP.oJNFbpLvfgNG0-L3_qJSygAAAA?pid=ImgDet&rs=1')
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Eula') {
@@ -225,6 +235,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Kaedehara Kazuha') {
@@ -236,6 +247,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Kamisato Ayaka') {
@@ -247,6 +259,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Yoimiya') {
@@ -258,6 +271,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Keqing') {
@@ -269,6 +283,7 @@ module.exports = {
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Mona') {
@@ -280,6 +295,7 @@ module.exports = {
                 .setColor(hydro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Diluc') {
@@ -291,6 +307,7 @@ module.exports = {
                 .setColor(pyro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Jean') {
@@ -302,6 +319,7 @@ module.exports = {
                 .setColor(anemo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Qiqi') {
@@ -313,6 +331,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Raiden Shogun') {
@@ -324,6 +343,7 @@ module.exports = {
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Sangonomiya Kokomi') {
@@ -335,6 +355,7 @@ module.exports = {
                 .setColor(hydro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Arataki Itto') {
@@ -346,6 +367,7 @@ module.exports = {
                 .setColor(geo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Shenhe') {
@@ -357,6 +379,7 @@ module.exports = {
                 .setColor(cryo)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Yae Miko') {
@@ -368,6 +391,7 @@ module.exports = {
                 .setColor(electro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else if (randompull == 'Kamisato Ayato') {
@@ -379,6 +403,7 @@ module.exports = {
                 .setColor(hydro)
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else {
@@ -650,6 +675,7 @@ ${items[9]}`)
                     .setThumbnail(primogem)
                     .setColor(color)
                     .setTimestamp()
+                    .setFooter({ text: footer})
                     receivedMessage.reply({ embeds: [embed]})
                 }
                 // else if (arguments == 'history') {
