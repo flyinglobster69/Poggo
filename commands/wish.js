@@ -12,18 +12,18 @@ module.exports = {
         const star5 = ['Venti', 'Tartaglia', 'Klee', 'Albedo', 'Ganyu', 'Xiao', 'Hu Tao', 'Zhongli',
             'Eula', 'Kaedehara Kazuha', 'Kamisato Ayaka', 'Yoimiya', 'Keqing', 'Mona', 'Qiqi', 'Diluc',
             'Jean', 'Raiden Shogun', 'Sangonomiya Kokomi', 'Arataki Itto', 'Shenhe', 'Yae Miko', 
-            'Kamisato Ayato', // 5-star characters
+            'Kamisato Ayato', 'Yelan', // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
             'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
             'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse',
             'Elegy for the End', 'Memory of Dust', 'Everlasting Moonglow', 'Kagura\'s Verity', 
             'The Unforged', 'Song of Broken Pines', 'Redhorn Stonethresher', 'Engulfing Lightning', 
             'Calamity Queller', 'Staff of Homa', 'Vortex Vanquisher', 'Mistsplitter Reforged', 
-            'Summit Shaper', 'Freedom-Sworn', 'Primordial Jade Cutter'] // 5-star weapons
+            'Summit Shaper', 'Freedom-Sworn', 'Primordial Jade Cutter', 'Haran Geppaku Futsu'] // 5-star weapons
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
-            'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', // 4-star characters
+            'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Kuki Shinobu', // 4-star characters
             'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
             'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
             'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
@@ -67,6 +67,7 @@ module.exports = {
         const shenhecard = 'https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Shenhe_Card.jpg'
         const yaecard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png'
         const ayatocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Kamisato_Ayato_Card.png'
+        const yelancard = 'https://static.wikia.nocookie.net/gensin-impact/images/1/18/Character_Yelan_Card.jpg'
 
         const footer = 'Official art from Genshin Fandom Wiki'
 
@@ -406,6 +407,18 @@ module.exports = {
                 .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
+            else if (randompull == 'Yelan') {
+                // wishHistory()
+                const embed = new MessageEmbed()
+                .setTitle(goldstar)
+                .setDescription(randompull)
+                .setImage(ayatocard)
+                .setColor(hydro)
+                .setThumbnail(primogem)
+                .setTimestamp()
+                .setFooter({ text: footer})
+                receivedMessage.reply({ embeds: [embed]})
+            }
             else {
                 // wishHistory()
                 const embed = new MessageEmbed()
@@ -552,6 +565,11 @@ module.exports = {
             else if (randompull == 'Kamisato Ayato') {
                 item = goldstar + randompull
                 charimage = ayatocard
+                color = hydro
+            }
+            else if (randompull == 'Yelan') {
+                item = goldstar + randompull
+                charimage = yelancard
                 color = hydro
             }
             else {

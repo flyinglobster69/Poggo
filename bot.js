@@ -55,6 +55,7 @@ const ship = require('./commands/ship')
 const remind = require('./commands/remind')
 const server = require('./commands/server')
 const rng = require('./commands/rng')
+const suggest = require('./commands/suggest') // does nothing for now
 // const music = require('./commands/music')
 
 // Moderation commands
