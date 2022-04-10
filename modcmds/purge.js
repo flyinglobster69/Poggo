@@ -6,16 +6,18 @@ module.exports = {
     let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
     let primaryCommand = splitCommand[0] // The first word directly after "pog" is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
+    let amount = Number(arguments[0]); // amount = a number entered.
+    let reason = 'unspecified' // all values after number are the reason for purge
     found = false
 
         switch(primaryCommand.toLowerCase()) { // called when messages says 'pog purge'
             case 'purge' :
                 
-                    let amount = Number(arguments[0]); // amount = a number entered.
                     let bool = false
+                    reason = arguments.slice(1) // all values after number are the reason for purge
 
                     if (!receivedMessage.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) 
-                        return // Does nothing if the author does not have administrator permission.
+                        return receivedMessage.reply('Lol you don\'t have permission to use this command, \nTake the L')
                     
                     if (!amount) {
                         const embed = new MessageEmbed()
@@ -73,8 +75,8 @@ module.exports = {
 
                     const embed = new MessageEmbed()
                     .setTitle(`${amount} messages purged!`)
-                    .setDescription(`Messages purged by <@${receivedMessage.member.id}>`)
-                    .setThumbnail('https://c.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif')
+                    .setDescription(`Messages purged by <@${receivedMessage.member.id}>\nReason: \`${reason.join(' ')}\``)
+                    .setThumbnail('https://c.tenor.com/7SC4ShnJbQgAAAAC/zhongli-zhong.gif')
                     .setColor('#00ADEF')
                     .setFooter({ text: 'Task Complete'})
                     .setTimestamp()

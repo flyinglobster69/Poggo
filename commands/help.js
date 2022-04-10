@@ -48,7 +48,6 @@ Usage: \`pog count\` (to check your \`pog\` count); \`pog count [@user]\` (menti
                     .setDescription(`A Genshin Impact wish simulation command.
 
 Notice: The command only accepts single wishes or 10-wishes, as per the actual game. The pity system for 10-pulls also doesn't work (it works for singles but is a separate system).
-Notice: The Wish History function is temporarily disabled, you can check your current wish history, but no new data will be added to it when wishing (for now; a fix will be deployed later).
 
 Usage: \`pog wish\` (to do one wish); \`pog wish 10\` (to do a 10-pull wish)
 Note: The Pity system is shared, so other users running the command at the same time can "steal your pity".`)
@@ -76,7 +75,7 @@ Usage:
                     .setTitle(`\`pog profile\``)
                     .setDescription(`Returns your Discord User Information
 
-This command returns your Username, Discord Tag, Discord ID, and a ping.
+This command returns your Username, Discord Tag, Discord ID, and your IP address (fake lol)
 If you mention someone after typing \`pog profile\`, then the bot will return the mentioned user's Discord User Information
 
 Usage: \`pog profile\` (to check your own profile); \`pog profile [@user]\` (to check someone else's profile)`)
@@ -121,11 +120,11 @@ Note: Superscripts are not enabled, therefore for powers, the exponent is denote
                     .setTitle('\`pog purge\`')
                     .setDescription(`This command mass-deletes the specified number of messages.
 
-Usage: \`pog purge [# of messages up to 100]\`
+Usage: \`pog purge [number reason]\`
+-> where \`number\` is the number of messages to purge, and \`reason\` is the reason for the purge
 
 Note: This is a moderation command that can only be used by people with the Administrator permission.
-Note: It is recommended that you purge less messages at a time and run the command multiple times, this makes it harder to accidentally purge too much.
-Note: A button will be added soon to delete the purge message in one click, but for now it has to be removed by a moderator.`)
+Note: It is recommended that you purge less messages at a time and run the command multiple times so you won't accidentally purge too much.`)
                     .setColor(color)
                     .setTimestamp()
                     receivedMessage.reply({ embeds: [embed]})
@@ -141,8 +140,6 @@ Usage:
 \`pog remind [minutes task]\` 
 -> ex. \`pog remind 10 your task\` will remind you to do 'your task' with a ping in 10 mins.
 
-
-Note: This command curently does not take specific reminder information, it will ping you for 'something'.
 Note: It is not recommended to purely rely on this reminder system because active reminders are cleared when the bot is rebooted for updates.`)
                     .setColor(color)
                     .setTimestamp()
