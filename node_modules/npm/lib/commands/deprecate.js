@@ -15,6 +15,8 @@ class Deprecate extends BaseCommand {
     'otp',
   ]
 
+  static ignoreImplicitWorkspace = false
+
   async completion (opts) {
     if (opts.conf.argv.remain.length > 1) {
       return []
@@ -24,7 +26,7 @@ class Deprecate extends BaseCommand {
     const packages = await libaccess.lsPackages(username, this.npm.flatOptions)
     return Object.keys(packages)
       .filter((name) =>
-        packages[name] === 'write' &&
+        packages[name] === 'read-write' &&
         (opts.conf.argv.remain.length === 0 ||
           name.startsWith(opts.conf.argv.remain[0])))
   }

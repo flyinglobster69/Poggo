@@ -1,0 +1,21 @@
+CHANGELOG 
+---------
+
+
+Previous versions changelogs only recorded in GitHub pushes
+v1.0 - v2.3
+
+
+v2.4
+- Added changelog.txt
+- Updated npm
+    - I left this version for months so I don't even remember what some of the stuff was, sorry
+- Updated wish.js
+    - Added Dendro, Tighnari, Collei
+    - Reconstructed wish system code to be a lot more concise
+- Updated exe.js
+    - Added commented code for a word filter for later
+- Added dm.js (does nothing for now)
+- Updated bot.js
+    - Added dm.js to the command list
+    - Added more replies to the sus generator

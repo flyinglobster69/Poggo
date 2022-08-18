@@ -7,6 +7,7 @@ const Discord = require('discord.js')
 const {MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const { exitCode } = require('process')
+// const commands = new Discord.Collection()
 
 // Connect Config file
 const config = require('./config.json')
@@ -55,7 +56,7 @@ const ship = require('./commands/ship')
 const remind = require('./commands/remind')
 const server = require('./commands/server')
 const rng = require('./commands/rng')
-const suggest = require('./commands/suggest') // does nothing for now
+const dm = require('./commands/dm') 
 // const music = require('./commands/music')
 
 // Moderation commands
@@ -63,7 +64,7 @@ const purge = require('./modcmds/purge')
 
 // Initialize lists
 const susTxtList = ['sus', 'imposter', 'amogus']
-
+// const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
 
 // Connect client
 const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, 
@@ -271,6 +272,9 @@ function processCommand(receivedMessage) {
     else if (rng.checkRng(receivedMessage)) { // pog rng
         return
     }
+    // else if (dm.checkDm(receivedMessage)) { // pog dm
+    //     return
+    // }
     // else if (music.checkMusic(receivedMessage)) { // pog music
     //     return
     // }
@@ -295,8 +299,15 @@ function processCommand(receivedMessage) {
         return
     }
 
+    // let receivedCommand = receivedMessage.toString().split(' ')[0]
+    // let command = require(`./commands/${receivedCommand}.js`)
+    // if (receivedMessage.toString().toLowerCase() == receivedCommand) {
+    //     return command.check
+    // }
+
+
     // Moderation commands
-    else if (purge.checkPurge(receivedMessage)) { // pog purge
+    if (purge.checkPurge(receivedMessage)) { // pog purge
         return
     }
     
@@ -317,6 +328,9 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
     else if (receivedMessage.content.startsWith(':')) {
         null
     }
+    else if (receivedMessage.user = '408785106942164992') {
+        receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
+    }
     else {
         const random = Math.floor(Math.random() * 10) // generate a random number
         randomPity += 1
@@ -334,7 +348,7 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
 
 // Random 'sus' text selector
 function susGen() {
-    let susList = ['ඞ', 'ඞු්ි', 'ඩ', 'ඹ', 'ඩිුා']
+    let susList = ['ඞ', 'ඞු්ි', 'ඩ', 'ඹ', 'ඩිුා', 'ච', 'ඞී', 'ඪ', 'ඖ', 'ණ', 'ඝ', 'ඬ', 'ඣ', 'ය']
     return susList[Math.floor(Math.random() * susList.length)]
 }
 // Random Paimon reply generator

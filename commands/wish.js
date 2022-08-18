@@ -3,27 +3,89 @@ var star4pity = 0
 
 module.exports = {
     checkWish: function(receivedMessage) {
-
-    const fs = require('fs') // connect fs module
     const {MessageEmbed} = require('discord.js')
 
 
         const primogem = 'https://th.bing.com/th/id/R.7384eddb3aa0b07801ada263123ec336?rik=Gr7ZaVnIfXjK%2bQ&pid=ImgRaw&r=0'
-        const star5 = ['Venti', 'Tartaglia', 'Klee', 'Albedo', 'Ganyu', 'Xiao', 'Hu Tao', 'Zhongli',
-            'Eula', 'Kaedehara Kazuha', 'Kamisato Ayaka', 'Yoimiya', 'Keqing', 'Mona', 'Qiqi', 'Diluc',
-            'Jean', 'Raiden Shogun', 'Sangonomiya Kokomi', 'Arataki Itto', 'Shenhe', 'Yae Miko', 
-            'Kamisato Ayato', 'Yelan', // 5-star characters
+
+        const venticard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
+        const childecard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
+        const kleecard = 'https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Character_Klee_Card.png'
+        const albedocard = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
+        const ganyucard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
+        const xiaocard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Character_Xiao_Card.png'
+        const hutaocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
+        const zhonglicard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png'
+        const eulacard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
+        const kazuhacard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
+        const ayakacard = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
+        const yoimiyacard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
+        const keqingcard = 'https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Character_Keqing_Card.png'
+        const monacard = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
+        const diluccard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
+        const jeancard = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
+        const qiqicard = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
+        const eicard = 'https://static.wikia.nocookie.net/gensin-impact/images/9/97/Character_Raiden_Shogun_Card.png'
+        const kokomicard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8c/Character_Sangonomiya_Kokomi_Card.png'
+        const ittocard = 'https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Arataki_Itto_Card.png'
+        const shenhecard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/83/Character_Shenhe_Card.png'
+        const yaecard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png'
+        const ayatocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Kamisato_Ayato_Card.png'
+        const yelancard = 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Character_Yelan_Card.png'
+        const tighnaricard = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Character_Tighnari_Card.png'
+
+        var color = '#191a36'
+        const anemo = '#4cc285'
+        const geo = '#ecc60d'
+        const pyro = '#da5d31'
+        const hydro = '#569cd0'
+        const cryo = '#b4dcde'
+        const electro = '#965daa'
+        const dendro = '#9bc800'
+
+        const venti = ['Venti', venticard, anemo]
+        const childe = ['Tartaglia', childecard, hydro]
+        const klee = ['Klee', kleecard, pyro]
+        const albedo = ['Albedo', albedocard, geo]
+        const ganyu = ['Ganyu', ganyucard, cryo]
+        const xiao = ['Xiao', xiaocard, anemo]
+        const hutao = ['Hu Tao', hutaocard, pyro]
+        const zhongli = ['Zhongli', zhonglicard, geo]
+        const eula = ['Eula', eulacard, cryo]
+        const kazuha = ['Kaedehara Kazuha', kazuhacard, anemo]
+        const ayaka = ['Kamisato Ayaka', ayakacard, cryo]
+        const yoimiya = ['Yoimiya', yoimiyacard, pyro]
+        const keqing = ['Keqing', keqingcard, electro]
+        const mona = ['Mona', monacard, hydro]
+        const diluc = ['Diluc', diluccard, pyro]
+        const jean = ['Jean', jeancard, anemo]
+        const qiqi = ['Qiqi', qiqicard, cryo]
+        const ei = ['Raiden Shogun', eicard, electro]
+        const kokomi = ['Sangonomiya Kokomi', kokomicard, hydro]
+        const itto = ['Arataki Itto', ittocard, geo]
+        const shenhe = ['Shenhe', shenhecard, cryo]
+        const yae = ['Yae Miko', yaecard, electro]
+        const ayato = ['Kamisato Ayato', ayatocard, hydro]
+        const yelan = ['Yelan', yelancard, hydro]
+        const tighnari = ['Tighnari', tighnaricard, dendro]
+
+        const star5 = [venti, childe, klee, albedo, ganyu, xiao, hutao, zhongli,
+            eula, kazuha, ayaka, yoimiya, keqing, mona, qiqi, diluc,
+            jean, ei, kokomi, itto, shenhe, yae,
+            ayato, yelan, tighnari, // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
             'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
             'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse',
             'Elegy for the End', 'Memory of Dust', 'Everlasting Moonglow', 'Kagura\'s Verity', 
             'The Unforged', 'Song of Broken Pines', 'Redhorn Stonethresher', 'Engulfing Lightning', 
             'Calamity Queller', 'Staff of Homa', 'Vortex Vanquisher', 'Mistsplitter Reforged', 
-            'Summit Shaper', 'Freedom-Sworn', 'Primordial Jade Cutter', 'Haran Geppaku Futsu'] // 5-star weapons
+            'Summit Shaper', 'Freedom-Sworn', 'Primordial Jade Cutter', 'Haran Geppaku Futsu', 
+            'Aqua Simulacra'] // 5-star weapons
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
-            'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Kuki Shinobu', // 4-star characters
+            'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Kuki Shinobu', 
+            'Collei', 'Dori', // 4-star characters
             'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
             'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
             'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
@@ -44,44 +106,7 @@ module.exports = {
             'Bloodstained Greatsword', 'Ferrous Shadow', 'Skyrider Sword', 'Harbringer of Dawn', 
             'Cool Steel'] // List of 3-star weapons
 
-        const venticard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
-        const childecard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png'
-        const kleecard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/78/Character_Klee_Card.jpg'
-        const albedocard = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png'
-        const ganyucard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png'
-        const xiaocard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Xiao_Card.jpg'
-        const hutaocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Hu_Tao_Card.jpg'
-        const zhonglicard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png'
-        const eulacard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png'
-        const kazuhacard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png'
-        const ayakacard = 'https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png'
-        const yoimiyacard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png'
-        const keqingcard = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg'
-        const monacard = 'https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg'
-        const diluccard = 'https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Diluc_Card.jpg'
-        const jeancard = 'https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg'
-        const qiqicard = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg'
-        const eicard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Character_Raiden_Shogun_Card.jpg'
-        const kokomicard = 'https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg'
-        const ittocard = 'https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Arataki_Itto_Card.jpg'
-        const shenhecard = 'https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Shenhe_Card.jpg'
-        const yaecard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png'
-        const ayatocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Kamisato_Ayato_Card.png'
-        const yelancard = 'https://static.wikia.nocookie.net/gensin-impact/images/1/18/Character_Yelan_Card.jpg'
-
         const footer = 'Official art from Genshin Fandom Wiki'
-
-        // function lineCount(text) {
-        //     var nLines = 0
-        //     for( var i = 0, n = text.length;  i < n;  i += 1 ) {
-        //         if( text[i] === '\n' ) {
-        //             nLines += 1
-        //         }
-        //     }
-        //     return nLines
-        // }
-        
-        // let lines = ''
 
         function random3star(star3) {
             return star3[Math.floor(Math.random() * star3.length)]
@@ -92,384 +117,38 @@ module.exports = {
         function random5star(star5) {
             return star5[Math.floor(Math.random() * star5.length)]
         }
-        function nameGen(nameList) {
-            return nameList[Math.floor(Math.random() * nameList.length)]
-        }
-        function wishHistory() {
-            var uid = 'wishhistory' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
-                fs.open(`./wishhistory/${uid}`, 'a+', function(error, fd) { // opens the user's wish history file
-                    if (error) { // if user has no wish history file, create one
-                        fs.writeFile(`./wishhistory/${uid}`, randompull, 'utf8', function(error, data) { // start user with 1 pog
-                            null
-                        })
-                    }
-                    else { // if user has a wish history file
-                        // read file
-                        // append new data to file
-                        // if there are 10 lines, remove the first line
-                        // overwrite file with new data
 
-                        // fs.readFile(`./wishhistory/${uid}`, 'utf8', function(error, data) { // read the value in the wish history
-                        //     fs.readFileSync(`./wishhistory/${uid}`, 'utf8').split('\n').forEach(function(randompull){
-                        //        lines.push(randompull)
-                        //     })
-                        //     if (lines.length >= 10) {
-                        //         lines.splice(0, 2)
-                        //     }
-                        //     else {
-                        //         null
-                        //     }
-                        //     fs.write(fd, `${lines}`, 0, 'utf8', function(error, writtenbytes) { // appends new wish to the line below the last
-                        //         null
-                        //     })
-                            
-                            
-                            // lineCount(data)
-                            // if (lineCount(data) >= 10) {
-                            //     // delete first line - loop until 10 lines
-                            //     var lines = fs.readFile('./wishhistory/' + uid, 'utf8', function(error, data) {
-                            //         null
-                            //     }).split('\n')
-                            //     lines.splice(0, 2)
-                            //     var newwishhistory = lines.join('\n').substr(1)
-                            //     fs.write(fd, newwishhistory, 0, 'utf8', function(error, data) {
-                            //         null
-                            //     })
-                            // }
-                            // else {
-                            //     null
-                            // }
-                            null
-                        }
-                })
-                
-        }
-        // function tenWishHistory(item) {
-        //     var uid = 'wishhistory' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
-        //         fs.open('./wishhistory/' + uid, 'a+', function(error, fd) { // opens the user's wish history file
-        //             if (error) { // if user has no wish history file, create one
-        //                 fs.writeFile('./wishhistory/' + uid, item, 'utf8', function(error, data) { // start user with 1 pog
-        //                     null
-        //                 })
-        //             }
-        //             else { // if user has a wish history file
-        //                 fs.readFile('./wishhistory/' + uid, 'utf8', function(error, data) { // read the value in the pog count file
-        //                     if (error) { // if file does not exist, create one (this is unlikely to be needed)
-        //                         fs.writeFile('./wishhistory/' + uid, item, 'utf8', function(error, data) { // start user with wish history
-        //                             null
-        //                         })
-        //                     }
-        //                     else { // log wishes
-        //                         fs.write(fd, `\n${item}`, 0, 'utf8', function(error, writtenbytes) { // appends new wish to the line below the last
-        //                         })
-        //                     }
-        //                 })
-        //             }
-        //         })
-        // }
-        function single5star() {
-            randompull = random5star(star5)
-            if (randompull == 'Venti') {
-                wishHistory()
+        function single5starinfo(char) {
+            if(typeof(char) == 'string') {
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(venticard)
-                .setColor(anemo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Tartaglia') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(childecard)
-                .setColor(geo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Klee') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(kleecard)
-                .setColor(pyro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Albedo') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(albedocard)
-                .setColor(geo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Ganyu') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(ganyucard)
-                .setColor(cryo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Xiao') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(xiaocard)
-                .setColor(anemo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Hu Tao') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(hutaocard)
-                .setColor(pyro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Zhongli') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(zhonglicard)
-                .setColor(geo)
-                .setThumbnail('https://th.bing.com/th/id/OIP.oJNFbpLvfgNG0-L3_qJSygAAAA?pid=ImgDet&rs=1')
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Eula') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(eulacard)
-                .setColor(cryo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Kaedehara Kazuha') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(kazuhacard)
-                .setColor(anemo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Kamisato Ayaka') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(ayakacard)
-                .setColor(cryo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Yoimiya') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(yoimiyacard)
-                .setColor(pyro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Keqing') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(keqingcard)
-                .setColor(electro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Mona') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(monacard)
-                .setColor(hydro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Diluc') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(diluccard)
-                .setColor(pyro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Jean') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(jeancard)
-                .setColor(anemo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Qiqi') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(qiqicard)
-                .setColor(cryo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Raiden Shogun') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(eicard)
-                .setColor(electro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Sangonomiya Kokomi') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(kokomicard)
-                .setColor(hydro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Arataki Itto') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(ittocard)
-                .setColor(geo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Shenhe') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(shenhecard)
-                .setColor(cryo)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Yae Miko') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(yaecard)
-                .setColor(electro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Kamisato Ayato') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(ayatocard)
-                .setColor(hydro)
-                .setThumbnail(primogem)
-                .setTimestamp()
-                .setFooter({ text: footer})
-                receivedMessage.reply({ embeds: [embed]})
-            }
-            else if (randompull == 'Yelan') {
-                wishHistory()
-                const embed = new MessageEmbed()
-                .setTitle(goldstar)
-                .setDescription(randompull)
-                .setImage(ayatocard)
-                .setColor(hydro)
+                .setDescription(random5star(star5))
+                .setImage('https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif')
+                .setColor(color)
                 .setThumbnail(primogem)
                 .setTimestamp()
                 .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
             else {
-                wishHistory()
                 const embed = new MessageEmbed()
                 .setTitle(goldstar)
-                .setDescription(randompull)
-                .setColor('#ffff00')
+                .setDescription(char[0])
+                .setImage(char[1])
+                .setColor(char[2])
                 .setThumbnail(primogem)
                 .setTimestamp()
+                .setFooter({ text: footer})
                 receivedMessage.reply({ embeds: [embed]})
             }
+        }
+        function single5star() {
+            single5starinfo(random5star(star5))
+
             star5pity = 0
             star4pity += 1
         }
+
         function single4star() {
             const embed = new MessageEmbed()
             .setTitle(purplestar)
@@ -482,163 +161,17 @@ module.exports = {
             star5pity += 1
         }
         function ten5star() {
-            randompull = random5star(star5)
-            // wishHistory()
+            char = random5star(star5)
             charimage = 'https://media.tenor.com/images/3e2ccd3ef1a57a27d5b17629071c00f3/tenor.gif'
-            if (randompull == 'Venti') {
-                const nameList = ['Venti', 'Barbatos', 'Windborne Bard', 'Tone-Deaf Bard']
-                item = goldstar + nameGen(nameList)
-                charimage = 'https://media1.tenor.com/images/43cb917c658c0cc22dbf96f2e8858269/tenor.gif'
-                color = anemo
-                wishHistory()
-            }
-            else if (randompull == 'Tartaglia') {
-                const nameList = ['Tartaglia', 'Childe']
-                item = goldstar + nameGen(nameList)
-                charimage = childecard
-                color = hydro
-                wishHistory()
-            }
-            else if (randompull == 'Klee') {
-                item = goldstar + randompull
-                charimage = kleecard
-                color = pyro
-                wishHistory()
-            }
-            else if (randompull == 'Albedo') {
-                item = goldstar + randompull
-                charimage = albedocard
-                color = geo
-                wishHistory()
-            }
-            else if (randompull == 'Ganyu') {
-                item = goldstar + randompull
-                charimage = ganyucard
-                color = cryo
-                wishHistory()
-            }
-            else if (randompull == 'Xiao') {
-                item = goldstar + randompull
-                charimage = xiaocard
-                color = anemo
-                wishHistory()
-            }
-            else if (randompull == 'Hu Tao') {
-                item = goldstar + randompull
-                charimage = hutaocard
-                color = pyro
-                wishHistory()
-            }
-            else if (randompull == 'Zhongli') {
-                const nameList = ['Zhongli', 'Rex Lapis', 'Morax', 'God of Contracts']
-                item = goldstar + nameGen(nameList)
-                charimage = 'https://media.tenor.com/images/0061cccac5300206283e08bac71b98b7/tenor.gif'
-                color = geo
-                wishHistory()
-            }
-            else if (randompull == 'Eula') {
-                item = goldstar + randompull
-                charimage = eulacard
-                color = cryo
-                wishHistory()
-            }
-            else if (randompull == 'Kaedehara Kazuha') {
-                item = goldstar + randompull
-                charimage = kazuhacard
-                color = anemo
-                wishHistory()
-            }
-            else if (randompull == 'Kamisato Ayaka') {
-                const nameList = ['Kamisato Ayaka', 'Kamisato Ayaya']
-                item = goldstar + nameGen(nameList)
-                charimage = ayakacard
-                color = cryo
-                wishHistory()
-            }
-            else if (randompull == 'Yoimiya') {
-                item = goldstar + randompull
-                charimage = yoimiyacard
-                color = pyro
-                wishHistory()
-            }
-            else if (randompull == 'Keqing') {
-                item = goldstar + randompull
-                charimage = keqingcard
-                color = electro
-                wishHistory()
-            }
-            else if (randompull == 'Mona') {
-                item = goldstar + randompull
-                charimage = monacard
-                color = hydro
-                wishHistory()
-            }
-            else if (randompull == 'Diluc') {
-                item = goldstar + randompull
-                charimage = diluccard
-                color = pyro
-                wishHistory()
-            }
-            else if (randompull == 'Jean') {
-                item = goldstar + randompull
-                charimage = jeancard
-                color = anemo
-                wishHistory()
-            }
-            else if (randompull == 'Qiqi') {
-                item = goldstar + randompull
-                charimage = qiqicard
-                color = cryo
-                wishHistory()
-            }
-            else if (randompull == 'Raiden Shogun') {
-                const nameList = ['Raiden Shogun', 'Ei', 'Baal', '雷電 ']
-                item = goldstar + nameGen(nameList)
-                charimage = 'https://media1.tenor.com/images/4f804b253e28794392652859c7b8f1c3/tenor.gif'
-                color = electro
-                wishHistory()
-            }
-            else if (randompull == 'Sangonomiya Kokomi') {
-                item = goldstar + randompull
-                charimage = kokomicard
-                color = hydro
-                wishHistory()
-            }
-            else if (randompull == 'Arataki Itto') {
-                item = goldstar + randompull
-                charimage = ittocard
-                color = geo
-                wishHistory()
-            }
-            else if (randompull == 'Shenhe') {
-                item = goldstar + randompull
-                charimage = shenhecard
-                color = cryo
-                wishHistory()
-            }
-            else if (randompull == 'Yae Miko') {
-                item = goldstar + randompull
-                charimage = yaecard
-                color = electro
-                wishHistory()
-            }
-            else if (randompull == 'Kamisato Ayato') {
-                item = goldstar + randompull
-                charimage = ayatocard
-                color = hydro
-                wishHistory()
-            }
-            else if (randompull == 'Yelan') {
-                item = goldstar + randompull
-                charimage = yelancard
-                color = hydro
-                wishHistory()
+            if (typeof(char) == 'string') {
+                item = goldstar + char
             }
             else {
-                item = goldstar + randompull
-                charimage = 'https://media.tenor.com/images/34c6064f32fbe1b5ace18ac243546fac/tenor.gif'
-                wishHistory()
+                item = `${goldstar} ${char[0]}`
+                charimage = char[1]
+                color = char[2]
             }
+            star5pity = 0
         }
 
         function ten4star() {                   
@@ -654,14 +187,6 @@ module.exports = {
         const goldstar = star2 + star2 + star2 + star2 + star2
         const purplestar = star + star + star + star
         const normiestar = star + star + star
-
-        var color = '#191a36'
-        const anemo = '#4cc285'
-        const geo = '#ecc60d'
-        const pyro = '#da5d31'
-        const hydro = '#569cd0'
-        const cryo = '#b4dcde'
-        const electro = '#965daa'
 
         var items = [] // Init
 

@@ -21,7 +21,7 @@ module.exports = {
                 if (arguments == '') {
                     const embed = new MessageEmbed()
                     .setTitle('Your Discord Profile')
-                    .setDescription(`Your server nickname: \`${receivedMessage.member.displayName}\`\nYour username: \`${receivedMessage.author.username}\`\nYour Discord Tag: \`${receivedMessage.member.user.tag}\`\nYour ID: \`${receivedMessage.author.id}\`\nYour IPv4 IP Address (fake): \`${randomIP}\``) 
+                    .setDescription(`Your server nickname: \`${receivedMessage.member.displayName}\`\nYour username: \`${receivedMessage.author.username}\`\nYour Discord Tag: \`${receivedMessage.member.user.tag}\`\nYour ID: \`${receivedMessage.author.id}\`\nYour IP Address (fake): \`${randomIP}\``) 
                     .setThumbnail(receivedMessage.author.avatarURL())
                     .setColor('#00ADEF')
                     .setTimestamp()
@@ -30,7 +30,7 @@ module.exports = {
                 else {
                     const embed = new MessageEmbed()
                     .setTitle('Their Discord Profile')
-                    .setDescription(`Their username: \`${firstMentioned.username}\`\nTheir Discord Tag: \`${firstMentioned.tag}\`\nTheir ID: \`${firstMentioned.id}\`\nTheir IPv4 IP Address (fake): \`${randomIP}\``) 
+                    .setDescription(`Their username: \`${firstMentioned.username}\`\nTheir Discord Tag: \`${firstMentioned.tag}\`\nTheir ID: \`${firstMentioned.id}\`\nTheir IP Address (fake): \`${randomIP}\``) 
                     .setThumbnail(firstMentioned.avatarURL())
                     .setColor('#00ADEF')
                     .setTimestamp()
