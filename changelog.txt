@@ -19,3 +19,10 @@ v2.4
 - Updated bot.js
     - Added dm.js to the command list
     - Added more replies to the sus generator
+
+
+v2.4.1
+- Fixed a bug in bot.js
+    - Stopped message quoting system from quoting pings
+    - Fixed a bug causing it to quote deleted messages 100% of the time
+    - Removed special quote settings for OwO Bot (this was the cause of the bug)

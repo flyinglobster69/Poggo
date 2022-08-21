@@ -322,14 +322,14 @@ var randomPity // create pity variable
 randomPity = 0 // initialize pity system
 client.on('messageDelete', receivedMessage => { // called whenever a message is deleted
 
-    if (receivedMessage.author == client.user) {
+    if (receivedMessage.author == client.user) { // Do nothing if itself
         null
     }
-    else if (receivedMessage.content.startsWith(':')) {
+    else if (receivedMessage.content.startsWith(':')) { // Do nothing if nqn emote
         null
     }
-    else if (receivedMessage.user = '408785106942164992') {
-        receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
+    else if (receivedMessage.content.includes('@')) { // Do nothing if ping
+        null
     }
     else {
         const random = Math.floor(Math.random() * 10) // generate a random number
@@ -339,6 +339,7 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
             receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
             randomPity = 0
         }
+        // console.log(random)
         else if (random == 5) { // if random number (luck) is 5, quote delete message and reset pity count (10% luck)
             randomPity = 0
             receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
@@ -363,7 +364,7 @@ function helpGen() {
 }
 // Random Ehe response
 function ehePranked() {
-    let eheRNG = Math.floor(Math.random() * (10 - 1) + 1)
+    let eheRNG = Math.floor(Math.random() * 10)
     if (eheRNG == 6) {
         const embed = new MessageEmbed()
         .setTitle('**You\'ve been pranked!**')
