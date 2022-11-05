@@ -21,13 +21,13 @@ Current Features:
 - Genshin Impact Wish Simulator
 - The Aviation Butter command that sends a very buttery landing video into the chat
 - Occasionally quotes a user when they delete a message (deleted messages not saved)
+- Reminder system (pings user to remind them of something)
 - Rick Rolls
 - And more!
 
 Future Features:
 - Bot verification and whitelisting
 - Sending random reddit posts (meme command)
-- Reminder system (pings user to remind them of something)
 - Butter landing submissions (so it isn't just one butter landing every time)
 - Music VC Function (play music in VC)
 
@@ -35,7 +35,7 @@ Invite the bot with this link!
 https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=274878426112
 
 
-Fun fact: this README is a rickroll!
+Fun fact: this README is a rickroll when you run it on Windows!
 
 @echo off
 start https://bit.ly/3h872Sg

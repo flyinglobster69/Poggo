@@ -5,7 +5,6 @@ module.exports = {
     checkWish: function(receivedMessage) {
     const {MessageEmbed} = require('discord.js')
 
-
         const primogem = 'https://th.bing.com/th/id/R.7384eddb3aa0b07801ada263123ec336?rik=Gr7ZaVnIfXjK%2bQ&pid=ImgRaw&r=0'
 
         const venticard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg'
@@ -33,6 +32,10 @@ module.exports = {
         const ayatocard = 'https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Kamisato_Ayato_Card.png'
         const yelancard = 'https://static.wikia.nocookie.net/gensin-impact/images/9/98/Character_Yelan_Card.png'
         const tighnaricard = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Character_Tighnari_Card.png'
+        const cynocard = 'https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Cyno_Card.png'
+        const niloucard = 'https://static.wikia.nocookie.net/gensin-impact/images/1/19/Character_Nilou_Card.png'
+        const nahidacard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ae/Character_Nahida_Card.png'
+        const scaramouchecard = 'https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Character_Wanderer_Card.jpg'
 
         var color = '#191a36'
         const anemo = '#4cc285'
@@ -68,11 +71,15 @@ module.exports = {
         const ayato = ['Kamisato Ayato', ayatocard, hydro]
         const yelan = ['Yelan', yelancard, hydro]
         const tighnari = ['Tighnari', tighnaricard, dendro]
+        const cyno = ['Cyno', cynocard, electro]
+        const nilou = ['Nilou', niloucard, hydro]
+        const nahida = ['Nahida', nahidacard, dendro]
+        const scaramouche = ['The Wanderer', scaramouchecard, anemo]
 
         const star5 = [venti, childe, klee, albedo, ganyu, xiao, hutao, zhongli,
-            eula, kazuha, ayaka, yoimiya, keqing, mona, qiqi, diluc,
-            jean, ei, kokomi, itto, shenhe, yae,
-            ayato, yelan, tighnari, // 5-star characters
+            eula, kazuha, ayaka, yoimiya, keqing, mona, qiqi, diluc, jean, ei, 
+            kokomi, itto, shenhe, yae, ayato, yelan, tighnari, cyno, nilou, nahida, 
+            scaramouche, // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
             'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
             'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse',
@@ -80,12 +87,13 @@ module.exports = {
             'The Unforged', 'Song of Broken Pines', 'Redhorn Stonethresher', 'Engulfing Lightning', 
             'Calamity Queller', 'Staff of Homa', 'Vortex Vanquisher', 'Mistsplitter Reforged', 
             'Summit Shaper', 'Freedom-Sworn', 'Primordial Jade Cutter', 'Haran Geppaku Futsu', 
-            'Aqua Simulacra'] // 5-star weapons
+            'Aqua Simulacra', 'The Hunter\'s Path', 'Staff of the Scarlet Sands', 'Key of Khaj-Nisut',
+            'A Thousand Floating Dreams', 'Alaya'] // 5-star weapons
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
             'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Kuki Shinobu', 
-            'Collei', 'Dori', // 4-star characters
+            'Collei', 'Dori', 'Layla', 'Faruzan', // 4-star characters
             'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
             'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
             'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
@@ -284,29 +292,7 @@ ${items[9]}`)
                     .setFooter({ text: footer})
                     receivedMessage.reply({ embeds: [embed]})
                 }
-                // else if (arguments == 'history') {
-                //     fs.readFile(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`, 'utf8', function(error, data) { // read the value in the pog count file
-                //         if (error) { // if file does not exist
-                //             const embed = new MessageEmbed()
-                //             .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
-                //             .setDescription('This user has no wish history.')
-                //             .setThumbnail('https://c.tenor.com/v6uW6qb-ukcAAAAi/qiqi-fallen.gif')
-                //             .setColor(color)
-                //             .setTimestamp()
-                //             receivedMessage.reply({ embeds: [embed]})
-                //         }
-                //         else { // send file
-                //             const embed = new MessageEmbed()
-                //             .setTitle(`${receivedMessage.author.username}'s 5-star Wish History`)
-                //             .setDescription('See attached wish history file with your Discord user ID (it may delay sending)')
-                //             .setThumbnail(primogem)
-                //             .setColor(color)
-                //             .attachFiles(`./wishhistory/wishhistory${parseInt(receivedMessage.author.id).toString()}.txt`)
-                //             .setTimestamp()
-                //             receivedMessage.reply({ embeds: [embed]})
-                //         }
-                //     })
-                // }
+                
                 else {
                     const random = Math.floor(Math.random() * 90) // generates a random number between 1-90
                     if (random < 2) { // if random number < 6, random 5-star

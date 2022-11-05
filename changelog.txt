@@ -26,3 +26,10 @@ v2.4.1
     - Stopped message quoting system from quoting pings
     - Fixed a bug causing it to quote deleted messages 100% of the time
     - Removed special quote settings for OwO Bot (this was the cause of the bug)
+
+
+v2.4.2
+- Added items to wish sim
+    - Added Cyno, Nilou, Nahida, The Wanderer, and their weapons into 5-star category
+    - Added Layla and Faruzan to 4-star category
+- Updated README
