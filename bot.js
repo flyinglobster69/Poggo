@@ -39,8 +39,6 @@ const code = require('./commands/code')
 const version = require('./commands/version')
 const readme = require('./commands/readme')
 const horny = require('./commands/horny')
-const biden = require('./commands/biden')
-const trump = require('./commands/trump')
 const exe = require('./commands/exe')
 const buff = require('./commands/buff')
 const butter = require('./commands/butter')
@@ -56,7 +54,7 @@ const ship = require('./commands/ship')
 const remind = require('./commands/remind')
 const server = require('./commands/server')
 const rng = require('./commands/rng')
-const dm = require('./commands/dm') 
+const she = require('./commands/she') 
 // const music = require('./commands/music')
 
 // Moderation commands
@@ -84,17 +82,18 @@ client.on('ready', () => {
     client.user.setActivity('pog help') // Activity status on Discord
 })
 
-
+// On message from any user
 client.on('messageCreate', receivedMessage => {
+    lowered = receivedMessage.content.toLowerCase()
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
         return // kekw
     }
     
-    if (receivedMessage.content.toLowerCase().startsWith(config.prefix)) { // If first 3 letters = 'pog', process receivedMessage function
+    if (lowered.startsWith(config.prefix)) { // If first 3 letters = 'pog', process receivedMessage function
         processCommand(receivedMessage)
     }
 
-    if (receivedMessage.content.toLowerCase() == 'e') { // e
+    if (lowered == 'e') { // e
         var uid = 'ecount' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
 
                 fs.open('./ecount/' + uid, 'r+', function(error, fd) { // opens the user's e count file
@@ -122,28 +121,28 @@ client.on('messageCreate', receivedMessage => {
                     }
                 })
     }
-    if (receivedMessage.content.toLowerCase() == 'help') { // help
+    if (lowered == 'help') { // help
         receivedMessage.channel.send(helpGen())
     }
     if (receivedMessage.content.includes('69 ') && (receivedMessage.author.bot == false)) { // 69
         receivedMessage.channel.send('nice')
     }
-    if (receivedMessage.content.toLowerCase().includes('paimon')) { // paimon 
+    if (lowered.includes('paimon')) { // paimon 
         receivedMessage.channel.send(emergencyFoodGen())
     }
-    if (receivedMessage.content.toLowerCase() == 'dewit') { // dewit
+    if (lowered == 'dewit') { // dewit
         const embed = new MessageEmbed()
         .setImage('https://media.discordapp.net/attachments/852751760324821042/863226637460963364/dewit.gif')
         .setColor('#00ADEF')
         receivedMessage.channel.send({ embeds: [embed]})
     }
-    if (receivedMessage.content.toLowerCase() == 'kekw') { // kekw
+    if (lowered == 'kekw') { // kekw
         receivedMessage.channel.send('<:kekw:852782062607401032>')
     }
-    if (receivedMessage.content.toLowerCase() == 'ehe') { // ehe
+    if (lowered == 'ehe') { // ehe
         receivedMessage.channel.send({ embeds: [ehePranked()]})
     }
-    if (susTxtList.includes(receivedMessage.content.toLowerCase())) { // sus
+    if (susTxtList.includes(lowered)) { // sus
         receivedMessage.channel.send(susGen())
         var uid = 'suscount' + parseInt(receivedMessage.author.id).toString() + '.txt' // takes the message author uid and puts it into the file name
 
@@ -172,9 +171,23 @@ client.on('messageCreate', receivedMessage => {
                     }
                 })
     } 
-    if (receivedMessage.content.toLowerCase().startsWith(dad.im) && (receivedMessage.content.length < 14)) { // dad
+    if (lowered.startsWith(dad.im) && (receivedMessage.content.length < 14)) { // dad
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
+    }
+    if (receivedMessage.content.split(' ').length == 3){
+        const random = Math.floor(Math.random() * 5) // generate a random number out of 10
+        if (random == 3) { // if random number (luck) is 5, send phrase to the chat
+            var data = receivedMessage.content.split(' ')
+            var first = data.slice(0)[0]
+            var second = data.slice(1)[0]
+            var third = data.slice(2)[0]
+            var phrase = `She ${first} on my ${second} til I ${third}`
+            receivedMessage.channel.send(phrase) // sends the phrase to the message channel
+        }
+    }
+    else {
+        null
     }
 })
 
@@ -221,12 +234,6 @@ function processCommand(receivedMessage) {
     else if (horny.checkHorny(receivedMessage)) { // pog horny
         return
     }
-    else if (biden.checkBiden(receivedMessage)) { // pog biden
-        return 
-    }
-    else if (trump.checkTrump(receivedMessage)) { // pog trump
-        return
-    }
     else if (exe.checkExe(receivedMessage)) { // pog exe
         return
     }
@@ -270,6 +277,9 @@ function processCommand(receivedMessage) {
         return
     }
     else if (rng.checkRng(receivedMessage)) { // pog rng
+        return
+    }
+    else if (she.checkShe(receivedMessage)) { // pog she
         return
     }
     // else if (dm.checkDm(receivedMessage)) { // pog dm

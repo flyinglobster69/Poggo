@@ -33,3 +33,12 @@ v2.4.2
     - Added Cyno, Nilou, Nahida, The Wanderer, and their weapons into 5-star category
     - Added Layla and Faruzan to 4-star category
 - Updated README
+
+
+v2.5
+- Removed Trump and Biden commands
+- Added a She command ("pog help she")
+- Added an RNG-based version of the She command that runs whenever a message with 3 words is spotted
+- Updated README to contain more specific info about the Server PC (device model)
+- She command added to help.js
+- Code cleanup in bot.js (onMessageCreate)
