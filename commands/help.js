@@ -154,20 +154,25 @@ Usage:
 \`pog rng [number] [number]\` where the first number is the minimum, and the second number is the maximum.
 ex. \`pog rng 69 420\` will generate a random number between 69 and 420.`)
                 }
-                // else if (arguments.includes('help')) {
-                //     const embed = new MessageEmbed()
-                //     .setTitle(`Need more clarification?`)
-                //     .setDescription(`For more information about individual commands, click here: https://bit.ly/3h872Sg`)
-                //     .setColor('#01796f')
-                //     .setTimestamp()
-                //     receivedMessage.reply({ embeds: [embed]})
-                // }
+                else if (arguments.includes('she')) {
+                    const embed = new MessageEmbed()
+                    .setTitle(`\`pog she\``)
+                    .setDescription(`This command takes 3 words for input and returns a sentence:
+"She [first word] on my [second word] till I [third word]"
+
+Usage:
+\`pog she [first] [second] [third]\` where first, second, and third are the 3 words added to the sentence.
+ex. \`pog she played phone AAA\` will return: \`She played on my phone until I AAA\``)
+                    .setColor('#01796f')
+                    .setTimestamp()
+                    receivedMessage.reply({ embeds: [embed]})
+                }
                 else {
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`, \`server\`;
-Troll Commands: \`biden\`, \`trump\`, \`buff\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
-Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`;
+Troll Commands: \`buff\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
+Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`, \`she [first] [second] [third]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;
 Type \`pog help count\` for a more in-depth overview of the different counters and how to access the data.

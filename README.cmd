@@ -8,7 +8,7 @@ Users can use a command to get how many times they said 'pog', or get how many t
 This bot is still a work-in-progress; Send feedback to me on Discord -> https://discord.gg/JDTRUPP (FlyingLobster69#1861)
 
 Server Location: Western Canada
-Server Type: Acer Aspire nugget from 2008? (chonky desktop pc)
+Server Type: Modded Acer Aspire X1800 (has a Xeon X3220)
 
 Programming Language: Javascript
 Prefix: 'pog'
@@ -29,7 +29,6 @@ Future Features:
 - Bot verification and whitelisting
 - Sending random reddit posts (meme command)
 - Butter landing submissions (so it isn't just one butter landing every time)
-- Music VC Function (play music in VC)
 
 Invite the bot with this link!
 https://discord.com/oauth2/authorize?client_id=837148121934725141&scope=bot&permissions=274878426112
