@@ -42,3 +42,7 @@ v2.5
 - Updated README to contain more specific info about the Server PC (device model)
 - She command added to help.js
 - Code cleanup in bot.js (onMessageCreate)
+
+
+v2.5.1
+- Reduced the probability of the RNG-based version of the She command from activating

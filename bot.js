@@ -176,7 +176,7 @@ client.on('messageCreate', receivedMessage => {
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
     if (receivedMessage.content.split(' ').length == 3){
-        const random = Math.floor(Math.random() * 5) // generate a random number out of 10
+        const random = Math.floor(Math.random() * 10) // generate a random number out of 10
         if (random == 3) { // if random number (luck) is 5, send phrase to the chat
             var data = receivedMessage.content.split(' ')
             var first = data.slice(0)[0]
