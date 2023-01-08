@@ -171,7 +171,7 @@ ex. \`pog she played phone AAA\` will return: \`She played on my phone until I A
                     const embed = new MessageEmbed()
                     .setTitle(`Prefix\: \`pog\``) 
                     .setDescription(`Command list\: \nUtility Commands: \`help\`, \`test\`, \`code\`, \`ping\`, \`version\`, \`readme\`, \`invite\`, \`server\`;
-Troll Commands: \`buff\`, \`start\`, \`butter\`, \`american\`, \`horny\`, \`isearthround\`, \`die\`;
+Troll Commands: \`start\`, \`butter\`, \`horny\`, \`isearthround\`, \`die\`;
 Bigger Commands\: \`exe [insert text here]\`, \`wish [10]\`, \`ship [person1] [person2]\`, \`profile [@user]\`, \`remind [hours minutes]\`, \`rng [min max]\`, \`she [first] [second] [third]\`;
 
 Count Commands: \`count [@user]\`, \`ecount [@user]\`, \`suscount [@user]\`;

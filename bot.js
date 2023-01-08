@@ -175,17 +175,6 @@ client.on('messageCreate', receivedMessage => {
         var name = receivedMessage.content.substr(3)
         receivedMessage.channel.send(dad.hi + name + dad.dad)
     }
-    if (receivedMessage.content.split(' ').length == 3){
-        const random = Math.floor(Math.random() * 10) // generate a random number out of 10
-        if (random == 3) { // if random number (luck) is 5, send phrase to the chat
-            var data = receivedMessage.content.split(' ')
-            var first = data.slice(0)[0]
-            var second = data.slice(1)[0]
-            var third = data.slice(2)[0]
-            var phrase = `She ${first} on my ${second} til I ${third}`
-            receivedMessage.channel.send(phrase) // sends the phrase to the message channel
-        }
-    }
     else {
         null
     }

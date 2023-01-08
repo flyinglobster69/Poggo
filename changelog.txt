@@ -46,3 +46,9 @@ v2.5
 
 v2.5.1
 - Reduced the probability of the RNG-based version of the She command from activating
+
+
+v2.5.2
+- Removed the RNG-based version of the She Command due to spam issues
+- Removed American and Buff commands 
+- Updated the Help command to reflect these changes
