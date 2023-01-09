@@ -51,4 +51,4 @@ v2.5.1
 v2.5.2
 - Removed the RNG-based version of the She Command due to spam issues
 - Removed American and Buff commands 
-- Updated the Help command to reflect these changes
+- Updated help.js and bot.js to reflect these changes

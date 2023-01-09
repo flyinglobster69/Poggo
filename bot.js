@@ -226,13 +226,7 @@ function processCommand(receivedMessage) {
     else if (exe.checkExe(receivedMessage)) { // pog exe
         return
     }
-    else if (buff.checkBuff(receivedMessage)) { // pog buff
-        return
-    }
     else if (butter.checkButter(receivedMessage)) { // pog butter
-        return
-    }
-    else if (american.checkAmerican(receivedMessage)) { // pog american
         return
     }
     else if (count.checkCount(receivedMessage)) { // pog count
