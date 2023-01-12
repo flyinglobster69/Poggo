@@ -52,3 +52,7 @@ v2.5.2
 - Removed the RNG-based version of the She Command due to spam issues
 - Removed American and Buff commands 
 - Updated help.js and bot.js to reflect these changes
+
+v2.5.3
+- Added Alhaitham to wish command
+- Fixed missing character cards in wish command
