@@ -37,6 +37,7 @@ module.exports = {
         const nahidacard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ae/Character_Nahida_Card.png'
         const scaramouchecard = 'https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Wanderer_Card.png'
         const alhaithamcard = 'https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Character_Alhaitham_Card.png'
+        const dehyacard = 'https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Character_Dehya_Card.png'
 
         var color = '#191a36'
         const anemo = '#4cc285'
@@ -77,6 +78,7 @@ module.exports = {
         const nahida = ['Nahida', nahidacard, dendro]
         const scaramouche = ['The Wanderer', scaramouchecard, anemo]
         const alhaitham = ['Alhaitham', alhaithamcard, dendro]
+        const dehya = ['Dehya', dehyacard, pyro]
 
         const star5 = [venti, childe, klee, albedo, ganyu, xiao, hutao, zhongli,
             eula, kazuha, ayaka, yoimiya, keqing, mona, qiqi, diluc, jean, ei, 

@@ -56,3 +56,7 @@ v2.5.2
 v2.5.3
 - Added Alhaitham to wish command
 - Fixed missing character cards in wish command
+
+v2.5.4
+- Removed guarantee counter from deleted message quoting system
+- Added Dehya info to wish command (character not added to pool)

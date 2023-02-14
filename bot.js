@@ -309,8 +309,6 @@ function processCommand(receivedMessage) {
 }
 
 // Deleted Message quoting system
-var randomPity // create pity variable
-randomPity = 0 // initialize pity system
 client.on('messageDelete', receivedMessage => { // called whenever a message is deleted
 
     if (receivedMessage.author == client.user) { // Do nothing if itself
@@ -324,16 +322,12 @@ client.on('messageDelete', receivedMessage => { // called whenever a message is 
     }
     else {
         const random = Math.floor(Math.random() * 10) // generate a random number
-        randomPity += 1
 
-        if (randomPity > 9) { // if pity reaches 10, quote deleted message and reset pity counter
+        if (random == 5) { // if random number (luck) is 5, quote delete message 
             receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
-            randomPity = 0
         }
-        // console.log(random)
-        else if (random == 5) { // if random number (luck) is 5, quote delete message and reset pity count (10% luck)
-            randomPity = 0
-            receivedMessage.channel.send(`\'${receivedMessage.content}\' - ${receivedMessage.author.username}`)
+        else {
+            null
         }
     }
 })
