@@ -52,3 +52,10 @@ v2.5.2
 - Removed the RNG-based version of the She Command due to spam issues
 - Removed American and Buff commands 
 - Updated help.js and bot.js to reflect these changes
+
+v2.5.3
+- Updated all Wish Simulator image dependencies
+- Updated item lists in Wish Simulator
+- The bot will no longer recieve Feature Updates until further notice
+- Wish Simulator will continue recieving list updates
+- Bug fixes and improvements may still occur
