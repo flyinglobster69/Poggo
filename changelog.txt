@@ -54,8 +54,16 @@ v2.5.2
 - Updated help.js and bot.js to reflect these changes
 
 v2.5.3
+- Added Alhaitham to wish command
+- Fixed missing character cards in wish command
+
+v2.5.4
+- Removed guarantee counter from deleted message quoting system
+- Added Dehya info to wish command (character not added to pool)
+
+v2.5.5
 - Updated all Wish Simulator image dependencies
 - Updated item lists in Wish Simulator
 - The bot will no longer recieve Feature Updates until further notice
 - Wish Simulator will continue recieving list updates
-- Bug fixes and improvements may still occur
+- Bug fixes and improvements to existing features may still occur
