@@ -39,6 +39,8 @@ module.exports = {
         const alhaithamcard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/70/Alhaitham_Card.png'
         const dehyacard = 'https://static.wikia.nocookie.net/gensin-impact/images/d/de/Dehya_Card.png'
         const baizhucard = 'https://static.wikia.nocookie.net/gensin-impact/images/a/ae/Baizhu_Card.png'
+        const lyneycard = 'https://static.wikia.nocookie.net/gensin-impact/images/8/86/Lyney_Card.png'
+        const neuvillettecard = 'https://static.wikia.nocookie.net/gensin-impact/images/7/76/Neuvillette_Card.png'
 
         var color = '#191a36'
         const anemo = '#4cc285'
@@ -81,12 +83,14 @@ module.exports = {
         const alhaitham = ['Alhaitham', alhaithamcard, dendro]
         const dehya = ['Dehya', dehyacard, pyro]
         const baizhu = ['Baizhu', baizhucard, dendro]
+        const lyney = ['Lyney', lyneycard, pyro]
+        const neuvillette = ['Neuvillette', neuvillettecard, hydro]
 
 
         const star5 = [venti, childe, klee, albedo, ganyu, xiao, hutao, zhongli,
             eula, kazuha, ayaka, yoimiya, keqing, mona, qiqi, diluc, jean, ei, 
             kokomi, itto, shenhe, yae, ayato, yelan, tighnari, cyno, nilou, nahida, 
-            scaramouche, alhaitham, dehya, baizhu, // 5-star characters
+            scaramouche, alhaitham, dehya, baizhu, lyney, neuvillette, // 5-star characters
             'Amos\' Bow', 'Skyward Harp', 'Lost Prayer to the Sacred Winds', 'Skyward Atlas', 
             'Kamisato Ayato', 'Primoridal Jade Winged-Spear', 'Skyward Spine', 'Wolf\'s Gravestone', 
             'Skyward Pride', 'Skyward Blade', 'Aquila Favonia', 'Polar Star', 'Thundering Pulse',
@@ -96,12 +100,12 @@ module.exports = {
             'Summit Shaper', 'Freedom-Sworn', 'Primordial Jade Cutter', 'Haran Geppaku Futsu', 
             'Aqua Simulacra', 'The Hunter\'s Path', 'Staff of the Scarlet Sands', 'Key of Khaj-Nisut',
             'A Thousand Floating Dreams', 'Alaya', 'Light of Foliar Incision', 'Beacon of the Reed Sea', 
-            'Jadefall\'s Splendor'] // 5-star weapons
+            'Jadefall\'s Splendor', 'The First Great Magic'] // 5-star weapons
 
         const star4 = ['Yanfei', 'Rosaria', 'Xinyan', 'Sucrose', 'Diona', 'Chongyun', 'Noelle', 
             'Bennett', 'Fischl', 'Ningguang', 'Xingqiu', 'Beidou', 'Xiangling', 'Amber', 'Razor', 
             'Kaeya', 'Barbara', 'Lisa', 'Sayu', 'Kujou Sara', 'Thoma', 'Gorou', 'Yun Jin', 'Kuki Shinobu', 
-            'Collei', 'Dori', 'Layla', 'Faruzan', 'Yaoyao', 'Kaveh', 'Candace', 'Kirara', // 4-star characters
+            'Collei', 'Dori', 'Layla', 'Faruzan', 'Yaoyao', 'Kaveh', 'Candace', 'Kirara', 'Lynette',// 4-star characters
             'Rust', 'Sacrificial Bow', 'The Stringless', 'Favonius Warbow', 'Eye of Perception', 
             'Sacrificial Fragments', 'The Widsith', 'Favonius Codex', 'Favonius Lance', 'Dragon\'s Bane', 
             'Rainslasher', 'Sacrificial Greatsword', 'The Bell', 'Favonius Greatsword', 'Lion\'s Roar', 
