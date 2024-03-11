@@ -84,3 +84,6 @@ v2.6
 - Converted character cards to wish splash art in wish simulator
 - Added new Warp command for Honkai: Star Rail warp simulator
 - Updated all items in Warp simulator
+
+v2.6 Hotfix
+- Replaced Dan Heng IL warp image due to splash art URL issue
