@@ -1,9 +1,11 @@
 {
   "dependencies": {
+    "18": "^0.0.0",
     "ansi-regex": "^5.0.1",
     "discord.js": "^13.6.0",
+    "node": "^25.6.0",
     "node-fetch": "^2.6.7",
-    "npm": "^10.5.2",
+    "npm": "^11.8.0",
     "ytdl-core": "^4.9.1"
   }
 }
