@@ -1,7 +1,7 @@
 // Parse a field, coercing it to the best type available.
 const typeDefs = require('./type-defs.js')
 const envReplace = require('./env-replace.js')
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 
 const { parse: umaskParse } = require('./umask.js')
 
@@ -20,6 +20,7 @@ const parseField = (f, key, opts, listElement = false) => {
   const isUmask = typeList.has(typeDefs.Umask.type)
   const isNumber = typeList.has(typeDefs.Number.type)
   const isList = !listElement && typeList.has(Array)
+  const isDate = typeList.has(typeDefs.Date.type)
 
   if (Array.isArray(f)) {
     return !isList ? f : f.map(field => parseField(field, key, opts, true))
@@ -52,6 +53,10 @@ const parseField = (f, key, opts, listElement = false) => {
   }
 
   f = envReplace(f, env)
+
+  if (isDate) {
+    return new Date(f)
+  }
 
   if (isPath) {
     const homePattern = platform === 'win32' ? /^~(\/|\\)/ : /^~\//
